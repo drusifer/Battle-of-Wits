@@ -1,0 +1,224 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5EFE6; /* Parchment light */
+    color: #4A3B31; /* Dark Brown */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 700px;
+    height: 90vh;
+    max-height: 800px;
+    background-color: #E8DFCA; /* Parchment dark */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px solid #C8BBAF; /* Muted brown border */
+}
+
+.game-header {
+    background-color: #795548; /* Darker Brown */
+    color: #F5EFE6; /* Parchment light for header text */
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #5D4037; /* Even Darker Brown */
+}
+
+.game-header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+.game-status {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-window {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-log {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-sender {
+    font-size: 0.8em;
+    color: #6D4C41; /* Medium Brown */
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.message-sender .icon {
+    margin-right: 5px;
+    font-size: 2.5em;
+}
+
+.message-bubble {
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* DPR's messages (right side) */
+.message.dread-pirate-roberts { /* Assuming DPR's character name will result in this class */
+    align-self: flex-end;
+    align-items: flex-end; 
+    align-items: reverse;
+}
+.message.dread-pirate-roberts .message-bubble {
+    background-color: #4A6B8A; /* Muted Blue */
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+.message.dread-pirate-roberts .message-sender {
+    text-align: right;
+}
+
+
+/* Other characters' messages (left side) */
+.message.vizzini, 
+.message.buttercup, 
+.message.gramps, 
+.message.sick-boy { /* Generic class for non-DPR characters */
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+
+.message.vizzini .message-bubble,
+.message.gramps .message-bubble,
+.message.sick-boy .message-bubble {
+    background-color: #D7CCC8; /* Light Grey-Brown */
+    color: #3E2723; /* Darkest Brown */
+    border-bottom-left-radius: 5px;
+}
+
+.message.vizzini .message-bubble
+{
+    background-color: lightseagreen
+}
+
+.message.buttercup .message-bubble {
+    background-color: #FFCDD2; /* Light Pink for Buttercup */
+    color: #795548; /* Darker Brown */
+    border-bottom-left-radius: 5px;
+}
+
+
+.message.game-event {
+    align-self: center;
+}
+.message.game-event .message-bubble {
+    line-height: .5;
+    font-size: 0.7em;
+    background-color: #D7CCC8; /* Light Grey-Brown */
+    font-style: italic;
+    background-color: #CFD8DC; /* Light Blue-Grey for narrator/events */
+}
+
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 2px solid #C8BBAF; /* Muted brown border */
+    background-color: #D7CCC8; /* Light Grey-Brown for input area */
+}
+
+#answerInput {
+    flex-grow: 1;
+    padding: 10px 12px;
+    border: 1px solid #A1887F; /* Medium Brown */
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    background-color: #F5F5F5; /* Lighter input background */
+}
+
+#answerInput:focus {
+    outline: none;
+    border-color: #795548; /* Darker Brown */
+    box-shadow: 0 0 0 2px rgba(121, 85, 72, 0.2);
+}
+
+#submitAnswerButton, 
+.action-buttons button, 
+.goblet-choice-area button {
+    padding: 10px 20px;
+    background-color: #8D6E63; /* Medium Brown */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#submitAnswerButton:hover, 
+.action-buttons button:hover, 
+.goblet-choice-area button:hover {
+    background-color: #6D4C41; /* Darker Brown on hover */
+}
+
+.action-buttons, .goblet-choice-area {
+    display: none; /* Hidden by default, shown by JS */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid #C8BBAF;
+}
+
+/* Typing indicator styles */
+.typing-indicator {
+    display: inline-block;
+    margin-left: 5px;
+}
+.typing-indicator span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 2px;
+    background-color: #8D6E63; /* Medium Brown */
+    border-radius: 50%;
+    animation: typing 1s infinite ease-in-out;
+}
+.typing-indicator span:nth-child(1) { animation-delay: 0s; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.15s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+}
