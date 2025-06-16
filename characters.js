@@ -1,5 +1,5 @@
 import { AutoShuffleDeck } from './autoShuffleDeck.js';
-import { ChatSession } from './chat.js'
+import { ChatSession } from './chat.js';
 
 /**
  * The base class for all characters in the game.
@@ -164,7 +164,7 @@ export class DreadPirateRoberts extends Character {
             "My final regret...", "I... am sorry...", "The world fades...",
             "Inconceivable...", "I have lost...", "The end...", "No...", "Buttercup..."
         ];
-        super(chat, "Dread Pirate Roberts", "🏴‍☠️", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Dread Pirate Roberts", "\u{1F3F4}\u{2620}\u{FE0F}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
         this.drankPoisonMessages = new AutoShuffleDeck([
             "It's a good thing I've built up a resistance to iocane powder. Let's go again, shall we?",
             "Merely a flesh wound. I've spent years building up an immunity to iocane powder. Your methods are... predictable. I've got time for one more, if you dare.",
@@ -290,7 +290,7 @@ export class Vizzini extends Character {
             "And the crowd goes wild! For me, of course.", "Checkmate.", "Game, set, and match. To me.", "I am victorious! As always."
         ];
 
-        super(chat, "Vizzini", "🧐", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Vizzini", "\u{1F9D0}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.gobletRoundMessages = new AutoShuffleDeck([
             "No more banter! The time has come to choose.",
@@ -403,8 +403,7 @@ export class Buttercup extends Character {
             "This is almost over. Stay strong. 🙏",
             "Don't let him see your fear.",
             "You are doing wonderfully.",
-            "He talks and talks, but you think. That is your advantage.",
-            "That's a non sequitur, Vizzini. Your premise doesn't support your conclusion.", "Pay attention to his rhetoric, Wesley. He uses ad hominem attacks to distract from his weak arguments.",
+            "He talks and talks, but you think. That is your advantage.", "That's a non sequitur, Vizzini. Your premise doesn't support your conclusion.", "Pay attention to his rhetoric, Wesley. He uses ad hominem attacks to distract from his weak arguments.",
             "He's trying to provoke an emotional response. Don't let him. Stay analytical. ❤️", "That's an appeal to authority fallacy. Just because he's Sicilian doesn't make him right.",
             "He's speaking quickly to confuse you, my love. Take your time.", "The more he insults you, the less confident he truly is.",
             "He's presenting a false dichotomy. There may be other options he's not mentioning.", "His logic is circular. He's using his conclusion as proof.",
@@ -436,7 +435,7 @@ export class Buttercup extends Character {
             "You have taken everything from me.", "This is not the end. I will not let it be.",
             "My Wesley... gone...", "I will never forget you.", "As you wish...", "My heart... is gone..."
         ];
-        super(chat, "Buttercup", "👑", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Buttercup", "\u{1F451}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
     }
 }
 
@@ -455,7 +454,8 @@ export class Gramps extends Character {
             "This Vizzini fellow is a real piece of work, isn't he?", "Shh, shh. The game is beginning.",
             "This old book has seen better days, but the story is timeless.", "Are you ready? No interruptions now.",
             "He has to choose between the two cups. A perfect dilemma.", "The princess watches, her heart in her throat.",
-            "This scene is all about psychology.", "It's not about the poison, it's about the people.",
+            "This scene is all about psychology.",
+            "It's not about the poison, it's about the people.",
             "Now Vizzini thinks he's in control. But is he?", "The man in black is letting him talk. It's a strategy.",
             "This is a game of high stakes.", "The most important thing is to never let your opponent know what you're thinking.",
             "Okay, deep breath. Here we go.", "It's about to get very clever.",
@@ -523,7 +523,7 @@ export class Gramps extends Character {
             "That's a tough lesson in humility.", "Even the best of us can fall."
         ];
 
-        super(chat, "Gramps", "👴", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Gramps", "\u{1F474}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.gobletRoundMessages = new AutoShuffleDeck([
             "Alright, alright, settle down. So, where were we? Ah, yes... Vizzini had laid out the goblets. The tension was so thick you could cut it with a butter knife. And the Man in Black, cool as ever, surveyed the scene and declared:",
@@ -636,7 +636,7 @@ export class SickBoy extends Character {
             "So the jerk wins? Great.", "I'm officially bored."
         ];
 
-        super(chat, "Sick Boy", "🤒", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Sick Boy", "\u{1F912}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.greetings = new AutoShuffleDeck([
             "Hi gramps *cough* *cough* *cough* *cough*",
