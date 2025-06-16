@@ -162,9 +162,7 @@ export class Game {
             } else {
                 this.playerHearts--;
                 if (this.playerHearts > 0) {
-                    await this.vizzini.dprLossMessages();
-                    await this.buttercup.dprLossMessages();
-                    await this.dpr.drankPoisonMessages();
+                    await this.dpr.sayDrankPoisonMessage();
                 }
             }
         }
@@ -185,7 +183,7 @@ export class Game {
             await this.randomCommentDeck.draw().saySomething();
             await this.randomCommentDeck.draw().saySomething();
         } else {
-            await this.vizzini.say(this.poisonedGoblet.getInsult());
+            await this.vizzini.say(this.deadlyGoblet.getInsult());
             await this.randomCommentDeck.draw().saySomething();
             await this.randomCommentDeck.draw().saySomething();
             await this.randomCommentDeck.draw().saySomething();

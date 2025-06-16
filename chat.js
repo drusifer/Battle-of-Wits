@@ -70,14 +70,9 @@ export class BrowserChat extends AsyncChat {
         this.chatLogElement = document.getElementById('chatLog');
         
         // Riddle input elements
-        this.riddleInputAreaDiv = document.getElementById('riddleInputArea');
         this.answerInputElement = document.getElementById('answerInput');
         this.submitAnswerButton = document.getElementById('submitAnswerButton');
-        
-        // Riddle action buttons
-        this.riddleActionButtonsDiv = document.getElementById('riddleActionButtons');
         this.hintButton = document.getElementById('hintButton');
-        this.passButton = document.getElementById('passButton');
 
         // Goblet choice elements
         this.gobletChoiceAreaDiv = document.getElementById('gobletChoiceArea');
@@ -96,20 +91,21 @@ export class BrowserChat extends AsyncChat {
         if (status == "on") {
             this.answerInputElement.disabled = false;
             this.submitAnswerButton.disabled = false;
+            this.hintButton.disabled = false;
             this.answerInputElement.placeholder = "Your One Word Answer Pirate...";
         } else {
+            this.answerInputElement.placeholder = "...";
             this.answerInputElement.disabled = true;
             this.submitAnswerButton.disabled = true;
-            this.answerInputElement.placeholder = "...";
+            this.hintButton.disabled = true;
         }
     }
 
     waitForAnswer() {
         this.answerInputElement.placeholder="Your Answer Pirate..."
-        this.riddleActionButtonsDiv.style.display = 'flex';
         this.setInputStatus("on");
 
-        return new Promise(resolve => {
+        return new Promise( resolve => {
             const callback = (event) => {
                 this.submitAnswerButton.removeEventListener('click', callback);
                 resolve(this.getRiddleAnswer());
@@ -120,7 +116,7 @@ export class BrowserChat extends AsyncChat {
             this.submitAnswerButton.addEventListener('click', callback);
             this.answerInputElement.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter') {
-                    callback();
+                    callback(event);
                 }
             });
         });
@@ -128,7 +124,6 @@ export class BrowserChat extends AsyncChat {
 
     waitForGobletChoice() {
         this.gobletChoiceAreaDiv.style.display = 'flex';
-        this.setInputStatus("on");
 
         return new Promise(resolve => {
 
@@ -187,9 +182,8 @@ export class BrowserChat extends AsyncChat {
 
         messageDiv.classList.add(slug);
         this.chatLogElement.appendChild(messageDiv);
-        this.scrollLastChildIntoView(this.chatLogElement);
-
-
+        //this.scrollLastChildIntoView(this.chatLogElement);
+        this.smoothScrollDivToBottom(this.chatLogElement);
     }
 
     // Smooth scroll alternative (less precise for absolute bottom, but often visually nicer)
@@ -219,55 +213,6 @@ export class BrowserChat extends AsyncChat {
         return value;
     }
 
-    /**
-     * Adds an event listener to a specific UI interaction type.
-     * This implementation is simplified as the primary listeners for resolving
-     * promises are set up in _bindInitialListeners. This method is here to fulfill
-     * the AsyncChat contract if it's used for other generic UI events by the game logic.
-     * @param {string} eventType - The type of event (e.g., 'submitRiddle', 'requestHint').
-     * @param {function} callback - The function to call when the event occurs.
-     */
-    addEventListener(eventType, callback) {
-        let element;
-        const domEvent = 'click';
-
-        switch (eventType) {
-            case 'submitRiddle': element = this.submitAnswerButton; break;
-            case 'requestHint': element = this.hintButton; break;
-            case 'passRiddle': element = this.passButton; break;
-            case 'chooseLeftGoblet': element = this.leftGobletButton; break;
-            case 'chooseRightGoblet': element = this.rightGobletButton; break;
-            default:
-                console.warn(`BrowserChat: Unsupported eventType for addEventListener: ${eventType}`);
-                return;
-        }
-
-        if (element) {
-            const wrapperCallback = (event) => callback(event);
-            if (!this.activeListeners.has(eventType)) {
-                this.activeListeners.set(eventType, []);
-            }
-            this.activeListeners.get(eventType).push({ original: callback, wrapper: wrapperCallback, element: element, domEvent: domEvent });
-            element.addEventListener(domEvent, wrapperCallback);
-        }
-    }
-
-    /**
-     * Removes an event listener for a specific UI interaction type.
-     * @param {string} eventType - The type of event.
-     * @param {function} callback - The original callback function to remove.
-     */
-    removeEventListener(eventType, callback) {
-        if (this.activeListeners.has(eventType)) {
-            const listeners = this.activeListeners.get(eventType);
-            const listenerIndex = listeners.findIndex(l => l.original === callback);
-            if (listenerIndex > -1) {
-                const listenerToRemove = listeners[listenerIndex];
-                listenerToRemove.element.removeEventListener(listenerToRemove.domEvent, listenerToRemove.wrapper);
-                listeners.splice(listenerIndex, 1);
-            }
-        }
-    }
     
     // --- UI State Management and Helper Methods (Private) ---
 
@@ -295,8 +240,6 @@ export class BrowserChat extends AsyncChat {
     }
     
     _setRiddleMode(active) {
-        this.riddleInputAreaDiv.style.display = active ? 'flex' : 'none';
-        this.riddleActionButtonsDiv.style.display = active ? 'flex' : 'none';
         this.gobletChoiceAreaDiv.style.display = 'none';
 
         this.answerInputElement.disabled = !active;
@@ -309,42 +252,10 @@ export class BrowserChat extends AsyncChat {
     }
 
     _setGobletMode(active) {
-        this.riddleInputAreaDiv.style.display = 'none';
-        this.riddleActionButtonsDiv.style.display = 'none';
         this.gobletChoiceAreaDiv.style.display = active ? 'flex' : 'none';
         
         this.leftGobletButton.disabled = !active;
         this.rightGobletButton.disabled = !active;
-    }
-
-    // --- Promise-based methods for Game.js to await ---
-
-    /**
-     * Prompts the user for an action during the riddle phase (answer, hint, or pass).
-     * Returns a Promise that resolves with an object: { type: 'answer'|'hint'|'pass', value?: string }
-     */
-    promptForRiddleAction() {
-        this._setRiddleMode(true);
-        return new Promise(resolve => {
-            this._resolveRiddleAction = (action) => {
-                this._setRiddleMode(false); // Disable inputs after action
-                resolve(action);
-            };
-        });
-    }
-    
-    /**
-     * Prompts the user to choose a goblet.
-     * Returns a Promise that resolves with 'left' or 'right'.
-     */
-    promptForGobletChoice() {
-        this._setGobletMode(true);
-        return new Promise(resolve => {
-            this._resolveGobletChoice = (choice) => {
-                this._setGobletMode(false); // Disable inputs after choice
-                resolve(choice);
-            };
-        });
     }
 
     /**
