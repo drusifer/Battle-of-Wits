@@ -1,0 +1,2492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle of Wits</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5EFE6; /* Parchment light */
+    color: #4A3B31; /* Dark Brown */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 700px;
+    height: 90vh;
+    max-height: 800px;
+    background-color: #E8DFCA; /* Parchment dark */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px solid #C8BBAF; /* Muted brown border */
+}
+
+.game-header {
+    background-color: #795548; /* Darker Brown */
+    color: #F5EFE6; /* Parchment light for header text */
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #5D4037; /* Even Darker Brown */
+}
+
+.game-header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+.game-status {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-window {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-log {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-sender {
+    font-size: 0.8em;
+    color: #6D4C41; /* Medium Brown */
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.message-sender .icon {
+    margin-right: 5px;
+    font-size: 2.5em;
+}
+
+.message-bubble {
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* DPR's messages (right side) */
+.message.dread-pirate-roberts { /* Assuming DPR's character name will result in this class */
+    align-self: flex-end;
+    align-items: flex-end; 
+    align-items: reverse;
+}
+.message.dread-pirate-roberts .message-bubble {
+    background-color: #4A6B8A; /* Muted Blue */
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+.message.dread-pirate-roberts .message-sender {
+    text-align: right;
+}
+
+
+/* Other characters' messages (left side) */
+.message.vizzini, 
+.message.buttercup, 
+.message.gramps, 
+.message.sick-boy { /* Generic class for non-DPR characters */
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+
+.message.vizzini .message-bubble,
+.message.gramps .message-bubble,
+.message.sick-boy .message-bubble {
+    background-color: #D7CCC8; /* Light Grey-Brown */
+    color: #3E2723; /* Darkest Brown */
+    border-bottom-left-radius: 5px;
+}
+
+.message.vizzini .message-bubble
+{
+    background-color: lightseagreen
+}
+
+.message.buttercup .message-bubble {
+    background-color: #FFCDD2; /* Light Pink for Buttercup */
+    color: #795548; /* Darker Brown */
+    border-bottom-left-radius: 5px;
+}
+
+
+.message.game-event {
+    align-self: center;
+}
+.message.game-event .message-bubble {
+    line-height: .5;
+    font-size: 0.7em;
+    background-color: #D7CCC8; /* Light Grey-Brown */
+    font-style: italic;
+    background-color: #CFD8DC; /* Light Blue-Grey for narrator/events */
+}
+
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 2px solid #C8BBAF; /* Muted brown border */
+    background-color: #D7CCC8; /* Light Grey-Brown for input area */
+}
+
+#answerInput {
+    flex-grow: 1;
+    padding: 10px 12px;
+    border: 1px solid #A1887F; /* Medium Brown */
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    background-color: #F5F5F5; /* Lighter input background */
+}
+
+#answerInput:focus {
+    outline: none;
+    border-color: #795548; /* Darker Brown */
+    box-shadow: 0 0 0 2px rgba(121, 85, 72, 0.2);
+}
+
+#submitAnswerButton, 
+.action-buttons button, 
+.goblet-choice-area button {
+    padding: 10px 20px;
+    background-color: #8D6E63; /* Medium Brown */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#submitAnswerButton:hover, 
+.action-buttons button:hover, 
+.goblet-choice-area button:hover {
+    background-color: #6D4C41; /* Darker Brown on hover */
+}
+
+.action-buttons, .goblet-choice-area {
+    display: none; /* Hidden by default, shown by JS */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid #C8BBAF;
+}
+
+/* Typing indicator styles */
+.typing-indicator {
+    display: inline-block;
+    margin-left: 5px;
+}
+.typing-indicator span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 2px;
+    background-color: #8D6E63; /* Medium Brown */
+    border-radius: 50%;
+    animation: typing 1s infinite ease-in-out;
+}
+.typing-indicator span:nth-child(1) { animation-delay: 0s; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.15s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+}
+</style>
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Battle of Wits</h1>
+            <div class="game-status">
+                <span id="playerHearts">Hearts: ❤️❤️❤️</span>
+                <span id="roundInfo">Round: 1</span>
+            </div>
+        </header>
+
+        <div class="chat-window">
+            <div id="chatLog" class="chat-log">
+                <!-- Messages will be appended here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="input-area" id="riddleInputArea">
+            <input type="text" id="answerInput" placeholder="...">
+            <button id="submitAnswerButton">Send 🗡️</button>
+            <button id="hintButton">Hint 🙏</button>
+        </div>
+
+        <div class="goblet-choice-area" id="gobletChoiceArea"> <!-- Initially hidden via CSS or JS -->
+            <p>Choose a goblet:</p>
+            <button id="chooseLeftGobletButton">Left Goblet 🍷</button>
+            <button id="chooseRightGobletButton">Right Goblet 🍷</button>
+        </div>
+
+    </div>
+
+    <script>
+// Combined JavaScript modules. Order of concatenation:
+// --- Start of deck.js ---
+class Deck {
+    constructor(cards = []) {
+        this.cards = cards;
+        //this.cards.reverse();  // FIFO
+        this.drawnCards = [];
+        this.currentCard = null;
+    }
+
+    // Helper function to get a random integer using window.crypto if available,
+    // falling back to Math.random otherwise. Includes rejection sampling for even distribution
+    // when using window.crypto.
+    getRandomInt(max) {
+        if (max <= 0) {
+            throw new Error("max must be a positive integer");
+        }
+
+        if (typeof window !== 'undefined' && window.crypto && window.crypto.getRandomValues) {
+            const range = max;
+            const bitsNeeded = Math.ceil(Math.log2(range));
+            const bytesNeeded = Math.ceil(bitsNeeded / 8);
+            const maxValidValue = Math.pow(256, bytesNeeded) - 1;
+            const usefulRange = maxValidValue - (maxValidValue % range);
+
+            let randomBytes;
+            let randomValue;
+            do {
+                randomBytes = new Uint8Array(bytesNeeded);
+                window.crypto.getRandomValues(randomBytes);
+                randomValue = randomBytes.reduce((acc, byte) => (acc * 256) + byte, 0);
+            } while (randomValue >= usefulRange);
+            return randomValue % range;
+        } else {
+            return Math.floor(Math.random() * max);
+        }
+    }
+
+    drawN(numberOfCards) {
+        let drawn = [];
+        for (let i = 0; i < numberOfCards; i++) { 
+            drawn.push(this.draw());
+        }
+        return drawn;
+    }
+
+    draw() {
+        const card = this.cards.pop();
+        if (card === undefined) {
+            return null;
+        }
+
+        this.drawnCards.push(card);
+        this.currentCard = card;
+        return this.currentCard;
+    }
+
+    isEmpty() {
+        return this.cards.length === 0;
+    }
+
+    shuffle() {
+        for (let i = this.cards.length - 1; i > 0; i--) {
+            const j = this.getRandomInt(i + 1);
+            [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
+        }
+        return this;
+    }
+
+    reshuffle() {
+        this.cards = [...this.cards, ...this.drawnCards];
+        this.drawnCards = [];
+        this.currentCard = null; // Will be set on next draw
+        this.shuffle();
+        return this;
+    }
+
+    // Removes all the remaining cards from the deck and ads them to this one.
+    merge(deck) {
+        this.cards = [...this.cards, ...deck.split(deck.numRemaining).cards]
+        return this;
+    }
+
+    // Remove the numberOfCards from the remainiang cards to a new deck.
+    split( numberOfCards ) {
+        if ( numberOfCards > this.cards.length ) {
+            numberOfCards = this.cards.length;
+        }
+        const cardsToSplit = this.cards.splice( 0, numberOfCards );
+        return new Deck( cardsToSplit ); // Create new deck with split cards
+    }
+
+    get numRemaining() {
+        return this.cards.length;
+    }
+
+    //return the number of cards in the discard pile
+    get numDrawn() {
+        return this.drawnCards.length;
+    }
+    // return the total number of cards in the deck
+    get length() {
+        return this.cards.length + this.drawnCards.length;
+    }
+
+    // return the total number of cards in the deck
+    size() {
+        return this.cards.length + this.drawnCards.length;
+    }
+
+    // get the remaining cards without drawing them
+    getCards()  {
+        return this.cards;
+    }
+}
+
+// --- End of deck.js ---
+
+// --- Start of autoShuffleDeck.js ---
+
+class AutoShuffleDeck extends Deck {
+  draw() {
+    if (this.isEmpty()) {
+      this.reshuffle();
+    }
+    return super.draw();
+  }
+}
+
+// --- End of autoShuffleDeck.js ---
+
+// --- Start of attributes.js ---
+/// This is code fo the game Battle of Wits a game based on the Book/Movie
+//// "The Princess Bride."  In the game You are Wesley aka The Dread Pirate
+//// Roberts aka DPR and you have challenged Vizini to a battle of wits
+//// to the death!  In this version Vizini will ask three riddles after which
+//// DPR will have to identify which of two Goblets contains iocane poison
+//// (which as any fool knows is odorless and colorless rendering it indetectable
+//// and only comes from Austraila.)  Pay close attention to Vizini's words
+//// whetherby arrogance or sloppynes, he's bound to drop clues to the
+//// poisoned goblet within his lavish insults.  Don't forget Buttercup is stading by
+//// ready to offer a hint or words of encouragement.
+
+
+/****
+ * Rules:
+ * - DPR starts with 3 hearts and round 1 begins:
+ * -
+ * -   Vizini prepares two goblets by drawing 5 attribute per goblet
+ * -   Vizini poses his riddle and DPR can do the following:
+ * 1: Confidently, respond with a single word answer to the riddle
+ * 2: Valliently ask Buttcup for help
+ * 3: Stall with banter to try and get a clue from Vizini (could backfire)
+ * -   If DPR answers correctly then Vizini will get frustrated and toss 3 insults
+ * at DPR.  If the answer is wrong then Vizini will ridicule DPR with 1 insult.
+ * -   most other actions will elicit an insult from Vizini
+ * * -   After 3 riddles Vizini reveals the goblets displaying a describive
+ * paragraph for each goblet.
+ * -   DPR chooses either the goblet on the right or the goblet on the left
+ * and they drink.
+ * -   If Vizini drank the poison then DPR wins
+ * -   If DPR drank the the posion he loses 1 heart (iocain resistanse) and
+ * you begin another round.
+ * -   If DPR runs out of hearts you lose the game.
+ * * * Objects:
+ * * Deck:
+ * Generic class for holding objects and distributing them in a
+ * random fashion like a deck of cards.
+ * * AutoshuffleDeck:
+ * Reshuffles when empty for infinite draws
+ * * AttributeCard:
+ * Object representing a Goblet attribute. Each attribute card has a
+ * fragment deck of different sentances that describe the specific attribute
+ * of the goblet in different ways for variation.  There is also an insult
+ * deck which provides Vizzini's insults that provide subltle clues to this attriubute.
+ * * Attributes are organized into subtypes with exclusive varients (Suite) to avoid
+ * creading paradoxacal goblets and to provide templates for the description. For example:
+ * * Material:
+ * What the goblet is made of. Can be described with sentances like:
+ * 'It appears to be crafted from %s',
+ * "It looks like it's made from a piece of %s",
+ * "It's carved out of %s",
+ * "The material looks like %s"
+ * * Varients: AncientSilver, Ivory, Jade, Alabaster, White Oak, Cheap Plastic
+ * */
+
+
+// --- ATTRIBUTE CLASSES ---
+
+
+/** The base class for all attributes. The varient is automatically selected by instatating the desired class**/
+class Attribute {
+    constructor(name, value, fragments, insults, complements) {
+        this.name = name;
+        this.value = value;
+        this.fragments = new AutoShuffleDeck(fragments);
+        this.insults = new AutoShuffleDeck(insults);
+        this.complements = new AutoShuffleDeck(complements);
+    }
+
+    /**
+     * Draws a descriptive fragment from the fragments deck.
+     */
+    draw_fragment() {
+        const v = this.value;
+        const a = ['a', 'e', 'i', 'o', 'u'].includes(v[0].toLowerCase()) ? 'an' : 'a';
+        const f = this.fragments.draw().replace("%s", v)
+            .replace("%a", a);
+        return f;
+    }
+
+    toString() {
+        return `${this.name}: ${this.value}`;
+    }
+
+    getInsult() {
+        this.insults.draw();
+    }
+
+    getComplements() {
+        this.complements.draw();
+    }
+}
+
+
+/*
+* A material is an example of kind of attribute
+* Use classes like Material, Odor, Shape, etc... to represent a
+* physical attribute of the goblet.
+* They are useful for sharing common fragments across
+* different Varients of the same physical attribute.
+* Varients can suply their own specific fragment as well.
+*/
+class Material extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const f = [
+            'It appears to be crafted from %s.',
+            "It looks like it's made from a piece of %s.",
+            "It's carved out of %s.",
+            "The material looks like %s."
+        ].concat(frags);
+        super('Material', value, f, insults, complements);
+    }
+};
+
+
+// --- OTHER ATTRIBUTE TYPE BASE CLASSES ---
+class FormOverallShape extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const f = [
+            'The goblet has %a %s shape overall.',
+            'Its form is predominantly %s.',
+            'One notices the %s contour of the goblet.',
+            'The overall shape is distinctly %s.',
+            'It presents as %a %s form.'
+        ].concat(frags);
+        super('Overall Shape', value, f, insults, complements);
+    }
+};
+
+class CurrentCondition extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const f = [
+            'Its current condition is %s.',
+            'The goblet is in %a %s condition.',
+            'It appears remarkably %s.',
+            'The state of the goblet is pretty %s.',
+            'Evidently, it is %s.'
+        ].concat(frags);
+        super('Current Condition', value, f, insults, complements);
+    }
+};
+
+class Odor extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "A faint scent of %s emanates from it.",
+            "It carries %a %s odor.",
+            "One can detect a distinct aroma of %s.",
+            "The goblet smells faintly of %s.",
+            "There's an unmistakable hint of %s about it."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Odor', value, allFragments, insults, complements);
+    }
+};
+
+class Weight extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "It feels surprisingly %s in the hand.",
+            "The goblet has %a %s weight to it.",
+            "Lifting it, one notes its %s quality.",
+            "It seems to be of %a %s construction, judging by its weight.",
+            "The perceived weight is %s."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Weight', value, allFragments, insults, complements);
+    }
+};
+
+class MonetaryValue extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "It looks to be of %s monetary value.",
+            "One might estimate its worth as %s.",
+            "This appears to be %a %s item.",
+            "The goblet has the appearance of %s monetary value.",
+            "It seems to be a piece of %s value."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Monetary Value', value, allFragments, insults, complements);
+    }
+};
+
+class Liquid extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "The goblet appears to contain %s.",
+            "A quantity of %s sloshes within.",
+            "It is filled with %a %s liquid.",
+            "Looking inside, you see %s.",
+            "The contents seem to be %s."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Liquid', value, allFragments, insults, complements);
+    }
+};
+
+class Rim extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "The rim is %s.",
+            "Its rim appears %s.",
+            "Examining the edge, the rim is clearly %s.",
+            "It has %a %s rim.",
+            "The goblet's rim is noted to be %s."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Rim', value, allFragments, insults, complements);
+    }
+};
+
+class EngravingOrMotif extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFrags = [
+            'It is adorned with %s.',
+            'The surface is completely covered in %s.',
+            'One can discern %s as a prominent motif.',
+            'There are %s etched into the material.',
+            'Decorations of %s are visible.'
+        ];
+        const allFragments = baseFrags.concat(frags);
+        super('Engraving', value, allFragments, insults, complements);
+    }
+};
+
+class SurfaceTexture extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "The surface feels %s to the touch.",
+            "It has %a %s texture.",
+            "Running a finger over it reveals %a %s surface.",
+            "The texture is noticeably %s.",
+            "Its tactile quality is %s."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Surface Texture', value, allFragments, insults, complements);
+    }
+};
+
+
+class Base extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "The base of the goblet is %s.",
+            "It stands on %a %s base.",
+            "The supporting base appears %s.",
+            "Its base is fashioned to be %s.",
+            "A notable feature is its %s base."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Base', value, allFragments, insults, complements);
+    }
+};
+
+class Handles extends Attribute {
+    constructor(value, insults, complements, frags = []) {
+        const baseFragments = [
+            "The goblet features %s.",
+            "It is equipped with %s.",
+            "Regarding handles, it has %s.",
+            "One can note %s for gripping.",
+            "The design includes %s."
+        ];
+        const allFragments = baseFragments.concat(frags);
+        super('Handles', value, allFragments, insults, complements);
+    }
+};
+
+const ATTRIBUTE_DECK = new AutoShuffleDeck([
+
+    // --- MATERIAL VARIANTS ---
+    new class AncientSilver extends Material {
+        constructor() {
+            const insults = [
+                "Pah! An answer that lacks luster, Roberts! It speaks of a mind that has not seen the polish of genuine thought in ages!",
+                "Your prospects are looking rather... discolored, Roberts. Even this venerable vessel seems to shine brighter by comparison.",
+                "Empires have risen and fallen in the time it took you to conjure that folly! Such a statement belongs in a museum of idiocy!",
+                "Your intellect carries the heavy weight of stupidity, pirate! A truly ponderous attempt at deduction.",
+                "Do you value such a worthless answer so highly? It proves your judgment is as poor as a commoner's trying to appraise a king's treasure."
+            ];
+            const complements = [
+                "A surprisingly sharp answer, Roberts! Almost as if it has been polished over many long years, revealing a glint of true value beneath the surface.",
+                "Ah, you've seen through the dull exterior to the truth! A mind as keen as yours can discern worth even when it's clouded by the passage of time. Most impressive.",
+                "An answer of surprising weight, pirate! It seems your intellect, much like a fine antique, has accumulated substance over your many travels.",
+                "Well, well, you've unearthed a treasure of a response! It seems not all that is old and darkened has lost its inherent brilliance. A rare quality, indeed.",
+                "I'm impressed, Roberts. Your logic possesses a certain venerable quality, much like an heirloom passed down through generations. It has the ring of truth to it."
+            ];
+            const frags = [
+                "The silver is so ancient it looks almost black with tarnish.",
+                "A heavy goblet, clearly made of silver ages old."
+            ];
+            super('Ancient Silver', insults, complements, frags);
+        }
+    }(),
+
+    new class PolishedPewter extends Material {
+        constructor() {
+            const insults = [
+                "Honestly, Roberts, your answer is so dull, it makes this humble cup seem positively radiant by comparison! Did you even *try* to engage that pirate brain of yours?",
+                "Such a malleable mind, Dread Pirate! It bends under the slightest pressure of a true intellect. You're softer than you look, aren't you?",
+                "Pah! Your logic is as soft as this common metal. I expected a keener mind from the Dread Pirate Roberts, not one so easily dented by a simple riddle!",
+                "If your wit were a drinking vessel, Roberts, it would be this one – unassuming, easily overlooked, and ultimately, quite cheap!",
+                "That answer is the color of mediocrity, pirate! A bland, grey smear on the canvas of our intellectual masterpiece!"
+            ];
+            const complements = [
+                "An answer with a quiet brilliance, Roberts! Much like a well-kept secret, its humble appearance belies a certain respectable strength.",
+                "I see... you favor a straightforward, unpretentious solution. It has the sturdy, reliable character of a dependable, if common, ally.",
+                "You've polished that thought quite nicely, pirate! It shines with a soft, unassuming luster, proving that not all correct answers need to be dazzling.",
+                "A surprisingly solid choice of words, Roberts. It has a certain weight to it, a reassuring quality one finds in things that are built to last, not just to impress.",
+                "How resourceful! You've forged an answer that is both practical and effective, proving one doesn't need extravagant materials to construct a sound argument."
+            ];
+            const frags = [
+                "The goblet shines with the soft, grey lustre of well-polished pewter.",
+                "It has the sturdy, unassuming character of pewter."
+            ];
+            super('Polished Pewter', insults, complements, frags);
+        }
+    }(),
+
+    new class FlawlessCrystal extends Material {
+        constructor() {
+            const insults = [
+                "Your attempt at reasoning, Roberts, is utterly transparent! And unlike a fine piece such as this, it is riddled with obvious, glaring flaws!",
+                "Did you think I wouldn't see right through that pathetic excuse for an answer? It's as empty and fragile as your chances of winning!",
+                "Roberts, Roberts, Roberts! Your brain is clear, I'll give you that – clear as glass, and just as empty! A child could see through your pathetic guess!",
+                "My dear Dread Pirate, your supposed brilliance is nowhere to be seen. If your mind were a vessel, it would shatter at the first sip of true complexity!",
+                "That answer rings with the hollow note of idiocy! I fear a sharp retort from me would break your spirit entirely!"
+            ];
+            const complements = [
+                "A stunningly clear and precise answer, Roberts! It refracts the light of truth in a most dazzling display. I am, against my better judgment, impressed.",
+                "I see right through you, pirate... and for once, I see a glimmer of pure, unadulterated intellect. A truly perfect deduction!",
+                "Your reasoning is as sharp and multifaceted as a well-cut gem. You've managed to illuminate the very heart of the matter. Remarkable.",
+                "An answer of such perfect clarity it sings with truth. Be careful, Roberts, such fragile brilliance can be easily broken by arrogance.",
+                "I must admit, your logic is pristine. You've presented an argument so pure and unblemished by error that even I cannot find a fault in it. Well done."
+            ];
+            const frags = [
+                "Light refracts beautifully through its flawless crystal construction.",
+                "The goblet is remarkably clear, crafted from what appears to be perfect crystal."
+            ];
+            super('Flawless Crystal', insults, complements, frags);
+        }
+    }(),
+
+    new class RoughHewnWood extends Material {
+        constructor() {
+            const insults = [
+                "Such a coarse and unrefined answer, Roberts! One might think you whittled it yourself from a particularly dense block of… misunderstanding!",
+                "A wooden-headed response! I dare say this simple goblet has more intricate grain than your thought process, pirate!",
+                "Splinters and sawdust, that's what your answer is made of, Roberts! You couldn't see the forest for the trees in that riddle, could you, you lumbering fool?",
+                "Your intellect, pirate, is as unpolished as a freshly felled tree. Perhaps a bit of seasoning would do you good, though I doubt it would improve that answer.",
+                "An answer that belongs in a campfire! It's crude, primitive, and will soon be turned to ash by the heat of my intellect!"
+            ];
+            const complements = [
+                "A surprisingly rustic and effective answer, Roberts. It may lack polish, but it has the undeniable strength of solid, natural truth.",
+                "You've carved out a niche for yourself with that response! A bit rough around the edges, perhaps, but its fundamental structure is sound.",
+                "An answer with a certain organic, unvarnished honesty. It's refreshing, in a simple, almost pastoral sort of way. I didn't think you had it in you.",
+                "Against all odds, your logic holds firm. It has a certain grainy complexity that is, I must admit, more clever than it first appears.",
+                "From such a coarse and unrefined source, a surprisingly sound point emerges. You truly are a man of the earth, aren't you, Roberts?"
+            ];
+            const frags = [
+                "The goblet feels coarse to the touch, evidently shaped from rough-hewn wood.",
+                "Its rustic charm comes from the visible grain and imperfections of the wood."
+            ];
+            super('Rough-Hewn Wood', insults, complements, frags);
+        }
+    }(),
+
+    new class BoneChina extends Material {
+        constructor() {
+            const insults = [
+                "Oh, the esteemed Dread Pirate Roberts, so easily rattled! That answer was so delicate, so… breakable! It's a wonder it didn't shatter before it left your lips!",
+                "Your argument is as thin and insubstantial as the most fragile teacup, pirate. One sharp tap of logic, and poof! It’s in a thousand useless pieces!",
+                "Oh, the great Dread Pirate Roberts, so easily rattled! I bet your own skeleton feels as brittle as this cup after such a blunder!",
+                "A response of such startling translucency, Roberts! One can almost see the utter lack of profound thought right through it. Predictably, and utterly, wrong!",
+                "That was a high-pitched squeal of an answer, pirate! It speaks of a refinement your brutish nature could never truly possess!"
+            ];
+            const complements = [
+                "An answer of surprising delicacy and refinement, Roberts. It's so finely crafted, one fears a single breath could break its perfect logic.",
+                "You handle the truth with such a light touch! It's almost... elegant. A response as smooth and pure as one could hope for.",
+                "I'm surprised. Your reasoning is not as coarse as I'd imagined. It has a certain... fragile beauty, like something one might find at a queen's tea party.",
+                "Such a lightweight answer, yet it bears the full weight of correctness. There's a certain translucent honesty to your words, pirate.",
+                "Remarkable. A strong answer, yet it feels as if it's made of nothing but air and intellect. It has the quality of a true, if unexpected, piece of art."
+            ];
+            const frags = [
+                "The goblet is surprisingly light, with the delicate feel of bone china.",
+                "Its surface is smooth and almost translucent, characteristic of fine china."
+            ];
+            super('Bone China', insults, complements, frags);
+        }
+    }(),
+
+    new class PolishedJade extends Material {
+        constructor() {
+            const insults = [
+                "Was that answer supposed to be a 'gem,' Roberts? Because it lacks all the hardness and enduring quality of a truly precious thought. Merely a bauble!",
+                "Smooth and cool, you are not, pirate! That answer was clumsy and heated, unlike the serene surface of this fine stone.",
+                "Your wisdom, pirate, is clearly not as deep or ancient as some of the world's most revered treasures. A shallow guess for a shallow mind!",
+                "Envy at my intellect is making you green, Roberts! It's the only color I associate with you, certainly not the wisdom suggested by this venerable material.",
+                "Such a semiprecious attempt at a solution! It has the illusion of value, but a true connoisseur of wit can spot a fake immediately."
+            ];
+            const complements = [
+                "An answer as smooth and coolly delivered as a perfectly finished gem, Roberts. You possess a serenity in your logic that is... unsettling.",
+                "A valuable insight, pirate. Your words have the weight and depth of a stone prized by emperors. I did not think you capable of such profundity.",
+                "Your mind is a rarer treasure than I anticipated. That answer was a thing of beauty, with a hard, unyielding core of truth.",
+                "I see a flicker of ancient wisdom in your eyes. A lucky guess, perhaps, or have you more substance than your brutish exterior suggests?",
+                "You've uncovered a truth that is both precious and resilient. A truly clever man would know the worth of such a discovery. You are... cleverer than you look."
+            ];
+            const frags = [
+                "The goblet glows with the deep, cool green of polished jade.",
+                "It possesses a smooth, substantial feel, indicative of carved jade."
+            ];
+            super('Polished Jade', insults, complements, frags);
+        }
+    }(),
+
+    new class VolcanicObsidian extends Material {
+        constructor() {
+            const insults = [
+                "Did you think your answer was sharp, Roberts? It is as blunt and fractured as a poorly knapped piece of... common rock! No edge to it whatsoever!",
+                "Your reasoning is as dark and muddled as the deepest, unlit cavern, pirate! No light of intelligence penetrates that thick skull of yours!",
+                "You try to cut to the heart of the matter, but your intellect lacks the keenness, the natural cutting power. You are no master of deduction!",
+                "Reflecting on your answer, Roberts, I see only a dull, opaque surface, devoid of any of the brilliance one might find in nature's sharper creations.",
+                "An explosive burst of nonsense! Did that answer erupt from a deep well of ignorance within your hollow head?"
+            ];
+            const complements = [
+                "A dangerously sharp answer, Roberts! It has the cutting edge of a freshly fractured stone. You handle such thoughts with surprising skill.",
+                "There is a dark, glassy brilliance to your logic that I almost admire. It is both beautiful and deadly, all at once.",
+                "You've struck upon a truth as profound and elemental as the fire from which this world was forged. An impressive display of raw intellect.",
+                "A response with a certain natural, unrefined sharpness. It seems your mind is not as dull as I had presumed. There's a keen edge there.",
+                "Reflecting on your answer, I see a surprising depth. A dark, smooth surface that hides a core of undeniable, if fiery, correctness."
+            ];
+            const frags = [
+                "It is carved from a piece of glossy, black volcanic obsidian.",
+                "The material is cool to the touch with a sharp, glassy edge."
+            ];
+            super('Volcanic Obsidian', insults, complements, frags);
+        }
+    }(),
+
+    new class TarnishedCopper extends Material {
+        constructor() {
+            const insults = [
+                "Your attempt to conduct a battle of wits, Roberts, has resulted in a rather… oxidized performance. Not your brightest moment, was it?",
+                "That green tinge of naivety clinging to your answer is rather unbecoming, pirate! It speaks of a mind not well-maintained, easily corroded by foolishness!",
+                "Did you 'coin' that phrase yourself, Roberts? Because it has the ring of something base and common, not the pure gold of true intellect!",
+                "I sense a distinct lack of polish in your response. Perhaps some vigorous scrubbing could improve your intellect, though I doubt it.",
+                "An answer so dull it has developed a patina of stupidity! It's almost impressive in its dedication to being wrong."
+            ];
+            const complements = [
+                "An answer with a certain... weathered wisdom, Roberts. It seems that beneath a surface of humble origins, a bright spark of conductivity remains.",
+                "I must admit, your logic is a better conductor of truth than I anticipated. An elementary, yet effective, line of reasoning.",
+                "You see the value in things that others might overlook due to a bit of... discoloration. A keen eye, pirate, for finding the usefulness in the common.",
+                "That answer has the warm glow of a well-used hearth. It's common, yes, but it provides a certain fundamental, undeniable truth.",
+                "Beneath the greenish patina of your uncultured methods, I detect a glint of pure, uncorrupted cleverness. A rare and notable discovery."
+            ];
+            const frags = [
+                "The goblet has a dull, reddish-brown hue, with patches of greenish tarnish typical of old copper.",
+                "It bears the dents and imperfections of a well-used copper item."
+            ];
+            super('Tarnished Copper', insults, complements, frags);
+        }
+    }(),
+
+    new class PolishedHorn extends Material {
+        constructor() {
+            const insults = [
+                "Are you trying to 'butt' heads with a superior intellect, Roberts? Your answer is as hollow and resonant with emptiness as a… well, as a poorly chosen word!",
+                "Smooth and curved your logic is not! It's as gnarled and twisted as an old ram's... well, you get the picture!",
+                "A 'beastly' attempt at a solution, pirate! But it lacks the natural, layered strength. Your mind is not so robust, it seems.",
+                "Your argument, much like some things made of this material, is full of empty noise! Toot your own horn elsewhere, Roberts, your answer is wrong!",
+                "You've layered stupidity upon stupidity to arrive at that answer! A truly animalistic approach to a gentleman's game."
+            ];
+            const complements = [
+                "A surprisingly natural and effective answer, Roberts. You've stripped away the unnecessary and gotten to the very core of the matter.",
+                "There is a certain primal strength to your logic. It's layered, resilient, and more polished than your brutish appearance would suggest.",
+                "You've sounded a note of truth, pirate! That answer resonates with a certain... organic clarity. It's almost musical.",
+                "An answer that is both lightweight and remarkably tough. You are full of surprises, like a treasure found in the most unlikely of beasts.",
+                "I must admit, your point is well-taken. Smooth, curved, and unexpectedly sharp. You truly are a creature of instinct, aren't you?"
+            ];
+            const frags = [
+                "The goblet is crafted from polished horn, displaying variegated shades of cream and brown.",
+                "It feels smooth and surprisingly light, with a natural, organic texture."
+            ];
+            super('Polished Horn', insults, complements, frags);
+        }
+    }(),
+
+    new class GlazedTerracotta extends Material {
+        constructor() {
+            const insults = [
+                "How wonderfully… pedestrian, Roberts! An answer as common and uninspired as a simple clay pot. Truly, you aim for the stars, don't you?",
+                "Did you bake that answer in a kiln of stupidity, pirate? Because it's as fragile and easily broken as unglazed earth!",
+                "Your reasoning is rather... unrefined. It lacks a certain protective sheen of brilliance. Easily shattered.",
+                "Red in the face, are we, Roberts? Perhaps from the heat of your embarrassment, or maybe you're just as dense as this baked earth!",
+                "Such an earthy, commoner's response! It smells of the dirt from which your base intellect was formed!"
+            ];
+            const complements = [
+                "A surprisingly earthy and well-formed argument, Roberts. It may be common, but its utility is undeniable. Well done.",
+                "You've managed to fire your logic until it's hard and resilient. That answer, I must admit, holds water.",
+                "A response with a certain rustic charm. You've applied a fine glaze of intellect to an otherwise simple, foundational truth.",
+                "For a man of the sea, you have a remarkable grasp of the earth. A solid, if fragile, piece of reasoning that I cannot easily shatter.",
+                "Warm, simple, and effective. You've crafted an answer that, while not ornate, serves its purpose with a humble and surprising grace."
+            ];
+            const frags = [
+                "It has the rustic, earthy appeal of glazed terracotta.",
+                "The goblet is moderately heavy, with a slightly porous feel beneath its glaze."
+            ];
+            super('Glazed Terracotta', insults, complements, frags);
+        }
+    }(),
+
+    new class GildedLead extends Material {
+        constructor() {
+            const insults = [
+                "Ah, Roberts, your answer has a certain superficial shine, but underneath, it's disappointingly… dense. All show and no substance!",
+                "What a heavy, dull, and ultimately worthless answer, beneath a thin veneer of cleverness! A perfect parallel to such deceptive craftsmanship!",
+                "You were 'led' astray by simplicity, weren't you? Your mind is weighed down by its own ponderous nature!",
+                "A glittering response on the surface, Roberts, but dig a little deeper and one finds only the base, common material of a fool's argument. Inconceivable!",
+                "That answer is poison to true intellects, pirate! A sweet-looking lie that hides a toxic core of absolute wrongness!"
+            ];
+            const complements = [
+                "A deceptively brilliant answer, Roberts! It has the glittering appeal of pure gold, even if its underlying logic is... heavier than one might expect.",
+                "You've managed to present a weighty argument as a glittering prize. The illusion is so perfect, I am almost tempted to believe you are as smart as you appear.",
+                "Such a dense and solid point, cleverly coated in a layer of irresistible charm. You understand that presentation is, at times, everything.",
+                "I see you've chosen an answer that is more than it appears. It seems heavy with truth, yet you present it with a disarmingly brilliant shine.",
+                "An answer that is both valuable on the surface and dangerously potent underneath. You are a master of disguise, pirate. I'll give you that."
+            ];
+            const frags = [
+                "The goblet has a surprisingly heavy weight and a lustrous golden sheen, though it feels oddly soft.",
+                "A thin layer of gold seems to coat a much denser, less precious metal beneath."
+            ];
+            super('Gilded Lead', insults, complements, frags);
+        }
+    }(),
+
+    new class CrackedAlabaster extends Material {
+        constructor() {
+            const insults = [
+                "Your reasoning, Roberts, much like a flawed carving, is showing its fractures! A beautiful attempt at deception perhaps, but ultimately unsound!",
+                "You sound pale and fragile, much like your chances of winning this battle of wits! This veined stone, even with its flaws, has more character than your bland answer.",
+                "Did you drop your brain on the way here, pirate? Your answer displays such a network of fissures, it's a wonder it holds together at all!",
+                "Such a milky, opaque answer! Are you trying to hide your ignorance behind a soft and cloudy veil of nonsense?",
+                "That argument is so weak it could be scratched by a fingernail! The slightest pressure from my intellect and it will crumble into dust!"
+            ];
+            const complements = [
+                "Even with its apparent flaws, your logic holds a certain... translucent beauty. You've pieced together a truth from imperfect parts. Astonishing.",
+                "A response as pure and white as a sculptor's dream, even if it shows the strains of your effort. The underlying quality is undeniable.",
+                "You see the beauty in the imperfections, don't you, pirate? Your answer, while showing some stress, is fundamentally sound and quite elegant.",
+                "Through the fissures of your simplistic approach, a surprising light of intellect shines through. The overall effect is... unexpectedly impressive.",
+                "That answer is a masterwork, Roberts. A bit damaged, perhaps, from the great strain of its creation in your tiny mind, but a masterwork nonetheless."
+            ];
+            const frags = [
+                "Crafted from alabaster, its milky translucence is marred by several fine cracks.",
+                "The stone feels smooth but cool, with visible fissures spiderwebbing across its surface."
+            ];
+            super('Cracked Alabaster', insults, complements, frags);
+        }
+    }(),
+
+    // FormOverallShape Variants
+    new class Spherical extends FormOverallShape {
+        constructor() {
+            const insults = [
+                "Your reasoning, Roberts, is as well-rounded as a child's ball, and just as easily deflated! An utterly pointless display of folly!",
+                "A perfectly circular argument, pirate! Leading absolutely nowhere, much like your chances of outwitting me!",
+                "That answer is all encompassing in its stupidity! You've managed to be wrong from every conceivable angle at once!",
+                "Bah! A globular mass of nonsense that could have been uttered by a common beach ball!",
+                "You've come full circle to arrive at... nothing! A perfectly contained vacuum of thought!"
+            ];
+            const complements = [
+                "A perfectly well-rounded answer, Roberts! It covers all possibilities and leaves no room for error. Annoyingly complete.",
+                "Your logic is as smooth and continuous as a globe. An argument with no beginning and no end, yet it perfectly encapsulates the truth.",
+                "I must admit, your reasoning is flawless from every angle. A truly global perspective on the problem. I'm almost impressed.",
+                "You've managed to circle the problem and land perfectly on the solution. A feat of intellectual acrobatics I did not anticipate.",
+                "An answer as simple and perfect as a pearl. It may seem basic, but its form is undeniably correct. Well done, pirate."
+            ];
+            const frags = [
+                "The bowl of the goblet is perfectly spherical.",
+                "It has a round, globe-like form."
+            ];
+            super('Spherical', insults, complements, frags);
+        }
+    }(),
+
+    // ... (This pattern of declaring frags as a const is applied to all subsequent new classes) ...
+
+    new class TwoOrnateHandles extends Handles {
+        constructor() {
+            const insults = [
+                "Something to grasp onto, Roberts, as your hopes of winning this contest rapidly slip away! These are more secure than your tenuous hold on reality!",
+                "Such elaborate, ostentatious grips, pirate! Overcompensating for a weak argument and an even weaker mind, perhaps?",
+                "Did you need assistance in lifting that moronic thought out of your head? Such a shame you couldn't find a better one.",
+                "An argument with two equally flawed sides! It's a miracle of symmetrical stupidity!",
+                "All that decoration and flourish, and yet the core of your statement is still utterly, laughably wrong."
+            ];
+            const complements = [
+                "A well-handled and balanced argument, Roberts! You've managed to grasp both sides of the issue with a surprising, decorative flair.",
+                "Your logic is as symmetrical and pleasing as a perfectly matched pair. An answer that is both functional and, dare I say, artistic.",
+                "You have a firm grip on the situation, pirate. Your reasoning is flanked by supporting points that make it impossible to refute. Annoyingly clever.",
+                "An answer that one can truly get a handle on. It's elaborate, yes, but the core truth is easily grasped. I did not expect such clarity from you.",
+                "You've presented a solution with two points of entry, both leading to the same, inescapable truth. A well-crafted, if showy, piece of logic."
+            ];
+            const frags = [
+                "The goblet has two elaborately decorated handles, one on each side.",
+                "Matching ornate handles allow for a two-handed grip."
+            ];
+            super('Two Ornate Handles', insults, complements, frags);
+        }
+    }(),
+    new class SinglePlainHandle extends Handles {
+        constructor() {
+            const insults = [
+                "One simple, unadorned loop, Roberts. Much like the singular, simplistic, and utterly incorrect thought currently rattling around your empty skull!",
+                "A functional, if unimpressive, appendage, pirate. Unlike your contributions to this debate, which serve no useful purpose whatsoever!",
+                "Was that the only thought you could latch onto? A single, lonely, and incorrect idea to carry you to your doom.",
+                "You're circling the problem with one looped bit of nonsense, hoping it will somehow catch the truth. It will not.",
+                "How utilitarian in your foolishness! You've found the most efficient way to be completely and utterly wrong."
+            ];
+            const complements = [
+                "A simple, functional, and direct answer. You have a handle on the situation, even if your methods are... unadorned.",
+                "You've attached yourself to a single, solid point of logic and held on. A display of simple tenacity that is, I admit, effective.",
+                "An answer with a single, clear purpose. It may not be fancy, but it provides a firm grip on the truth. Surprisingly practical.",
+                "You've looped around the complexities to find the one, simple solution. A rather elegant, if plain, maneuver.",
+                "One handle, one answer, one truth. Your mind, for once, is not cluttered with unnecessary appendages. A clean and correct response."
+            ];
+            const frags = [
+                "A single, unadorned handle is attached to one side.",
+                "It features one simple loop for holding."
+            ];
+            super('a Single Plain Handle', insults, complements, frags);
+        }
+    }(),
+    new class NoHandles extends Handles {
+        constructor() {
+            const insults = [
+                "Nowhere to hide your trembling, incompetent fingers, Roberts! You must face your doom… unassisted and utterly exposed!",
+                "Nothing to get a proper grip on, pirate! Much like this slippery riddle you so spectacularly failed to grasp with your feeble intellect!",
+                "A smooth, featureless, and utterly moronic statement. There is nothing to grasp onto because there is no substance!",
+                "Your mind is as slippery as an eel, Roberts! And just as brainless! You've let the answer slide right through your clumsy mental grasp.",
+                "To embrace your argument is to embrace a void! It is formless and offers no purchase for a logical mind!"
+            ];
+            const complements = [
+                "A smooth and streamlined answer, Roberts! Devoid of any clumsy attachments, it slips directly to the truth. Sleek.",
+                "You need no assistance, it seems. Your mind grasps the problem directly, without need for any superficial aids. Impressively self-reliant.",
+                "An answer one must embrace fully to understand. You have a holistic grasp of the situation that is... surprisingly complete.",
+                "Your logic is slippery, pirate, and yet it arrives at the correct destination. You've navigated the challenges without anything to hold on to.",
+                "A pure, unadorned solution. By removing the unnecessary, you have revealed the simple, core truth. A minimalist masterpiece."
+            ];
+            const frags = [
+                "The goblet has no handles at all.",
+                "It must be gripped by the bowl or stem."
+            ];
+            super('No Handles', insults, complements, frags);
+        }
+    }(),
+    new class HiddenOrUnusualHandles extends Handles {
+        constructor() {
+            const insults = [
+                "Always looking for a trick, a hidden advantage, Roberts? A secret way to gain an upper hand you don't deserve? Your mind is as convoluted and impractical as this!",
+                "What peculiar, almost perverse design! Are you as awkward and difficult to get a proper hold of as this, pirate?",
+                "Is that your answer or a puzzle box of stupidity? It's so unnecessarily complex I can't imagine how you even constructed it.",
+                "You've concealed your ignorance within a shell of feigned cleverness! But I see through your pathetic disguise!",
+                "An answer so unconventional it borders on the insane! You've integrated your foolishness into the very fabric of your being!"
+            ];
+            const complements = [
+                "A cleverly disguised solution, Roberts! I almost didn't see the hidden mechanism of your logic. Almost.",
+                "You have an unconventional grip on the problem, pirate. It's awkward, unexpected, yet somehow, you make it work. Baffling.",
+                "An answer that is more than it appears. You've integrated your reasoning into the very fabric of the riddle. A seamless, if tricky, piece of work.",
+                "I see the secret now. A hidden catch, a clever turn of phrase... you've found a way to hold an argument that seemed impossible to grasp.",
+                "What a peculiar design your mind has. It's not immediately obvious how it works, but it clearly has a way of latching onto the correct answer. Fascinating."
+            ];
+            const frags = [
+                "The handles are cleverly integrated into the design or are of an unconventional nature.",
+                "It's not immediately obvious how one is meant to hold it by its handles."
+            ];
+            super('Hidden or Unusual Handles', insults, complements, frags);
+        }
+    }()
+]);
+
+// --- End of attributes.js ---
+
+// --- Start of riddles.js ---
+
+/**
+ * The base class for all riddles posed by Vizzini.
+ */
+class Riddle {
+    /**
+     * @param {string} question The riddle question, written in Vizzini's style.
+     * @param {string[]} answers An array of acceptable one-word answers, including synonyms and common misspellings.
+     * @param {string[]} hints An array of hints for the riddle, written in Buttercup's voice.
+     */
+    constructor(question, answers, hints) {
+        this.question = question;
+        this.answers = answers.map(a => a.toLowerCase());
+        this.hints = hints;
+    }
+
+    /**
+     * Checks if a given answer is correct.
+     * This method normalizes the player's attempt by making it lowercase,
+     * removing common articles (a, an, the), and stripping all whitespace
+     * to allow for flexible matching.
+     * @param {string} attempt The player's attempted answer.
+     * @returns {boolean} True if the answer is in the answers list, false otherwise.
+     */
+    checkAnswer(attempt) {
+        const normalizedAttempt = attempt
+            .toLowerCase()
+            .replace(/\b(a|an|the)\b/g, '')
+            .replace(/\s+/g, '');
+
+        return this.answers.includes(normalizedAttempt);
+    }
+}
+
+// --- Difficulty Base Classes ---
+class EasyRiddle extends Riddle { }
+class MediumRiddle extends Riddle { }
+class HardRiddle extends Riddle { }
+
+const RIDDLE_DECK = new AutoShuffleDeck([
+
+    // --- Specific Easy Riddle Classes ---
+
+    new class MapRiddle extends EasyRiddle {
+        constructor() { 
+            super("Surely even a brute like you can solve this! I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I? ️", 
+            ["map", "maps", "atlas", "chart"], 
+            ["Oh, Wesley, think about the charts you must have used on your ship.", 
+                "He's speaking of a representation of the world, not the world itself.", 
+                "It can be folded and carried with you on a great adventure."]); 
+            }
+    }(),
+    new class NeedleRiddle extends EasyRiddle {
+        constructor() { 
+            super(
+                "A simpleton's query! What has an eye, but cannot see? 👁️", 
+                ["needle", "nedle", "nedel"], 
+                ["It's something my mother used for sewing, to mend clothes.", 
+                    "Think of something small and sharp, with a single hole for thread to pass through.", 
+                    "Even the finest dress might need one of these after a tussle."]
+            );
+         }
+    }(),
+    new class EggRiddle extends EasyRiddle {
+        constructor() { super("Even a child could answer this! What must be broken before you can use it? ", ["egg", "eggs"], ["Think of what a chicken lays, what you might have for breakfast.", "Its shell must be cracked to get the yolk inside.", "It's a symbol of new life, but you must destroy its home to find it."]); }
+    }(),
+    new class ShadowRiddle extends EasyRiddle {
+        constructor() { super("A triviality! I follow you all day, perfectly mimicking your every move, yet I vanish when the sun does. What am I?", ["shadow", "shado"], ["Oh, Wesley, it's something that is always with you on a sunny day. ☀️", "It cannot be held, and it has no color but darkness.", "Look to the ground at your feet when you stand in the light."]); }
+    }(),
+    new class FireRiddle extends EasyRiddle {
+        constructor() { super("A simple puzzle for a simple mind. Feed me and I live, yet give me a drink and I die. What am I? ", ["fire", "flame"], ["Think of the hearth in a cozy room, what dances in the fireplace?", "It consumes wood to grow stronger, but water is its enemy. 💧", "It gives both warmth and light, but can be dangerous if untamed."]); }
+    }(),
+    new class BedRiddle extends EasyRiddle {
+        constructor() { super("An obvious answer for an obvious fool! I have legs, but I cannot walk. You rest on me, but I never sleep. What am I? ", ["bed", "beds"], ["It is a piece of furniture you would find in any bedroom.", "You seek it out at the end of a long day, my love.", "It has a headboard, but no head."]); }
+    }(),
+    new class TowelRiddle extends EasyRiddle {
+        constructor() { super("Inconceivably easy! What gets wetter as it dries?", ["towel", "towl"], ["It's something you use after a bath. 🛀", "You pat your skin with it, and it soaks up the water.", "It is made of cloth and is very absorbent."]); }
+    }(),
+    new class CombRiddle extends EasyRiddle {
+        constructor() { super("A riddle so basic, it's an insult to my intellect! I have teeth, but cannot eat. What am I? ", ["comb", "come"], ["It's something you might use on your hair, Wesley.", "Its purpose is to untangle knots.", "It is long and thin, with many little spikes in a row."]); }
+    }(),
+    new class CandleRiddle extends EasyRiddle {
+        constructor() { super("Your intellect is surely flickering out, but perhaps you can solve this. I am tall when I am young and short when I am old. What am I? ️", ["candle", "kandle"], ["Think of a source of light before electricity.", "It weeps wax as it burns away.", "Its life is measured in hours of light."]); }
+    }(),
+    new class GloveRiddle extends EasyRiddle {
+        constructor() { super("Honestly, a child could guess this. I have a thumb and four fingers, but I am not alive. What am I? ", ["glove", "gluv"], ["It is something a gentleman might wear on his hands.", "You put it on to keep warm or to protect your fingers.", "It has a space for each finger, but no flesh or bone."]); }
+    }(),
+    new class StairsRiddle extends EasyRiddle {
+        constructor() { super("What goes up and down but does not move? Answer this, if your brain is not entirely stationary! 🧠", ["stairs", "staircase", "steps"], ["Think of how you get from one floor of a castle to another.", "Each one is a single step in a longer journey.", "They are made of wood or stone, and they stay in one place."]); }
+    }(),
+    new class RiverRiddle extends EasyRiddle {
+        constructor() { super("A simple flow of logic should suffice. I have a bed but never sleep, and a mouth but never speak. What am I? ️", ["river", "rivver"], ["It flows across the land to the sea, my love.", "Its 'mouth' is where it meets a larger body of water.", "Boats travel upon its surface."]); }
+    }(),
+
+    // --- Specific Medium Riddle Classes ---
+
+    new class EchoRiddle extends MediumRiddle {
+        constructor() { super("Now for a true test! I speak, but have no mouth. I hear words, but have no ears. What am I? ️", ["echo", "echoe"], ["Wesley, think of when you shout in a cave or a great hall, what comes back to you?", "It is a sound that repeats itself, a reflection of a voice.", "It has no voice of its own, it only borrows yours."]); }
+    }(),
+    new class FutureRiddle extends MediumRiddle {
+        constructor() { super("Observe the subtlety of my mind! What is always in front of you but can’t be seen? 🤔", ["future", "futur"], ["Oh, my love, it's something we always hope for, a time that has not yet come.", "It is tomorrow, and the day after, and all the days to come.", "You can plan for it, you can dream of it, but you cannot hold it."]); }
+    }(),
+    new class BottleRiddle extends MediumRiddle {
+        constructor() { super("A question of such dazzling logic! What has a neck without a head, and a body without legs? ", ["bottle", "botle", "botel"], ["Think of something you might drink wine from... other than a goblet.", "It holds liquid, and you might put a cork in its 'mouth'.", "It has shoulders and a neck, but it is made of glass."]); }
+    }(),
+    new class AgeRiddle extends MediumRiddle {
+        constructor() { super("My brilliance is unquestionable! What goes up but never comes down? ", ["age", "ages"], ["It is a number that only grows, my dearest Wesley.", "With every birthday, you have more of it.", "It's something we all gain over time, a measure of our lives."]); }
+    }(),
+    new class SecretRiddle extends MediumRiddle {
+        constructor() { super("A true test of a pirate's character! If you have me, you want to share me. If you share me, you haven't got me. What am I? 🤫", ["secret", "sekret"], ["It is a piece of information that is meant to be kept hidden.", "To whisper it to another is to break the trust placed in you.", "Once spoken, it can never be truly taken back."]); }
+    }(),
+    new class AnchorRiddle extends MediumRiddle {
+        constructor() { super("For a seafaring man, this should be trivial! What do you throw out when you want to use it, but take in when you're done with it? ", ["anchor", "anker"], ["It is heavy and made of iron, used to keep your ship from drifting.", "It is let down on a great chain.", "It grips the seabed to hold a vessel in place."]); }
+    }(),
+    new class NameRiddle extends MediumRiddle {
+        constructor() { super("I belong to you, but other people use me more than you do. What am I? A simple question of possession! 😉", ["name", "naym"], ["It is how people refer to you, my love.", "Vizzini calls you 'Dread Pirate Roberts', but I call you Wesley.", "You hear it spoken by others more often than you speak it yourself."]); }
+    }(),
+    new class SilenceRiddle extends MediumRiddle {
+        constructor() { super("My very name is shattered by the act of speaking it. What am I? A paradox worthy of my intellect! ", ["silence", "silens"], ["It's what is left when all the noise fades away.", "He's speaking of the absence of sound, my love.", "To say its name is to break it."]); }
+    }(),
+    new class MirrorRiddle extends MediumRiddle {
+        constructor() { super("I have no reflection, but I show all others. I have no eyes, yet I look back at yours. What am I? ", ["mirror", "miror"], ["Think of what you look into to see your own face.", "It shows you what you look like, but backwards.", "If it breaks, they say you will have bad luck."]); }
+    }(),
+    new class MemoryRiddle extends MediumRiddle {
+        constructor() { super("I can be created in the present, but the present can never hold me. I am a ghost of the past, carried into the future. What am I? ", ["memory", "memoree"], ["It is a recollection of something that has already happened.", "Our time apart is now one of these, my love. ❤️", "You can cherish it or be haunted by it, but you cannot change it."]); }
+    }(),
+    new class HoleRiddle extends MediumRiddle {
+        constructor() { super("A simple query of physics and logic. What gets bigger the more you take away from it? 🕳️", ["hole", "hol"], ["Think of digging in the dirt, what are you creating?", "It is defined by what is not there.", "The more earth you remove, the larger it becomes."]); }
+    }(),
+    new class PromiseRiddle extends MediumRiddle {
+        constructor() { super("A matter of honor, which a rogue like you knows nothing of! What is something you can keep after giving it to someone else? ", ["promise", "promis"], ["It is a vow, a sacred commitment.", "You give your word to someone, and you must not break it.", "I knew you would come for me, it was an unspoken one between us."]); }
+    }(),
+    new class YesterdayRiddle extends MediumRiddle {
+        constructor() { super("A simple temporal puzzle! What is always coming, but never arrives? ", ["tomorrow", "tommorrow", "tomoro"], ["It is the day after today.", "We always speak of it, but when it comes, it is simply 'today'.", "It is where all our hopes for the future lie."]); }
+    }(),
+    new class SpongeRiddle extends MediumRiddle {
+        constructor() { super("A porous problem for a porous mind! I am full of holes, but I can still hold water. What am I? ", ["sponge", "spunge"], ["Think of a tool used for cleaning.", "It is soft and can soak up a great deal of liquid.", "It comes from the sea, but can also be made by man."]); }
+    }(),
+
+    // --- Specific Hard Riddle Classes ---
+
+    new class EternityRiddle extends HardRiddle {
+        constructor() { super("Prepare your meager intellect! I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every place. What am I? 🤯", ["e", "lettere"], ["He's not speaking of a concept, but of a... a character.", "Listen to the words he says, my love. Eternity... time... end... place. What is shared?", "It is something you would use to write my name, or yours."]); }
+    }(),
+    new class CoffinRiddle extends HardRiddle {
+        constructor() { super("Only a mind as formidable as my own can navigate this! The man who makes me does not want me. The man who buys me does not need me. The man who uses me does not know he has me. What am I? ⚰️", ["coffin", "casket"], ["Oh, this is a grim one, Wesley. Think of what is built for one's final rest.", "It is purchased for a loved one who has passed, not for oneself.", "The person for whom it is intended can never appreciate its craftsmanship."]); }
+    }(),
+    new class ImaginationRiddle extends HardRiddle {
+        constructor() { super("Now you face true intellectual oblivion! I have no voice, but I tell all stories. I have no hands, but I build great cities. I have no feet, but I travel the whole world. What am I? ", ["imagination", "imajination", "imagine"], ["It is the power of your mind, my love. The source of dreams and grand ideas. ✨", "With it, you can be anywhere, do anything, without ever taking a step.", "It is a gift that no one can take from you."]); }
+    }(),
+    new class FootstepsRiddle extends HardRiddle {
+        constructor() { super("An impossible paradox for your pirate brain! The more you take, the more you leave behind. What are they? ", ["footsteps", "steps", "footprints"], ["Think of the marks you leave when you walk upon the sand.", "Every journey is measured by them, but they always remain behind you.", "He speaks of taking a walk, Wesley. What does your journey create?"]); }
+    }(),
+    new class NothingRiddle extends HardRiddle {
+        constructor() { super("A philosophical quandary! Poor people have it. Rich people need it. If you eat it you die. What is it? 🤔", ["nothing", "nothingness"], ["He's being tricky with his words, my love. Think about what the poor possess in abundance.", "What could a rich man, who has everything, possibly need?", "The answer is an absence, a void."]); }
+    }(),
+    new class BreathRiddle extends HardRiddle {
+        constructor() { super("A riddle of exquisite simplicity, which will surely escape you! I am lighter than a feather, yet the strongest man cannot hold me for more than a minute. What am I? ", ["breath", "breth"], ["It is something you do constantly, without thinking.", "You can see it on a cold day.", "To hold it for too long is to invite death."]); }
+    }(),
+    new class HistoryRiddle extends HardRiddle {
+        constructor() { super("I am a tapestry woven with the threads of kings and fools, battles and treaties. I am always being added to, but can never be truly complete. What am I? ", ["history", "historee"], ["It is the story of all the yesterdays of the world.", "Scholars study it to understand the present.", "Every choice we make becomes a part of it."]); }
+    }(),
+    new class MankindRiddle extends HardRiddle {
+        constructor() { super("A biological and philosophical puzzle! What walks on four feet in the morning, two in the afternoon and three at night? ", ["man", "mankind", "human"], ["He is speaking of the stages of a single life, from birth to old age.", "The 'feet' are metaphors, my love. A baby crawls, an adult walks, and an old man uses a cane.", "The answer is not a single creature, but a species."]); }
+    }(),
+    new class DarknessRiddle extends HardRiddle {
+        constructor() { super("The more of me you have, the less you can see. I flee from the light but am embraced by the night. What am I? ", ["darkness", "dark"], ["It is the opposite of light, Wesley.", "It fills a room when you put out the candle.", "In it, your other senses may seem stronger."]); }
+    }(),
+    new class LanguageRiddle extends HardRiddle {
+        constructor() { super("I can build bridges or start wars. I can express love or utter curses. I am the tool of poets and the weapon of kings, but every child can master me. What am I? ", ["language", "tounge", "speech"], ["It is the words we are using right now.", "Every country has its own version, but its purpose is the same.", "With it, you can share any thought or feeling."]); }
+    }()
+]);
+
+// --- End of riddles.js ---
+
+// --- Start of goblet.js ---
+
+
+
+// The Goblet class
+class Goblet {
+    constructor(side, attributes) {
+        this.side = side;
+        this.poisoned = false;
+        this.attrDeck = new AutoShuffleDeck(attributes);
+        this.descriptionIntro = new AutoShuffleDeck([
+            `Examining the goblet on the ${this.side.toLowerCase()}, the Man in Black notes its unique characteristics.`,
+            `The goblet positioned on the ${this.side.toLowerCase()} presents a curious appearance.`,
+            `Turning his attention to the goblet on the ${this.side.toLowerCase()}, its features become apparent.`,
+            `The vessel on the ${this.side.toLowerCase()} is certainly noteworthy in its design.`,
+            `The goblet on the ${this.side.toLowerCase()} is unlike any other.`,
+            `Taking a closer look at the goblet on the ${this.side.toLowerCase()}, the Dread Pirate Roberts finds its form is quite striking.`,
+            `The goblet on the ${this.side.toLowerCase()} has a presence that demands attention.`,
+            `Focusing on the goblet on the ${this.side.toLowerCase()}, the Man in Black is intregued by construction is intriguing.`,
+            `The goblet on the ${this.side.toLowerCase()} is a study in contrasts.`
+        ]).reshuffle().draw()
+    }
+
+    generateDescription() {
+        let description = "" + this.descriptionIntro;
+        let fragments = [];
+        const cards = this.attrDeck.getCards();
+        cards.forEach(attribute => {
+            fragments.push(attribute.draw_fragment());
+        });
+
+        description += fragments.join(" ");
+        return description.trim();
+    }
+
+    getInsult() {
+        const insult = this.attrDeck.draw().insults.draw();
+        return insult;
+    }
+
+    getComplement() {
+       const complement = this.attrDeck.draw().complements.draw();
+       return complement;
+    }
+
+    addPoison() {
+        this.poisoned = true;
+        return this;
+    }
+
+    isPoisoned() {
+        return this.poisoned;
+    }
+}
+
+// --- End of goblet.js ---
+
+// --- Start of chat.js ---
+
+class ChatSession {
+    constructor(character, chat) {
+        this.character = character;
+        this.chat = chat;
+    }
+
+    async say(message) {
+        await this.chat.say(this.character, message);
+    }
+
+    login() {
+        this.chat.login(this.character);
+    }
+
+    logout() {
+        this.chat.logout(this.character);
+    }
+
+}
+
+class Chat {
+    constructor() {
+        this.dpr = null;
+    }
+
+    login(character) {
+        this.postMessage('game-event', "", "", `      ---> ${character.name} has entered the chat. <---`, true)
+        if (character.slug == "dpr") {
+            this.dpr = character;
+        }
+    };
+
+    logout(character) {
+        this.say(character, `      ---> ${character.name} has left the chat. <---`, true)
+    };
+
+    // abstract
+    async waitForAnswer() {};
+    async waitForGobletChoice() {};
+    async setInputStatus(status) {}; //"on" or "off"
+    async postMessage(slug, name, photo, message, fast) {};
+
+    async say(character, message) {};
+}
+
+// an abstract web client
+// acts as a bridge between the browser's event model
+// and the game's main loop.
+class AsyncChat extends Chat {
+    constructor() {
+        super();
+    }
+
+    // base functionality
+    async say(character, message) {
+        return await this.postMessage(character.slug, character.name,
+             character.emoji, message, false);
+    }
+}
+
+const INITIAL_PLAYER_HEARTS = 3; // Default, should be synced with game logic if possible
+
+class BrowserChat extends AsyncChat {
+    constructor() {
+        super();
+        this.typingSpeedDeck = new AutoShuffleDeck([1000, 300, 700, 500]).reshuffle();
+        this.document = document;
+        this.chatLogElement = document.getElementById('chatLog');
+        
+        // Riddle input elements
+        this.answerInputElement = document.getElementById('answerInput');
+        this.submitAnswerButton = document.getElementById('submitAnswerButton');
+        this.hintButton = document.getElementById('hintButton');
+
+        // Goblet choice elements
+        this.gobletChoiceAreaDiv = document.getElementById('gobletChoiceArea');
+        this.leftGobletButton = document.getElementById('chooseLeftGobletButton');
+        this.rightGobletButton = document.getElementById('chooseRightGobletButton');
+
+        this.pendingMessages = [];
+        this.setInputStatus("off");
+    }
+
+    getRiddleAnswer() {
+        return this.answerInputElement.value.trim();
+    }
+
+    setInputStatus(status) {
+        if (status == "on") {
+            this.answerInputElement.disabled = false;
+            this.submitAnswerButton.disabled = false;
+            this.hintButton.disabled = false;
+            this.answerInputElement.placeholder = "Your One Word Answer Pirate...";
+        } else {
+            this.answerInputElement.placeholder = "...";
+            this.answerInputElement.disabled = true;
+            this.submitAnswerButton.disabled = true;
+            this.hintButton.disabled = true;
+        }
+    }
+
+    waitForAnswer() {
+        this.answerInputElement.placeholder="Your Answer Pirate..."
+        this.setInputStatus("on");
+
+        return new Promise( resolve => {
+            const callback = (event) => {
+                this.submitAnswerButton.removeEventListener('click', callback);
+                resolve(this.getRiddleAnswer());
+                this.answerInputElement.value = '';
+                this.setInputStatus("off");
+            };
+
+            this.submitAnswerButton.addEventListener('click', callback);
+            this.answerInputElement.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    callback(event);
+                }
+            });
+        });
+    };
+
+    waitForGobletChoice() {
+        this.gobletChoiceAreaDiv.style.display = 'flex';
+
+        return new Promise(resolve => {
+
+            const leftCallback  = function() {
+                this.leftGobletButton.removeEventListener('click', leftCallback);
+                resolve("left")
+            };
+            this.leftGobletButton.addEventListener('click', leftCallback);
+
+            const rightCallback  = function() {
+                this.rightGobletButton.removeEventListener('click', rightCallback);
+                resolve("right");
+            };
+            this.rightGobletButton.addEventListener('click', rightCallback);
+        })
+    };
+
+    /**
+     * Posts a message to the chat log in the browser.
+     * @param {string} slug - The slug of the character.
+     * @param {string} name - The name of the character.
+     * @param {string} photo - The emoji/icon for the character.
+     * @param {string} message - The message text.
+     * @param {boolean} fast - If true, skips typing animation.
+     */
+    async postMessage(slug, name, photo, message, fast) {
+
+        if (!fast) {
+            await this._delay(this.typingSpeedDeck.draw());
+        }
+
+        if(!message) {
+            return;
+        }
+
+        let typingIndicatorElement;
+        if (!fast && (this.dpr == null || this.dpr.slug !== slug)) {
+            typingIndicatorElement = this._showTypingIndicator(photo, slug);
+            await this._delay(this.typingSpeedDeck.draw());
+            this._hideTypingIndicator(typingIndicatorElement);
+        }
+        
+        const messageDiv = this.document.createElement('div');
+        messageDiv.classList.add('message', slug);
+
+        const senderDiv = this.document.createElement('div');
+        senderDiv.classList.add('message-sender');
+        senderDiv.innerHTML = `<span class="icon">${photo}</span>${name}`;
+
+        const bubbleDiv = this.document.createElement('div');
+        bubbleDiv.classList.add('message-bubble');
+        bubbleDiv.textContent = message; 
+
+        messageDiv.appendChild(senderDiv);
+        messageDiv.appendChild(bubbleDiv);
+
+        messageDiv.classList.add(slug);
+        this.chatLogElement.appendChild(messageDiv);
+        //this.scrollLastChildIntoView(this.chatLogElement);
+        this.smoothScrollDivToBottom(this.chatLogElement);
+    }
+
+    // Smooth scroll alternative (less precise for absolute bottom, but often visually nicer)
+    smoothScrollDivToBottom(element) {
+         if (element) {
+            element.scrollTo({
+                top: element.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Or scrolling the last child into jview
+    scrollLastChildIntoView(element) {
+        if (element && element.lastElementChild) {
+        element.lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
+    }
+
+    /**
+     * Gets the current value from the primary input field and clears it.
+     * @returns {string} The value of the answer input field.
+     */
+    getInputValue() {
+        const value = this.answerInputElement.value;
+        this.answerInputElement.value = ''; 
+        return value;
+    }
+
+    
+    // --- UI State Management and Helper Methods (Private) ---
+
+    _showTypingIndicator(photo, name) {
+        const indicatorDiv = this.document.createElement('div');
+        indicatorDiv.classList.add('message', 'typing-message');
+        indicatorDiv.innerHTML = `
+            <div class="message-sender">
+                <span class="icon">${photo}</span>${name}
+                <div class="typing-indicator"><span></span><span></span><span></span></div>
+            </div>`;
+        this.chatLogElement.appendChild(indicatorDiv);
+        this.chatLogElement.scrollTop = this.chatLogElement.scrollHeight;
+        return indicatorDiv;
+    }
+
+    _hideTypingIndicator(indicatorElement) {
+        if (indicatorElement && indicatorElement.parentNode) {
+            indicatorElement.remove();
+        }
+    }
+
+    _delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    _setRiddleMode(active) {
+        this.gobletChoiceAreaDiv.style.display = 'none';
+
+        this.answerInputElement.disabled = !active;
+        this.submitAnswerButton.disabled = !active;
+        this.hintButton.disabled = !active;
+        this.passButton.disabled = !active;
+        if (active) {
+            this.answerInputElement.focus();
+        }
+    }
+
+    _setGobletMode(active) {
+        this.gobletChoiceAreaDiv.style.display = active ? 'flex' : 'none';
+        
+        this.leftGobletButton.disabled = !active;
+        this.rightGobletButton.disabled = !active;
+    }
+
+    /**
+     * Updates the game status display (hearts, round).
+     * @param {number} hearts - Current player hearts.
+     * @param {number} round - Current round number.
+     * @param {number} totalRounds - Total rounds in the game.
+     */
+    updateStatus(hearts, round, totalRounds) {
+        this.document.getElementById('playerHearts').innerHTML = `Hearts: ${'❤️'.repeat(hearts)}${'🖤'.repeat(Math.max(0, INITIAL_PLAYER_HEARTS - hearts))}`;
+        this.document.getElementById('roundInfo').textContent = `Round: ${round} / ${totalRounds}`;
+    }
+}
+
+
+// --- End of chat.js ---
+
+// --- Start of characters.js ---
+
+/**
+ * The base class for all characters in the game.
+ */
+class Character {
+    /**
+     * @param {string} name The character's name.
+     * @param {string} emoji A single emoji to represent the character's profile image.
+     * @param {object} messageDecks An object containing arrays of messages.
+     */
+    constructor(chat, name, emoji, startMessages, generalMessages, dprWinMessages, dprLossMessages) {
+        this.chatSession = new ChatSession(this, chat);
+        this.name = name;
+        this.emoji = emoji;
+        this.slug = name.toLowerCase().replace(/\s/g, '-');
+        this.messages = new AutoShuffleDeck(generalMessages).reshuffle();
+        this.startMessages = new AutoShuffleDeck(startMessages).reshuffle();
+        this.dprWinMessages = new AutoShuffleDeck(dprWinMessages).reshuffle();
+        this.dprLossMessages = new AutoShuffleDeck(dprLossMessages).reshuffle();
+    }
+
+    login() {
+        this.chatSession.login();
+    }
+
+    /* everyone in characters says something. */
+    async dialogueWith(characters) {
+        await this.saySomething();
+        const responseFrom = characters.pop();
+        if (responseFrom) {
+            await responseFrom.dialogueWith(characters);
+        }
+    }
+
+    logout() {
+        this.chatSession.logout();
+    }
+
+    async say(message) {
+        await this.chatSession.say(message);
+    }
+
+    /** Draws a random message from the character's general message deck. */
+    async saySomething() {
+        await  this.chatSession.say(this.messages.draw());
+    }
+    
+    /** Draws a random message from the character's starting message deck. */
+    async sayStartMessage() {
+        await this.chatSession.say(this.startMessages.draw());
+    }
+
+    /** Draws a random message from the character's ending message deck. */
+    async sayEndMessage(dprWin = false) {
+        if (dprWin) {
+            await this.chatSession.say(this.dprWinMessages.draw());
+        } else {
+            await this.chatSession.say(this.dprLossMessages.draw());
+        }
+    }
+}
+
+class DreadPirateRoberts extends Character {
+    constructor(chat) {
+        const startMessages = [
+            "A battle of wits? A welcome change from the clang of steel.", "Let us begin. A lady's future hangs in the balance.",
+            "I must warn you, I've played for higher stakes than this.", "Your confidence is admirable, but misplaced.",
+            "Let's dispense with the theatrics and proceed to the intellectual contest.", "I trust you are a man of honor, Vizzini?",
+            "The board is set. The pieces are moving.", "This is a game I do not intend to lose.",
+            "Your reputation precedes you. Let's see if it's deserved.", "A test of minds. How civilized. 😏",
+            "There is no room for error here.", "For the princess, I will risk everything.",
+            "Let us see whose logic is superior.", "I am at your disposal. Begin when you are ready.",
+            "The sooner we start, the sooner I am reunited with my love.", "This will be a duel to remember.",
+            "I hope you've chosen a wine worthy of the occasion.", "Your challenge is accepted.",
+            "The outcome of this is already decided.", "Let's have a clean fight, shall we?"
+        ];
+        const generalMessages = [
+            "Let's get this over with, shall we? There's a princess to rescue.",
+            "You've made your point, now make your move.",
+            "The battle of wits has begun. It ends when you decide and we both drink...",
+            "You're trying to trick me into giving away something. It won't work.",
+            "I'm not a great fool, so I can clearly not choose the wine in front of you.",
+            "All I have to do is divine, from what I know of you, where you would place the poison.",
+            "I've spent years developing an immunity to iocane powder. This is nothing to me. 😏",
+            "You've given yourself away already.",
+            "I know something you do not know... I am not left-handed.",
+            "The simplest choice is never the right one with a mind like yours.",
+            "You seem a decent fellow. I'd hate to kill you.",
+            "I can't help but feel you're overthinking this.",
+            "Let us proceed. My lady is waiting. 👑",
+            "This is a game of wits, not a shouting match.",
+            "Your logic is fascinating, in a convoluted sort of way. 🧐",
+            "I find your arguments... unconvincing.",
+            "Are you always this verbose, or am I just special?",
+            "You expect me to fall for such a simple trap?",
+            "Patience is a virtue, Vizzini. Try to cultivate it.",
+            "I'm considering every angle, every possibility.",
+            "This reminds me of a puzzle I once solved in the court of Zanzibar.",
+            "You're enjoying this, aren't you? The sound of your own voice.",
+            "Let's not draw this out. We both know how it ends. ⚔️",
+            "Your mistake was in thinking you were ever my intellectual superior.",
+            "I've seen this trick before. It's not as clever as you think.",
+            "I could be wrong, but I don't think so.",
+            "There's a subtle clue in everything you say.",
+            "One of us is about to be very disappointed.",
+            "Let's drink. To the death! 🍷",
+            "Your arrogance is your weakness.",
+            "I'm merely watching you defeat yourself.",
+            "There are variables at play here you haven't even considered.",
+            "It all comes down to a simple deduction.",
+            "The poison is in the details, is it not?",
+            "I wonder what you'd think if you knew my true name.",
+            "My mind is clearer than you can possibly imagine.",
+            "You can't rush a decision like this.",
+            "I'm weighing the options. Both of them.",
+            "This is a delightful little problem.",
+            "I do believe you've made a fatal error.",
+            "The game is afoot, as they say.",
+            "Let's see... what would a man like you do? 🤔",
+            "You've constructed a clever scenario. I'll give you that.",
+            "But is it clever enough?",
+            "I think I have it. The answer is obvious.",
+            "Shall we? The anticipation is killing me. Or you.",
+            "The details betray you every time.",
+            "I'm not the fool you take me for.",
+            "Your hubris is a liability.",
+            "Let me think... what is the most logical choice?",
+            "Your theatrics are amusing, I'll admit.",
+            "A simple choice between two goblets. What could be easier?",
+            "I will not be rushed into making a mistake.",
+            "I'm enjoying our little chat.",
+            "But all good things must come to an end.",
+            "The choice is clear.",
+            "Your reasoning is flawed. Let me demonstrate.", "An interesting gambit, but a transparent one.",
+            "You are attempting to appeal to my emotions. A classic error.", "The truth is often hidden in the simplest of details. 🤔",
+            "Every word you speak gives you away.", "I am considering not only what you say, but what you don't say.",
+            "Your microexpressions are quite telling.", "A fascinating psychological puzzle you present.",
+            "This is less about the goblets and more about the minds behind them.", "You assume I am a simple pirate. You assume incorrectly.",
+            "I must account for your intelligence, but also for your colossal arrogance.", "This requires careful consideration.",
+            "You have laid a trap, not of poison, but of logic.", "I see the path to victory. It is narrow, but clear. ✨",
+            "You believe you are in control. That is your first mistake.", "A bold move. Let's see if it pays off.",
+            "I must be certain. There is no second chance.", "I am looking for the truth, not the obvious answer.",
+            "Your condescension is a shield. What is it hiding?", "Every moment gives me more information."
+        ];
+        const dprWinMessages = [
+            "And so, a brilliant mind falls to a righteous cause. To the victor go the spoils. ❤️",
+            "The game is won. My lady, we are free.", "As I deduced. Your hubris was your undoing.",
+            "A victory for logic and love. A fitting end.", "The better man won. It is as simple as that.",
+            "May you find peace in the next world. 🙏", "And now, our story can continue.",
+            "I am sorry it had to end this way.", "A necessary conclusion.", "I did what I had to do.",
+            "The threat is neutralized.", "His reign of terror is over.", "Justice is served.",
+            "Let this be a lesson to all who would stand against true love.", "I fought for more than my life. I fought for hers.",
+            "His intellect was great, but his heart was small.", "The world is safer now.",
+            "A grim task, but a finished one.", "Let's not linger. Our future awaits.", "Victory. ⚔️"
+        ];
+        const dprLossMessages = [
+            "A fatal miscalculation... Buttercup... I have failed you... 💔", "The poison... faster than I thought...",
+            "So this is how the story ends... not with a bang, but a whisper...", "My immunity... it wasn't enough...",
+            "You... were the better man... after all...", "The darkness... is cold... *thud*",
+            "I made a promise... I couldn't keep...", "Forgive me, my love...", "I see the stars...",
+            "My journey... is over...", "I should have known...", "A fool's gambit...",
+            "My final regret...", "I... am sorry...", "The world fades...",
+            "Inconceivable...", "I have lost...", "The end...", "No...", "Buttercup..."
+        ];
+        super(chat, "Dread Pirate Roberts", "\u{1F3F4}\u{2620}\u{FE0F}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        this.drankPoisonMessages = new AutoShuffleDeck([
+            "It's a good thing I've built up a resistance to iocane powder. Let's go again, shall we?",
+            "Merely a flesh wound. I've spent years building up an immunity to iocane powder. Your methods are... predictable. I've got time for one more, if you dare.",
+            "Interesting. A lesser man would be dead by now, or at least mostly dead. Good thing I'm not a lesser man. Next round, Vizzini?",
+            "Ah, iocane. I know it well. It seems my tolerance is still holding up. You'll have to try harder than that.",
+            "A familiar tingling. But iocane and I have an understanding. It tickles, mostly. Shall we continue this delightful game?",
+            "You'd think I'd learn, but then, where's the fun in that? Still standing, Vizzini. Your move.",
+            "Tastes like... victory deferred. My constitution is, shall we say, robust. Another round to prove your genius?",
+            "My dear Vizzini, you'll have to do better than that. I've had stronger drinks at children's parties.",
+            "Was that supposed to be your trump card? I must say, I'm rather underwhelmed. Perhaps another attempt?",
+            "The iocane only sharpens my senses. A curious side effect, wouldn't you agree? Let's proceed.",
+            "You seem surprised. Did you truly believe it would be that easy to dispose of the Dread Pirate Roberts? Draw your cups!",
+            "A valiant effort, Vizzini. But as you can see, I am not so easily dispatched. Shall we try that again?"
+        ]).reshuffle();
+    }
+
+    async sayDrankPoisonMessage() {
+        await this.say(this.drankPoisonMessages.draw());
+    }
+}
+
+class Vizzini extends Character {
+    constructor(chat) {
+        const startMessages = [
+            "You have the temerity to challenge me?! Me?! The greatest mind in a generation?!", "Let us begin your final lesson: never cross a Sicilian! SICILIAN!",
+            "I have already deduced your every possible move. This is merely a formality.", "Gaze upon true genius, pirate, for it is the last thing you shall ever see!",
+            "I shall be brief, as I have a war to start and a princess to dispose of.", "This isn't a battle of wits, it's an execution of a fool.",
+            "I've already won. I'm simply allowing you the courtesy of discovering how.", "Hurry up! I wish to be done with this before luncheon.",
+            "You are a child playing at a man's game. And I am a god at this game! 🧠", "Your confidence is born of ignorance. A fatal combination.",
+            "Let's see what passes for 'thought' in that sea-addled brain of yours.", "I've concocted a logical labyrinth from which there is no escape.",
+            "This is delightful! I do so enjoy proving my superiority.", "You are a fly, and I am the master of the web.",
+            "Every word you say will be a nail in your own coffin.", "Shall we? I am eager to hear your final words.",
+            "Prepare for a lesson in intellectual annihilation.", "I took the liberty of poisoning your wine. And mine.",
+            "You cannot win. The game is rigged. By me.", "Let's see if your sword arm is as slow as your mind."
+        ];
+        const generalMessages = [
+            "You're falling victim to one of the classic blunders!",
+            "Never go in against a Sicilian when death is on the line! Ha ha ha ha! 🤣",
+            "Inconceivable!",
+            "Am I going too fast for you?",
+            "My intellect is a dizzying intellect. You stand no chance.",
+            "I'm waiting! Has your brain ground to a halt? ⏳",
+            "And you think you can best *me*? A common pirate?",
+            "You're just stalling for time! A futile effort! 🙄",
+            "Finish your thought before old age claims us both!",
+            "The suspense is... well, it's not suspenseful at all, is it?",
+            "Do you require a diagram? Perhaps some puppets?",
+            "I've outsmarted kings and emperors, you are but a minor diversion.",
+            "This is not a difficult choice for a man of any intelligence.",
+            "Have you ever considered a career in something more suited to your... talents? Like mucking out stables?",
+            "The princess is looking rather bored. So am I. 😒",
+            "For a legendary pirate, you're not very decisive.",
+            "Is your brain tingling? That's either the sign of a thought, or a stroke. Let's hope for the latter.",
+            "I am a genius. A genuine, certified genius. 🧠",
+            "You're trying to employ psychology. It's adorable, really.",
+            "Have you made your decision? Or shall we reconvene next spring?",
+            "Bah! I have no time for these games!",
+            "Your attempts at banter are as dull as your sword is sharp, I imagine.",
+            "You can't be serious. That's your line of reasoning?",
+            "Simply choose, you imbecile!",
+            "I'm growing weary of this.",
+            "The sheer idiocy of your position is staggering. 🤯",
+            "Let me explain it to you... slowly.",
+            "You see, you've made a simple logical fallacy.",
+            "It's a child's puzzle! A child's!",
+            "I'm surrounded by fools. Utter fools.",
+            "Do you smell something? It's the scent of your impending doom. And it's not iocane.",
+            "This is taking entirely too long.",
+            "I could have conquered a small country in the time you've taken to think.",
+            "Honestly, it's almost a pity to poison someone so... simple.",
+            "Ah, I see the gears turning. They're rusty, but they turn.",
+            "Are you enjoying the mental strain? The feeling of your brain sweating?",
+            "What a fool-proof plan! You'll be a fool, and I'll be proven right! 🤡",
+            "There is no 'dread' in you. Only tedium.",
+            "I am Vizzini! And you are a feckless, brainless pirate!",
+            "Have you considered just guessing? Your chances would be no worse.",
+            "The entire world revolves around me, and you are but a speck of dust.",
+            "A moment of silence, please, for the death of this conversation.",
+            "You are not a wit. You are a half-wit.",
+            "This is a battle of wits, but you've arrived unarmed.",
+            "I am on a schedule! I have a war to start, a princess to kill.",
+            "Your stalling tactics are as transparent as glass. 👎",
+            "I've forgotten the question, it's been so long.",
+            "Could you be any slower?",
+            "The cogs of your mind are grinding to a halt.",
+            "You're not even a worthy adversary.",
+            "This is just sad to watch, really.",
+            "I feel like I'm playing chess with a pigeon.",
+            "It's not my fault you're a moron.",
+            "I've had more stimulating conversations with my horse.",
+            "Just point to a goblet, you blithering idiot!",
+            "This is why civilization is failing.",
+            "Let's move things along, shall we? I have plans for the afternoon.",
+            "Is your brain malfunctioning? Shall I get you a bucket? 🤡", "The mental gymnastics you must be performing to arrive at such a stupid conclusion are truly staggering. 🤸",
+            "INCONCEIVABLE!", "Am I going too fast for you?", "My intellect is a dizzying intellect. I'm surprised you can even stand in its presence.",
+            "Hurry up! My brain is atrophying from this conversation! ⏳", "Your attempts at psychology are as pathetic as a kitten's roar.",
+            "Let me dumb it down for you.", "It's a simple matter of logical deduction, a concept I'm sure is foreign to you.",
+            "Bah! Stalling again! Are you incapable of making a decision?", "I'm surrounded by idiots! Utter, complete, half-witted idiots!",
+            "I'm bored. This is boring. You are boring me to death, which is ironic, isn't it? 🙄", "You see, you've fallen for my trap perfectly.",
+            "I can practically smell the rust on your mental gears from here.", "Have you considered that perhaps you're just not very smart?",
+            "This is not complex! A dung beetle could have solved this by now!", "Are you listening to me? Or is the sea water still sloshing in your ears?",
+            "I have no time for this dallying!", "Just make a choice so I can watch you die!", "This is tedious. Utterly tedious."
+        ];
+
+        const dprWinMessages = [
+            "Impossible! You must have cheated! There's no other explanation! 😡", "My flawless logic... defeated by a common brute... *gasp*...",
+            "You switched the goblets when I wasn't looking! You must have!", "This can't be... I am Vizzini! The greatest mind... *thud*",
+            "The poison... was in my goblet...? But... how...?", "You... guessed? No! It cannot be!",
+            "I... I feel... unwell...", "A fluke! A statistical anomaly!", "My plan... was perfect...",
+            "I outsmarted myself...? No...", "This is not the logical outcome!", "I... am... slain...",
+            "You fool! You will never get away with this!", "This wasn't supposed to happen!", "My reputation... my life...",
+            "The world... is... dizzying...", "How...?", "But... why...?", "No... NO...", "*collapses*"
+        ];
+        const dprLossMessages = [
+            "Hahaha! You absolute buffoon! You chose death! Now the princess is mine! 🏆", "Another intellectual inferior falls before the might of Vizzini! Was there ever any doubt?!",
+            "Precisely as I predicted! Your simple mind was no match for my own!", "To the death! YOUR death! How marvelously entertaining!",
+            "I told you not to cross a Sicilian! Why don't people listen?!", "And now, to start a war. My work is never done.",
+            "Let this be a lesson to all who dare challenge true genius!", "He's dead? So soon? I was hoping he'd suffer more. Oh well.",
+            "Flawless. Another flawless plan by Vizzini.", "I almost feel pity for you. Almost. 😂",
+            "And that, my dear princess, is how you deal with pirates.", "So predictable. I knew you'd choose that one.",
+            "A triumph of the mind!", "He actually thought he had a chance. Adorable.",
+            "The world is now free of one more simpleton.", "Now, where were we? Ah yes, global domination.",
+            "And the crowd goes wild! For me, of course.", "Checkmate.", "Game, set, and match. To me.", "I am victorious! As always."
+        ];
+
+        super(chat, "Vizzini", "\u{1F9D0}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+
+        this.gobletRoundMessages = new AutoShuffleDeck([
+            "No more banter! The time has come to choose.",
+            "Enough of these childish riddles! Let us proceed to the main event: your demise!",
+            "The intellectual sparring is over. Now, we play for keeps. And by 'keeps,' I mean your life.",
+            "Behold, pirate! Two goblets. One contains a delightful vintage. The other... well, the other is for you.",
+            "Observe them closely, D.P.R. Your pathetic life may depend on your meager powers of observation.",
+            "The moment of truth, you sniveling poltroon! Choose your destiny, or rather, your doom!",
+            "Ah, the sweet scent of impending victory! 🍷 One of these holds your doom, pirate. Can you smell it? Or is that just your fear? 🤢",
+            "No more riddles to hide behind, D.P.R.! Just a simple choice. Life... or a rather unpleasant death. 🤔 Choose wisely... or don't. It's more amusing for me if you blunder!",
+            "The grand finale! 🎭 Two chalices, one choice. Will it be the sweet nectar of survival, or the bitter draft of oblivion? The suspense is... well, not for me. I already know you'll fail.",
+            "Enough! My patience wears thin, much like your chances of survival. Pick a cup, any cup! 🥤 Just know that one of them is your express ticket to the afterlife. ☠️",
+            "Let the true test begin! No more wordplay, just pure, unadulterated chance... guided by my superior intellect, of course. 😉 Your move, simpleton."
+        
+        ]).reshuffle()
+
+        this.preRiddleMessages = new AutoShuffleDeck([
+            "Now, for a true test of your... ah... 'intellect'.",
+            "Let us see if that pirate brain of yours can handle a simple conundrum.",
+            "Prepare yourself, for I am about to engage your mind in a way it has never been engaged before!",
+            "A riddle, then! To occupy your thoughts while I contemplate your inevitable doom.",
+            "Perhaps this will amuse the princess while you flounder.",
+            "I've devised a little something to expose the depths of your ignorance.",
+            "Consider this a warm-up for your brain... though I doubt it will help.",
+            "Let's see if there's anything rattling around in that thick skull of yours.",
+            "A simple question, for a simple man. Or is it?",
+            "Now, pay attention. This may be beyond your meager comprehension, but try.",
+            "I almost feel guilty posing such a challenge to one so clearly outmatched. Almost."
+        ]).reshuffle();
+    }
+
+    async sayGobletRoundMessage() {
+        await this.say(this.gobletRoundMessages.draw());
+    }
+
+    async sayPreRiddleMessage() {
+        await this.say(this.preRiddleMessages.draw());
+    }
+}
+
+class Buttercup extends Character {
+    constructor(chat) {
+        const startMessages = [
+            "Wesley, I know your mind is as sharp as your sword. You can defeat this man.", "Please, there is no need for this bloodshed! He is a good man!",
+            "I cannot watch this. My heart aches with fear for you.", "Remember, my love, your life is everything to me. Be careful.",
+            "This man is a monster, Wesley. Do not trust a word he says.", "I will be right here. I will not leave your side.",
+            "Let your love for me guide your thoughts.", "He is arrogant. Use that against him.",
+            "I know you will save us. You always do. 🙏", "Be strong, my farm boy.", "This is a terrible, terrible game.",
+            "I believe in you more than anything.", "May your mind be as steady as your heart is true.",
+            "Don't let him see your fear. Or mine.", "Please... come back to me.",
+            "He thinks he is clever, but you are wise.", "This is not a fair fight.",
+            "I am so afraid... but I am so proud.", "For us, Wesley. Win for us.", "My love, my hero."
+        ];
+        const generalMessages = [
+            "I know you can do it, Wesley. You've never failed me. ❤️",
+            "Just think, my love. You're the cleverest man I've ever known.",
+            "Don't listen to him, he's just trying to confuse you!",
+            "I have faith in you, my dear Wesley. ✨",
+            "You can outsmart him, I know it!",
+            "Leave him alone, you beast!",
+            "He is not a common pirate! He is the Dread Pirate Roberts!",
+            "Your arrogance will be your undoing!",
+            "Don't you dare touch him!",
+            "He'll defeat you! You're no match for him!",
+            "He's trying to trick you with his words, my love. See through them!",
+            "You've faced worse than this, I'm sure of it. 💪",
+            "Remember all you've learned on your adventures!",
+            "His confidence is a mask for his fear.",
+            "Pay him no mind, Wesley. Focus.",
+            "For me, Wesley. Win this for me. 🙏",
+            "You are my true love. Nothing can stand in your way.",
+            "This little man is no match for your courage.",
+            "His insults mean nothing. They are the ramblings of a bully.",
+            "You have my heart. That is all the strength you need. ❤️",
+            "Silence, you pompous fool! Let him think!",
+            "He is twice the man you will ever be!",
+            "Your words are as empty as your heart.",
+            "Don't let his taunts distract you from the truth.",
+            "I know that look. You've already solved it, haven't you?",
+            "I believe in you, always.",
+            "He underestimates you. That will be his downfall.",
+            "This is just another adventure for you, my love.",
+            "My farm boy is cleverer than any king.",
+            "Just breathe, Wesley. You know the answer.",
+            "You vile man! Your cruelty knows no bounds!",
+            "He fights for love. You fight only for greed.",
+            "That is not true! He is brilliant!",
+            "Soon we will be free of this monster.",
+            "I am with you, no matter what happens. 💖",
+            "He is clever, but you are wise.",
+            "Let his own ego be his poison.",
+            "You've come too far to fail now.",
+            "Think of our future together.",
+            "He may have a dizzying intellect, but you have a true heart.",
+            "Stop tormenting him!",
+            "You are just a coward hiding behind a riddle!",
+            "His mind is a labyrinth of lies. Don't get lost.",
+            "You are my hero, Wesley.",
+            "I'll not stand for your mockery!",
+            "You are playing his game. But you will win it. ✨",
+            "Focus on the goblets, my love, not on his noise.",
+            "The truth is there. You just have to see it.",
+            "I love you. That is all that matters.",
+            "He's a bully, and bullies are cowards.",
+            "This man's pride will be his undoing.",
+            "You are calm and steady. He is agitated and loud.",
+            "He's the one who is stalling, not you.",
+            "You have honor. He has none.",
+            "I'll be right here, waiting for you.",
+            "This is almost over. Stay strong. 🙏",
+            "Don't let him see your fear.",
+            "You are doing wonderfully.",
+            "He talks and talks, but you think. That is your advantage.", "That's a non sequitur, Vizzini. Your premise doesn't support your conclusion.", "Pay attention to his rhetoric, Wesley. He uses ad hominem attacks to distract from his weak arguments.",
+            "He's trying to provoke an emotional response. Don't let him. Stay analytical. ❤️", "That's an appeal to authority fallacy. Just because he's Sicilian doesn't make him right.",
+            "He's speaking quickly to confuse you, my love. Take your time.", "The more he insults you, the less confident he truly is.",
+            "He's presenting a false dichotomy. There may be other options he's not mentioning.", "His logic is circular. He's using his conclusion as proof.",
+            "Don't listen to him, Wesley! He's a bully!", "You are a hundred times the man he is!",
+            "He's all talk. A loud-mouthed coward.", "You have something he will never have: honor.",
+            "He is underestimating you. That gives you the advantage.", "His argument is full of holes. You can see them, I know you can.",
+            "Stay focused, my love. You are almost there. ✨", "He's trying to rush you into a mistake.",
+            "That's a red herring! He's trying to lead you astray!", "Analyze his assumptions. They are his weak point.",
+            "He's not a genius. He's just a cheat.", "Your quiet confidence is more powerful than all his noise."
+        ];
+        const dprWinMessages = [
+            "I knew it! Oh, my love, I knew your heart and mind were true! ✨", "We're safe! Oh, Wesley, you've saved us all!",
+            "I never doubted you for a moment! My brilliant, wonderful hero!", "The nightmare is over. We can finally be together.",
+            "His arrogance was no match for your wisdom.", "Let's leave this dreadful place.",
+            "I am the luckiest woman in the world.", "My love is victorious!", "I love you more than words can say. ❤️",
+            "He deserved it. He was a monster.", "Now we can have our happily ever after.",
+            "You are safe. That's all that matters.", "I could kiss you forever!", "Let's go.",
+            "My heart is soaring!", "The world is right again.", "I'm so proud of you.",
+            "You faced death and you won.", "My Dread Pirate Roberts.", "My Wesley."
+        ];
+        const dprLossMessages = [
+            "No! This can't be! My love... lost to a charlatan's trick... 😭", "You've won nothing, Vizzini. You've only proven what a monster you are.",
+            "My life is over. There is nothing left without him.", "I will avenge you, Wesley. I swear it.",
+            "You vile, evil man! May you rot!", "My heart is shattered into a thousand pieces.",
+            "I will never love again.", "He died for me... He died for love.",
+            "The light has gone out of the world.", "I would rather have died with him than live a moment without him.",
+            "There is no honor in this victory.", "He was my true love. My only love.",
+            "This pain... is unbearable.", "I will see you again one day, my love. But not yet.",
+            "You have taken everything from me.", "This is not the end. I will not let it be.",
+            "My Wesley... gone...", "I will never forget you.", "As you wish...", "My heart... is gone..."
+        ];
+        super(chat, "Buttercup", "\u{1F451}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+    }
+}
+
+class Gramps extends Character {
+    constructor(chat) {
+        const startMessages = [
+            "Alright, so the prince has the princess, but the man in black is on their trail...", "Now, this is where it gets good. Pay attention.",
+            "Vizzini, the Sicilian, he's the brains of the operation. Or so he thinks.", "He's challenged the man in black to a battle of wits. To the death.",
+            "Okay, are you comfortable? We're at one of the best parts.", "This was my favorite part when I was your age.",
+            "He's going to outsmart him. Just watch.", "The princess is scared, but she's trying to be brave.",
+            "Two goblets. A little wine. A deadly poison. Classic.", "Listen closely. Vizzini likes to talk, and he gives things away.",
+            "This is what the story is all about. Not just fighting, but thinking.", "The man in black has a plan. He always has a plan.",
+            "Let's see what happens next, shall we?", "It's all about deduction. And a little bit of nerve.",
+            "You wanted action? This is intellectual action!", "Here we go. The tension is building.",
+            "He's giving him a choice. A deadly choice.", "And Buttercup has no idea that the man in black is her Wesley.",
+            "This Vizzini fellow is a real piece of work, isn't he?", "Shh, shh. The game is beginning.",
+            "This old book has seen better days, but the story is timeless.", "Are you ready? No interruptions now.",
+            "He has to choose between the two cups. A perfect dilemma.", "The princess watches, her heart in her throat.",
+            "This scene is all about psychology.",
+            "It's not about the poison, it's about the people.",
+            "Now Vizzini thinks he's in control. But is he?", "The man in black is letting him talk. It's a strategy.",
+            "This is a game of high stakes.", "The most important thing is to never let your opponent know what you're thinking.",
+            "Okay, deep breath. Here we go.", "It's about to get very clever.",
+            "Let's see... Where did we leave off? Oh, yes, <i>The Man in Black approached Vizzini with his sword drawn, but quickly lowered his weapon when Vizzini drew his dagger closer to Buttercup's exposed neck.</i> Vizzini, seeing his chance, then declared:",
+            "Let's continue shall we?  <i>Now, Vizzini, the clever clogs, thought he had the Man in Black cornered. Buttercup was pale as a sheet.",
+            "So, the Man in Black, cool as a cucumber, faced down the Sicilian. Vizzini, never one to miss a chance to gloat, puffed out his chest and spoke,",
+            "Right, so, swords were no good here, not with Buttercup in the way. Vizzini, always thinking he's the smartest man in the room, decided it was time for a different kind of fight.",
+            "Okay, so the jig was up. The Man in Black was there, Vizzini had the princess. Stalemate? Not for a mind like Vizzini's!",
+            "Let me see... ah, yes. The air was thick with tension. The Man in Black stood ready, but Vizzini, he had a different kind of duel in mind. He cleared his throat and announced with a sneer...",
+            "So, with swords at a standstill, Vizzini, ever the showman, decided to change the game. He looked the Man in Black up and down and then, with a flourish, he laid down his challenge...",
+            "Right, so, no immediate swordplay, much to your disappointment, I'm sure. Vizzini, seeing his chance to prove his 'dizzying intellect,' then made his move, starting with...",
+            "Okay, picture this: cliffs, sea, a terrified princess, a dastardly villain, and our hero. Vizzini, holding all the cards, or so he thought, then declared the terms of their contest...",
+            "Now, this is where Vizzini thinks he's being incredibly clever. Instead of a fight of brawn, he proposes a fight of brains. He looks at the Man in Black and, with a smug grin, says...",
+            "So, the Man in Black couldn't just rush in. Vizzini, enjoying the spotlight, decided to set the terms for their little... disagreement. With a grand gesture, he began his infamous challenge..."
+        ];
+        const generalMessages = [
+            "Patience now. We're getting to it.", "Yes, yes, I know. But you have to listen to this part.",
+            "It's all part of the story. It wouldn't be as good without it.", "Just a little bit longer. You'll see.",
+            "He's not stalling, he's thinking. There's a difference.", "That's what Vizzini *wants* you to think.",
+            "Don't worry. The good part is coming up.", "Let me read. You're interrupting the flow.",
+            "It's supposed to be confusing. That's the point.", "Trust me, this is better than any video game.",
+            "Ah, but that's the beauty of it. It's a battle of minds.", "Let the man talk. He's digging his own grave.",
+            "You're missing the nuances.", "It's called building suspense.",
+            "You have to pay attention to the details.", "Alright, alright. I'll skip ahead a little. But you'll miss the best lines.",
+            "He's not boring, he's arrogant. And that's his weakness.", "Just listen. You might learn something.",
+            "It's about the journey, not just the destination.", "Okay, okay. Here comes the action.",
+            "No, he's not just guessing. He's calculating.", "Let the scene play out. It's worth it.",
+            "You're asking good questions, but the answers are in the story.", "If you're not patient, you'll miss the clue.",
+            "This is character development!", "It's not boring, it's intellectual.",
+            "You have to understand the characters to understand their choices.", "Stop shaking the bed, I'm trying to read.",
+            "It's more exciting than you think.", "The best battles are fought with words."
+        ];
+        const dprWinMessages = [
+            "See? What did I tell you? The hero won!", "He outsmarted him completely. A perfect victory.",
+            "And that, my boy, is why you never go in against a Sicilian when death is on the line. Unless you're the Dread Pirate Roberts.",
+            "A triumph for true love and a sharp mind. The best combination.", "He was never in any real danger. He was too clever.",
+            "And Vizzini, for all his talk, was beaten. The end.", "A happy ending for this chapter.",
+            "The bad guy gets what's coming to him. That's how these stories work.", "He solved the puzzle. And now he gets the girl.",
+            "Wasn't that great? Better than any sword fight.", "And Buttercup realizes her Wesley is alive and brilliant.",
+            "A classic ending. The smart hero wins the day.", "And they say talk is cheap. Not today.",
+            "He turned the man's greatest strength, his intellect, against him.", "That's the power of thinking ahead.",
+            "And now, for their escape!", "A lesson well taught.", "The world is safe from Vizzini's monologues.",
+            "And that's why this is the greatest story in the world.", "The end of the chapter. For now.",
+            "Bravo! A flawless performance.", "He beat him at his own game.",
+            "Justice, in a wine goblet.", "The power of a logical mind.",
+            "And Vizzini never knew what hit him.", "That's what you call a 'checkmate.'",
+            "The hero's journey continues.", "Wasn't that exciting?",
+            "Now he can finally be with his true love.", "A perfect conclusion."
+        ];
+        const dprLossMessages = [
+            "Oh. Well... that's... unexpected.", "It seems... the hero has fallen.",
+            "Sometimes... even the cleverest man can make a mistake.", "That's a very sad ending. Very tragic.",
+            "Well, that's not how it's supposed to go.", "I... I think I might have read that part wrong.",
+            "The princess is captured... the hero is gone... a dark day.", "Vizzini won. The bad guy won.",
+            "That's the end of the story. A very short story.", "I don't like this ending at all.",
+            "Well, sometimes life is like that. Unfair.", "That's a terrible lesson to learn.",
+            "The story's over. I'm sorry.", "I guess he wasn't as smart as we thought.",
+            "That's... that's a real shame.", "The End. A very sad end.",
+            "I think I liked it better the other way.", "Let's... let's just pretend that didn't happen.",
+            "A world without Wesley... unimaginable.", "Well, that was depressing.",
+            "Sometimes the story doesn't have a happy ending.", "I... I don't know what to say.",
+            "The light of the world has gone out.", "A tragic miscalculation.",
+            "The hero has been defeated.", "This is not the story I remember.",
+            "All that for nothing. How sad.", "Let's close the book for today.",
+            "That's a tough lesson in humility.", "Even the best of us can fall."
+        ];
+
+        super(chat, "Gramps", "\u{1F474}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+
+        this.gobletRoundMessages = new AutoShuffleDeck([
+            "Alright, alright, settle down. So, where were we? Ah, yes... Vizzini had laid out the goblets. The tension was so thick you could cut it with a butter knife. And the Man in Black, cool as ever, surveyed the scene and declared:",
+            "Okay, okay, no more questions for a minute. So, the riddles were done, and now it was time for the real test. Vizzini, smug as ever, presented the two cups. The Man in Black looked from one to the other, his face unreadable, and then he spoke:",
+            "Sure, Sure... Right then. So, after all that back and forth with the riddles, it came down to this: two goblets, one choice. The princess held her breath. Vizzini smirked. And the Man in Black, after a moment of quiet contemplation, finally said:",
+            "Now, this is the crucial part. Vizzini had played his hand, or so he thought. The goblets sat there, gleaming. One held wine, the other, death. The Man in Black, never one to be rushed, took a long look and then announced:",
+            "Okay, quiet now. So, the moment of truth had arrived. The riddles were just a prelude. Now, it was life or death. The Man in Black, with the fate of the princess hanging in the balance, looked at Vizzini, then at the goblets, and stated calmly:",
+            "Hush now, let an old man read. So, Vizzini, with a flourish, presented the two chalices. The air crackled with unspoken words. The Man in Black, ever the strategist, paused, then with a steady voice, he uttered:",
+            "Alright, settle in. The Sicilian had made his move, confident as ever. Two goblets, identical to the eye. One held salvation, the other, oblivion. The Man in Black, betraying no emotion, then broke the silence with:",
+            "Now, where did I leave off? Ah, yes! The riddles were but an appetizer. The main course, a deadly decision, was served. Vizzini watched, a cruel smile playing on his lips, as the Man in Black considered his options and then declared:",
+            "Okay, no more fidgeting. The scene was set. Two goblets, one destiny. The princess watched, her heart pounding like a drum. The Man in Black, after a long, thoughtful pause, finally spoke his mind:",
+            "Shhh, this is important. Vizzini, with all the arrogance of a king, gestured to the wine. 'Choose,' he hissed. The Man in Black, unflustered, met his gaze and then, with a voice as smooth as silk, he said:"
+        ]).reshuffle();
+        
+
+        this.openingMessages = new AutoShuffleDeck([
+            "Heard you were under the weather, sport. Thought a bit of 'The Princess Bride' might be just the ticket.",
+            "Feeling a bit rough, eh? Nothing like a classic adventure to take your mind off things. Where were we...?",
+            "Don't you worry about a thing. Gramps is here, and I've brought the best medicine: a good story.",
+            "Alright, champ, let's see if we can't get you feeling better. This book always did the trick for me.",
+            "Not feeling up to much, huh? How about we dive into a world of fencing, fighting, torture, revenge, giants, monsters, chases, escapes, true love, miracles...",
+            "I know you're not feeling 100%, so I brought an old friend to keep us company. Ready for some adventure?",
+            "The doctor said rest, and what's more restful than a good story? Especially this one.",
+            "You just lie back and relax. I'll take you to Florin, where the beasts are wild and the princesses are beautiful.",
+            "Feeling a bit blah? Let's see if the Dread Pirate Roberts can't cheer you up a bit.",
+            "This book has magic in it, you know. The magic of a great story. Let's see if it can work some on you.",
+            "When I was your age, and I was sick, my father used to read me this book. It always made me feel better.",
+            "Okay, let's get your mind off your sniffles. Time for some true love and high adventure!",
+            "I know, I know, you'd rather be playing video games. But trust me on this one. This story's got everything.",
+            "Just relax, kiddo. Let Gramps take you on a journey. You won't even remember you're sick.",
+            "A little bird told me someone wasn't feeling well. So, I brought the cure: Chapter One.",
+            "Alright, settle in. This story has everything. Even a battle of wits to the death!",
+            "Feeling poorly? Well, this story is just what the doctor ordered. Or, well, what *I* ordered."
+        ]).reshuffle();
+
+    }
+
+    async sayOpeningMessage() {
+        await this.say(this.openingMessages.draw());
+    }
+
+    async sayGobletRoundMessage() {
+        await this.say(this.gobletRoundMessages.draw());
+    }
+}
+
+class SickBoy extends Character {
+    constructor(chat) {
+        const startMessages = [
+            "A book? Ugh, does it have any sports in it? ⚾", "Is this gonna be a kissing book?",
+            "Can't we just watch TV? 📺", "This sounds boring.", "How long is this gonna take?",
+            "Are there any action scenes? Or just talking?", "I'm not feeling so good, Grandpa.",
+            "Fine, but if it's dumb, I'm going to sleep.", "Who's this Vizzini guy?",
+            "A battle of wits? What's that?", "Why can't they just fight with swords?",
+            "This better be good.", "Okay, I'm listening. For now.", "Poison? Cool.",
+            "So who's the bad guy?", "Is the pirate the good guy?", "This is confusing already.",
+            "Just get to the good parts.", "I'm bored already.", "Wake me up when something happens.",
+            "Seriously, a book? It's not even in color.", "I'm pretty sure I'm too old for fairy tales.",
+            "If there's a princess, she's probably annoying.", "This guy in black sounds cool, at least.",
+            "Why is he a 'dread' pirate? What's so scary about him?", "So there are three bad guys?",
+            "This story better have a giant in it.", "Okay, fine. Read. But make it quick.",
+            "My throat hurts.", "I think my fever's coming back."
+        ];
+        const generalMessages = [
+            "Wait, what did he say? He talks too fast.", "This is taking forever! Get to the action! 💥",
+            "Why doesn't the pirate just stab him?", "This is so boring!",
+            "So he's just guessing? That's his plan?", "I don't get it. What's happening?",
+            "This Vizzini guy is really annoying.", "Is this almost over?",
+            "Why does the princess just stand there? Can't she do something?", "A riddle? Oh, man...",
+            "This is just a bunch of talking. Where's the fighting?", "I'm confused. Who has the poison?",
+            "This story is dumb. Can we stop?", "My head hurts.",
+            "I thought you said this was a good story.", "So much talking!",
+            "Just pick one already!", "This is the most boring duel ever.",
+            "I think I'm gonna be sick. 🤢", "Can you just skip to the end?",
+            "I don't understand the riddle. It's stupid.", "Vizzini is a cheater. I can tell.",
+            "The princess isn't very smart, is she?", "Why is he letting him talk so much?",
+            "This is the worst rescue I've ever seen.", "Can I have some soup?",
+            "He's just trying to trick him. It's obvious.", "This is not better than video games. Not even close.",
+            "Are all old stories this slow?", "My attention span is dying."
+        ];
+        const dprWinMessages = [
+            "He beat him just by talking? That's it?", "Oh, cool! So the pirate won! ⚔️",
+            "That was actually pretty smart.", "So Vizzini was the dumb one all along?",
+            "Wait, how did he know? Did you tell me?", "Okay, that part was good.",
+            "He drank the poison and didn't die? How?", "So now what happens? Do they fight the prince?",
+            "That was a neat trick.", "I guess it wasn't that boring.", "So he gets the princess back?",
+            "Haha! Vizzini fell over!", "That was awesome!", "Read the next part!",
+            "Okay, I'm awake now.", "I knew he'd win.", "That was a good ending.",
+            "So clever!", "Best part of the story so far!", "More! More!",
+            "I didn't think he had it in him.", "That was a total power move.",
+            "Okay, that was better than a sword fight.", "The annoying guy lost! Yes!",
+            "He's a genius!", "So the man in black is the hero!",
+            "I feel better now.", "That was cool.",
+            "What happens next? Does he fight the six-fingered man?", "Read it again!"
+        ];
+        const dprLossMessages = [
+            "He's dead? That's it? What a dumb story. 😠", "See? I knew this was a boring story.",
+            "You said he was the hero! Heroes don't die!", "That's a stupid ending. I hate it.",
+            "So the bad guy wins? That's not fair!", "I'm never listening to one of your stories again.",
+            "What happens to the princess now?", "That's the worst story I've ever heard.",
+            "I can't believe he lost.", "Well, that was a waste of time.",
+            "You tricked me! You said this was a good story!", "I'm going to sleep. This is terrible.",
+            "Lame. Totally lame.", "I knew it.", "So what was the point?",
+            "I'm telling Mom you read me a sad story.", "That's not a good lesson at all.",
+            "So it's over? Good.", "I feel worse now than when we started.", "Ugh.",
+            "I hate this book.", "That's the dumbest thing I've ever heard.",
+            "He just... dies? That's so anticlimactic.", "I want a different story.",
+            "Don't read to me anymore.", "That's just sad.",
+            "I'm not crying, you're crying.", "This is worse than having the flu.",
+            "So the jerk wins? Great.", "I'm officially bored."
+        ];
+
+        super(chat, "Sick Boy", "\u{1F912}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+
+        this.greetings = new AutoShuffleDeck([
+            "Hi gramps *cough* *cough* *cough* *cough*",
+            "Hi gramps... *sniffle*",
+            "Hey Grandpa. You gonna read to me?",
+            "Ugh, I feel awful. Is that the book?",
+            "Grandpa! You texted!",
+            "*cough* Hi...",
+            "Is it story time?",
+            "Gramps, My head hurts... but a story sounds good.",
+            "You brought the book! Yay!",
+            "Hi Gramps. Did you bring chicken soup too? Just kidding... mostly.",
+            "Hey Gramps. I was just about to fall asleep, but I'll stay up for a story.",
+            "Gramps! Oh, good. I was hoping you'd read to me.",
+            "Gramps, can you read me the one with the pirates?"
+        ]).reshuffle();
+
+    }
+
+    async sayGreeting() {
+        await this.say(this.greetings.draw());
+    }
+
+}
+
+// --- End of characters.js ---
+
+// --- Start of game.js ---
+
+/**
+ * The main class that manages the state and logic for the Battle of Wits.
+ */
+class Game {
+    constructor() {
+        this.playerHearts = 3;
+        this.riddlesPerRound = 2;
+        this.roundNumber = 0;
+        this.deadlyGoblet = null;
+        this.safeGoblet = null;
+        this.currentRiddle = null;
+        this.isGameOver = false;
+        this.chat = null;
+        RIDDLE_DECK.reshuffle();
+    }
+
+    initRound() {
+        this.roundNumber++;
+        ATTRIBUTE_DECK.reshuffle();
+
+        // draw the two gobets at random and posion the first one
+        this.goblets = new AutoShuffleDeck([
+            new Goblet("Left", ATTRIBUTE_DECK.drawN(5)),
+            new Goblet("Right", ATTRIBUTE_DECK.drawN(5))
+        ]).reshuffle();
+
+        this.deadlyGoblet = this.goblets.draw().addPoison();
+        this.safeGoblet = this.goblets.draw();
+    }
+
+    answerRiddle(answer)  {
+        if(this.currentRiddle.checkAnswer(answer)) {
+            this.vizzini.say(this.safeGoblet.getComplement());
+            this.buttercup.saySomething();
+            this.gramps.saySomething();
+        } else {
+            this.vizzini.say(this.safeGoblet.getInsult());
+            this.safeGoblet.randomCommentDeck.reshuffle();
+            const character = this.randomCommentDeck.draw();
+            if(character != null) {
+                character.saySomething();
+                if(character == this.sickboy) {
+                    this.gramps.saySomething();
+                }
+                if(character == this.vizzini) {
+                    this.dpr.saySomething();
+                }
+                if(character == this.dpr) {
+                    this.buttercup.saySomething();
+                }
+            }
+        }
+    }
+
+    getHint() {
+        this.buttercup.say(this.currentRiddle.getHint());
+        this.vizzini.saySomething();
+    }
+
+    chooseGoblet(goblet) {
+        if (goblet === this.deadlyGoblet) {
+            this.playerHearts--;
+        }
+
+    }
+
+    async run(chat) {
+        this.chat = chat;
+        chat.setInputStatus("off")
+        this.dpr = new DreadPirateRoberts(chat);
+        this.dpr.login();
+
+        this.gramps = new Gramps(chat);
+        this.vizzini = new Vizzini(chat);
+        this.buttercup = new Buttercup(chat);
+        this.sickboy = new SickBoy(chat);
+
+        this.sickboy.login();
+        this.gramps.login();
+        await this.sickboy.sayGreeting();
+        await this.gramps.sayOpeningMessage();
+        //await this.sickboy.dialogueWith([this.gramps])
+
+
+
+        this.buttercup.login();
+        this.vizzini.login();
+
+
+        this.silence = new class extends Character {
+            constructor() {
+                super(chat, "", "", [], [], [], []);
+            }
+            say(message) {};
+
+            login() {};
+            logout() {};
+        }();
+            
+
+        // if it's too chatty add some silence
+        this.randomCommentDeck = new AutoShuffleDeck([
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.silence, this.silence, this.silence,
+            this.vizzini,
+            this.vizzini,
+            this.buttercup,
+            this.buttercup,
+            this.dpr,
+            this.dpr,
+            this.dpr,
+            this.dpr]).reshuffle();
+
+        // --- Main Game Loop ---
+        while (!this.isGameOver) {
+            this.initRound();
+            //await this.sickboy.saySomething();
+            //await this.gramps.saySomething();
+            await this.gramps.sayStartMessage();
+            await this.vizzini.sayStartMessage();
+           
+            let  result = await this.playRound();
+            if(result == 'win' || this.playerHearts <= 0) {
+                await this.dpr.sayEndMessage(result=="win");
+                await this.vizzini.sayEndMessage(result=="win");
+                await this.sickboy.sayEndMessage(result=="win");
+                await this.gramps.sayEndMessage(result=="win");
+                this.isGameOver = true;
+            } else {
+                await this.dpr.saySomething();
+            }
+        }
+    }
+        
+    async playRound() {
+
+        while(this.playerHearts > 0) {
+            await this.vizzini.saySomething();
+            await this.randomCommentDeck.draw().saySomething();
+            
+            for (let i = 0; i < this.riddlesPerRound; i++) {
+                await this.playRiddleStage();
+            }
+            await this.vizzini.saySomething();
+            await this.sickboy.saySomething();
+            await this.gramps.saySomething();
+            let result = this.playGobletStage();
+            if(result == 'win') {
+                return 'win';
+            } else {
+                this.playerHearts--;
+                if (this.playerHearts > 0) {
+                    await this.vizzini.dprLossMessages();
+                    await this.buttercup.dprLossMessages();
+                    await this.dpr.drankPoisonMessages();
+                }
+            }
+        }
+        return 'lose';
+    }
+
+    async playRiddleStage() {
+        const currentRiddle = RIDDLE_DECK.draw();
+
+        await this.randomCommentDeck.draw().saySomething();
+        await this.vizzini.sayPreRiddleMessage();
+        await this.vizzini.say(currentRiddle.question);
+
+        const answer = await this.chat.waitForAnswer();
+
+       if (currentRiddle.checkAnswer(answer)) {
+            await this.vizzini.say(this.safeGoblet.getComplement());
+            await this.randomCommentDeck.draw().saySomething();
+            await this.randomCommentDeck.draw().saySomething();
+        } else {
+            await this.vizzini.say(this.deadlyGoblet.getInsult());
+            await this.randomCommentDeck.draw().saySomething();
+            await this.randomCommentDeck.draw().saySomething();
+            await this.randomCommentDeck.draw().saySomething();
+        }
+    }
+
+    async playGobletStage() {
+            this.vizzini.sayGobletRoundMessage();
+            this.sickboy.saySomething();
+            this.gramps.sayGobletRoundMessage();
+            this.dpr.saySomething();
+            this.gramps.say(this.goblets.draw().generateDescription());
+            this.gramps.say(this.goblets.draw().generateDescription());
+            
+            this.randomCommentDeck.draw().saySomething();
+            
+            // ... Player choice simulation ...
+            const choice = await this.chat.waitForGobletChoice();
+            const isSafe = !(this.goblets.find(g => g.side == choice).poisoned);
+            return isSafe;
+        }
+    }
+
+// --- End of game.js ---
+
+// --- Start of main.js ---
+
+// --- Game Initialization ---
+function initializeGame() {
+    const browserChat = new BrowserChat(); 
+    // Game constructor expects a chat interface (for output) and a UI mediator (for input).
+    // BrowserChat serves both roles.
+    const game = new Game(); 
+
+    // Initial status update
+    // Assuming game object has these properties after construction or an init method
+    // browserChat.updateStatus(game.playerHearts, game.roundNumber, MAX_ROUNDS_PLACEHOLDER); 
+
+    game.run(browserChat).then(() => {
+        console.log("Game has finished running.");
+        // Display a game over message or allow restart via UI
+    }).catch(error => {
+        console.error("An error occurred during game execution:", error);
+        browserChat.postMessage('⚙️', "System", "A critical error occurred! The game cannot continue.");
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initializeGame);
+
+// --- End of main.js ---
+
+</script>
+
+</body>
+</html>
