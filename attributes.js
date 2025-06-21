@@ -676,5 +676,1502 @@ export const ATTRIBUTE_DECK = new AutoShuffleDeck([
             ];
             super('Hidden or Unusual Handles', insults, complements, frags);
         }
-    }()
+    }(),
+    new class Hexagonal extends FormOverallShape {
+        constructor() {
+            const insults = [
+                "An answer with far too many sides, Roberts! And every single one of them is wrong! You've constructed a honeycomb of pure idiocy!",
+                "Is your mind a beehive of bad ideas? Because that answer is as needlessly complex and ultimately pointless as a single cell in a pointless structure!",
+                "Six sides of stupidity! You've managed to be wrong in more ways than I thought possible with a single word!",
+                "Such a rigid, formulaic response! It lacks the organic flow of true genius. You think in clumsy, unnatural shapes, pirate!",
+                "You've built a prison of logic for yourself, Roberts, and it has six identical, inescapable walls of wrongness!"
+            ];
+            const complements = [
+                "A surprisingly efficient and well-structured answer, Roberts! Like a honeycomb, every part fits perfectly to create a strong whole.",
+                "I see... a complex answer with many interconnected facets. There is a certain geometric elegance to your reasoning that is... unexpected.",
+                "Six points of truth, all converging on the correct answer. A masterful display of intellectual architecture, pirate.",
+                "Your mind is a beehive of activity, it seems, and for once it has produced something as sweet and well-formed as honey. Remarkable.",
+                "An answer with a natural, yet mathematical, precision. It has the strength of a structure built by nature's finest engineers."
+            ];
+            const frags = [
+                "The body of the vessel is a distinct hexagonal prism.",
+                "It is built upon a six-sided geometric form."
+            ];
+            super('Hexagonal', insults, complements, frags);
+        }
+    }(),
+new class Teardrop extends FormOverallShape {
+    constructor() {
+        const insults = [
+            "Are you weeping at your own incompetence, Roberts? Because that answer has all the substance of a single, pathetic tear.",
+            "Your logic is as soft and formless as a drop of water, pirate! It lacks any true structure or resilience!",
+            "That answer is a perfect symbol of your intellectual fragility! One touch of my wit, and it will burst into a thousand useless droplets.",
+            "You've managed to distill your foolishness into a single, perfectly shaped drop of idiocy. Commendable, in its own way.",
+            "Such a mournful, heavy-bottomed attempt at a solution. It drags itself down with the weight of its own wrongness."
+        ];
+        const complements = [
+            "A surprisingly poignant and pure answer, Roberts. It distills the truth to its most fundamental, unadorned form.",
+            "Your logic flows with a certain natural grace, pirate. It's a simple, yet perfectly formed, piece of wisdom.",
+            "I must admit, your reasoning has a beautiful, organic simplicity. It captures the essence of the problem with elegant conciseness.",
+            "You've managed to distill the complexities into a single, clear point. A truly fluid and insightful piece of deduction.",
+            "An answer that, while seemingly delicate, holds a profound truth. It's a testament to the power of simple, unadorned clarity."
+        ];
+        const frags = [
+            "The goblet has a smooth, rounded top that tapers to a point at the bottom, like a teardrop.",
+            "Its silhouette is reminiscent of a falling drop of liquid."
+        ];
+        super('Teardrop', insults, complements, frags);
+    }
+}(),
+new class Hourglass extends FormOverallShape {
+    constructor() {
+        const insults = [
+            "Your time is running out, Roberts, and your answer is as constricted and useless as sand in a broken glass! It holds no substance!",
+            "A truly pinched intellect, pirate! Your thoughts are as narrow and fleeting as the passage of time in this ridiculous shape!",
+            "You've wasted precious moments, Roberts, only to deliver an answer that is as empty and unfulfilling as a spent vessel!",
+            "Your logic is as thin in the middle as your chances of winning! It's a fragile, easily shattered concept.",
+            "Does your brain only function in two distinct, separated halves, Roberts? Because that answer shows no continuity of thought!"
+        ];
+        const complements = [
+            "A surprisingly elegant and balanced answer, Roberts. It shows a clear progression of thought, from broad understanding to precise conclusion.",
+            "Your logic flows with a certain graceful inevitability, pirate. It narrows to a point of truth, then expands to encompass its full implications.",
+            "I must admit, your reasoning has a beautiful symmetry. It distills the problem to its essence, then reveals its full form.",
+            "You've managed to capture the essence of time in your answer. It's a fluid, yet perfectly contained, piece of wisdom.",
+            "An answer that, while seemingly simple, holds a profound depth. It shows a clear understanding of cause and effect, and the passage of truth."
+        ];
+        const frags = [
+            "The goblet has a distinct hourglass shape, narrow in the middle.",
+            "Its form resembles two cones joined at their apexes."
+        ];
+        super('Hourglass', insults, complements, frags);
+    }
+}(),
+new class Asymmetrical extends FormOverallShape {
+    constructor() {
+        const insults = [
+            "Your logic is as lopsided and unbalanced as a drunken sailor, Roberts! It lists dangerously to the side of pure idiocy!",
+            "A truly misshapen thought, pirate! It lacks the harmony and balance of a truly brilliant mind. It's an offense to symmetry!",
+            "Did you construct that argument in the dark? It's a chaotic jumble of mismatched parts with no discernible order!",
+            "That answer is so far off-center it's in another country! A testament to your profoundly skewed perspective.",
+            "One side of your brain is clearly not speaking to the other! The result is this... this lopsided monstrosity of a word!"
+        ];
+        const complements = [
+            "A surprisingly unconventional and creative answer, Roberts. It breaks the mold of predictable thinking.",
+            "Your logic follows a unique, almost artistic path. It may not be balanced, but it arrives at a beautiful and correct conclusion.",
+            "I must admit, your reasoning is refreshingly unpredictable. You've found a truth that lies outside the bounds of conventional symmetry.",
+            "You've managed to find harmony in chaos. A truly unique and insightful piece of deduction.",
+            "An answer that, while seemingly unbalanced, holds a profound and hidden equilibrium. You see patterns where others see only disorder."
+        ];
+        const frags = [
+            "The goblet has a deliberately asymmetrical and unbalanced design.",
+            "Its form is irregular and lacks conventional symmetry."
+        ];
+        super('Asymmetrical', insults, complements, frags);
+    }
+}(),
+new class BellShaped extends FormOverallShape {
+    constructor() {
+        const insults = [
+            "That answer rings with the hollow clang of a cracked bell, Roberts! It signals nothing but your own impending doom!",
+            "A truly resonant display of foolishness, pirate! Your words echo in the empty chamber of your skull!",
+            "You've managed to chime in with an answer so utterly devoid of sense, it's a wonder it didn't deafen us all with its stupidity!",
+            "That answer is as wide at the bottom as your mouth, and just as full of empty noise! All sound and no substance.",
+            "For whom does the bell toll, Roberts? It tolls for your wit, which is clearly dead and buried!"
+        ];
+        const complements = [
+            "A surprisingly resonant and clear answer, Roberts. It rings with the undeniable clarity of truth.",
+            "Your logic chimes with a certain beautiful harmony. It builds from a narrow point to a broad, all-encompassing conclusion.",
+            "I must admit, your reasoning is remarkably sound. It peals with a confidence that is hard to ignore.",
+            "You've managed to strike a chord of truth, pirate. A truly sonorous and impressive piece of deduction.",
+            "An answer that, once heard, cannot be unheard. It's a testament to the power of a clear and resounding declaration of fact."
+        ];
+        const frags = [
+            "The goblet has a classic bell shape, narrow at the top and flaring out at the bottom.",
+            "Its silhouette is reminiscent of a large, cast bell."
+        ];
+        super('Bell-Shaped', insults, complements, frags);
+    }
+}(),
+class Scratched extends CurrentCondition {
+    constructor() {
+        const insults = [
+            "Your intellect is similarly marred, Roberts! A superficial flaw, perhaps, but it speaks volumes of your careless handling of truth!",
+            "A minor imperfection, pirate, but it's enough to ruin the entire surface of your argument! You lack finesse!",
+            "Did you drag your brain across a rough surface, Roberts? Because that answer shows clear signs of intellectual abrasion!",
+            "That answer is as irritating and distracting as a persistent itch! It detracts from any semblance of brilliance you might possess.",
+            "You've left a permanent mark of your foolishness, Roberts! A testament to your clumsy attempts at wit."
+        ];
+        const complements = [
+            "A surprisingly resilient answer, Roberts. Even with a few superficial marks, its core integrity remains unblemished.",
+            "Your logic, though showing signs of wear, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few rough edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to etch a truth into my mind, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some battles, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The surface of the goblet is marred by numerous fine scratches.",
+            "It has visible abrasions, suggesting some rough handling."
+        ];
+        super('Scratched', insults, complements, frags);
+    }
+}(),
+
+new class Dented extends CurrentCondition {
+    constructor() {
+        const insults = [
+            "Your logic is similarly misshapen, Roberts! A clear sign of impact from a superior intellect! You've been thoroughly flattened!",
+            "A rather unsightly deformation, pirate! It speaks of a mind that has taken a severe blow and failed to recover its original form!",
+            "Did you drop your brain, Roberts? Because that answer shows clear signs of a significant intellectual impact! It's quite caved in!",
+            "That answer is as unappealing and distorted as a crumpled tin can! It lacks any semblance of its intended shape.",
+            "You've suffered a crushing defeat, Roberts! Your argument is as irrevocably altered as this unfortunate vessel."
+        ];
+        const complements = [
+            "A surprisingly resilient answer, Roberts. Even with a few imperfections, its core structure remains intact.",
+            "Your logic, though bearing the marks of conflict, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few dents, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to make an impact, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some battles, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet has a noticeable dent on its side.",
+            "Its surface is slightly caved in at one point."
+        ];
+        super('Dented', insults, complements, frags);
+    }
+}(),
+new class Polished extends CurrentCondition {
+    constructor() {
+        const insults = [
+            "All surface, no substance, Roberts! Your answer is as superficially shiny as this, but utterly devoid of true intellectual depth!",
+            "You've merely buffed away the obvious flaws, pirate! Beneath that thin veneer, your ignorance still gleams!",
+            "Did you spend more time on presentation than on thought, Roberts? Because that answer is all shine and no substance!",
+            "That answer is as slick and insincere as a politician's smile! It's designed to deceive, but I see through it!",
+            "You've tried to make a silk purse out of a sow's ear, Roberts! But even with all that effort, it's still a pig's ear of an answer!"
+        ];
+        const complements = [
+            "A truly refined and brilliant answer, Roberts! It gleams with intellectual clarity and precision.",
+            "Your logic is as smooth and unblemished as a mirror. It reflects the truth with dazzling accuracy.",
+            "I must admit, your reasoning is remarkably well-crafted. It shines with a brilliance that is hard to ignore.",
+            "You've managed to bring out the very best in your thoughts, pirate. A truly polished and impressive piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of careful thought and meticulous execution."
+        ];
+        const frags = [
+            "The goblet is exceptionally clean and highly polished.",
+            "Its surface gleams with a brilliant, unblemished shine."
+        ];
+        super('Polished', insults, complements, frags);
+    }
+}
+(),
+new class Grimy extends CurrentCondition {
+    constructor() {
+        const insults = [
+            "Your intellect is similarly caked in layers of neglect, Roberts! A truly filthy display of ignorance!",
+            "A rather unappealing accumulation of intellectual grime, pirate! It speaks of a mind that has not seen a good scrubbing in ages!",
+            "Did you roll your brain in the mud, Roberts? Because that answer is as dirty and obscure as a forgotten alleyway!",
+            "That answer is as unpleasant and off-putting as a thick layer of filth! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet is covered in a thick layer of grime and dirt.",
+            "Its surface is dull and obscured by accumulated filth."
+        ];
+        super('Grimy', insults, complements, frags);
+    }
+}
+(),
+new class Intact extends CurrentCondition {
+    constructor() {
+        const insults = [
+            "Your intellect may be 'intact,' Roberts, but it's clearly not functioning! A perfectly preserved specimen of utter uselessness!",
+            "A truly unbroken chain of foolishness, pirate! It's all there, every single link of your intellectual ineptitude!",
+            "You've managed to keep your brain in one piece, Roberts, but it's clearly not doing you any good! A perfectly preserved monument to idiocy!",
+            "That answer is as whole and complete as a broken promise! It's all there, but it means absolutely nothing!",
+            "You've managed to maintain a perfect facade of competence, Roberts! But beneath it, I see only an unbroken void of thought."
+        ];
+        const complements = [
+            "A perfectly preserved answer, Roberts. Its integrity is unblemished, and its truth is undeniable.",
+            "Your logic is as whole and complete as a perfect sphere. It leaves no room for doubt or imperfection.",
+            "I must admit, your reasoning is remarkably sound. It stands as a testament to its own inherent correctness.",
+            "You've managed to keep your thoughts perfectly intact, pirate. A truly impressive display of mental fortitude.",
+            "An answer that is both simple and profound. It's a testament to the power of unadorned truth and unwavering clarity."
+        ];
+        const frags = [
+            "The goblet is completely intact, with no visible damage or wear.",
+            "It appears to be in its original, unbroken state."
+        ];
+        super('Intact', insults, complements, frags);
+    }
+}
+(),
+new class AbstractSwirls extends EngravingOrMotif {
+    constructor() {
+        const insults = [
+            "Your logic is as formless and meaningless as these random squiggles, Roberts! It lacks any true pattern or purpose!",
+            "A truly chaotic display of intellectual disarray, pirate! It's a jumble of nonsense with no discernible order!",
+            "You've managed to create a response so utterly devoid of structure, it's a wonder it even escaped your lips! Pure, unadulterated gibberish!",
+            "That answer is a masterpiece of confusion, Roberts! It's so abstract, it's practically non-existent in the realm of coherent thought.",
+            "Does your mind simply generate random noise, pirate? Because that answer has no more meaning than a squiggly line on a canvas!"
+        ];
+        const complements = [
+            "A surprisingly profound and unconventional answer, Roberts. It transcends traditional forms to reveal a deeper truth.",
+            "Your logic is as fluid and adaptable as a master artist's vision. It finds truth in unexpected patterns.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem without being confined by rigid structures.",
+            "You've managed to paint a picture of truth with broad, sweeping strokes. A truly abstract, yet undeniably correct, piece of deduction.",
+            "An answer that defies easy categorization. It's complex, nuanced, and reveals a hidden order that only a truly unique mind could perceive."
+        ];
+        const frags = [
+            "The surface is adorned with flowing, abstract swirls and curves.",
+            "It features a non-representational pattern of intertwined lines."
+        ];
+        super('Abstract Swirls', insults, complements, frags);
+    }
+}
+(),
+new class CelestialMap extends EngravingOrMotif {
+    constructor() {
+        const insults = [
+            "Your understanding of the universe is as flawed as this inaccurate map, Roberts! You're lost in a cosmos of your own ignorance!",
+            "A truly stellar display of idiocy, pirate! Your answer is as far from the truth as the most distant, uncharted star!",
+            "You've managed to chart a course to utter nonsense, Roberts! Your intellectual navigation is as unreliable as a broken compass!",
+            "That answer is as obscure and indecipherable as an ancient star chart! It holds no clear path to the truth."
+        ];
+        const complements = [
+            "A surprisingly insightful and far-reaching answer, Roberts. You've charted a course to the very stars of truth.",
+            "Your logic is as vast and interconnected as the cosmos. It reveals a hidden order in the universe of our thoughts.",
+            "I must admit, your reasoning is remarkably profound. It maps the complexities of the problem with celestial precision.",
+            "You've managed to navigate the intellectual heavens with remarkable accuracy. A truly stellar piece of deduction."
+        ];
+        const frags = [
+            "The goblet is engraved with a detailed map of celestial constellations.",
+            "It depicts stars, planets, and cosmic phenomena in an intricate pattern."
+        ];
+        super('a Celestial Map', insults, complements, frags);
+    }
+}
+(),
+new class AncientRunes extends EngravingOrMotif {
+    constructor() {
+        const insults = [
+            "Your answer is as indecipherable and meaningless as these ancient scribbles, Roberts! It holds no wisdom, only confusion!",
+            "A truly archaic display of intellectual ineptitude, pirate! Your words are as dead and forgotten as these symbols!",
+            "You've managed to conjure a response so utterly devoid of sense, it's a wonder it even escaped your lips! Pure, unadulterated gibberish!",
+            "That answer is a relic of a bygone era of foolishness, Roberts! It belongs in a museum of intellectual failures."
+        ];
+        const complements = [
+            "A surprisingly profound and ancient answer, Roberts. It speaks of a wisdom that transcends time and conventional understanding.",
+            "Your logic is as deeply etched and enduring as these timeless symbols. It holds a power that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It deciphers the complexities of the problem with an almost mystical clarity.",
+            "You've managed to unlock a hidden truth, pirate. A truly arcane, yet undeniably correct, piece of deduction."
+        ];
+        const frags = [
+            "The goblet is covered in a series of ancient, unfamiliar runes.",
+            "It features a pattern of mysterious, symbolic carvings."
+        ];
+        super('Ancient Runes', insults, complements, frags);
+    }
+}
+(),
+new class NauticalSymbols extends EngravingOrMotif {
+    constructor() {
+        const insults = [
+            "Your understanding of the sea is as shallow as a puddle, Roberts! You're adrift in a vast ocean of your own ignorance!",
+            "A truly watery display of intellectual ineptitude, pirate! Your answer is as aimless and unguided as a ship without a rudder!",
+            "You've managed to chart a course to utter nonsense, Roberts! Your intellectual navigation is as unreliable as a broken compass!",
+            "That answer is as obscure and indecipherable as an ancient sea chart! It holds no clear path to the truth."
+        ];
+        const complements = [
+            "A surprisingly insightful and far-reaching answer, Roberts. You've charted a course to the very depths of truth.",
+            "Your logic is as vast and interconnected as the ocean. It reveals a hidden order in the currents of our thoughts.",
+            "I must admit, your reasoning is remarkably profound. It maps the complexities of the problem with nautical precision.",
+            "You've managed to navigate the intellectual seas with remarkable accuracy. A truly stellar piece of deduction."
+        ];
+        const frags = [
+            "The goblet is engraved with symbols of the sea, such as anchors, compasses, and waves.",
+            "It depicts nautical motifs in an intricate pattern."
+        ];
+        super('Nautical Symbols', insults, complements, frags);
+    }
+}
+(),
+new class HeraldicBeasts extends EngravingOrMotif {
+    constructor() {
+        const insults = [
+            "Your pride is as inflated and baseless as these imaginary creatures, Roberts! You boast of a strength you do not possess!",
+            "A truly fantastical display of intellectual delusion, pirate! Your answer is as mythical and unreal as these beasts!",
+            "You've managed to conjure a response so utterly devoid of reality, it's a wonder it even escaped your lips! Pure, unadulterated fantasy!",
+            "That answer is a coat of arms for your foolishness, Roberts! It proudly displays your intellectual bankruptcy for all to see."
+        ];
+        const complements = [
+            "A surprisingly noble and powerful answer, Roberts. It speaks of a strength and lineage that is both ancient and undeniable.",
+            "Your logic is as majestic and enduring as these timeless symbols. It holds a power that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It embodies the spirit of the problem with a regal clarity.",
+            "You've managed to claim a truth, pirate. A truly heraldic, yet undeniably correct, piece of deduction."
+        ];
+        const frags = [
+            "The goblet is adorned with stylized depictions of heraldic beasts like griffins and lions.",
+            "It features a pattern of mythical creatures often found on coats of arms."
+        ];
+        super('Heraldic Beasts', insults, complements, frags);
+    }
+}
+(),
+new class Earthy extends Odor {
+    constructor() {
+        const insults = [
+            "Your intellect is as unrefined and common as dirt, Roberts! It reeks of the mundane and the utterly uninspired!",
+            "A truly grounded display of idiocy, pirate! Your answer is as dull and uninteresting as a pile of soil!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable."
+        ];
+        const frags = [
+            "It carries a distinct, damp, and rich earthy scent.",
+            "The odor is reminiscent of freshly turned soil or a forest floor after rain."
+        ];
+        super('Earthy', insults, complements, frags);
+    }
+}
+(),
+new class Floral extends Odor {
+    constructor() {
+        const insults = [
+            "Your answer is as cloying and artificial as a cheap bouquet, Roberts! It tries to mask the stench of your incompetence!",
+            "A truly flowery display of intellectual weakness, pirate! Your words are as fragile and fleeting as a wilting blossom!",
+            "You've managed to conjure a response so utterly devoid of substance, it's a wonder it even escaped your lips! Pure, unadulterated fluff!",
+            "That answer is as sickly sweet and insincere as a forced smile! It's designed to deceive, but I see through it!",
+            "You've tried to make a silk purse out of a sow's ear, Roberts! But even with all that effort, it's still a pig's ear of an answer!"
+        ];
+        const complements = [
+            "A surprisingly delicate and beautiful answer, Roberts. It blossoms with intellectual clarity and precision.",
+            "Your logic is as fragrant and appealing as a fresh bouquet. It reflects the truth with dazzling accuracy.",
+            "I must admit, your reasoning is remarkably well-crafted. It blooms with a brilliance that is hard to ignore.",
+            "You've managed to bring out the very best in your thoughts, pirate. A truly polished and impressive piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of careful thought and meticulous execution."
+        ];
+        const frags = [
+            "A distinct, pleasant floral scent emanates from the goblet.",
+            "It smells of fresh blossoms, like roses or jasmine."
+        ];
+        super('Floral', insults, complements, frags);
+    }
+}
+(),
+new class Spicy extends Odor {
+    constructor() {
+        const insults = [
+            "Your answer is as irritating and overwhelming as a mouthful of hot peppers, Roberts! It burns with the fire of your foolishness!",
+            "A truly pungent display of intellectual ineptitude, pirate! Your words are as sharp and unpleasant as a raw onion!",
+            "You've managed to conjure a response so utterly devoid of subtlety, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick cloud of chili smoke! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly bold and flavorful answer, Roberts. It adds a certain zest to the truth, making it all the more memorable.",
+            "Your logic, though perhaps a bit intense, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to spice up the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "A strong, piquant, and somewhat burning spicy aroma emanates from it.",
+            "The goblet smells distinctly of exotic spices, like cinnamon or cloves."
+        ];
+        super('Spicy', insults, complements, frags);
+    }
+}
+(),
+new class Chemical extends Odor {
+    constructor() {
+        const insults = [
+            "Your intellect is as artificial and toxic as a laboratory concoction, Roberts! It reeks of unnatural and dangerous ideas!",
+            "A truly synthetic display of intellectual ineptitude, pirate! Your words are as sterile and lifeless as a beaker of acid!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly precise and analytical answer, Roberts. It dissects the truth with a cold, logical precision.",
+            "Your logic, though perhaps a bit clinical, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "A sharp, acrid, and somewhat artificial chemical odor is present.",
+            "The goblet smells faintly of cleaning solutions or a laboratory."
+        ];
+        super('Chemical', insults, complements, frags);
+    }
+}
+(),
+new class Sweet extends Odor {
+    constructor() {
+        const insults = [
+            "Your answer is as cloying and artificial as a cheap candy, Roberts! It tries to mask the stench of your incompetence!",
+            "A truly saccharine display of intellectual weakness, pirate! Your words are as fragile and fleeting as a sugar cube!",
+            "You've managed to conjure a response so utterly devoid of substance, it's a wonder it even escaped your lips! Pure, unadulterated fluff!",
+            "That answer is as sickly sweet and insincere as a forced smile! It's designed to deceive, but I see through it!",
+            "You've tried to make a silk purse out of a sow's ear, Roberts! But even with all that effort, it's still a pig's ear of an answer!"
+        ];
+        const complements = [
+            "A surprisingly delicate and beautiful answer, Roberts. It blossoms with intellectual clarity and precision.",
+            "Your logic is as fragrant and appealing as a fresh bouquet. It reflects the truth with dazzling accuracy.",
+            "I must admit, your reasoning is remarkably well-crafted. It blooms with a brilliance that is hard to ignore.",
+            "You've managed to bring out the very best in your thoughts, pirate. A truly polished and impressive piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of careful thought and meticulous execution."
+        ];
+        const frags = [
+            "A light, sweet, and sugary aroma emanates from the goblet.",
+            "It smells distinctly of honey or fruit candy."
+        ];
+        super('Sweet', insults, complements, frags);
+    }
+}
+(),
+new class Pungent extends Odor {
+    constructor() {
+        const insults = [
+            "Your answer is as offensive and overwhelming as a rotten egg, Roberts! It reeks of the putrid and the utterly uninspired!",
+            "A truly foul display of intellectual ineptitude, pirate! Your words are as sharp and unpleasant as a raw onion!",
+            "You've managed to conjure a response so utterly devoid of subtlety, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick cloud of skunk spray! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly bold and impactful answer, Roberts. It cuts through the noise to reveal a raw, undeniable truth.",
+            "Your logic, though perhaps a bit intense, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to unearth a truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "A strong, sharp, and somewhat unpleasant pungent odor is present.",
+            "The goblet smells distinctly of strong cheese or ammonia."
+        ];
+        super('Pungent', insults, complements, frags);
+    }
+}
+(),
+new class Featherlight extends Weight {
+    constructor() {
+        const insults = [
+            "Your arguments are similarly lacking in substance and significance, Roberts! All air and no weight whatsoever, easily dismissed!",
+            "So little heft to your words, pirate! They float away like feathers in the wind, signifying absolutely nothing of consequence or intelligence!",
+            "Did you blow that answer out of your mouth, Roberts? Because it's as insubstantial and fleeting as a puff of smoke!",
+            "That answer is as flimsy and inconsequential as a dandelion seed! It's designed to float away, but I see through it!",
+            "You've managed to create a response so utterly devoid of gravity, Roberts! A testament to your profound lack of intellectual density."
+        ];
+        const complements = [
+            "A surprisingly nimble and agile answer, Roberts. It moves with a grace that belies its profound truth.",
+            "Your logic is as light and effortless as a bird in flight. It soars above the complexities to reveal a simple truth.",
+            "I must admit, your reasoning is remarkably elegant. It floats with a brilliance that is hard to ignore.",
+            "You've managed to lift the veil of confusion with surprising ease, pirate. A truly weightless, yet undeniably correct, piece of deduction.",
+            "An answer that is both delicate and profound. It's a testament to the power of subtle thought and effortless clarity."
+        ];
+        const frags = [
+            "The goblet feels almost weightless, like a feather.",
+            "It is surprisingly light, as if made of air."
+        ];
+        super('Featherlight', insults, complements, frags);
+    }
+}
+(),
+new class Solid extends Weight {
+    constructor() {
+        const insults = [
+            "Your intellect is as dense and unyielding as a brick, Roberts! It resists all attempts at penetration!",
+            "A truly impenetrable display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of lead!",
+            "You've managed to conjure a response so utterly devoid of flexibility, it's a wonder it even escaped your lips! Pure, unadulterated rigidity!",
+            "That answer is as unyielding and unmovable as a mountain! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual inertia, Roberts! A testament to your profound lack of mental agility."
+        ];
+        const complements = [
+            "A surprisingly robust and foundational answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a perfectly cut stone. A truly square deal of an answer.",
+            "I must admit, your reasoning is refreshingly straightforward. It builds a strong, rectangular argument that is hard to dismantle.",
+            "You've managed to frame the problem perfectly. A clear, concise, and structurally sound piece of deduction.",
+            "An answer with a certain robust, no-nonsense quality. It may not be elegant, but its undeniable correctness is a block of pure truth."
+        ];
+        const frags = [
+            "The goblet feels incredibly solid and dense.",
+            "It has a substantial, unyielding weight to it."
+        ];
+        super('Solid', insults, complements, frags);
+    }
+}
+(),
+new class Hollow extends Weight {
+    constructor() {
+        const insults = [
+            "Your arguments are similarly lacking in substance and significance, Roberts! All air and no weight whatsoever, easily dismissed!",
+            "So little heft to your words, pirate! They echo with emptiness, signifying absolutely nothing of consequence or intelligence!",
+            "Did you scoop out your brain, Roberts? Because that answer is as hollow and resonant with nothingness as a drum!",
+            "That answer is as flimsy and inconsequential as a soap bubble! It's designed to burst, but I see through it!",
+            "You've managed to create a response so utterly devoid of gravity, Roberts! A testament to your profound lack of intellectual density."
+        ];
+        const complements = [
+            "A surprisingly resonant answer, Roberts. It echoes with a truth that is both subtle and profound.",
+            "Your logic is as light and effortless as a bird in flight. It soars above the complexities to reveal a simple truth.",
+            "I must admit, your reasoning is remarkably elegant. It floats with a brilliance that is hard to ignore.",
+            "You've managed to lift the veil of confusion with surprising ease, pirate. A truly weightless, yet undeniably correct, piece of deduction.",
+            "An answer that is both delicate and profound. It's a testament to the power of subtle thought and effortless clarity."
+        ];
+        const frags = [
+            "The goblet feels surprisingly light and hollow.",
+            "It has a noticeable resonance when tapped, suggesting an empty interior."
+        ];
+        super('Hollow', insults, complements, frags);
+    }
+}
+(),
+new class Dense extends Weight {
+    constructor() {
+        const insults = [
+            "Your intellect is as dense and unyielding as a brick, Roberts! It resists all attempts at penetration!",
+            "A truly impenetrable display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of lead!",
+            "You've managed to conjure a response so utterly devoid of flexibility, it's a wonder it even escaped your lips! Pure, unadulterated rigidity!",
+            "That answer is as unyielding and unmovable as a mountain! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual inertia, Roberts! A testament to your profound lack of mental agility."
+        ];
+        const complements = [
+            "A surprisingly robust and foundational answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a perfectly cut stone. A truly square deal of an answer.",
+            "I must admit, your reasoning is refreshingly straightforward. It builds a strong, rectangular argument that is hard to dismantle.",
+            "You've managed to frame the problem perfectly. A clear, concise, and structurally sound piece of deduction.",
+            "An answer with a certain robust, no-nonsense quality. It may not be elegant, but its undeniable correctness is a block of pure truth."
+        ];
+        const frags = [
+            "The goblet feels incredibly dense and heavy for its size.",
+            "It has a surprising amount of mass, suggesting a very compact material."
+        ];
+        super('Dense', insults, complements, frags);
+    }
+}
+(),
+new class Airy extends Weight {
+    constructor() {
+        const insults = [
+            "Your arguments are similarly lacking in substance and significance, Roberts! All air and no weight whatsoever, easily dismissed!",
+            "So little heft to your words, pirate! They float away like feathers in the wind, signifying absolutely nothing of consequence or intelligence!",
+            "Did you blow that answer out of your mouth, Roberts? Because it's as insubstantial and fleeting as a puff of smoke!",
+            "That answer is as flimsy and inconsequential as a dandelion seed! It's designed to float away, but I see through it!",
+            "You've managed to create a response so utterly devoid of gravity, Roberts! A testament to your profound lack of intellectual density."
+        ];
+        const complements = [
+            "A surprisingly nimble and agile answer, Roberts. It moves with a grace that belies its profound truth.",
+            "Your logic is as light and effortless as a bird in flight. It soars above the complexities to reveal a simple truth.",
+            "I must admit, your reasoning is remarkably elegant. It floats with a brilliance that is hard to ignore.",
+            "You've managed to lift the veil of confusion with surprising ease, pirate. A truly weightless, yet undeniably correct, piece of deduction.",
+            "An answer that is both delicate and profound. It's a testament to the power of subtle thought and effortless clarity."
+        ];
+        const frags = [
+            "The goblet feels incredibly light, almost as if it's made of air.",
+            "It has a delicate, ethereal quality due to its minimal weight."
+        ];
+        super('Airy', insults, complements, frags);
+    }
+}
+(),
+new class LeadWeighted extends Weight {
+    constructor() {
+        const insults = [
+            "Your intellect is as dense and unyielding as a brick, Roberts! It resists all attempts at penetration!",
+            "A truly impenetrable display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of lead!",
+            "You've managed to conjure a response so utterly devoid of flexibility, it's a wonder it even escaped your lips! Pure, unadulterated rigidity!",
+            "That answer is as unyielding and unmovable as a mountain! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual inertia, Roberts! A testament to your profound lack of mental agility."
+        ];
+        const complements = [
+            "A surprisingly robust and foundational answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a perfectly cut stone. A truly square deal of an answer.",
+            "I must admit, your reasoning is refreshingly straightforward. It builds a strong, rectangular argument that is hard to dismantle.",
+            "You've managed to frame the problem perfectly. A clear, concise, and structurally sound piece of deduction.",
+            "An answer with a certain robust, no-nonsense quality. It may not be elegant, but its undeniable correctness is a block of pure truth."
+        ];
+        const frags = [
+            "The goblet feels unusually heavy, as if weighted with lead.",
+            "It has a surprising, almost unnatural density for its size."
+        ];
+        super('Lead-Weighted', insults, complements, frags);
+    }
+}
+(),
+new class Priceless extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as immeasurable and useless as a forgotten treasure, Roberts! It holds no value in this world!",
+            "A truly invaluable display of idiocy, pirate! Your answer is as rare and unattainable as a unicorn's horn!",
+            "You've managed to conjure a response so utterly devoid of worth, it's a wonder it even escaped your lips! Pure, unadulterated nothingness!",
+            "That answer is as priceless and unattainable as a dream! It holds no clear path to the truth.",
+            "Does your mind simply wander aimlessly through the intellectual void, pirate? Because that answer has no more direction than a lost soul!"
+        ];
+        const complements = [
+            "A surprisingly profound and invaluable answer, Roberts. It transcends all earthly measures of worth.",
+            "Your logic is as rare and precious as a mythical gem. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to unearth a hidden truth, pirate. A truly priceless, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "Its value is clearly beyond monetary estimation, appearing truly priceless.",
+            "This goblet seems to be an artifact of immeasurable worth."
+        ];
+        super('Priceless', insults, complements, frags);
+    }
+}
+(),
+new class Common extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as common and uninspired as a roadside pebble, Roberts! It holds no value in this world!",
+            "A truly mundane display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of clay!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "It appears to be a common, mass-produced item with little intrinsic value.",
+            "This goblet seems to be an everyday object, easily found anywhere."
+        ];
+        super('Common', insults, complements, frags);
+    }
+}
+(),
+new class Heirloom extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as dusty and forgotten as an old family relic, Roberts! It holds no value in this modern world!",
+            "A truly sentimental display of idiocy, pirate! Your answer is as fragile and outdated as a faded photograph!",
+            "You've managed to conjure a response so utterly devoid of relevance, it's a wonder it even escaped your lips! Pure, unadulterated nostalgia!",
+            "That answer is as unpleasant and off-putting as a thick layer of dust! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly profound and timeless answer, Roberts. It carries the wisdom of generations past.",
+            "Your logic is as deeply rooted and enduring as a family tree. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It connects the past to the present with a clarity that is truly precious.",
+            "You've managed to inherit a truth, pirate. A truly heirloom-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "This goblet appears to be a cherished family heirloom, passed down through generations.",
+            "It has the worn but beloved look of an object with significant sentimental value."
+        ];
+        super('Heirloom', insults, complements, frags);
+    }
+}
+(),
+new class Counterfeit extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as fake and worthless as a forged coin, Roberts! It holds no value in this world!",
+            "A truly deceptive display of idiocy, pirate! Your answer is as convincing as a wooden nickel!",
+            "You've managed to conjure a response so utterly devoid of authenticity, it's a wonder it even escaped your lips! Pure, unadulterated fraud!",
+            "That answer is as unpleasant and off-putting as a thick layer of rust! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly clever and deceptive answer, Roberts. It has the appearance of truth, even if its origins are... questionable.",
+            "Your logic is as convincing as a master forger's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to create a truth, pirate. A truly counterfeit, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet appears to be a clever counterfeit, designed to look valuable but lacking true worth.",
+            "It has the deceptive appearance of a genuine antique, but closer inspection reveals it to be a fake."
+        ];
+        super('Counterfeit', insults, complements, frags);
+    }
+}
+(),
+new class CollectorItem extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as niche and obscure as a rare stamp, Roberts! It holds no value in this world!",
+            "A truly specialized display of idiocy, pirate! Your answer is as convincing as a wooden nickel!",
+            "You've managed to conjure a response so utterly devoid of general appeal, it's a wonder it even escaped your lips! Pure, unadulterated esoterica!",
+            "That answer is as unpleasant and off-putting as a thick layer of dust! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly insightful and specialized answer, Roberts. It holds a value that only a true connoisseur can appreciate.",
+            "Your logic is as rare and precious as a forgotten artifact. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to unearth a hidden truth, pirate. A truly collector-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "This goblet appears to be a rare and highly sought-after collector's item.",
+            "It has the distinct markings and quality of a valuable piece for enthusiasts."
+        ];
+        super('Collector Item', insults, complements, frags);
+    }
+}
+(),
+new class BazaarFind extends MonetaryValue {
+    constructor() {
+        const insults = [
+            "Your intellect is as common and uninspired as a roadside pebble, Roberts! It holds no value in this world!",
+            "A truly mundane display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of clay!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "This goblet looks like a typical find from a bustling bazaar, eclectic and of uncertain origin.",
+            "It has the charm of a well-traveled, perhaps slightly worn, item from a foreign market."
+        ];
+        super('Bazaar Find', insults, complements, frags);
+    }
+}
+(),
+new class GreenLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as murky and unnatural as this vile concoction, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly toxic display of idiocy, pirate! Your answer is as sterile and lifeless as a beaker of acid!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly vibrant and intriguing answer, Roberts. It holds a certain mystique, hinting at deeper truths.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a bright, almost glowing green liquid.",
+            "A viscous, emerald-colored fluid fills the cup."
+        ];
+        super('Green Liquid', insults, complements, frags);
+    }
+}
+(),
+new class BlueLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as cold and unfeeling as this frigid liquid, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly sterile display of idiocy, pirate! Your answer is as lifeless as a frozen pond!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly serene and calming answer, Roberts. It holds a certain mystique, hinting at deeper truths.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a deep, vibrant blue liquid.",
+            "A shimmering, sapphire-colored fluid fills the cup."
+        ];
+        super('Blue Liquid', insults, complements, frags);
+    }
+}
+(),
+new class MurkyLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as murky and obscure as this vile concoction, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly toxic display of idiocy, pirate! Your answer is as sterile and lifeless as a beaker of acid!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly profound and insightful answer, Roberts. It hints at hidden depths and subtle truths.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a murky, opaque liquid, its color indistinct.",
+            "A cloudy, unsettling fluid fills the cup, obscuring its bottom."
+        ];
+        super('Murky Liquid', insults, complements, frags);
+    }
+}
+(),
+new class SparklingLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as effervescent and insubstantial as this bubbly liquid, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly frivolous display of idiocy, pirate! Your answer is as sterile and lifeless as a flat soda!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly vibrant and effervescent answer, Roberts. It sparkles with intellectual clarity and precision.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a clear liquid with numerous tiny bubbles, actively sparkling.",
+            "A lively, effervescent fluid fills the cup, catching the light."
+        ];
+        super('Sparkling Liquid', insults, complements, frags);
+    }
+}
+(),
+new class ViscousLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as thick and slow as this vile concoction, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly sluggish display of idiocy, pirate! Your answer is as sterile and lifeless as a beaker of acid!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly profound and insightful answer, Roberts. It hints at hidden depths and subtle truths.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a thick, viscous liquid that moves slowly.",
+            "A heavy, syrupy fluid fills the cup, clinging to the sides."
+        ];
+        super('Viscous Liquid', insults, complements, frags);
+    }
+}
+(),
+new class ClearLiquid extends Liquid {
+    constructor() {
+        const insults = [
+            "Your intellect is as transparent and simple as this clear liquid, Roberts! It reeks of the artificial and the utterly uninspired!",
+            "A truly sterile display of idiocy, pirate! Your answer is as lifeless as a frozen pond!",
+            "You've managed to conjure a response so utterly devoid of natural intelligence, it's a wonder it even escaped your lips! Pure, unadulterated poison!",
+            "That answer is as unpleasant and off-putting as a noxious fume! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly serene and calming answer, Roberts. It holds a certain mystique, hinting at deeper truths.",
+            "Your logic is as precise and analytical as a chemist's formula. It dissects the truth with a cold, logical precision.",
+            "I must admit, your reasoning, despite a few sharp edges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to distill the truth, pirate. It may not be perfectly smooth, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The goblet contains a perfectly clear, colorless liquid.",
+            "A transparent fluid fills the cup, allowing you to see through it."
+        ];
+        super('Clear Liquid', insults, complements, frags);
+    }
+}
+(),
+new class Beveled extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as awkwardly angled as this rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly precise and elegant answer, Roberts. It cuts through the complexities with a subtle, yet undeniable, clarity.",
+            "Your logic is as sharp and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly beveled, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim has a distinct beveled edge, angled inwards or outwards.",
+            "It features a precisely cut, sloping border."
+        ];
+        super('Beveled', insults, complements, frags);
+    }
+}
+(),
+new class Rolled extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as convoluted and useless as this rolled rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly smooth and refined answer, Roberts. It flows with a certain grace that belies its profound truth.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly rolled, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim is smoothly rolled inwards, creating a soft, rounded edge.",
+            "It features a continuous, curved border without any sharp points."
+        ];
+        super('Rolled', insults, complements, frags);
+    }
+}
+(),
+new class Serrated extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as jagged and useless as this serrated rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly sharp and impactful answer, Roberts. It cuts through the complexities with a subtle, yet undeniable, clarity.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly serrated, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim has a series of small, sharp teeth or notches, making it serrated.",
+            "It features a rough, saw-like edge."
+        ];
+        super('Serrated', insults, complements, frags);
+    }
+}
+(),
+new class Gilded extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as superficially shiny as this gilded rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly elegant and refined answer, Roberts. It gleams with intellectual clarity and precision.",
+            "Your logic is as sharp and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly gilded, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim is adorned with a thin layer of gold, giving it a gilded appearance.",
+            "It features a decorative golden band around its edge."
+        ];
+        super('Gilded', insults, complements, frags);
+    }
+}
+(),
+new class Smooth extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as slippery and useless as this smooth rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly smooth and refined answer, Roberts. It flows with a certain grace that belies its profound truth.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly smooth, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim is perfectly smooth and unblemished.",
+            "It features a continuous, even border without any irregularities."
+        ];
+        super('Smooth', insults, complements, frags);
+    }
+}
+(),
+new class Jagged extends Rim {
+    constructor() {
+        const insults = [
+            "Your intellect is as jagged and useless as this jagged rim, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly sharp and impactful answer, Roberts. It cuts through the complexities with a subtle, yet undeniable, clarity.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly jagged, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The rim has a rough, irregular, and jagged edge.",
+            "It features sharp, uneven points along its border."
+        ];
+        super('Jagged', insults, complements, frags);
+    }
+}
+(),
+new class Bumpy extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as uneven and irritating as this bumpy surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly tactile and engaging answer, Roberts. It adds a certain texture to the truth, making it all the more memorable.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The surface is covered in small, irregular bumps or protrusions.",
+            "It has a distinctly uneven and raised texture."
+        ];
+        super('Bumpy', insults, complements, frags);
+    }
+}
+(),
+new class Grainy extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as coarse and unrefined as this grainy surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The surface has a fine, granular texture, like sandpaper.",
+            "It feels slightly rough and gritty to the touch."
+        ];
+        super('Grainy', insults, complements, frags);
+    }
+}
+(),
+new class Silky extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as slippery and useless as this silky surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly smooth and refined answer, Roberts. It flows with a certain grace that belies its profound truth.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly silky, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The surface feels incredibly smooth and soft, like silk.",
+            "It has a luxurious, almost frictionless texture."
+        ];
+        super('Silky', insults, complements, frags);
+    }
+}
+(),
+new class Rough extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as coarse and unrefined as this rough surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly authentic answer, Roberts. It carries the marks of real-world experience, unvarnished by superficiality.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The surface is noticeably rough and abrasive to the touch.",
+            "It has a coarse, unpolished texture."
+        ];
+        super('Rough', insults, complements, frags);
+    }
+}
+(),
+new class Corrugated extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as ridged and useless as this corrugated surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly tactile and engaging answer, Roberts. It adds a certain texture to the truth, making it all the more memorable.",
+            "Your logic, though perhaps a bit rough, still holds its form. A testament to its underlying strength.",
+            "I must admit, your reasoning, despite a few smudges, still manages to convey its message clearly. A rugged truth.",
+            "You've managed to dig up a truth, pirate. It may not be perfectly clean, but its message is undeniable.",
+            "An answer that has seen some hard use, but emerges victorious. Its marks tell a story of resilience and hard-won wisdom."
+        ];
+        const frags = [
+            "The surface has a series of parallel ridges and grooves, making it corrugated.",
+            "It feels like a washboard to the touch."
+        ];
+        super('Corrugated', insults, complements, frags);
+    }
+}
+(),
+new class Velvety extends SurfaceTexture {
+    constructor() {
+        const insults = [
+            "Your intellect is as soft and useless as this velvety surface, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly soft and refined answer, Roberts. It flows with a certain grace that belies its profound truth.",
+            "Your logic is as precise and well-defined as a master craftsman's edge. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly velvety, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The surface feels incredibly soft and smooth, like velvet.",
+            "It has a luxurious, almost plush texture."
+        ];
+        super('Velvety', insults, complements, frags);
+    }
+}
+(),
+new class Pedestal extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as elevated and useless as a broken statue, Roberts! It serves no purpose but to gather dust!",
+            "A truly pretentious display of idiocy, pirate! Your answer is as dull and uninteresting as a poorly carved stone!",
+            "You've managed to conjure a response so utterly devoid of substance, it's a wonder it even escaped your lips! Pure, unadulterated grandiosity!",
+            "That answer is as unpleasant and off-putting as a thick layer of dust! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly profound and elevated answer, Roberts. It stands tall, supporting the truth with undeniable grace.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly pedestal-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet rests on a tall, slender pedestal base.",
+            "It has an elegant, elevated foot designed for display."
+        ];
+        super('Pedestal', insults, complements, frags);
+    }
+}
+(),
+new class Tripod extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as unstable and useless as a broken tripod, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly stable and balanced answer, Roberts. It stands firm on three points of undeniable truth.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly tripod-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet is supported by a three-legged, tripod-style base.",
+            "It features a stable, three-pronged foot."
+        ];
+        super('Tripod', insults, complements, frags);
+    }
+}
+(),
+new class Flat extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as flat and uninspired as a pancake, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly stable and grounded answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly flat, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet has a simple, flat base, allowing it to sit flush on a surface.",
+            "It features a broad, unadorned foot without any elevation."
+        ];
+        super('Flat', insults, complements, frags);
+    }
+}
+(),
+new class Weighted extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as dense and unyielding as a brick, Roberts! It resists all attempts at penetration!",
+            "A truly impenetrable display of idiocy, pirate! Your answer is as dull and uninteresting as a lump of lead!",
+            "You've managed to conjure a response so utterly devoid of flexibility, it's a wonder it even escaped your lips! Pure, unadulterated rigidity!",
+            "That answer is as unyielding and unmovable as a mountain! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual inertia, Roberts! A testament to your profound lack of mental agility."
+        ];
+        const complements = [
+            "A surprisingly robust and foundational answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a perfectly cut stone. A truly square deal of an answer.",
+            "I must admit, your reasoning is refreshingly straightforward. It builds a strong, rectangular argument that is hard to dismantle.",
+            "You've managed to frame the problem perfectly. A clear, concise, and structurally sound piece of deduction.",
+            "An answer with a certain robust, no-nonsense quality. It may not be elegant, but its undeniable correctness is a block of pure truth."
+        ];
+        const frags = [
+            "The base of the goblet feels unusually heavy, suggesting it is weighted.",
+            "It has a low center of gravity, making it very stable."
+        ];
+        super('Weighted', insults, complements, frags);
+    }
+}
+(),
+new class Sculpted extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as formless and useless as a lump of clay, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly artistic and profound answer, Roberts. It speaks of a creativity that is both subtle and undeniable.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly sculpted, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The base is intricately sculpted into a decorative form.",
+            "It features a unique, artistic carving that serves as its foot."
+        ];
+        super('Sculpted', insults, complements, frags);
+    }
+}
+(),
+new class Simple extends Base {
+    constructor() {
+        const insults = [
+            "Your intellect is as simple and uninspired as a child's drawing, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly simple and profound answer, Roberts. It cuts through the complexities with a subtle, yet undeniable, clarity.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly simple, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The base is simple and unadorned, focusing purely on functionality.",
+            "It has a straightforward, minimalist design."
+        ];
+        super('Simple', insults, complements, frags);
+    }
+}
+(),
+new class Loop extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as circular and useless as this loop handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly simple and effective answer, Roberts. It provides a clear, unshakeable framework for the truth.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly loop-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet has a simple, circular loop handle.",
+            "It features a single, unadorned ring for gripping."
+        ];
+        super('Loop', insults, complements, frags);
+    }
+}
+(),
+new class Ergonomic extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as awkward and useless as this ergonomic handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly comfortable and effective answer, Roberts. It fits the hand of truth with undeniable precision.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly ergonomic, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet has a handle shaped to fit the hand comfortably, with ergonomic curves.",
+            "It features a thoughtfully designed grip for ease of use."
+        ];
+        super('Ergonomic', insults, complements, frags);
+    }
+}
+(),
+new class Chain extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as flimsy and useless as this chain handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly flexible and adaptable answer, Roberts. It links together truths with undeniable strength.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly chain-worthy, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet has a handle made of interconnected metal links, forming a chain.",
+            "It features a flexible, segmented grip."
+        ];
+        super('Chain', insults, complements, frags);
+    }
+}
+(),
+new class Integrated extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as seamlessly useless as this integrated handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly seamless and elegant answer, Roberts. It flows with a certain grace that belies its profound truth.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly integrated, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The handles are seamlessly integrated into the goblet's main body, forming part of its overall design.",
+            "It features a smooth, continuous form where the handles are not distinct additions."
+        ];
+        super('Integrated', insults, complements, frags);
+    }
+}
+(),
+new class Detachable extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as flimsy and useless as this detachable handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly versatile and adaptable answer, Roberts. It can be applied to various situations with undeniable effectiveness.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly detachable, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet has handles that appear to be detachable or removable.",
+            "It features a modular grip that can be added or taken off."
+        ];
+        super('Detachable', insults, complements, frags);
+    }
+}
+(),
+new class AnimalShaped extends Handles {
+    constructor() {
+        const insults = [
+            "Your intellect is as beastly and useless as this animal-shaped handle, Roberts! It lacks any true grace or precision!",
+            "A truly clumsy display of intellectual ineptitude, pirate! Your answer is as dull and uninteresting as a poorly cut stone!",
+            "You've managed to conjure a response so utterly devoid of sophistication, it's a wonder it even escaped your lips! Pure, unadulterated crudeness!",
+            "That answer is as unpleasant and off-putting as a thick layer of mud! It obscures any potential brilliance you might possess.",
+            "You've managed to accumulate a truly impressive amount of intellectual debris, Roberts! A testament to your profound lack of mental hygiene."
+        ];
+        const complements = [
+            "A surprisingly wild and imaginative answer, Roberts. It adds a certain flair to the truth, making it all the more memorable.",
+            "Your logic is as precise and well-defined as a master craftsman's work. It holds a value that is both subtle and undeniable.",
+            "I must admit, your reasoning is remarkably insightful. It captures the essence of the problem with an almost mystical clarity.",
+            "You've managed to find a hidden truth, pirate. A truly animal-shaped, yet undeniably correct, piece of deduction.",
+            "An answer that is both beautiful and profound. It's a testament to the power of a mind that can see beyond the obvious, and into the very essence of things."
+        ];
+        const frags = [
+            "The goblet's handles are sculpted in the form of animals, such as serpents or lions.",
+            "It features decorative grips shaped like mythical creatures or real beasts."
+        ];
+        super('Animal-Shaped', insults, complements, frags);
+    }
+}
+
+
 ]);
