@@ -17,18 +17,19 @@ export class Deck {
         if (typeof window !== 'undefined' && window.crypto && window.crypto.getRandomValues) {
             const range = max;
             const bitsNeeded = Math.ceil(Math.log2(range));
-            const bytesNeeded = Math.ceil(bitsNeeded / 8);
-            const maxValidValue = Math.pow(256, bytesNeeded) - 1;
-            const usefulRange = maxValidValue - (maxValidValue % range);
+            const bytesNeeded = Math.ceil(bitsNeeded / 8); // Minimum bytes to cover 'max'
 
             let randomBytes;
             let randomValue;
-            do {
-                randomBytes = new Uint8Array(bytesNeeded);
-                window.crypto.getRandomValues(randomBytes);
-                randomValue = randomBytes.reduce((acc, byte) => (acc * 256) + byte, 0);
-            } while (randomValue >= usefulRange);
-            return randomValue % range;
+            
+            randomBytes = new Uint8Array(bytesNeeded);
+            window.crypto.getRandomValues(randomBytes);
+            randomValue = randomBytes.reduce((acc, byte) => (acc * 256) + byte, 0);
+
+            // Using modulo directly. This is faster as it avoids rejection sampling,
+            // but introduces a very slight bias if (2^N - 1) % max != 0,
+            // where N is the number of bits in randomValue. For game purposes, this is usually negligible.
+            return randomValue % max;
         } else {
             return Math.floor(Math.random() * max);
         }

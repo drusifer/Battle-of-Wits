@@ -38,8 +38,18 @@ export class Character {
         this.chatSession.logout();
     }
 
-    async say(message) {
-        await this.chatSession.say(message);
+    /**
+     * Sends a message to the chat session, optionally replacing placeholders within the message.
+     * @param {string} message The message string to send.
+     * @param {Object} [replaces={}] An optional object where keys are placeholders to be replaced (e.g., "%KEY%") and values are their replacements.
+     */
+    
+    async say(message, replaces={}) {
+        let m = message;
+        for (const [key, value] of Object.entries(replaces)) {
+            m = m.replace(key, value);
+        }
+        await this.chatSession.say(m);
     }
 
     /** Draws a random message from the character's general message deck. */
@@ -164,7 +174,7 @@ export class DreadPirateRoberts extends Character {
             "My final regret...", "I... am sorry...", "The world fades...",
             "Inconceivable...", "I have lost...", "The end...", "No...", "Buttercup..."
         ];
-        super(chat, "Dread Pirate Roberts", "\u{1F3F4}\u{2620}\u{FE0F}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super(chat, "Dread Pirate Roberts", "\u{FE0F}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
         this.drankPoisonMessages = new AutoShuffleDeck([
             "It's a good thing I've built up a resistance to iocane powder. Let's go again, shall we?",
             "Merely a flesh wound. I've spent years building up an immunity to iocane powder. Your methods are... predictable. I've got time for one more, if you dare.",
@@ -308,17 +318,36 @@ export class Vizzini extends Character {
         ]).reshuffle()
 
         this.preRiddleMessages = new AutoShuffleDeck([
-            "Now, for a true test of your... ah... 'intellect'.",
-            "Let us see if that pirate brain of yours can handle a simple conundrum.",
-            "Prepare yourself, for I am about to engage your mind in a way it has never been engaged before!",
-            "A riddle, then! To occupy your thoughts while I contemplate your inevitable doom.",
-            "Perhaps this will amuse the princess while you flounder.",
-            "I've devised a little something to expose the depths of your ignorance.",
-            "Consider this a warm-up for your brain... though I doubt it will help.",
-            "Let's see if there's anything rattling around in that thick skull of yours.",
-            "A simple question, for a simple man. Or is it?",
-            "Now, pay attention. This may be beyond your meager comprehension, but try.",
-            "I almost feel guilty posing such a challenge to one so clearly outmatched. Almost."
+            "Now, for a true test of your... 'intellect'. A single word, pirate, is all I require. 😠",
+            "Let us see if that pirate brain of yours can condense its meager thoughts into one solitary utterance. 🧠",
+            "Prepare yourself, for I am about to engage your mind in a way it has never been engaged before! Your response, a single word, will seal your fate! 💀",
+            "A riddle, then! And your answer, a mere syllable, will determine if you live or die! ⚖️",
+            "Perhaps this will amuse the princess while you flounder. But remember, only one word may pass your lips. 🤫",
+            "I've devised a little something to expose the depths of your ignorance. Your reply? A single, concise word. 🤏",
+            "Consider this a warm-up for your brain... though I doubt it will help. Your answer, one word, if you please. 🙄",
+            "Let's see if there's anything rattling around in that thick skull of yours. A single word, pirate, is all I demand. 😤",
+            "A simple question, for a simple man. Or is it? Your answer, one word, will reveal all. ✨",
+            "Now, pay attention. This may be beyond your meager comprehension, but try. Your reply must be a single word. 📚",
+            "I almost feel guilty posing such a challenge to one so clearly outmatched. Almost. Your answer, a solitary word, will suffice. 😒",
+            "My intellect demands precision. Therefore, your answer to my impending riddle must be a single, unadorned word. 🎯",
+            "Do not waste my time with lengthy explanations. Your solution, a single word, is all that matters. ⏱️",
+            "The answer is simple, if you are not a fool. Prove me wrong with one word, if you dare. 😈",
+            "I seek not eloquence, but accuracy. A single word, pirate, will tell me if you possess either. 🧐",
+            "This riddle requires a mind capable of distillation. Your answer, a single word, will be the proof. 🧪",
+            "One word, pirate. That is the currency of this exchange. Do you have it? 💰",
+            "I have no patience for rambling. Your answer, a single word, or your life is forfeit. 🔪",
+            "The essence of the truth can be captured in a single word. Can you find it? 💡",
+            "My riddle approaches. Your response, a solitary word, will be your judgment. 👑",
+            "My next question demands a single, unhesitating word, pirate! Do not disappoint me. 😡",
+            "Your intellect, if it exists, must now condense into one solitary word. Fail, and you perish! ☠️",
+            "I require a single, precise term. Anything more, and you prove yourself a verbose fool! 🗣️",
+            "One word, pirate! That is the only acceptable response to my genius! 🏆",
+            "Distill your thoughts! A single word is all I will permit! 💧",
+            "Your answer, a solitary word, will be your judgment. Choose wisely! 🤞",
+            "Do not equivocate! A single word, or your life is forfeit! 🗡️",
+            "My patience is finite. One word, and we proceed. Otherwise, we conclude! 🛑",
+            "The truth, in one word! Can your simple mind grasp such brevity? 🤏",
+            "Speak! But let your entire response be but a single, solitary word! 🤐"
         ]).reshuffle();
     }
 
@@ -559,16 +588,52 @@ export class Gramps extends Character {
             "Feeling poorly? Well, this story is just what the doctor ordered. Or, well, what *I* ordered."
         ]).reshuffle();
 
+        this.preRiddleMessages = new AutoShuffleDeck([
+            'Alright, kiddo, listen up. The book says: "Vizzini, with a theatrical flourish, then demanded of the Man in Black..." 🎭',
+            'Now, pay close attention. Gramps reads: "He then, with a glint of malice in his eye, posed his next intellectual trap..." 😈',
+            'Here\'s where Vizzini tries to be extra clever. The story continues: "He leaned in, as if sharing a great secret, and whispered, though his voice carried across the chasm..." 🤫',
+            'Alright, now, the book describes: "Vizzini, certain of his own brilliance, laid out his intellectual challenge, saying..." ✨',
+            'And then, Vizzini, thinking he had him, said: "Now, for the first test of your supposed intellect..." 🧐',
+            'Gramps clears his throat. "With a condescending smile, Vizzini began his next verbal assault..." 😒',
+            'The text reads: "He looked the Man in Black squarely in the eye, and with an air of supreme confidence, he uttered..." 👑',
+            'This is a tricky one. The book says: "Vizzini, ever the master of psychological warfare, then presented his next conundrum..." 🧠',
+            'And then, Gramps reads, "He paused for dramatic effect, letting the tension build, before finally delivering his next challenge..." ⏳',
+            'Alright, kiddo, listen up. The book says: "And then, Vizzini posed his riddle to the masked man, saying..."',
+            'Now, pay close attention. Gramps reads: "Vizzini, with a smug grin, began his intellectual assault..."',
+            'Here\'s the part where Vizzini gets clever. The story goes: "He then turned to the Man in Black, a glint in his eye, and uttered..."',
+            'This is where the real test begins. From the book: "Vizzini, confident in his superior intellect, challenged..."',
+            'Gramps\' favorite part! It says: "With a flourish, Vizzini presented his first conundrum..."',
+            'You won\'t believe what Vizzini says next. The text reads: "He fixed his gaze on the pirate and declared..."',
+            'The tension was thick. The book describes: "Vizzini, relishing the moment, posed his question..."',
+            'Here\'s Vizzini\'s opening move. It\'s written: "He leaned forward, a wicked smile playing on his lips, and began..."',
+            'This is where he tries to trick him. The story tells: "Vizzini, with feigned politeness, inquired..."',
+            'Gramps remembers this line. It goes: "And so, the Sicilian, with a theatrical gesture, began his interrogation..."',
+            'Now, Vizzini\'s turn to speak. The book states: "He cleared his throat, enjoying the silence, and then..."',
+            'He\'s really laying it on thick here. It says: "Vizzini, brimming with self-importance, announced..."',
+            'This is the setup for the big one. The text reveals: "He gestured grandly, inviting a response, and then..."',
+            'Gramps always liked this bit. It reads: "Vizzini, eager to demonstrate his genius, began..."',
+            'The moment of truth. The book says: "He looked the Man in Black squarely in the eye and demanded..."',
+            'Vizzini\'s not holding back. It\'s written: "With a condescending smirk, he posed his challenge..."',
+            'Here\'s the first trap. The story describes: "He spoke slowly, deliberately, each word a snare..."',
+            'Gramps always wondered how he came up with these. It goes: "Vizzini, certain of his victory, began his verbal assault..."',
+            'He\'s trying to intimidate him. The book tells: "He puffed out his chest, and with a booming voice, he asked..."',
+            'And so, the battle of wits truly began. The text reads: "Vizzini, with a twinkle in his eye, delivered his first test..."'
+        ]).reshuffle();
+    }
+
+    async sayGobletRoundMessage() {
+        await this.say(this.gobletRoundMessages.draw());
+    }
+
+    async sayPreRiddleMessage() {
+        await this.say(this.preRiddleMessages.draw());
     }
 
     async sayOpeningMessage() {
         await this.say(this.openingMessages.draw());
     }
 
-    async sayGobletRoundMessage() {
-        await this.say(this.gobletRoundMessages.draw());
-    }
-}
+};
 
 export class SickBoy extends Character {
     constructor(chat) {

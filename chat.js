@@ -106,17 +106,29 @@ export class BrowserChat extends AsyncChat {
         this.setInputStatus("on");
 
         return new Promise( resolve => {
-            const callback = (event) => {
-                this.submitAnswerButton.removeEventListener('click', callback);
-                resolve(this.getRiddleAnswer());
-                this.answerInputElement.value = '';
+
+            function handleSubmit(event, click_val) {
+                this.submitAnswerButton.removeEventListener('click', submitCallback);
+                this.hintButton.removeEventListener('click', hintCallback);
+                this.answerInputElement.removeEventListener('keydown', inputCallback);
+                if (click_val='answer') {
+                    resolve({ 'click': click_val, 
+                              'value': this.getRiddleAnswer() });
+                    this.answerInputElement.value = '';
+                } else {
+                    resolve({ 'click': click_val });
+                }
                 this.setInputStatus("off");
             };
 
-            this.submitAnswerButton.addEventListener('click', callback);
-            this.answerInputElement.addEventListener('keydown', (event) => {
+            const submitCallback  = this.submitAnswerButton.addEventListener(
+                handleSubmit.bind(null, 'answer'));
+            const hintCallback = this.hintButton.addEventListener(
+                handleSubmit.bind(null, 'hint'));
+
+            const inputCallback = this.answerInputElement.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter') {
-                    callback(event);
+                    submitCallback(event)
                 }
             });
         });

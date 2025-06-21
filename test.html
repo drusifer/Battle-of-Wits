@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Fractal Explorer</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; display: flex; flex-direction: column; align-items: center; margin: 0; background-color: #f4f4f9; color: #333; }
+        #app-container { width: 100%; max-width: 900px; padding: 10px; box-sizing: border-box; }
+        h1 { color: #2c3e50; text-align: center; }
+        #controls-container { margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px; background-color: white; padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .control-group { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #e0e0e0; }
+        .control-group:last-child { border-bottom: none; }
+        .control-item { display: flex; align-items: center; gap: 8px; }
+        canvas { width: 100%; height: auto; aspect-ratio: 1.5/1; border: 1px solid #ccc; background-color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); image-rendering: pixelated; cursor: grab; display: block; }
+        canvas.panning { cursor: grabbing; }
+        label { font-size: 0.9em; font-weight: 500; color: #34495e; }
+        input[type="range"] { vertical-align: middle; }
+        .value-display { font-family: monospace; font-size: 0.9em; background-color: #ecf0f1; padding: 2px 6px; border-radius: 4px; min-width: 50px; text-align: center; }
+        select, button { padding: 8px; border-radius: 4px; border: 1px solid #ccc; background-color: #fff; }
+        button { background-color: #3498db; color: white; border: none; cursor: pointer; font-weight: 500; }
+        button:hover { background-color: #2980b9; }
+        .reset-button { background-color: #e74c3c; }
+        .reset-button:hover { background-color: #c0392b; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Interactive Fractal Explorer</h1>
+        <div id="controls-container">
+            <div class="control-group">
+                <div class="control-item">
+                    <label for="fractalType">Fractal Type:</label>
+                    <select id="fractalType">
+                        <option value="mandelbrot">Mandelbrot Set</option>
+                        <option value="julia">Julia Set</option>
+                        <option value="sierpinski">Sierpinski Triangle</option>
+                    </select>
+                </div>
+                <div class="control-item">
+                     <button id="drawButton">Redraw</button>
+                </div>
+            </div>
+            <div class="control-group" id="commonControls"></div>
+            <div class="control-group" id="specificControls"></div>
+        </div>
+        <canvas id="fractalCanvas"></canvas>
+    </div>
+
+    <script>
+    // --- FRACTAL CLASS DEFINITIONS ---
+
+    class FractalBase {
+        constructor(canvas, ctx) { if (this.constructor === FractalBase) throw new Error("Abstract class."); this.canvas = canvas; this.ctx = ctx; this.width = canvas.width; this.height = canvas.height; }
+        draw() { setTimeout(() => this._render(), 10); }
+        _render() { throw new Error("Implement."); }
+        getControls() { throw new Error("Implement."); }
+    }
+
+    class EscapeTimeFractal extends FractalBase {
+        constructor(...args) {
+            super(...args);
+            this.defaultCoords = { centerX: -0.5, centerY: 0, zoom: 1 };
+            // State for mouse interactions
+            this.isPanning = false;
+            this.lastMouseX = 0;
+            this.lastMouseY = 0;
+            this.zoomDebounceTimer = null;
+        }
+
+        // --- Mouse Interaction Handlers ---
+        startPan(event) {
+            this.isPanning = true;
+            this.lastMouseX = event.clientX;
+            this.lastMouseY = event.clientY;
+            this.canvas.classList.add('panning');
+        }
+
+        pan(event) {
+            if (!this.isPanning) return;
+            const dx = event.clientX - this.lastMouseX;
+            const dy = event.clientY - this.lastMouseY;
+            
+            const currentZoom = parseFloat(document.getElementById('zoom').value);
+            const range = 4.0 / currentZoom;
+
+            const dCenterX = dx * (range / this.width);
+            const dCenterY = dy * (range / this.width); 
+
+            this._updateSlider('centerX', parseFloat(document.getElementById('centerX').value) - dCenterX);
+            this._updateSlider('centerY', parseFloat(document.getElementById('centerY').value) + dCenterY);
+
+            this.lastMouseX = event.clientX;
+            this.lastMouseY = event.clientY;
+        }
+
+        endPan() {
+            if (!this.isPanning) return;
+            this.isPanning = false;
+            this.canvas.classList.remove('panning');
+            this.draw(); 
+        }
+        
+        zoomOnWheel(event) {
+            event.preventDefault(); 
+            
+            const rect = this.canvas.getBoundingClientRect();
+            const mouseX = event.clientX - rect.left;
+            const mouseY = event.clientY - rect.top;
+
+            const oldZoom = parseFloat(document.getElementById('zoom').value);
+            const oldCenterX = parseFloat(document.getElementById('centerX').value);
+            const oldCenterY = parseFloat(document.getElementById('centerY').value);
+
+            const oldRange = 4.0 / oldZoom;
+            const oldYRange = oldRange * (this.height / this.width);
+            const mouseReal = oldCenterX - oldRange / 2 + (mouseX / this.width) * oldRange;
+            const mouseImag = oldCenterY + oldYRange / 2 - (mouseY / this.height) * oldYRange;
+
+            const zoomFactor = event.deltaY < 0 ? 1.25 : 1 / 1.25;
+            const newZoom = Math.max(1, oldZoom * zoomFactor);
+            
+            const newCenterX = mouseReal + (oldCenterX - mouseReal) / zoomFactor;
+            const newCenterY = mouseImag + (oldCenterY - mouseImag) / zoomFactor;
+            
+            this._updateSlider('zoom', newZoom);
+            this._updateSlider('centerX', newCenterX);
+            this._updateSlider('centerY', newCenterY);
+
+            clearTimeout(this.zoomDebounceTimer);
+            this.zoomDebounceTimer = setTimeout(() => this.draw(), 100);
+        }
+
+        // --- Control and UI Methods ---
+        getControls() { return [ { parent: 'common', type: 'slider', id: 'centerX', label: 'Center X:', min: -2, max: 2, value: this.defaultCoords.centerX, step: 0.01 }, { parent: 'common', type: 'slider', id: 'centerY', label: 'Center Y:', min: -2, max: 2, value: this.defaultCoords.centerY, step: 0.01 }, { parent: 'common', type: 'slider', id: 'zoom', label: 'Zoom:', min: 1, max: 10000, value: this.defaultCoords.zoom, step: 1 }, { parent: 'common', type: 'button', id: 'resetView', label: 'Reset View', event: { type: 'click', handler: this.handleResetView.bind(this) } }, { parent: 'specific', type: 'slider', id: 'maxIterations', label: 'Iterations:', min: 50, max: 1000, value: 200, step: 10 }, { parent: 'specific', type: 'select', id: 'colorPalette', label: 'Coloring:', options: ['hsl_spectrum', 'grayscale', 'blue_gold', 'black_white'] } ]; }
+        handleResetView() {
+            for (const [key, value] of Object.entries(this.defaultCoords)) {
+                this._updateSlider(key, value);
+            }
+            this.draw();
+        }
+        _updateSlider(id, value) {
+            const slider = document.getElementById(id);
+            if (!slider) return;
+            slider.value = value;
+            const display = document.querySelector(`input#${id} + .value-display`);
+            if (display) display.textContent = parseFloat(value).toFixed(4);
+        }
+        
+        getColor(iter, maxIter, palette) { if (iter === maxIter) return [0, 0, 0]; switch (palette) { case 'hsl_spectrum': return this._hslToRgb((Math.floor(360 * iter / maxIter)) / 360, 1, 0.5); case 'grayscale': const s = Math.floor(255 * iter / maxIter); return [s, s, s]; case 'blue_gold': const t = iter / maxIter; return [Math.floor(9*(1-t)*t*t*t*255), Math.floor(7*(1-t)*(1-t)*t*t*255), Math.floor(8.5*(1-t)*(1-t)*(1-t)*t*255)]; default: return [255, 255, 255]; } }
+        _hslToRgb(h, s, l){ let r, g, b; if(s==0){r=g=b=l;}else{const hue2rgb=(p,q,t)=>{if(t<0)t+=1;if(t>1)t-=1;if(t<1/6)return p+(q-p)*6*t;if(t<1/2)return q;if(t<2/3)return p+(q-p)*(2/3-t)*6;return p;};const q=l<0.5?l*(1+s):l+s-l*s;const p=2*l-q;r=hue2rgb(p,q,h+1/3);g=hue2rgb(p,q,h);b=hue2rgb(p,q,h-1/3);}return[Math.round(r*255),Math.round(g*255),Math.round(b*255)];}
+    }
+
+    class MandelbrotFractal extends EscapeTimeFractal {
+        _render() {
+            const maxIterations = parseInt(document.getElementById('maxIterations').value); const palette = document.getElementById('colorPalette').value; const centerX = parseFloat(document.getElementById('centerX').value); const centerY = parseFloat(document.getElementById('centerY').value); const zoom = parseFloat(document.getElementById('zoom').value); const range = 4.0 / zoom; const yRange = range * (this.height / this.width); const imageData = this.ctx.createImageData(this.width, this.height);
+            for (let px = 0; px < this.width; px++) { for (let py = 0; py < this.height; py++) {
+                const cReal = centerX - range / 2 + (px / this.width) * range; const cImag = centerY + yRange / 2 - (py / this.height) * yRange;
+                let zReal = 0.0, zImag = 0.0, iter = 0;
+                while (zReal * zReal + zImag * zImag <= 4 && iter < maxIterations) { const temp = zReal*zReal - zImag*zImag + cReal; zImag=2*zReal*zImag + cImag; zReal=temp; iter++; }
+                const color = this.getColor(iter, maxIterations, palette); imageData.data.set([...color, 255], (py * this.width + px) * 4);
+            } } this.ctx.putImageData(imageData, 0, 0);
+        }
+    }
+    
+    class JuliaFractal extends EscapeTimeFractal {
+        constructor(...args) { super(...args); this.defaultCoords = { centerX: 0, centerY: 0, zoom: 1 }; this.presets = { "default": { r: 0.285, i: 0.01 }, "dendrite": { r: 0, i: 1.0 }, "swirl": { r: -0.79, i: 0.15 }, "san_marco": { r: -0.75, i: 0.11 }, "snowflakes": { r: -0.8, i: 0.156 }, }; }
+        getControls() { const base = super.getControls(); const julia = [ { parent: 'specific', type: 'select', id: 'juliaPreset', label: 'Presets:', options: Object.keys(this.presets), event: { type: 'change', handler: this.handlePresetChange.bind(this) } }, { parent: 'specific', type: 'slider', id: 'realConstant', label: 'C (real):', min: -1.5, max: 1.5, value: this.presets.default.r, step: 0.001 }, { parent: 'specific', type: 'slider', id: 'imaginaryConstant', label: 'C (imag):', min: -1.5, max: 1.5, value: this.presets.default.i, step: 0.001 }, ]; return base.concat(julia); }
+        handlePresetChange(event) { const p = this.presets[event.target.value]; this._updateSlider('realConstant', p.r); this._updateSlider('imaginaryConstant', p.i); this.draw(); }
+        _render() {
+            const maxIterations = parseInt(document.getElementById('maxIterations').value); const palette = document.getElementById('colorPalette').value; const cReal = parseFloat(document.getElementById('realConstant').value); const cImag = parseFloat(document.getElementById('imaginaryConstant').value); const centerX = parseFloat(document.getElementById('centerX').value); const centerY = parseFloat(document.getElementById('centerY').value); const zoom = parseFloat(document.getElementById('zoom').value); const range = 3.0 / zoom; const yRange = range * (this.height / this.width); const imageData = this.ctx.createImageData(this.width, this.height);
+            for (let px = 0; px < this.width; px++) { for (let py = 0; py < this.height; py++) {
+                let zReal = centerX - range / 2 + (px / this.width) * range; let zImag = centerY + yRange / 2 - (py / this.height) * yRange; let iter = 0;
+                while (zReal * zReal + zImag * zImag < 4 && iter < maxIterations) { const temp = zReal*zReal - zImag*zImag + cReal; zImag=2*zReal*zImag + cImag; zReal=temp; iter++; }
+                const color = this.getColor(iter, maxIterations, palette); imageData.data.set([...color, 255], (py * this.width + px) * 4);
+            } } this.ctx.putImageData(imageData, 0, 0);
+        }
+    }
+
+    class SierpinskiFractal extends FractalBase { getControls() { return [ { parent: 'common', type: 'slider', id: 'iterations', label: 'Depth:', min: 1, max: 10, value: 5, step: 1 } ]; } _render() { const i = parseInt(document.getElementById('iterations').value); this.ctx.clearRect(0, 0, this.width, this.height); this.ctx.fillStyle = '#000'; const p1 = { x: this.width / 2, y: 20 }, p2 = { x: 20, y: this.height - 20 }, p3 = { x: this.width - 20, y: this.height - 20 }; this._drawTriangle(p1, p2, p3, i); } _drawTriangle(p1, p2, p3, d) { if (d === 0) { this.ctx.beginPath(); this.ctx.moveTo(p1.x, p1.y); this.ctx.lineTo(p2.x, p2.y); this.ctx.lineTo(p3.x, p3.y); this.ctx.closePath(); this.ctx.fill(); return; } const m12 = { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 }, m23 = { x: (p2.x + p3.x) / 2, y: (p2.y + p3.y) / 2 }, m31 = { x: (p3.x + p1.x) / 2, y: (p3.y + p1.y) / 2 }; this._drawTriangle(p1, m12, m31, d - 1); this._drawTriangle(m12, p2, m23, d - 1); this._drawTriangle(m31, m23, p3, d - 1); } }
+
+    // --- MAIN APPLICATION LOGIC ---
+    
+    const FRACTAL_REGISTRY = { 'mandelbrot': MandelbrotFractal, 'julia': JuliaFractal, 'sierpinski': SierpinskiFractal };
+    let currentFractal = null;
+
+    const canvas = document.getElementById('fractalCanvas');
+    const fractalTypeSelect = document.getElementById('fractalType'), commonControlsDiv = document.getElementById('commonControls'), specificControlsDiv = document.getElementById('specificControls');
+    const drawButton = document.getElementById('drawButton');
+    
+    const internalWidth = 600;
+    const internalHeight = 400;
+    canvas.width = internalWidth;
+    canvas.height = internalHeight;
+    const ctx = canvas.getContext('2d');
+
+    function setupControls() { commonControlsDiv.innerHTML = ''; specificControlsDiv.innerHTML = ''; const controls = currentFractal.getControls(); controls.forEach(def => { const p = def.parent === 'specific' ? specificControlsDiv : commonControlsDiv; let e; if (def.type === 'slider') e = createSlider(p, def); else if (def.type === 'select') e = createSelect(p, def); else if (def.type === 'button') e = createButton(p, def); if (def.event) e.addEventListener(def.event.type, def.event.handler); else if (def.type !== 'button') e.addEventListener('change', () => currentFractal.draw()); }); }
+    function createSlider(p, d) { const c=document.createElement('div');c.className='control-item';const l=document.createElement('label');l.htmlFor=d.id;l.textContent=d.label;const s=document.createElement('input');s.type='range';s.id=d.id;s.min=d.min;s.max=d.max;s.step=d.step;s.value=d.value;const v=document.createElement('span');v.className='value-display';v.textContent=parseFloat(d.value).toFixed(4);s.addEventListener('input',()=>v.textContent=parseFloat(s.value).toFixed(4));c.append(l,s,v);p.appendChild(c);return s; }
+    function createSelect(p, d) { const c=document.createElement('div');c.className='control-item';const l=document.createElement('label');l.htmlFor=d.id;l.textContent=d.label;const s=document.createElement('select');s.id=d.id;d.options.forEach(o=>{const op=document.createElement('option');op.value=o;op.textContent=o.replace(/_/g,' ').replace(/\b\w/g,l=>l.toUpperCase());s.appendChild(op);});c.append(l,s);p.appendChild(c);return s; }
+    function createButton(p, d) { const c=document.createElement('div');c.className='control-item';const b=document.createElement('button');b.id=d.id;b.textContent=d.label;b.className="reset-button";c.appendChild(b);p.appendChild(c);return b; }
+
+    function switchFractal() { const FractalClass = FRACTAL_REGISTRY[fractalTypeSelect.value]; currentFractal = new FractalClass(canvas, ctx); setupControls(); currentFractal.draw(); }
+    
+    // --- EVENT WIRING ---
+    canvas.addEventListener('mousedown', (e) => {
+        if (currentFractal instanceof EscapeTimeFractal) currentFractal.startPan(e);
+    });
+    window.addEventListener('mousemove', (e) => {
+        if (currentFractal instanceof EscapeTimeFractal) currentFractal.pan(e);
+    });
+    window.addEventListener('mouseup', (e) => {
+        if (currentFractal instanceof EscapeTimeFractal) currentFractal.endPan(e);
+    });
+    canvas.addEventListener('wheel', (e) => {
+        if (currentFractal instanceof EscapeTimeFractal) currentFractal.zoomOnWheel(e);
+    });
+
+    drawButton.addEventListener('click', () => currentFractal.draw());
+    fractalTypeSelect.addEventListener('change', switchFractal);
+    
+    function init() {
+        switchFractal();
+    }
+    init();
+    </script>
+</body>
+</html>
