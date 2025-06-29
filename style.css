@@ -148,6 +148,13 @@ body {
     background-color: #CFD8DC; /* Light Blue-Grey for narrator/events */
 }
 
+.correct-answer {
+    background-color: lightgreen !important;
+}
+
+.incorrect-answer { 
+    background-color: lightcoral !important;
+}
 
 .input-area {
     display: flex;

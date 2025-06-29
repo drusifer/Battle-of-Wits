@@ -19,6 +19,7 @@ export class Goblet {
             `Focusing on the goblet on the ${this.side.toLowerCase()}, the Man in Black is intregued by construction is intriguing.`,
             `The goblet on the ${this.side.toLowerCase()} is a study in contrasts.`
         ]).reshuffle().draw()
+        this.description = this.generateDescription();
     }
 
     generateDescription() {

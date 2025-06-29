@@ -63,15 +63,15 @@ export class Game {
      */
     drawGoblet() {
         let types_aready_drawn = {};
-        let selecte_attributes = [];
-        while (selecte_attributes.length < this.gobletSize) {
+        let selected_attributes = [];
+        while (selected_attributes.length < this.gobletSize) {
             let attribute = ATTRIBUTE_DECK.draw();
             if (!types_aready_drawn[attribute.name]) {
                 types_aready_drawn[attribute.name] = true;
-                selecte_attributes.push(attribute);
+                selected_attributes.push(attribute);
             }
         }
-        return selecte_attributes;
+        return selected_attributes;
     }
 
     /**
@@ -193,12 +193,14 @@ export class Game {
 
        if (currentRiddle.checkAnswer(answer.value)) {
             await this.vizzini.sayRiddleAnswerResponse(true);
-            await this.vizzini.say(this.safeGoblet.getComplement());
+            await this.vizzini.say(this.safeGoblet.getComplement(), {}, 
+                'correct-answer');
             await this.randomComment();
             await this.randomComment();
         } else {
             await this.vizzini.sayRiddleAnswerResponse(false);
-            await this.vizzini.say(this.deadlyGoblet.getInsult());
+            await this.vizzini.say(this.deadlyGoblet.getInsult(), {}, 
+                'incorrect-answer');
             await this.randomComment();
             await this.randomComment();
         }

@@ -6,8 +6,8 @@ export class ChatSession {
         this.chat = chat;
     }
 
-    async say(message) {
-        await this.chat.say(this.character, message);
+    async say(message, emphasis='') {
+        await this.chat.say(this.character, message, emphasis);
     }
 
     async login() {
@@ -47,23 +47,26 @@ export class BrowserChat {
 
         this.pendingMessages = [];
         this.setInputStatus("off");
+        this.lastMessage = null;
     }
 
     async login(character) {
-        await this.postMessage('game-event', "", "", `      ---> ${character.name} has entered the chat. <---`, true)
+        await this.postMessage('game-event', "", "", 
+            `      ---> ${character.name} has entered the chat. <---`, true, '')
         if (character.slug == "dpr") {
             this.dpr = character;
         }
     };
 
     async logout(character) {
-        await this.say(character, `      ---> ${character.name} has left the chat. <---`, true)
+        await this.say(character, 
+            `      ---> ${character.name} has left the chat. <---`, true, '')
     };
 
     // base functionality
-    async say(character, message) {
+    async say(character, message, emphasis='') { 
         return await this.postMessage(character.slug, character.name,
-             character.emoji, message, false);
+             character.emoji, message, false, emphasis);
     }
 
     getRiddleAnswer() {
@@ -127,6 +130,7 @@ export class BrowserChat {
 
     async waitForGobletChoice() {
         this.gobletChoiceAreaDiv.style.display = 'flex';
+        this.lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
         return new Promise(resolve => {
             let leftCallback, rightCallback;
@@ -134,6 +138,7 @@ export class BrowserChat {
                 this.leftGobletButton.removeEventListener('click', leftCallback);
                 this.rightGobletButton.removeEventListener('click', rightCallback);
                 this.gobletChoiceAreaDiv.style.display = 'none';
+                this.lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 resolve(click_val);
             };
 
@@ -144,6 +149,7 @@ export class BrowserChat {
             this.leftGobletButton.addEventListener('click', leftCallback);
             this.rightGobletButton.addEventListener('click', rightCallback);
         });
+
     };
 
     /**
@@ -153,8 +159,9 @@ export class BrowserChat {
      * @param {string} photo - The emoji/icon for the character.
      * @param {string} message - The message text.
      * @param {boolean} fast - If true, skips typing animation.
+     * @param {string} emphasis - Extra class for the text.
      */
-    async postMessage(slug, name, photo, message, fast) {
+    async postMessage(slug, name, photo, message, fast, emphasis='') {
 
         if (!fast) {
             await this._delay(this.typingSpeedDeck.draw());
@@ -183,10 +190,16 @@ export class BrowserChat {
 
         messageDiv.appendChild(senderDiv);
         messageDiv.appendChild(bubbleDiv);
-
         messageDiv.classList.add(slug);
+
+        if (emphasis){
+            bubbleDiv.classList.add(emphasis);
+        }
+
         this.chatLogElement.appendChild(messageDiv);
+        this.lastMessage = messageDiv;
         messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
     }
 
     getInputValue() {

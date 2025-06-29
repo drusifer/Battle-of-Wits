@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle of Wits</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
 
@@ -157,6 +156,13 @@ body {
     background-color: #CFD8DC; /* Light Blue-Grey for narrator/events */
 }
 
+.correct-answer {
+    background-color: lightgreen !important;
+}
+
+.incorrect-answer { 
+    background-color: lightcoral !important;
+}
 
 .input-area {
     display: flex;
@@ -3161,40 +3167,43 @@ class Character {
      * @param {Object} [replaces={}] An optional object where keys are placeholders to be replaced (e.g., "%KEY%") and values are their replacements.
      */
 
-    async say(message, replaces={}) {
+    async say(message, replaces={}, emphasis='') {
         return new Promise(async (resolve, reject) => {
             try { 
-                resolve(this._say(message, replaces));
+                resolve(this._say(message, 
+                    replaces, emphasis));
             } catch (error) {
                 reject(error);
             }
         });
     }
     
-    _say(message, replaces={}) {
+    _say(message, replaces={}, emphasis='') {
         let m = message;
         for (const [key, value] of Object.entries(replaces)) {
             m = m.replace(key, value);
         }
-        return this.chatSession.say(m);
+        return this.chatSession.say(m, emphasis);
     }
 
     /** Draws a random message from the character's general message deck. */
     async saySomething(replaces={}) {
-        await  this.say(this.messages.draw(),replaces);
+        await  this.say(this.messages.draw(), 
+        replaces, '');
     }
     
     /** Draws a random message from the character's starting message deck. */
     async sayStartMessage(replaces={}) {
-        await this.say(this.startMessages.draw(), replaces);
+        await this.say(this.startMessages.draw(), 
+        replaces, '');
     }
 
     /** Draws a random message from the character's ending message deck. */
     async sayEndMessage(dprWin = false, replaces={}) {
         if (dprWin) {
-            await this.say(this.dprWinMessages.draw(), replaces);
+            await this.say(this.dprWinMessages.draw(), replaces, '');
         } else {
-            await this.say(this.dprLossMessages.draw(), replaces);
+            await this.say(this.dprLossMessages.draw(), replaces, '');
         }
     }
 }
@@ -3639,9 +3648,9 @@ class Vizzini extends Character {
 
     async sayRiddleAnswerResponse(is_correct, replaces={}) {
         if (is_correct) {
-            await this.say(this.riddleCorrectResponses.draw(), replaces);
+            await this.say(this.riddleCorrectResponses.draw(), replaces, '');
         } else {
-            await this.say(this.riddleIncorrectResponses.draw(), replaces);
+            await this.say(this.riddleIncorrectResponses.draw(), replaces, '');
         }
     }
 
@@ -4081,8 +4090,8 @@ class ChatSession {
         this.chat = chat;
     }
 
-    async say(message) {
-        await this.chat.say(this.character, message);
+    async say(message, emphasis='') {
+        await this.chat.say(this.character, message, emphasis);
     }
 
     async login() {
@@ -4122,23 +4131,26 @@ class BrowserChat {
 
         this.pendingMessages = [];
         this.setInputStatus("off");
+        this.lastMessage = null;
     }
 
     async login(character) {
-        await this.postMessage('game-event', "", "", `      ---> ${character.name} has entered the chat. <---`, true)
+        await this.postMessage('game-event', "", "", 
+            `      ---> ${character.name} has entered the chat. <---`, true, '')
         if (character.slug == "dpr") {
             this.dpr = character;
         }
     };
 
     async logout(character) {
-        await this.say(character, `      ---> ${character.name} has left the chat. <---`, true)
+        await this.say(character, 
+            `      ---> ${character.name} has left the chat. <---`, true, '')
     };
 
     // base functionality
-    async say(character, message) {
+    async say(character, message, emphasis='') { 
         return await this.postMessage(character.slug, character.name,
-             character.emoji, message, false);
+             character.emoji, message, false, emphasis);
     }
 
     getRiddleAnswer() {
@@ -4202,6 +4214,7 @@ class BrowserChat {
 
     async waitForGobletChoice() {
         this.gobletChoiceAreaDiv.style.display = 'flex';
+        this.lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
         return new Promise(resolve => {
             let leftCallback, rightCallback;
@@ -4209,6 +4222,7 @@ class BrowserChat {
                 this.leftGobletButton.removeEventListener('click', leftCallback);
                 this.rightGobletButton.removeEventListener('click', rightCallback);
                 this.gobletChoiceAreaDiv.style.display = 'none';
+                this.lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 resolve(click_val);
             };
 
@@ -4219,6 +4233,7 @@ class BrowserChat {
             this.leftGobletButton.addEventListener('click', leftCallback);
             this.rightGobletButton.addEventListener('click', rightCallback);
         });
+
     };
 
     /**
@@ -4228,8 +4243,9 @@ class BrowserChat {
      * @param {string} photo - The emoji/icon for the character.
      * @param {string} message - The message text.
      * @param {boolean} fast - If true, skips typing animation.
+     * @param {string} emphasis - Extra class for the text.
      */
-    async postMessage(slug, name, photo, message, fast) {
+    async postMessage(slug, name, photo, message, fast, emphasis='') {
 
         if (!fast) {
             await this._delay(this.typingSpeedDeck.draw());
@@ -4258,10 +4274,16 @@ class BrowserChat {
 
         messageDiv.appendChild(senderDiv);
         messageDiv.appendChild(bubbleDiv);
-
         messageDiv.classList.add(slug);
+
+        if (emphasis){
+            bubbleDiv.classList.add(emphasis);
+        }
+
         this.chatLogElement.appendChild(messageDiv);
+        this.lastMessage = messageDiv;
         messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
     }
 
     getInputValue() {
@@ -4628,15 +4650,15 @@ class Game {
      */
     drawGoblet() {
         let types_aready_drawn = {};
-        let selecte_attributes = [];
-        while (selecte_attributes.length < this.gobletSize) {
+        let selected_attributes = [];
+        while (selected_attributes.length < this.gobletSize) {
             let attribute = ATTRIBUTE_DECK.draw();
             if (!types_aready_drawn[attribute.name]) {
                 types_aready_drawn[attribute.name] = true;
-                selecte_attributes.push(attribute);
+                selected_attributes.push(attribute);
             }
         }
-        return selecte_attributes;
+        return selected_attributes;
     }
 
     /**
@@ -4758,12 +4780,14 @@ class Game {
 
        if (currentRiddle.checkAnswer(answer.value)) {
             await this.vizzini.sayRiddleAnswerResponse(true);
-            await this.vizzini.say(this.safeGoblet.getComplement());
+            await this.vizzini.say(this.safeGoblet.getComplement(), {}, 
+                'correct-answer');
             await this.randomComment();
             await this.randomComment();
         } else {
             await this.vizzini.sayRiddleAnswerResponse(false);
-            await this.vizzini.say(this.deadlyGoblet.getInsult());
+            await this.vizzini.say(this.deadlyGoblet.getInsult(), {}, 
+                'incorrect-answer');
             await this.randomComment();
             await this.randomComment();
         }

@@ -44,40 +44,43 @@ export class Character {
      * @param {Object} [replaces={}] An optional object where keys are placeholders to be replaced (e.g., "%KEY%") and values are their replacements.
      */
 
-    async say(message, replaces={}) {
+    async say(message, replaces={}, emphasis='') {
         return new Promise(async (resolve, reject) => {
             try { 
-                resolve(this._say(message, replaces));
+                resolve(this._say(message, 
+                    replaces, emphasis));
             } catch (error) {
                 reject(error);
             }
         });
     }
     
-    _say(message, replaces={}) {
+    _say(message, replaces={}, emphasis='') {
         let m = message;
         for (const [key, value] of Object.entries(replaces)) {
             m = m.replace(key, value);
         }
-        return this.chatSession.say(m);
+        return this.chatSession.say(m, emphasis);
     }
 
     /** Draws a random message from the character's general message deck. */
     async saySomething(replaces={}) {
-        await  this.say(this.messages.draw(),replaces);
+        await  this.say(this.messages.draw(), 
+        replaces, '');
     }
     
     /** Draws a random message from the character's starting message deck. */
     async sayStartMessage(replaces={}) {
-        await this.say(this.startMessages.draw(), replaces);
+        await this.say(this.startMessages.draw(), 
+        replaces, '');
     }
 
     /** Draws a random message from the character's ending message deck. */
     async sayEndMessage(dprWin = false, replaces={}) {
         if (dprWin) {
-            await this.say(this.dprWinMessages.draw(), replaces);
+            await this.say(this.dprWinMessages.draw(), replaces, '');
         } else {
-            await this.say(this.dprLossMessages.draw(), replaces);
+            await this.say(this.dprLossMessages.draw(), replaces, '');
         }
     }
 }
@@ -522,9 +525,9 @@ export class Vizzini extends Character {
 
     async sayRiddleAnswerResponse(is_correct, replaces={}) {
         if (is_correct) {
-            await this.say(this.riddleCorrectResponses.draw(), replaces);
+            await this.say(this.riddleCorrectResponses.draw(), replaces, '');
         } else {
-            await this.say(this.riddleIncorrectResponses.draw(), replaces);
+            await this.say(this.riddleIncorrectResponses.draw(), replaces, '');
         }
     }
 
