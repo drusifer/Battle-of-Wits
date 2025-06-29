@@ -21,7 +21,7 @@ export class ChatSession {
 }
 
 const INITIAL_PLAYER_HEARTS = 2; // Default, should be synced with game logic if possible
-const SPEED_FACTOR = .5
+const SPEED_FACTOR = 2.0;
 
 export class BrowserChat {
     constructor() {
