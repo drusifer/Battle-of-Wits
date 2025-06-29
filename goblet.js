@@ -1,4 +1,4 @@
-import { AutoShuffleDeck } from "./autoShuffleDeck.js";
+import { AutoShuffleDeck } from "./deck.js";
 
 
 

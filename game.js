@@ -1,23 +1,44 @@
-import { AutoShuffleDeck } from './autoShuffleDeck.js';
+import { AutoShuffleDeck } from './deck.js';
 import { ATTRIBUTE_DECK } from './attributes.js';
 import { RIDDLE_DECK } from './riddles.js';
 import { Goblet } from './goblet.js';
 import { SickBoy, Gramps, Vizzini, Buttercup, DreadPirateRoberts, Character } from './characters.js';
+
+class Silence extends Character {
+    constructor() {
+        super("", "", [], [], [], []);
+    }
+
+    // do nothing
+    async say(message, replaces) {
+        return new Promise(resolve => setTimeout(resolve(), 0)); 
+    };
+    async login(chat) { 
+        return new Promise(resolve => setTimeout(resolve(), 0));
+    };
+    async logout(chat) { 
+        return new Promise(resolve => setTimeout(resolve(), 0));
+    };
+    async saySomething(replaces) {
+       return new Promise(resolve => setTimeout(resolve(), 0));
+    };
+};
+
 
 /**
  * The main class that manages the state and logic for the Battle of Wits.
  */
 export class Game {
     constructor() {
-        this.playerHearts = 3;
-        this.riddlesPerRound = 2;
+        this.gobletSize = 5;
+        this.playerHearts = 2;
+        this.riddlesPerRound = 3;
         this.roundNumber = 0;
         this.deadlyGoblet = null;
         this.safeGoblet = null;
         this.currentRiddle = null;
         this.isGameOver = false;
         this.chat = null;
-        RIDDLE_DECK.reshuffle();
     }
 
     initRound() {
@@ -26,185 +47,187 @@ export class Game {
 
         // draw the two gobets at random and posion the first one
         this.goblets = new AutoShuffleDeck([
-            new Goblet("Left", ATTRIBUTE_DECK.drawN(5)),
-            new Goblet("Right", ATTRIBUTE_DECK.drawN(5))
+            new Goblet("Left", this.drawGoblet()),
+            new Goblet("Right", this.drawGoblet())
         ]).reshuffle();
 
         this.deadlyGoblet = this.goblets.draw().addPoison();
         this.safeGoblet = this.goblets.draw();
     }
 
-    answerRiddle(answer)  {
-        if(this.currentRiddle.checkAnswer(answer)) {
-            this.vizzini.say(this.safeGoblet.getComplement());
-            this.buttercup.saySomething();
-            this.gramps.saySomething();
-        } else {
-            this.vizzini.say(this.safeGoblet.getInsult());
-            this.safeGoblet.randomCommentDeck.reshuffle();
-            const character = this.randomCommentDeck.draw();
-            if(character != null) {
-                character.saySomething();
-                if(character == this.sickboy) {
-                    this.gramps.saySomething();
-                }
-                if(character == this.vizzini) {
-                    this.dpr.saySomething();
-                }
-                if(character == this.dpr) {
-                    this.buttercup.saySomething();
-                }
+    
+    /**
+     * Draws a set of unique attributes for a goblet from the global ATTRIBUTE_DECK.
+     * It ensures that each attribute drawn is of a unique type until `this.gobletSize` attributes are collected.
+     * @returns {Array<Attribute>} An array of unique Attribute objects for a goblet.
+     */
+    drawGoblet() {
+        let types_aready_drawn = {};
+        let selecte_attributes = [];
+        while (selecte_attributes.length < this.gobletSize) {
+            let attribute = ATTRIBUTE_DECK.draw();
+            if (!types_aready_drawn[attribute.name]) {
+                types_aready_drawn[attribute.name] = true;
+                selecte_attributes.push(attribute);
             }
         }
+        return selecte_attributes;
     }
 
-    getHint() {
-        this.buttercup.say(this.currentRiddle.getHint());
-        this.vizzini.saySomething();
-    }
-
-    chooseGoblet(goblet) {
-        if (goblet === this.deadlyGoblet) {
-            this.playerHearts--;
-        }
-
-    }
-
+    /**
+     * Initiates and manages the main game loop, including character interactions,
+     * riddle stages, and goblet choices.
+     * @param {Chat} chat The chat interface object used for communication with the player.
+     */
+    
     async run(chat) {
+        RIDDLE_DECK.reshuffle();
         this.chat = chat;
         chat.setInputStatus("off")
-        this.dpr = new DreadPirateRoberts(chat);
-        this.dpr.login();
+        this.dpr = new DreadPirateRoberts();
 
-        this.gramps = new Gramps(chat);
-        this.vizzini = new Vizzini(chat);
-        this.buttercup = new Buttercup(chat);
-        this.sickboy = new SickBoy(chat);
+        this.gramps = new Gramps();
+        this.vizzini = new Vizzini();
+        this.buttercup = new Buttercup();
+        this.sickboy = new SickBoy();
 
-        this.sickboy.login();
-        this.gramps.login();
-        await this.sickboy.sayGreeting();
+        await this.sickboy.login(chat);
+        await this.gramps.login(chat);
+
         await this.gramps.sayOpeningMessage();
-        //await this.sickboy.dialogueWith([this.gramps])
+        await this.sickboy.sayGreeting();
 
-
-
-        this.buttercup.login();
-        this.vizzini.login();
-
-
-        this.silence = new class extends Character {
-            constructor() {
-                super(chat, "", "", [], [], [], []);
-            }
-            say(message) {};
-
-            login() {};
-            logout() {};
-        }();
+        await this.buttercup.login(chat);
+        await this.vizzini.login(chat);
             
 
         // if it's too chatty add some silence
         this.randomCommentDeck = new AutoShuffleDeck([
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.silence, this.silence, this.silence,
-            this.vizzini,
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
+            new Silence(), new Silence(), new Silence(), new Silence(), 
             this.vizzini,
             this.buttercup,
-            this.buttercup,
-            this.dpr,
-            this.dpr,
-            this.dpr,
             this.dpr]).reshuffle();
 
+        await this.gramps.sayStartMessage();
+        await this.vizzini.sayStartMessage();
+        await this.dpr.login(chat);
+        await this.dpr.sayStartMessage();
+        await this.chat.updateStatus(this.playerHearts, this.roundNumber);
         // --- Main Game Loop ---
         while (!this.isGameOver) {
             this.initRound();
-            //await this.sickboy.saySomething();
-            //await this.gramps.saySomething();
-            await this.gramps.sayStartMessage();
-            await this.vizzini.sayStartMessage();
            
             let  result = await this.playRound();
             if(result == 'win' || this.playerHearts <= 0) {
-                await this.dpr.sayEndMessage(result=="win");
                 await this.vizzini.sayEndMessage(result=="win");
+                await this.dpr.sayEndMessage(result=="win");
+                await this.buttercup.sayEndMessage(result=="win");
                 await this.sickboy.sayEndMessage(result=="win");
                 await this.gramps.sayEndMessage(result=="win");
                 this.isGameOver = true;
             } else {
-                await this.dpr.saySomething();
+                await this.buttercup.saySomething();
             }
+            await this.chat.updateStatus(this.playerHearts, this.roundNumber);
         }
     }
         
     async playRound() {
-
-        while(this.playerHearts > 0) {
-            await this.vizzini.saySomething();
-            await this.randomCommentDeck.draw().saySomething();
+        await this.randomComment();
             
-            for (let i = 0; i < this.riddlesPerRound; i++) {
-                await this.playRiddleStage();
-            }
-            await this.vizzini.saySomething();
-            await this.sickboy.saySomething();
-            await this.gramps.saySomething();
-            let result = this.playGobletStage();
-            if(result == 'win') {
-                return 'win';
-            } else {
-                this.playerHearts--;
-                if (this.playerHearts > 0) {
-                    await this.vizzini.dprLossMessages();
-                    await this.buttercup.dprLossMessages();
-                    await this.dpr.drankPoisonMessages();
-                }
+        for (let i = 0; i < this.riddlesPerRound; i++) {
+            await this.playRiddleStage(i);
+            await this.randomComment();
+        }
+        await this.sickboy.saySomething();
+        await this.gramps.saySomething();
+        let result = await this.playGobletStage();
+        if(result == 'win') {
+            return 'win';
+        } else {
+            this.playerHearts--;
+            if (this.playerHearts > 0) {
+                await this.vizzini.sayEndMessage(result=="lose");
+                await this.dpr.sayDrankPoisonMessage();
             }
         }
         return 'lose';
     }
 
-    async playRiddleStage() {
+    async playRiddleStage(round_number) {
         const currentRiddle = RIDDLE_DECK.draw();
 
-        await this.randomCommentDeck.draw().saySomething();
-        await this.vizzini.sayPreRiddleMessage();
+        await this.randomComment();
+        if (this.randomCommentDeck.currentCard !== this.sickboy) {
+            await this.sickboy.saySomething();
+        }
+        const rounds = [
+            {},
+            {'first': 'second',
+             'First': 'Second'},
+            {'first': 'third',
+             'First': 'Third'}
+            ];
+        await this.gramps.sayPreRiddleMessage(rounds[round_number]);
+        await this.vizzini.sayPreRiddleMessage(rounds);
         await this.vizzini.say(currentRiddle.question);
 
-        const answer = await this.chat.waitForAnswer();
+        let answer = await this.chat.waitForAnswer();
+        while (answer.click == 'hint') {
+            await this.buttercup.say(currentRiddle.getHint());
+            await this.vizzini.saySomething();
+            answer = await this.chat.waitForAnswer();
+        }
+        await this.dpr.sayAnswerMessage(answer.value);
 
-       if (currentRiddle.checkAnswer(answer)) {
+       if (currentRiddle.checkAnswer(answer.value)) {
+            await this.vizzini.sayRiddleAnswerResponse(true);
             await this.vizzini.say(this.safeGoblet.getComplement());
-            await this.randomCommentDeck.draw().saySomething();
-            await this.randomCommentDeck.draw().saySomething();
+            await this.randomComment();
+            await this.randomComment();
         } else {
-            await this.vizzini.say(this.poisonedGoblet.getInsult());
-            await this.randomCommentDeck.draw().saySomething();
-            await this.randomCommentDeck.draw().saySomething();
-            await this.randomCommentDeck.draw().saySomething();
+            await this.vizzini.sayRiddleAnswerResponse(false);
+            await this.vizzini.say(this.deadlyGoblet.getInsult());
+            await this.randomComment();
+            await this.randomComment();
         }
     }
 
+    async randomComment() {
+        let rando = this.randomCommentDeck.drawNew();
+        await rando.saySomething();
+    }
+
+
     async playGobletStage() {
-            this.vizzini.sayGobletRoundMessage();
-            this.sickboy.saySomething();
-            this.gramps.sayGobletRoundMessage();
-            this.dpr.saySomething();
-            this.gramps.say(this.goblets.draw().generateDescription());
-            this.gramps.say(this.goblets.draw().generateDescription());
+            await this.vizzini.sayGobletRoundMessage();
+            await this.dpr.sayGobletRoundMessage();
+            await this.gramps.say(this.goblets.draw().generateDescription());
+            await this.gramps.say(this.goblets.draw().generateDescription());
+            await this.sickboy.saySomething();
+            await this.gramps.sayGobletRoundMessage();
+
             
-            this.randomCommentDeck.draw().saySomething();
+            const rc = this.randomCommentDeck.drawNew();
+            if (rc !== this.gramps) {
+                await rc.saySomething();
+            }
             
-            // ... Player choice simulation ...
             const choice = await this.chat.waitForGobletChoice();
-            const isSafe = !(this.goblets.find(g => g.side == choice).poisoned);
+            await this.dpr.sayGobletAnswerMessage(choice);
+
+            const isSafe = this.safeGoblet.side.toLowerCase()==choice.toLowerCase();
             return isSafe;
         }
     }

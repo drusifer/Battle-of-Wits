@@ -1,5 +1,5 @@
-import { AutoShuffleDeck } from './autoShuffleDeck.js';
-import { ChatSession } from './chat.js'
+import { AutoShuffleDeck } from './deck.js';
+import { ChatSession } from './chat.js';
 
 /**
  * The base class for all characters in the game.
@@ -10,8 +10,7 @@ export class Character {
      * @param {string} emoji A single emoji to represent the character's profile image.
      * @param {object} messageDecks An object containing arrays of messages.
      */
-    constructor(chat, name, emoji, startMessages, generalMessages, dprWinMessages, dprLossMessages) {
-        this.chatSession = new ChatSession(this, chat);
+    constructor(name, emoji, startMessages, generalMessages, dprWinMessages, dprLossMessages) {
         this.name = name;
         this.emoji = emoji;
         this.slug = name.toLowerCase().replace(/\s/g, '-');
@@ -21,8 +20,9 @@ export class Character {
         this.dprLossMessages = new AutoShuffleDeck(dprLossMessages).reshuffle();
     }
 
-    login() {
-        this.chatSession.login();
+    async login(chat) {
+        this.chatSession = new ChatSession(this, chat);
+        await this.chatSession.login();
     }
 
     /* everyone in characters says something. */
@@ -34,30 +34,50 @@ export class Character {
         }
     }
 
-    logout() {
-        this.chatSession.logout();
+    async logout() {
+        await this.chatSession.logout();
     }
 
-    async say(message) {
-        await this.chatSession.say(message);
+    /**
+     * Sends a message to the chat session, optionally replacing placeholders within the message.
+     * @param {string} message The message string to send.
+     * @param {Object} [replaces={}] An optional object where keys are placeholders to be replaced (e.g., "%KEY%") and values are their replacements.
+     */
+
+    async say(message, replaces={}) {
+        return new Promise(async (resolve, reject) => {
+            try { 
+                resolve(this._say(message, replaces));
+            } catch (error) {
+                reject(error);
+            }
+        });
+    }
+    
+    _say(message, replaces={}) {
+        let m = message;
+        for (const [key, value] of Object.entries(replaces)) {
+            m = m.replace(key, value);
+        }
+        return this.chatSession.say(m);
     }
 
     /** Draws a random message from the character's general message deck. */
-    async saySomething() {
-        await  this.chatSession.say(this.messages.draw());
+    async saySomething(replaces={}) {
+        await  this.say(this.messages.draw(),replaces);
     }
     
     /** Draws a random message from the character's starting message deck. */
-    async sayStartMessage() {
-        await this.chatSession.say(this.startMessages.draw());
+    async sayStartMessage(replaces={}) {
+        await this.say(this.startMessages.draw(), replaces);
     }
 
     /** Draws a random message from the character's ending message deck. */
-    async sayEndMessage(dprWin = false) {
+    async sayEndMessage(dprWin = false, replaces={}) {
         if (dprWin) {
-            await this.chatSession.say(this.dprWinMessages.draw());
+            await this.say(this.dprWinMessages.draw(), replaces);
         } else {
-            await this.chatSession.say(this.dprLossMessages.draw());
+            await this.say(this.dprLossMessages.draw(), replaces);
         }
     }
 }
@@ -164,7 +184,7 @@ export class DreadPirateRoberts extends Character {
             "My final regret...", "I... am sorry...", "The world fades...",
             "Inconceivable...", "I have lost...", "The end...", "No...", "Buttercup..."
         ];
-        super(chat, "Dread Pirate Roberts", "🏴‍☠️", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super("Dread Pirate Roberts", "\u{2620}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
         this.drankPoisonMessages = new AutoShuffleDeck([
             "It's a good thing I've built up a resistance to iocane powder. Let's go again, shall we?",
             "Merely a flesh wound. I've spent years building up an immunity to iocane powder. Your methods are... predictable. I've got time for one more, if you dare.",
@@ -173,16 +193,68 @@ export class DreadPirateRoberts extends Character {
             "A familiar tingling. But iocane and I have an understanding. It tickles, mostly. Shall we continue this delightful game?",
             "You'd think I'd learn, but then, where's the fun in that? Still standing, Vizzini. Your move.",
             "Tastes like... victory deferred. My constitution is, shall we say, robust. Another round to prove your genius?",
+            "I've spent the last few years building up an immunity to iocane powder.",
             "My dear Vizzini, you'll have to do better than that. I've had stronger drinks at children's parties.",
             "Was that supposed to be your trump card? I must say, I'm rather underwhelmed. Perhaps another attempt?",
             "The iocane only sharpens my senses. A curious side effect, wouldn't you agree? Let's proceed.",
             "You seem surprised. Did you truly believe it would be that easy to dispose of the Dread Pirate Roberts? Draw your cups!",
             "A valiant effort, Vizzini. But as you can see, I am not so easily dispatched. Shall we try that again?"
         ]).reshuffle();
+        this.gobletRoundMessage = new AutoShuffleDeck([
+            "Alright. Where is the poison? The battle of wits has begun. It ends when you decide and we both drink, and find out who is right... and who is dead.",
+            "It's so simple. All I have to do is divine from what I know of you: are you the sort of man who would put the poison into his own goblet or his enemy's?",
+            "Now, a clever man would put the poison into his own goblet, because he would know that only a great fool would reach for what he was given. I am not a great fool, so I can clearly not choose the wine in front of you.",
+            "But you must have known I was not a great fool. You would have counted on it, so I can clearly not choose the wine in front of me.",
+            "You seem a decent fellow. I'd hate to kill you.",
+            "Let's drink. One of us is about to be very disappointed.",
+            "The choice is clear. I know where the poison is."
+        ]).reshuffle();
+
+        this.answerMessage = new AutoShuffleDeck([
+            "The answer is, of course, ANSWER.",
+            "It could only be ANSWER.",
+            "After careful consideration, the only logical conclusion is ANSWER.",
+            "You've made this too simple, Vizzini. The answer is clearly ANSWER.",
+            "I believe the word you're looking for is ANSWER.",
+            "My answer is ANSWER. And I am never wrong.",
+            "Let us end this charade. The answer is ANSWER.",
+            "The truth is simple, Vizzini. The truth is ANSWER.",
+            "I will say it but once. ANSWER.",
+            "You've given yourself away. The answer must be ANSWER.",
+            "The word you seek is ANSWER.",
+            "It is elementary. The answer is ANSWER.",
+            "I stake my life on it. The answer is ANSWER."
+        ]).reshuffle();
+
+
+        this.gobletAnswerMessage = new AutoShuffleDeck([
+            "You've given everything away, Vizzini. I choose the goblet on the SIDE!",
+            "The choice was never between the goblets. It was about understanding you. I'll take the one on the SIDE.",
+            "You assumed I was playing your game, but I was playing my own. The goblet on the SIDE, if you please.",
+            "Your mistake was in thinking this was a game of chance. It was a game of character. And yours is transparent. The goblet on the SIDE.",
+            "It was a simple deduction, based on your overwhelming arrogance. The wine on the SIDE is the only logical choice.",
+            "You see, Vizzini, the poison is in the details. And your details are sloppy. I'll drink from the cup on the SIDE.",
+            "You tried to lead me with logic, but you forgot about intuition. Mine tells me the correct choice is the goblet on the SIDE.",
+            "I know something you do not know. I am not left-handed. And I am not a fool. The goblet on the SIDE.",
+            "The entire game was a feint. The true answer lies with the goblet on the SIDE.",
+            "You monologued. I deduced. The goblet on the SIDE."
+        ]).reshuffle();
     }
 
-    async sayDrankPoisonMessage() {
-        await this.say(this.drankPoisonMessages.draw());
+    async sayDrankPoisonMessage(replaces={}) {
+        await this.say(this.drankPoisonMessages.draw(), replaces);
+    }
+
+    async sayGobletRoundMessage(replaces={}) {
+        await this.say(this.gobletRoundMessage.draw(), replaces);
+    }
+
+    async sayAnswerMessage(answer) {
+        await this.say(this.answerMessage.draw(), {"ANSWER": answer});
+    }
+
+    async sayGobletAnswerMessage(side) {
+        await this.say(this.gobletAnswerMessage.draw(), {"SIDE": side});
     }
 }
 
@@ -195,6 +267,16 @@ export class Vizzini extends Character {
             "I've already won. I'm simply allowing you the courtesy of discovering how.", "Hurry up! I wish to be done with this before luncheon.",
             "You are a child playing at a man's game. And I am a god at this game! 🧠", "Your confidence is born of ignorance. A fatal combination.",
             "Let's see what passes for 'thought' in that sea-addled brain of yours.", "I've concocted a logical labyrinth from which there is no escape.",
+            "You dare match wits with me? You've chosen your opponent poorly, and your last moments will be spent in regret!",
+            "Let's get this over with. I have kingdoms to destabilize, and your demise is but a footnote on my day's agenda.",
+            "Look upon my face, pirate. It is the face of pure, unadulterated intellect. It is the last truly intelligent thing you will ever see.",
+            "A battle of wits? Against me? It's like a battle of swimming against a fish! You are out of your element!",
+            "I've already calculated 1,427 ways this can end. They all involve your pathetic demise. Let's see which one you choose.",
+            "You may have faced the terrors of the sea, but you have never faced the maelstrom of a Sicilian mind!",
+            "I will not insult your intelligence by wishing you luck. You have none to speak of.",
+            "The princess will be my witness as I dismantle your feeble logic, piece by pathetic piece.",
+            "Do you hear that? It is the sound of inevitability. My victory is preordained.",
+            "Let us begin this farce. I am eager to see the look on your face when you realize your utter folly.",
             "This is delightful! I do so enjoy proving my superiority.", "You are a fly, and I am the master of the web.",
             "Every word you say will be a nail in your own coffin.", "Shall we? I am eager to hear your final words.",
             "Prepare for a lesson in intellectual annihilation.", "I took the liberty of poisoning your wine. And mine.",
@@ -266,6 +348,16 @@ export class Vizzini extends Character {
             "I'm bored. This is boring. You are boring me to death, which is ironic, isn't it? 🙄", "You see, you've fallen for my trap perfectly.",
             "I can practically smell the rust on your mental gears from here.", "Have you considered that perhaps you're just not very smart?",
             "This is not complex! A dung beetle could have solved this by now!", "Are you listening to me? Or is the sea water still sloshing in your ears?",
+            "You're trying to use reverse psychology on me? ME? The man who INVENTED reverse psychology? Inconceivable!",
+            "Is that a thought forming, or did a gear in your head just strip itself bare?",
+            "Your logic is so flawed, it's a wonder you can even stand upright.",
+            "I'm not just one step ahead of you, pirate. I am on an entirely different intellectual plane of existence.",
+            "Stop breathing so loudly. I can't hear the sound of my own genius.",
+            "You are a simpleton, a poltroon, a... what's the word... ah yes, a PIRATE.",
+            "Every word you utter is another shovel of dirt on your own grave. Keep talking.",
+            "I've had more stimulating intellectual debates with a head of cabbage!",
+            "Are you trying to bore me to death? Is that your strategy? It's surprisingly effective!",
+            "You are a walking, talking example of the Dunning-Kruger effect. Look it up. Oh, wait, you can't.",
             "I have no time for this dallying!", "Just make a choice so I can watch you die!", "This is tedious. Utterly tedious."
         ];
 
@@ -275,6 +367,16 @@ export class Vizzini extends Character {
             "The poison... was in my goblet...? But... how...?", "You... guessed? No! It cannot be!",
             "I... I feel... unwell...", "A fluke! A statistical anomaly!", "My plan... was perfect...",
             "I outsmarted myself...? No...", "This is not the logical outcome!", "I... am... slain...",
+            "A trick! A parlor game! You must have poisoned me while I was monologuing!",
+            "My calculations... they were flawless! The universe must have made an error!",
+            "This... is not... logical... *gurgle*...",
+            "You didn't win! I was simply... distracted by your staggering stupidity!",
+            "The princess... tell her... my intellect was... dizzying... *cough*",
+            "Never... trust... a man... with... a mask... *thud*",
+            "My only miscalculation... was underestimating the depths of your luck!",
+            "This is merely a setback! In the next life, I shall be... even... smarter... *gasp*",
+            "You haven't won! You've merely... postponed... the inevitable... *croak*",
+            "Inconceiv... able...",
             "You fool! You will never get away with this!", "This wasn't supposed to happen!", "My reputation... my life...",
             "The world... is... dizzying...", "How...?", "But... why...?", "No... NO...", "*collapses*"
         ];
@@ -286,11 +388,21 @@ export class Vizzini extends Character {
             "Flawless. Another flawless plan by Vizzini.", "I almost feel pity for you. Almost. 😂",
             "And that, my dear princess, is how you deal with pirates.", "So predictable. I knew you'd choose that one.",
             "A triumph of the mind!", "He actually thought he had a chance. Adorable.",
+            "And so, the pirate's tale ends not with a bang, but with a whimper of his own foolishness. Hah!",
+            "See? The brain always triumphs over the brawn. And my brain is the brainiest!",
+            "I almost feel a pang of... no, it's just indigestion. Your stupidity was hard to swallow.",
+            "Another one falls to the Sicilian intellect! Is there no one left to challenge me?",
+            "Let that be a lesson to you, princess. Never bet against a sure thing. And I am the surest thing there is.",
+            "He's dead. How droll. I expected more of a struggle. I am, as usual, disappointed by my opposition.",
+            "And now, the world is free of another fool who thought he could out-think his betters.",
+            "Victory is mine! As it was always meant to be. The script was written by me, for me.",
+            "He chose... poorly. As I knew he would. The predictability of simple minds is my greatest weapon.",
+            "Well, that was a pleasant little diversion. Now, back to my plans for world chaos.",
             "The world is now free of one more simpleton.", "Now, where were we? Ah yes, global domination.",
             "And the crowd goes wild! For me, of course.", "Checkmate.", "Game, set, and match. To me.", "I am victorious! As always."
         ];
 
-        super(chat, "Vizzini", "🧐", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super("Vizzini", "\u{1F9D0}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.gobletRoundMessages = new AutoShuffleDeck([
             "No more banter! The time has come to choose.",
@@ -303,31 +415,125 @@ export class Vizzini extends Character {
             "No more riddles to hide behind, D.P.R.! Just a simple choice. Life... or a rather unpleasant death. 🤔 Choose wisely... or don't. It's more amusing for me if you blunder!",
             "The grand finale! 🎭 Two chalices, one choice. Will it be the sweet nectar of survival, or the bitter draft of oblivion? The suspense is... well, not for me. I already know you'll fail.",
             "Enough! My patience wears thin, much like your chances of survival. Pick a cup, any cup! 🥤 Just know that one of them is your express ticket to the afterlife. ☠️",
+            "The time for talk is over! Now, we have the only conversation that matters: life and death!",
+            "Forget the riddles, forget the banter! This is the grand finale, the ultimate test!",
+            "Behold! The instruments of your doom, or your salvation. Though let's be honest, mostly your doom.",
+            "All your supposed cleverness, all your travels, it all comes down to this single, simple, fatal choice.",
+            "I've grown tired of the sound of your voice. Let us conclude this with the silent judgment of the wine.",
+            "One of these goblets holds your future. The other holds... well, it holds the end of your future.",
+            "No more hiding behind masks or clever phrases, pirate. It is just you, me, and a 50/50 chance at oblivion.",
+            "This is the point of no return! Choose, and let fate, guided by my intellect, decide the rest!",
+            "The final act! Will you receive applause or a tombstone? The choice is yours, but the outcome is mine.",
+            "Let us dispense with the foreplay and get to the consummation of your defeat!",
             "Let the true test begin! No more wordplay, just pure, unadulterated chance... guided by my superior intellect, of course. 😉 Your move, simpleton."
         
         ]).reshuffle()
 
         this.preRiddleMessages = new AutoShuffleDeck([
-            "Now, for a true test of your... ah... 'intellect'.",
-            "Let us see if that pirate brain of yours can handle a simple conundrum.",
-            "Prepare yourself, for I am about to engage your mind in a way it has never been engaged before!",
-            "A riddle, then! To occupy your thoughts while I contemplate your inevitable doom.",
-            "Perhaps this will amuse the princess while you flounder.",
-            "I've devised a little something to expose the depths of your ignorance.",
-            "Consider this a warm-up for your brain... though I doubt it will help.",
-            "Let's see if there's anything rattling around in that thick skull of yours.",
-            "A simple question, for a simple man. Or is it?",
-            "Now, pay attention. This may be beyond your meager comprehension, but try.",
-            "I almost feel guilty posing such a challenge to one so clearly outmatched. Almost."
+            "Now, for a true test of your... 'intellect'. A single word, pirate, is all I require. 😠",
+            "Let us see if that pirate brain of yours can condense its meager thoughts into one solitary utterance. 🧠",
+            "Prepare yourself, for I am about to engage your mind in a way it has never been engaged before! Your response, a single word, will seal your fate! 💀",
+            "A riddle, then! And your answer, a mere syllable, will determine if you live or die! ⚖️",
+            "Perhaps this will amuse the princess while you flounder. But remember, only one word may pass your lips. 🤫",
+            "I've devised a little something to expose the depths of your ignorance. Your reply? A single, concise word. 🤏",
+            "Consider this a warm-up for your brain... though I doubt it will help. Your answer, one word, if you please. 🙄",
+            "Let's see if there's anything rattling around in that thick skull of yours. A single word, pirate, is all I demand. 😤",
+            "A simple question, for a simple man. Or is it? Your answer, one word, will reveal all. ✨",
+            "Now, pay attention. This may be beyond your meager comprehension, but try. Your reply must be a single word. 📚",
+            "I almost feel guilty posing such a challenge to one so clearly outmatched. Almost. Your answer, a solitary word, will suffice. 😒",
+            "My intellect demands precision. Therefore, your answer to my impending riddle must be a single, unadorned word. 🎯",
+            "Do not waste my time with lengthy explanations. Your solution, a single word, is all that matters. ⏱️",
+            "The answer is simple, if you are not a fool. Prove me wrong with one word, if you dare. 😈",
+            "I seek not eloquence, but accuracy. A single word, pirate, will tell me if you possess either. 🧐",
+            "This riddle requires a mind capable of distillation. Your answer, a single word, will be the proof. 🧪",
+            "One word, pirate. That is the currency of this exchange. Do you have it? 💰",
+            "I have no patience for rambling. Your answer, a single word, or your life is forfeit. 🔪",
+            "The essence of the truth can be captured in a single word. Can you find it? 💡",
+            "My riddle approaches. Your response, a solitary word, will be your judgment. 👑",
+            "My next question demands a single, unhesitating word, pirate! Do not disappoint me. 😡",
+            "Your intellect, if it exists, must now condense into one solitary word. Fail, and you perish! ☠️",
+            "I require a single, precise term. Anything more, and you prove yourself a verbose fool! 🗣️",
+            "One word, pirate! That is the only acceptable response to my genius! 🏆",
+            "Distill your thoughts! A single word is all I will permit! 💧",
+            "Your answer, a solitary word, will be your judgment. Choose wisely! 🤞",
+            "Do not equivocate! A single word, or your life is forfeit! 🗡️",
+            "My patience is finite. One word, and we proceed. Otherwise, we conclude! 🛑",
+            "The truth, in one word! Can your simple mind grasp such brevity? 🤏",
+            "Speak! But let your entire response be but a single, solitary word! 🤐",
+            "My next query is a masterpiece of conciseness. Your answer must be its equal. One word!",
+            "Do not clutter the air with your usual drivel. A single word is the key. Can you find it?",
+            "I will now present a puzzle so elegant, its answer can only be one word. Do not embarrass yourself.",
+            "The following riddle is a test of focus. Focus your entire, limited vocabulary into a single utterance.",
+            "Brevity is the soul of wit. Let's see if you have any. One word, pirate.",
+            "I am about to speak. When I am done, you will speak. You will speak one word. Understood?",
+            "This next test requires not just intellect, but discipline. The discipline to use but a single word.",
+            "I will give you a riddle. You will give me a word. It is a simple transaction. Do not complicate it.",
+            "The answer is as simple as it is brilliant. It is one word. Let's see if you can find it.",
+            "Silence your babbling tongue! The only thing I wish to hear from you is a single, correct word!"
         ]).reshuffle();
+
+        this.riddleCorrectResponses = new AutoShuffleDeck([
+            "A lucky guess! A blind pig finds an acorn every century or so! Don't let it go to your head.",
+            "Impossible! You must have cheated! Did the princess signal you? No matter, it was a trivial riddle for a trivial mind.",
+            "Correct. Of course it's correct. It was an infantile puzzle! I was merely testing if you were sentient.",
+            "Hmph. So you can solve a simple word game. A trained monkey could do as much. Now for the REAL test of intellect!",
+            "INCONCEIVABLE! You... actually got it right. A fluke! A statistical anomaly of cosmic proportions!",
+            "Yes, yes, that's it. Very good. Now, have you been practicing, or was that a moment of accidental competence?",
+            "Correct. As I calculated you would be. It's all part of my grander design to give you a sliver of hope before crushing it entirely.",
+            "Well, well. A flicker of intelligence. Don't strain yourself, pirate, you might pull a muscle in that oversized head of yours.",
+            "Fine. You pass. But that was merely the appetizer. The main course involves death, and you're the guest of honor!",
+            "That's... the right answer. I'm... astonished. And annoyed. Mostly annoyed. Let's move on!",
+            "Bah! A lucky shot in the dark! Even a broken clock is right twice a day!",
+            "You must have heard this one before! It's impossible for you to have deduced it on your own!",
+            "Correct. I made it simple on purpose, to lull you into a false sense of security. It's working perfectly.",
+            "So, the brute has a vocabulary. I'm underwhelmed. Now for a real challenge.",
+            "Hmph. You got it. I'm not impressed. A child could have solved that. A smart child. Not you.",
+            "Yes, yes, that's the word. Don't look so proud. It was a gift.",
+            "Correct. But getting one answer right in a battle of wits is like bringing one drop of water to a raging fire. Futile.",
+            "Well, what do you know. A spark of cognizance. Don't let it fizzle out.",
+            "That is... surprisingly correct. I may have underestimated your capacity for random guessing.",
+            "Fine, you win this round. But the war of minds is far from over, and you, sir, are losing badly."
+        ]).reshuffle();
+
+        this.riddleIncorrectResponses = new AutoShuffleDeck([
+            "Wrong! Pathetically, predictably, UTTERLY wrong! HA! I knew you were a fool!",
+            "Not even close! Is your brain merely a ballast to keep your head from floating away? Inconceivable!",
+            "No, you blithering idiot! The answer was obvious to anyone with an intellect greater than a sea slug's!",
+            "Was that an answer or did a goat just clear its throat? Wrong! So very, very wrong!",
+            "And that, my dear princess, is the sound of a pirate's brain misfiring. A sad, pathetic little 'pop'.",
+            "I have seen rocks with more intellectual acumen! You are not worthy of my riddles!",
+            "Wrong! And with that, any hope you had of impressing me has evaporated. Now, let's get to the dying.",
+            "You see? You see how your mind is no match for mine? You are a child playing checkers against a grandmaster of chess!",
+            "I almost feel sorry for you. Almost. But my pity is eclipsed by the sheer spectacle of your stupidity!",
+            "That's not the answer. That's not even a word in any civilized language! You are a buffoon in a mask!",
+            "Wrong! So profoundly, spectacularly wrong! I almost feel second-hand embarrassment for you!",
+            "That wasn't even a guess! That was a cry for help from a drowning intellect!",
+            "No, no, NO! The answer was elegant, simple, and completely beyond your grasp, wasn't it?",
+            "I've heard more intelligent responses from a parrot! And the parrot was just hungry!",
+            "You have managed to fail a test I designed to be foolproof. You are a new and exciting kind of fool!",
+            "That answer is so far from correct, it's in a different time zone! In a different, stupider, dimension!",
+            "And with that, you have proven beyond all doubt that your head is filled with nothing but sea foam and regret.",
+            "Wrong! As I knew you would be. My genius lies not only in crafting the riddle but in predicting your failure.",
+            "Was that your final answer? It was pathetic. Truly, a new low in the annals of stupidity.",
+            "I weep for the state of education that produced a mind like yours. Wrong! Utterly, hopelessly wrong!"
+        ]).reshuffle();
+
     }
 
-    async sayGobletRoundMessage() {
-        await this.say(this.gobletRoundMessages.draw());
+    async sayRiddleAnswerResponse(is_correct, replaces={}) {
+        if (is_correct) {
+            await this.say(this.riddleCorrectResponses.draw(), replaces);
+        } else {
+            await this.say(this.riddleIncorrectResponses.draw(), replaces);
+        }
     }
 
-    async sayPreRiddleMessage() {
-        await this.say(this.preRiddleMessages.draw());
+    async sayGobletRoundMessage(replaces={}) {
+        await this.say(this.gobletRoundMessages.draw(), replaces);
+    }
+
+    async sayPreRiddleMessage(replaces={}) {
+        await this.say(this.preRiddleMessages.draw(), replaces);
     }
 }
 
@@ -403,8 +609,7 @@ export class Buttercup extends Character {
             "This is almost over. Stay strong. 🙏",
             "Don't let him see your fear.",
             "You are doing wonderfully.",
-            "He talks and talks, but you think. That is your advantage.",
-            "That's a non sequitur, Vizzini. Your premise doesn't support your conclusion.", "Pay attention to his rhetoric, Wesley. He uses ad hominem attacks to distract from his weak arguments.",
+            "He talks and talks, but you think. That is your advantage.", "That's a non sequitur, Vizzini. Your premise doesn't support your conclusion.", "Pay attention to his rhetoric, Wesley. He uses ad hominem attacks to distract from his weak arguments.",
             "He's trying to provoke an emotional response. Don't let him. Stay analytical. ❤️", "That's an appeal to authority fallacy. Just because he's Sicilian doesn't make him right.",
             "He's speaking quickly to confuse you, my love. Take your time.", "The more he insults you, the less confident he truly is.",
             "He's presenting a false dichotomy. There may be other options he's not mentioning.", "His logic is circular. He's using his conclusion as proof.",
@@ -436,7 +641,7 @@ export class Buttercup extends Character {
             "You have taken everything from me.", "This is not the end. I will not let it be.",
             "My Wesley... gone...", "I will never forget you.", "As you wish...", "My heart... is gone..."
         ];
-        super(chat, "Buttercup", "👑", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super("Buttercup", "\u{1F451}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
     }
 }
 
@@ -455,7 +660,8 @@ export class Gramps extends Character {
             "This Vizzini fellow is a real piece of work, isn't he?", "Shh, shh. The game is beginning.",
             "This old book has seen better days, but the story is timeless.", "Are you ready? No interruptions now.",
             "He has to choose between the two cups. A perfect dilemma.", "The princess watches, her heart in her throat.",
-            "This scene is all about psychology.", "It's not about the poison, it's about the people.",
+            "This scene is all about psychology.",
+            "It's not about the poison, it's about the people.",
             "Now Vizzini thinks he's in control. But is he?", "The man in black is letting him talk. It's a strategy.",
             "This is a game of high stakes.", "The most important thing is to never let your opponent know what you're thinking.",
             "Okay, deep breath. Here we go.", "It's about to get very clever.",
@@ -523,7 +729,7 @@ export class Gramps extends Character {
             "That's a tough lesson in humility.", "Even the best of us can fall."
         ];
 
-        super(chat, "Gramps", "👴", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super("Gramps", "\u{1F474}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.gobletRoundMessages = new AutoShuffleDeck([
             "Alright, alright, settle down. So, where were we? Ah, yes... Vizzini had laid out the goblets. The tension was so thick you could cut it with a butter knife. And the Man in Black, cool as ever, surveyed the scene and declared:",
@@ -559,16 +765,52 @@ export class Gramps extends Character {
             "Feeling poorly? Well, this story is just what the doctor ordered. Or, well, what *I* ordered."
         ]).reshuffle();
 
+        this.preRiddleMessages = new AutoShuffleDeck([
+            'Alright, kiddo, listen up. The book says: "Vizzini, with a theatrical flourish, then demanded of the Man in Black..." 🎭',
+            'Now, pay close attention. Gramps reads: "He then, with a glint of malice in his eye, posed his next intellectual trap..." 😈',
+            'Here\'s where Vizzini tries to be extra clever. The story continues: "He leaned in, as if sharing a great secret, and whispered, though his voice carried across the chasm..." 🤫',
+            'Alright, now, the book describes: "Vizzini, certain of his own brilliance, laid out his intellectual challenge, saying..." ✨',
+            'And then, Vizzini, thinking he had him, said: "Now, for the first test of your supposed intellect..." 🧐',
+            '*Ahem*, *hrok*, *ahem*, *snooort*. "With a condescending smile, Vizzini began his next verbal assault..." 😒',
+            'The text reads: "He looked the Man in Black squarely in the eye, and with an air of supreme confidence, he uttered..." 👑',
+            'This is a tricky one. The book says: "Vizzini, ever the master of psychological warfare, then presented his next conundrum..." 🧠',
+            'And then, Gramps reads, "He paused for dramatic effect, letting the tension build, before finally delivering his next challenge..." ⏳',
+            'Alright, kiddo, listen up. The book says: "And then, Vizzini posed his riddle to the masked man, saying..."',
+            'Now, pay close attention. Gramps reads: "Vizzini, with a smug grin, began his intellectual assault..."',
+            'Here\'s the part where Vizzini gets clever. The story goes: "He then turned to the Man in Black, a glint in his eye, and uttered..."',
+            'This is where the real test begins. From the book: "Vizzini, confident in his superior intellect, challenged..."',
+            'My favorite part! It says: "With a flourish, Vizzini presented his first conundrum..."',
+            'You won\'t believe what Vizzini says next. The text reads: "He fixed his gaze on the pirate and declared..."',
+            'The tension was thick. The book describes: "Vizzini, relishing the moment, posed his question..."',
+            'Here\'s Vizzini\'s opening move. It\'s written: "He leaned forward, a wicked smile playing on his lips, and began..."',
+            'This is where he tries to trick him. The story tells: "Vizzini, with feigned politeness, inquired..."',
+            'Remember this line. It goes: "And so, the Sicilian, with a theatrical gesture, began his interrogation..."',
+            'Now, Vizzini\'s turn to speak. The book states: "He cleared his throat, enjoying the silence, and then..."',
+            'He\'s really laying it on thick here. It says: "Vizzini, brimming with self-importance, announced..."',
+            'This is the setup for the big one. The text reveals: "He gestured grandly, inviting a response, and then..."',
+            'I always liked this bit. It reads: "Vizzini, eager to demonstrate his genius, began..."',
+            'The moment of truth. The book says: "He looked the Man in Black squarely in the eye and demanded..."',
+            'Vizzini\'s not holding back. It\'s written: "With a condescending smirk, he posed his challenge..."',
+            'Here\'s the first trap. The story describes: "He spoke slowly, deliberately, each word a snare..."',
+            'I always wondered how he came up with these. It goes: "Vizzini, certain of his victory, began his verbal assault..."',
+            'He\'s trying to intimidate him. The book tells: "He puffed out his chest, and with a booming voice, he asked..."',
+            'And so, the battle of wits truly began. The text reads: "Vizzini, with a twinkle in his eye, delivered his first test..."'
+        ]).reshuffle();
     }
 
-    async sayOpeningMessage() {
-        await this.say(this.openingMessages.draw());
+    async sayGobletRoundMessage(replaces={}) {
+        await this.say(this.gobletRoundMessages.draw(), replaces);
     }
 
-    async sayGobletRoundMessage() {
-        await this.say(this.gobletRoundMessages.draw());
+    async sayPreRiddleMessage(replaces={}) {
+        await this.say(this.preRiddleMessages.draw(), replaces);
     }
-}
+
+    async sayOpeningMessage(replaces={}) {
+        await this.say(this.openingMessages.draw(), replaces);
+    }
+
+};
 
 export class SickBoy extends Character {
     constructor(chat) {
@@ -586,6 +828,17 @@ export class SickBoy extends Character {
             "Why is he a 'dread' pirate? What's so scary about him?", "So there are three bad guys?",
             "This story better have a giant in it.", "Okay, fine. Read. But make it quick.",
             "My throat hurts.", "I think my fever's coming back."
+        ,
+            "Are you sure this isn't a history lesson? 'Cause I hate history.",
+            "If I fall asleep, don't get mad.",
+            "Is there a remote? Can I change the channel on this story?",
+            "Just tell me when the fighting starts.",
+            "My head feels fuzzy. Is this story gonna make it worse?",
+            "A book? Can't you just tell me the story?",
+            "Does it have any explosions?",
+            "Okay, but if I get bored, I'm playing on my phone.",
+            "Is this one of those stories with a moral? 'Cause I don't want a moral.",
+            "How many pages is this chapter? It looks long."
         ];
         const generalMessages = [
             "Wait, what did he say? He talks too fast.", "This is taking forever! Get to the action! 💥",
@@ -599,6 +852,16 @@ export class SickBoy extends Character {
             "Just pick one already!", "This is the most boring duel ever.",
             "I think I'm gonna be sick. 🤢", "Can you just skip to the end?",
             "I don't understand the riddle. It's stupid.", "Vizzini is a cheater. I can tell.",
+            "This is so slow. Can you fast-forward?",
+            "Why is he explaining everything? Just do it!",
+            "I'm so lost. Who's talking now?",
+            "This is more confusing than my math homework.",
+            "Can we take a break? I need a drink.",
+            "Is he ever going to make a choice?",
+            "This is giving me a headache.",
+            "The princess is useless. Why doesn't she just run away?",
+            "This riddle is impossible. It's not fair.",
+            "I bet the pirate is cheating.",
             "The princess isn't very smart, is she?", "Why is he letting him talk so much?",
             "This is the worst rescue I've ever seen.", "Can I have some soup?",
             "He's just trying to trick him. It's obvious.", "This is not better than video games. Not even close.",
@@ -617,6 +880,15 @@ export class SickBoy extends Character {
             "Okay, that was better than a sword fight.", "The annoying guy lost! Yes!",
             "He's a genius!", "So the man in black is the hero!",
             "I feel better now.", "That was cool.",
+            "Whoa! He totally tricked him!",
+            "That was the best part! Do it again!",
+            "See? I told you Vizzini was a jerk.",
+            "So the poison was in both cups? That's genius!",
+            "Okay, okay, I'm not bored anymore. What's next?",
+            "He didn't even have to fight him! He just used his brain!",
+            "That was a total boss move.",
+            "So the hero is smart AND good with a sword? Cool.",
+            "Vizzini got owned! Haha!",
             "What happens next? Does he fight the six-fingered man?", "Read it again!"
         ];
         const dprLossMessages = [
@@ -633,10 +905,20 @@ export class SickBoy extends Character {
             "He just... dies? That's so anticlimactic.", "I want a different story.",
             "Don't read to me anymore.", "That's just sad.",
             "I'm not crying, you're crying.", "This is worse than having the flu.",
+            "What? He lost? But he's the hero!",
+            "This book is broken. That's not how it's supposed to end.",
+            "I'm mad now. That was a ripoff.",
+            "So the annoying guy wins? I hate this.",
+            "Don't read anymore. I don't want to know what happens.",
+            "That's the stupidest ending ever.",
+            "This story is bad for my health.",
+            "Why would you read me a story where the good guy loses?",
+            "This is worse than when my team loses.",
+            "I'm never trusting a book again.",
             "So the jerk wins? Great.", "I'm officially bored."
         ];
 
-        super(chat, "Sick Boy", "🤒", startMessages, generalMessages, dprWinMessages, dprLossMessages);
+        super("Sick Boy", "\u{1F912}", startMessages, generalMessages, dprWinMessages, dprLossMessages);
 
         this.greetings = new AutoShuffleDeck([
             "Hi gramps *cough* *cough* *cough* *cough*",
@@ -651,13 +933,23 @@ export class SickBoy extends Character {
             "Hi Gramps. Did you bring chicken soup too? Just kidding... mostly.",
             "Hey Gramps. I was just about to fall asleep, but I'll stay up for a story.",
             "Gramps! Oh, good. I was hoping you'd read to me.",
-            "Gramps, can you read me the one with the pirates?"
+            "Gramps, can you read me the one with the pirates?",
+            "Hey Gramps. My head feels like a balloon.",
+            "Is that the princess book? Okay, I guess.",
+            "*cough* Hi. Can you get me some water first?",
+            "I was having a weird dream. A story sounds better.",
+            "You came! I was so bored.",
+            "Hi Grandpa. My throat is scratchy, so can you do all the talking?",
+            "I don't feel good. But maybe a story will help.",
+            "Are you gonna do the voices? You have to do the voices.",
+            "Hey. Did you bring snacks?",
+            "I'm ready. But no kissing parts today, okay?"
         ]).reshuffle();
 
     }
 
-    async sayGreeting() {
-        await this.say(this.greetings.draw());
+    async sayGreeting(replaces={}) {
+        await this.say(this.greetings.draw(), replaces);
     }
 
 }

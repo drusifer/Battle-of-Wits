@@ -1,0 +1,5 @@
+{
+    "extension": ["jsa"],
+    "spec": "test/**/*.test.js",
+    "watch-files": ["**/*.js"]
+}

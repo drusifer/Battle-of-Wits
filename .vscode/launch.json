@@ -1,10 +1,26 @@
 {
     "configurations": [
         {
-            "type": "chrome",
-            "name": "http://127.0.0.1:3000/Battle Of Wits.html",
+            "name": "Mocha Tests",
+            "type": "node",
             "request": "launch",
-            "url": "http://127.0.0.1:3000/Battle Of Wits.html"
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            // This flag enables ES Module support, which is likely needed for your tests.
+            "runtimeArgs": [
+                "--experimental-vm-modules"
+            ],
+            "args": [
+                "test/**/*.test.js" // Adjust this glob to match your test file locations
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/bow.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/bow.html"
         }
     ]
 }

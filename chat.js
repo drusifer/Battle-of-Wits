@@ -1,4 +1,4 @@
-import { AutoShuffleDeck } from "./autoShuffleDeck.js";
+import { AutoShuffleDeck } from "./deck.js";
 
 export class ChatSession {
     constructor(character, chat) {
@@ -10,74 +10,35 @@ export class ChatSession {
         await this.chat.say(this.character, message);
     }
 
-    login() {
-        this.chat.login(this.character);
+    async login() {
+        await this.chat.login(this.character);
     }
 
-    logout() {
-        this.chat.logout(this.character);
+    async logout() {
+        await this.chat.logout(this.character);
     }
 
 }
 
-class Chat {
+const INITIAL_PLAYER_HEARTS = 2; // Default, should be synced with game logic if possible
+const SPEED_FACTOR = .5
+
+export class BrowserChat {
     constructor() {
         this.dpr = null;
-    }
-
-    login(character) {
-        this.postMessage('game-event', "", "", `      ---> ${character.name} has entered the chat. <---`, true)
-        if (character.slug == "dpr") {
-            this.dpr = character;
-        }
-    };
-
-    logout(character) {
-        this.say(character, `      ---> ${character.name} has left the chat. <---`, true)
-    };
-
-    // abstract
-    async waitForAnswer() {};
-    async waitForGobletChoice() {};
-    async setInputStatus(status) {}; //"on" or "off"
-    async postMessage(slug, name, photo, message, fast) {};
-
-    async say(character, message) {};
-}
-
-// an abstract web client
-// acts as a bridge between the browser's event model
-// and the game's main loop.
-export class AsyncChat extends Chat {
-    constructor() {
-        super();
-    }
-
-    // base functionality
-    async say(character, message) {
-        return await this.postMessage(character.slug, character.name,
-             character.emoji, message, false);
-    }
-}
-
-const INITIAL_PLAYER_HEARTS = 3; // Default, should be synced with game logic if possible
-
-export class BrowserChat extends AsyncChat {
-    constructor() {
-        super();
-        this.typingSpeedDeck = new AutoShuffleDeck([1000, 300, 700, 500]).reshuffle();
+        this.typingSpeedDeck = new AutoShuffleDeck(
+            [1000*SPEED_FACTOR,
+              300*SPEED_FACTOR,
+              700*SPEED_FACTOR,
+              500*SPEED_FACTOR]
+        ).reshuffle();
         this.document = document;
         this.chatLogElement = document.getElementById('chatLog');
         
         // Riddle input elements
-        this.riddleInputAreaDiv = document.getElementById('riddleInputArea');
         this.answerInputElement = document.getElementById('answerInput');
         this.submitAnswerButton = document.getElementById('submitAnswerButton');
-        
-        // Riddle action buttons
-        this.riddleActionButtonsDiv = document.getElementById('riddleActionButtons');
         this.hintButton = document.getElementById('hintButton');
-        this.passButton = document.getElementById('passButton');
 
         // Goblet choice elements
         this.gobletChoiceAreaDiv = document.getElementById('gobletChoiceArea');
@@ -88,62 +49,101 @@ export class BrowserChat extends AsyncChat {
         this.setInputStatus("off");
     }
 
+    async login(character) {
+        await this.postMessage('game-event', "", "", `      ---> ${character.name} has entered the chat. <---`, true)
+        if (character.slug == "dpr") {
+            this.dpr = character;
+        }
+    };
+
+    async logout(character) {
+        await this.say(character, `      ---> ${character.name} has left the chat. <---`, true)
+    };
+
+    // base functionality
+    async say(character, message) {
+        return await this.postMessage(character.slug, character.name,
+             character.emoji, message, false);
+    }
+
     getRiddleAnswer() {
         return this.answerInputElement.value.trim();
     }
 
-    setInputStatus(status) {
+    async setInputStatus(status) {
         if (status == "on") {
             this.answerInputElement.disabled = false;
             this.submitAnswerButton.disabled = false;
+            this.hintButton.disabled = false;
             this.answerInputElement.placeholder = "Your One Word Answer Pirate...";
         } else {
+            this.answerInputElement.placeholder = "...";
             this.answerInputElement.disabled = true;
             this.submitAnswerButton.disabled = true;
-            this.answerInputElement.placeholder = "...";
+            this.hintButton.disabled = true;
         }
     }
 
-    waitForAnswer() {
+    async waitForAnswer() {
         this.answerInputElement.placeholder="Your Answer Pirate..."
-        this.riddleActionButtonsDiv.style.display = 'flex';
         this.setInputStatus("on");
 
         return new Promise(resolve => {
-            const callback = (event) => {
-                this.submitAnswerButton.removeEventListener('click', callback);
-                resolve(this.getRiddleAnswer());
-                this.answerInputElement.value = '';
+            // Declare variables to hold the listener function references
+            // so they can be added and removed correctly.
+            let submitCallback, hintCallback, inputCallback;
+
+            const cleanupAndResolve = (click_val) => {
+                // Remove the listeners to prevent them from firing again.
+                this.submitAnswerButton.removeEventListener('click', submitCallback);
+                this.hintButton.removeEventListener('click', hintCallback);
+                this.answerInputElement.removeEventListener('keydown', inputCallback);
+
+                if (click_val === 'answer') { // Use comparison '===' instead of assignment '='
+                    resolve({ 'click': click_val, 'value': this.getRiddleAnswer() });
+                    this.answerInputElement.value = '';
+                } else {
+                    resolve({ 'click': click_val });
+                }
                 this.setInputStatus("off");
             };
 
-            this.submitAnswerButton.addEventListener('click', callback);
-            this.answerInputElement.addEventListener('keydown', (event) => {
+            // Define the actual listener functions.
+            submitCallback = () => cleanupAndResolve('answer');
+            hintCallback = () => cleanupAndResolve('hint');
+            inputCallback = (event) => { // press enter in the input message box
                 if (event.key === 'Enter') {
-                    callback();
+                    event.preventDefault(); // Prevent default form submission
+                    submitCallback();
                 }
-            });
+            };
+
+            // Add the listeners.
+            this.submitAnswerButton.addEventListener('click', submitCallback);
+            this.hintButton.addEventListener('click', hintCallback);
+            this.answerInputElement.addEventListener('keydown', inputCallback);
         });
     };
 
-    waitForGobletChoice() {
+    async waitForGobletChoice() {
         this.gobletChoiceAreaDiv.style.display = 'flex';
-        this.setInputStatus("on");
 
         return new Promise(resolve => {
-
-            const leftCallback  = function() {
+            let leftCallback, rightCallback;
+            const cleanupAndResolve = (click_val) => {
                 this.leftGobletButton.removeEventListener('click', leftCallback);
-                resolve("left")
-            };
-            this.leftGobletButton.addEventListener('click', leftCallback);
-
-            const rightCallback  = function() {
                 this.rightGobletButton.removeEventListener('click', rightCallback);
-                resolve("right");
+                this.gobletChoiceAreaDiv.style.display = 'none';
+                resolve(click_val);
             };
+
+
+            leftCallback = () => cleanupAndResolve("left");
+            rightCallback = () => cleanupAndResolve("right");
+
+            this.leftGobletButton.addEventListener('click', leftCallback);
             this.rightGobletButton.addEventListener('click', rightCallback);
-        })
+        });
     };
 
     /**
@@ -164,9 +164,8 @@ export class BrowserChat extends AsyncChat {
             return;
         }
 
-        let typingIndicatorElement;
-        if (!fast && (this.dpr == null || this.dpr.slug !== slug)) {
-            typingIndicatorElement = this._showTypingIndicator(photo, slug);
+        if (!fast || (this.dpr == null || this.dpr.slug != slug)) {
+            let typingIndicatorElement = this._showTypingIndicator(photo, slug);
             await this._delay(this.typingSpeedDeck.draw());
             this._hideTypingIndicator(typingIndicatorElement);
         }
@@ -187,87 +186,15 @@ export class BrowserChat extends AsyncChat {
 
         messageDiv.classList.add(slug);
         this.chatLogElement.appendChild(messageDiv);
-        this.scrollLastChildIntoView(this.chatLogElement);
-
-
+        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
 
-    // Smooth scroll alternative (less precise for absolute bottom, but often visually nicer)
-    smoothScrollDivToBottom(element) {
-         if (element) {
-            element.scrollTo({
-                top: element.scrollHeight,
-                behavior: 'smooth'
-            });
-        }
-    }
-
-    // Or scrolling the last child into jview
-    scrollLastChildIntoView(element) {
-        if (element && element.lastElementChild) {
-        element.lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        }
-    }
-
-    /**
-     * Gets the current value from the primary input field and clears it.
-     * @returns {string} The value of the answer input field.
-     */
     getInputValue() {
         const value = this.answerInputElement.value;
         this.answerInputElement.value = ''; 
         return value;
     }
 
-    /**
-     * Adds an event listener to a specific UI interaction type.
-     * This implementation is simplified as the primary listeners for resolving
-     * promises are set up in _bindInitialListeners. This method is here to fulfill
-     * the AsyncChat contract if it's used for other generic UI events by the game logic.
-     * @param {string} eventType - The type of event (e.g., 'submitRiddle', 'requestHint').
-     * @param {function} callback - The function to call when the event occurs.
-     */
-    addEventListener(eventType, callback) {
-        let element;
-        const domEvent = 'click';
-
-        switch (eventType) {
-            case 'submitRiddle': element = this.submitAnswerButton; break;
-            case 'requestHint': element = this.hintButton; break;
-            case 'passRiddle': element = this.passButton; break;
-            case 'chooseLeftGoblet': element = this.leftGobletButton; break;
-            case 'chooseRightGoblet': element = this.rightGobletButton; break;
-            default:
-                console.warn(`BrowserChat: Unsupported eventType for addEventListener: ${eventType}`);
-                return;
-        }
-
-        if (element) {
-            const wrapperCallback = (event) => callback(event);
-            if (!this.activeListeners.has(eventType)) {
-                this.activeListeners.set(eventType, []);
-            }
-            this.activeListeners.get(eventType).push({ original: callback, wrapper: wrapperCallback, element: element, domEvent: domEvent });
-            element.addEventListener(domEvent, wrapperCallback);
-        }
-    }
-
-    /**
-     * Removes an event listener for a specific UI interaction type.
-     * @param {string} eventType - The type of event.
-     * @param {function} callback - The original callback function to remove.
-     */
-    removeEventListener(eventType, callback) {
-        if (this.activeListeners.has(eventType)) {
-            const listeners = this.activeListeners.get(eventType);
-            const listenerIndex = listeners.findIndex(l => l.original === callback);
-            if (listenerIndex > -1) {
-                const listenerToRemove = listeners[listenerIndex];
-                listenerToRemove.element.removeEventListener(listenerToRemove.domEvent, listenerToRemove.wrapper);
-                listeners.splice(listenerIndex, 1);
-            }
-        }
-    }
     
     // --- UI State Management and Helper Methods (Private) ---
 
@@ -277,10 +204,10 @@ export class BrowserChat extends AsyncChat {
         indicatorDiv.innerHTML = `
             <div class="message-sender">
                 <span class="icon">${photo}</span>${name}
-                <div class="typing-indicator"><span></span><span></span><span></span></div>
+                <div class="typing-indicator"><span>.</span>.<span>.</span><span>.</span></div>
             </div>`;
         this.chatLogElement.appendChild(indicatorDiv);
-        this.chatLogElement.scrollTop = this.chatLogElement.scrollHeight;
+        indicatorDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
         return indicatorDiv;
     }
 
@@ -295,8 +222,6 @@ export class BrowserChat extends AsyncChat {
     }
     
     _setRiddleMode(active) {
-        this.riddleInputAreaDiv.style.display = active ? 'flex' : 'none';
-        this.riddleActionButtonsDiv.style.display = active ? 'flex' : 'none';
         this.gobletChoiceAreaDiv.style.display = 'none';
 
         this.answerInputElement.disabled = !active;
@@ -309,42 +234,10 @@ export class BrowserChat extends AsyncChat {
     }
 
     _setGobletMode(active) {
-        this.riddleInputAreaDiv.style.display = 'none';
-        this.riddleActionButtonsDiv.style.display = 'none';
         this.gobletChoiceAreaDiv.style.display = active ? 'flex' : 'none';
         
         this.leftGobletButton.disabled = !active;
         this.rightGobletButton.disabled = !active;
-    }
-
-    // --- Promise-based methods for Game.js to await ---
-
-    /**
-     * Prompts the user for an action during the riddle phase (answer, hint, or pass).
-     * Returns a Promise that resolves with an object: { type: 'answer'|'hint'|'pass', value?: string }
-     */
-    promptForRiddleAction() {
-        this._setRiddleMode(true);
-        return new Promise(resolve => {
-            this._resolveRiddleAction = (action) => {
-                this._setRiddleMode(false); // Disable inputs after action
-                resolve(action);
-            };
-        });
-    }
-    
-    /**
-     * Prompts the user to choose a goblet.
-     * Returns a Promise that resolves with 'left' or 'right'.
-     */
-    promptForGobletChoice() {
-        this._setGobletMode(true);
-        return new Promise(resolve => {
-            this._resolveGobletChoice = (choice) => {
-                this._setGobletMode(false); // Disable inputs after choice
-                resolve(choice);
-            };
-        });
     }
 
     /**
@@ -353,8 +246,8 @@ export class BrowserChat extends AsyncChat {
      * @param {number} round - Current round number.
      * @param {number} totalRounds - Total rounds in the game.
      */
-    updateStatus(hearts, round, totalRounds) {
+    updateStatus(hearts, round) {
         this.document.getElementById('playerHearts').innerHTML = `Hearts: ${'❤️'.repeat(hearts)}${'🖤'.repeat(Math.max(0, INITIAL_PLAYER_HEARTS - hearts))}`;
-        this.document.getElementById('roundInfo').textContent = `Round: ${round} / ${totalRounds}`;
+        this.document.getElementById('roundInfo').textContent = `Round: ${round}`;
     }
 }

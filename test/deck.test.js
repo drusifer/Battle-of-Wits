@@ -1,8 +1,7 @@
 // Assuming deck.js and autoShuffleDeck.js are available in the same directory
-import { Deck } from './deck.js';
-import { AutoShuffleDeck } from './autoShuffleDeck.js';
 import { expect } from 'chai';
-import { describe, it, beforeEach } from 'mocha';
+import { describe, it, beforeEach } from 'vitest';
+import { Deck, AutoShuffleDeck } from '../deck.js';
 
 describe('Deck', () => {
     let deck;
@@ -26,7 +25,7 @@ describe('Deck', () => {
         expect(drawnCard).to.equal('card1');
         expect(deck.currentCard).to.equal(drawnCard);
         expect(deck.numDrawn).to.equal(1);
-        expect(deck.drawnCards[0]).to.equal(drawnCard)
+        expect(deck.drawnCards).to.be.empty;
     });
 
     it('draw should return the last card when only one card remains', () => {
@@ -36,15 +35,15 @@ describe('Deck', () => {
         expect(deck.currentCard).to.equal(drawnCard);
         expect(deck.numRemaining).to.equal(0);
         expect(deck.numDrawn).to.equal(1);
-        expect(deck.drawnCards[0]).to.equal(drawnCard);
+        expect(deck.drawnCards).to.be.empty;
     });
 
 
     it('draw should return null when the deck is empty and reshuffle is false', () => {
         deck = new Deck([]);
         const drawnCard = deck.draw();
-        expect(drawnCard).to.be.null; // Changed from to.equal.null to to.be.null
-        expect(deck.currentCard).to.be.null; // Changed from to.equal.null to to.be.null
+        expect(drawnCard).to.be.equal(undefined); 
+        expect(deck.currentCard).to.be.equal(undefined); 
         expect(deck.numRemaining).to.equal(0);
         expect(deck.numDrawn).to.equal(0);
     });
@@ -56,8 +55,8 @@ describe('Deck', () => {
         expect(deck.numRemaining).to.equal(0);
         expect(deck.numDrawn).to.equal(2); // cardA, cardB
 
-        const drawnWhenEmpty = deck.draw(true); // Reshuffle
-        expect(drawnWhenEmpty).to.be.null;
+        const drawnWhenEmpty = deck.draw(); // Reshuffle
+        expect(drawnWhenEmpty).to.be.undefined;
 
         deck.reshuffle()
         expect(deck.numRemaining).to.equal(2);
@@ -65,7 +64,7 @@ describe('Deck', () => {
         expect(deck.currentCard).to.be.null;
 
         const cardAfterReshuffle = deck.draw();
-        expect(cardAfterReshuffle).to.not.be.null;
+        expect(cardAfterReshuffle).to.be.oneOf(['cardA', 'cardB']);
         expect(deck.currentCard).to.equal(cardAfterReshuffle);
 
     });

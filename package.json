@@ -1,0 +1,20 @@
+{
+  "name": "battle-of-wits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "*"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

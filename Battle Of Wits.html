@@ -6,13 +6,14 @@
     <title>Battle of Wits</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS_PLACEHOLDER -->
 </head>
 <body>
     <div class="game-container">
         <header class="game-header">
             <h1>Battle of Wits</h1>
             <div class="game-status">
-                <span id="playerHearts">Hearts: ❤️❤️❤️</span>
+                <span id="playerHearts">Hearts: </span>
                 <span id="roundInfo">Round: 1</span>
             </div>
         </header>
@@ -24,13 +25,9 @@
         </div>
 
         <div class="input-area" id="riddleInputArea">
-            <input type="text" id="answerInput" placeholder="...">
+            <input type="text" id="answerInput" autocomplete="off" placeholder="...">
             <button id="submitAnswerButton">Send 🗡️</button>
-        </div>
-        
-        <div class="action-buttons" id="riddleActionButtons"> <!-- Initially hidden via CSS or JS -->
             <button id="hintButton">Hint 🙏</button>
-            <button id="passButton">Pass 🏳️</button>
         </div>
 
         <div class="goblet-choice-area" id="gobletChoiceArea"> <!-- Initially hidden via CSS or JS -->
@@ -41,6 +38,6 @@
 
     </div>
 
-    <script type="module" src="./main.js"></script>
+    <!-- JS_PLACEHOLDER -->
 </body>
 </html>
