@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Capacity:oversized",
+    "fragment": "grossly oversized, more of a bucket than a chalice",
+    "insults": [
+      "Your logic is as bloated and oversized as a common sewer pipe!",
+      "Oversized-brained! You have a mind like a heavy and dull block!",
+      "You are trying to be substantial with a blunt and clumsy mind!",
+      "Inconceivable! Even a bucket has more wit than you do!",
+      "You have offered a heavy and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. An oversized and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a solid casting, your answer is subtle and undeniably right.",
+      "A victory of the bucket! Correct, though I still find you a fool.",
+      "I concede. Your leaden correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both heavy and unrefined?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the weight of a thousand years of empire on your hand.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Capacity:thimble-sized",
+    "fragment": "no larger than a thimble, meant for the most potent of elixirs",
+    "insults": [
+      "Your answer is as regressive and tiny as a common thimble!",
+      "Thimble-sized-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a gold leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A thimble-sized and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the thimble! Correct, though I still find you a fool.",
+      "I concede. Your golden correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the sun and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Capacity:standard",
+    "fragment": "a perfectly standard capacity, neither greedy nor abstemious",
+    "insults": [
+      "Your logic is as common and unremarkable as a street stone!",
+      "Standard-brained! You have a mind like a plain and empty room!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead emperor has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A standard and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the standard! Correct, though I still find you a fool.",
+      "I concede. Your Roman correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the forum and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Capacity:flagon-like",
+    "fragment": "it has the flagon-like capacity of a tavern's best vessel",
+    "insults": [
+      "Your reasoning is as crude and unrefined as a barbarian's club!",
+      "Flagon-like-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A flagon-like and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the flagon! Correct, though I find you brutish.",
+      "I concede. Your Viking correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Capacity:dainty",
+    "fragment": "a dainty capacity, meant for a delicate sip of nectar",
+    "insults": [
+      "Your answer is as cloying and superficial as a merchant's perfume!",
+      "Dainty-capacity-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A dainty and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the sip! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Capacity:measure-marked",
+    "fragment": "inscribed with lines to measure the exact depth of the draught",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Measure-marked-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead glassblower has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A measure-marked and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the line! Correct, though I still find you a fool.",
+      "I concede. Your Venetian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Capacity:overflowing",
+    "fragment": "it seems perpetually overflowing, even when half-full",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Overflowing-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. An overflowing and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the flood! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Capacity:shallow-fill",
+    "fragment": "it appears deep but is surprisingly shallow-filled",
+    "insults": [
+      "Your reasoning is as hollow and empty as a dried-up old well!",
+      "Shallow-fill-brained! You have a mind like a tomb with no exit!",
+      "You are trying to be mysterious with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead king has more wit than you!",
+      "You have offered a dark and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A shallow-fill and perfectly permanent answer. I am annoyed.",
+      "You found the correct mark in the stone of the question. Correct.",
+      "Like a fine inscription, your answer is subtle and undeniably right.",
+      "A victory of the deception! Correct, though I still find you a fool.",
+      "I concede. Your concave correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What capacity suggests a material that is both ancient and mysterious?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sand and the weight of a thousand years of empire.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  }
+]

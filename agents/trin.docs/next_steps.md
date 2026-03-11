@@ -1,18 +1,21 @@
 # Next Steps
 
 ## Immediate Next Action
-Wait for Sprint 2 to begin. When Neo implements Characters + GameEngine, run:
-- `*qa test all` after each T16–T20
-- `*qa review` on GameEngine async state machine (complex — high risk)
+Sprint 3 QA gate closed. Waiting for Sprint 4 kickoff.
 
-## Planned Work for Sprint 2 UAT
-- [ ] Create `agents/tools/uat_sprint2.mjs` covering GameEngine state transitions
-- [ ] Verify async `whenIdle()` contract is tested (banter never interleaves gameplay)
-- [ ] Verify EventBus events fire in correct order
-- [ ] Add `make uat2` target
+## Completed Sprint 3 UAT Work
+- [x] T39: Unit tests for ChatUI (tests/unit/ChatUI.test.js — 14 tests)
+- [x] T40: Unit tests for StatusBar + GobletDisplay (21 additional tests in same file)
+- [x] T41: agents/tools/uat_sprint3.mjs + make uat3 target
+
+## Potential Sprint 4 QA Work (if difficulty scaling / typing animation added)
+- [ ] Tests for TypingIndicator.js (whenIdle() should resolve after animation completes)
+- [ ] Tests for difficulty scaling mechanic (if added)
+- [ ] Browser automation smoke test (Playwright) for end-to-end game session
+- [ ] UAT Sprint 4 script
 
 ## Waiting On
-Mouse to kick off Sprint 2, Neo to implement T16–T20
+Mouse to kick off Sprint 4
 
 ---
-*Last updated: 2026-03-10*
+*Last updated: 2026-03-11*

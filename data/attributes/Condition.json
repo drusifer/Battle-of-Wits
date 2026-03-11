@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Condition:ancient",
+    "fragment": "bearing the look of something ancient enough to have a legend attached",
+    "insults": [
+      "Ancient! Your answer belongs in the time before thinking was invented!",
+      "As ancient and irrelevant as the error you have just committed!",
+      "You dredge up ancient wrongness as though age were an excuse!",
+      "Your answer is as ancient as bad ideas and just as persistent!",
+      "Ancient mediocrity — preserved through centuries by sheer stubbornness!"
+    ],
+    "compliments": [
+      "Correct. Ancient wisdom occasionally trickles down even to you.",
+      "Like something ancient, your answer has survived the test of examination. Correct.",
+      "Ancient and correct — I find this as unsettling as I find most old things.",
+      "Correct. The ancient ways sometimes work, and today is apparently one such day.",
+      "Ancient correctness. Time has proven it, and so have you."
+    ],
+    "hints": [
+      "Think of something with deep history — older than memory, present before language.",
+      "What has been here since before anyone can remember, and will be here after?",
+      "It carries the weight of centuries and the dignity of endurance.",
+      "What do we call things that existed before the world was explained?",
+      "Older than the kingdom, older than the road — what has always been?"
+    ]
+  },
+  {
+    "id": "Condition:pristine",
+    "fragment": "kept in pristine condition as though never once used for its purpose",
+    "insults": [
+      "Pristine wrongness — you have kept your error in perfect, unmarked condition!",
+      "Your answer is pristine — completely untouched by correctness!",
+      "Pristine as the blank space where your answer should have been!",
+      "You have pristinely avoided the truth in every direction!",
+      "Pristine in its total wrongness — I almost admire the consistency!"
+    ],
+    "compliments": [
+      "Correct — pristine and exact and surprisingly untarnished by your usual method.",
+      "Pristine correctness. Not a flaw in it. Well done.",
+      "Like something pristine kept behind glass, your answer is perfect. Correct.",
+      "Correct. Pristine. I find I have nothing to complain about, which is its own problem.",
+      "Pristinely correct. Not a scratch on it."
+    ],
+    "hints": [
+      "Think of something kept perfect — unmarked by use, untouched by time.",
+      "What is exactly as it was the day it was made — no wear, no age?",
+      "It has never been used for its purpose. It exists to be preserved.",
+      "Perfect condition speaks of care, wealth, and perhaps a reluctance to live in the world.",
+      "What looks as though it has just been made and never since touched?"
+    ]
+  },
+  {
+    "id": "Condition:tarnished",
+    "fragment": "tarnished to a warm brown that suggests decades of neglect and occasional use",
+    "insults": [
+      "Tarnished! Your reputation for correct answers, already questionable, is further tarnished!",
+      "Your answer has tarnished whatever credibility remained to you!",
+      "As tarnished and dull as the thinking that produced that response!",
+      "Tarnished logic yields tarnished results — and you have yielded magnificently!",
+      "You have tarnished the fine tradition of attempting to answer correctly!"
+    ],
+    "compliments": [
+      "Correct — tarnished by surprise but correct nonetheless.",
+      "Like something tarnished that still holds its value, your answer does too. Correct.",
+      "Tarnished by the long road to get here, but correct upon arrival.",
+      "Correct. Even tarnished silver is still silver.",
+      "I concede. Tarnished but true."
+    ],
+    "hints": [
+      "Think of something that has aged — not broken, but marked by time and weather.",
+      "What loses its surface brightness without losing its essential nature?",
+      "It was once brilliant and still has worth — changed by time but not ruined by it.",
+      "The patina of long years and hard use — what wears it honestly?",
+      "What shows its history on its surface in the form of colour and texture?"
+    ]
+  },
+  {
+    "id": "Condition:scorched",
+    "fragment": "scorched along one side as though it survived something it should not have",
+    "insults": [
+      "Scorched! Your answer scorches the very concept of logical thinking!",
+      "You have scorched the earth of this conversation with that response!",
+      "As scorched and ruined as your chances of being correct!",
+      "Scorched-earth wrongness — you have burned every bridge to the right answer!",
+      "That answer scorched my patience to the roots!"
+    ],
+    "compliments": [
+      "Scorched me with surprise, you have. Correct.",
+      "Correct — like something scorched but not destroyed.",
+      "You have scorched your way through to the right answer. Correct.",
+      "Scorched but standing — your answer survives. Correct.",
+      "Correct. It burns me to say so, but it is right."
+    ],
+    "hints": [
+      "Think of something that has been through fire — marked by it, but not destroyed.",
+      "What carries the evidence of great heat upon its surface?",
+      "It survived something that should have ended it. The damage is the proof.",
+      "Blackened on one side, whole on the other — what does this image suggest?",
+      "What is changed by fire but not consumed by it?"
+    ]
+  },
+  {
+    "id": "Condition:ornate",
+    "fragment": "so ornate as to suggest it was made to impress rather than to be used",
+    "insults": [
+      "Ornate in its wrongness — you have decorated your failure magnificently!",
+      "As ornate and useless as an answer that looks right and isn't!",
+      "Ornate foolishness is the worst kind — it wastes everyone's time, including the fool's!",
+      "You have offered an ornate display with no substance — typical!",
+      "Ornate! Elaborate! Completely, magnificently wrong!"
+    ],
+    "compliments": [
+      "Ornate correctness. It has everything. Including being right. Correct.",
+      "Correct — ornate in its arrival but genuine in its content.",
+      "Like something ornate that is also functional — rare and correct.",
+      "Correct. I am ornately furious at having to say so.",
+      "Ornately correct. I cannot improve upon it, and I find that irritating."
+    ],
+    "hints": [
+      "Think of something made with excessive decoration — beautiful for its own sake.",
+      "What is built not for use but for impression? For ceremony rather than function?",
+      "It is more than it needs to be, and it knows this, and it doesn't care.",
+      "What is created to declare importance rather than to serve it?",
+      "Elaborate beyond necessity — what fits this description?"
+    ]
+  },
+  {
+    "id": "Condition:bloodstained",
+    "fragment": "marked by a single dark bloodstain that will not wash away",
+    "insults": [
+      "Bloodstained! A permanent, grim reminder of your murdered logic!",
+      "Your answer is stained with the failure of a thousand of your ancestors!",
+      "A bloodstained response from a cold-blooded fool! You are truly dangerous!",
+      "You have spilled the blood of reason on the table of fact! Inconceivable!",
+      "Even a bloodstain on a murderer's hand has more life than your answer!"
+    ],
+    "compliments": [
+      "Correct. A dark and bloodstained truth for a dark and bloodstained round.",
+      "You hit the mark with a bloodstained and terrifying precision. Correct.",
+      "Like a permanent stain, your correctness is undeniable and annoying. Correct.",
+      "A victory stained in red! Correct, though I shall need to wash my hands.",
+      "I concede. You have the killer instinct for the truth, if nothing else. Correct."
+    ],
+    "hints": [
+      "What condition speaks of a violent and tragic past on the battlefield?",
+      "Look for the dark, permanent mark that cannot be removed by any soap.",
+      "It is a reminder of a duel gone wrong and a life cut short.",
+      "Think of the colour of old iron and the record of lost lives.",
+      "What stain tells a story of the duel, the sword, and the final breath?"
+    ]
+  },
+  {
+    "id": "Condition:dusty",
+    "fragment": "covered in a fine layer of grey dust that smells of libraries",
+    "insults": [
+      "Dusty! Like the ancient and forgotten scraps of your own mind!",
+      "Your reasoning is as dry and lifeless as a desert tomb in high summer!",
+      "A dusty response from a moth-eaten and terminally slow intellect!",
+      "You are blowing dust into the eyes of the truth! I see right through you!",
+      "Inconceivable! Even the dust in the corner has more substance than your thoughts!"
+    ],
+    "compliments": [
+      "Correct. You brushed off the dust and found the truth beneath. Acceptable.",
+      "A dusty but valid correctness. I suppose you have been reading books.",
+      "Like a dusty book in a forgotten corner, your answer contains real knowledge.",
+      "A victory from the archives! Correct, though I resent your research.",
+      "I concede. You have been doing your research in the dusty stacks. Correct."
+    ],
+    "hints": [
+      "What condition suggests the passage of centuries in absolute silence?",
+      "Look for the grey veil of time that accumulates on the unloved.",
+      "It smells of old parchment, forgotten dreams, and quiet neglect.",
+      "Think of what gathers in the corners of the world when no one is looking.",
+      "What condition is easily removed by a single, sharp breath of air?"
+    ]
+  },
+  {
+    "id": "Condition:weathered",
+    "fragment": "weathered and worn by exposure to sun, wind, and rain",
+    "insults": [
+      "Weathered! Like a face that has seen too many winters and too little sense!",
+      "Your reasoning is as eroded as a cliff-side path after a spring flood!",
+      "A weathered response from a storm-tossed and rudderless mind!",
+      "You have been left out in the rain of your own stupidity for too long!",
+      "Inconceivable! Even a weathered stone has more shape than your logic!"
+    ],
+    "compliments": [
+      "Correct. Weathered and tough, like the truth that eventually emerges.",
+      "A weathered but enduring correctness. It is as stubborn as you are.",
+      "Like a weathered path, your answer has been walked before. Correct.",
+      "A victory against the elements! Correct, though you look the worse for wear.",
+      "I concede. You have survived the storm of my doubt for now. Correct."
+    ],
+    "hints": [
+      "What condition speaks of a long and honest life lived in the open air?",
+      "Look for the marks of the sun, the wind, and the relentless rain.",
+      "It is bleached, worn, and honest in its damage to the surface.",
+      "Think of something that has stood its ground against the world's fury.",
+      "What condition is earned by standing in the path of the storm for decades?"
+    ]
+  }
+]

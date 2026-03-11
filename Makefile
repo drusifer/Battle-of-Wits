@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help tldr install npm-install test test-watch test-coverage uat \
+.PHONY: help tldr install npm-install test test-watch test-coverage uat uat2 uat3 \
         lint lint-fix lint-format lint-format-fix lint-complexity lint-dead-code lint-security lint-structure lint-duplication
 
 help: ## Show available make targets
@@ -11,6 +11,9 @@ tldr: ## Show TL;DR summaries from all project files (quick orientation for agen
 
 npm-install: ## Install npm dependencies
 	npm install
+
+merge-attributes: ## Merge individual category JSONs into data/attributes.json
+	node scripts/mergeAttributes.js
 
 test: ## Run test suite once
 	npm test
@@ -23,6 +26,12 @@ test-coverage: ## Run tests with coverage report
 
 uat: ## Run Sprint 1 UAT acceptance checks
 	node agents/tools/uat_sprint1.mjs
+
+uat2: ## Run Sprint 2 UAT acceptance checks
+	node agents/tools/uat_sprint2.mjs
+
+uat3: ## Run Sprint 3 UAT acceptance checks (UI layer contracts)
+	node agents/tools/uat_sprint3.mjs
 
 # ── Code Quality ────────────────────────────────────────────────────────────
 

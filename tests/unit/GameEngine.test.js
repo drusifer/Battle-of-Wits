@@ -393,6 +393,34 @@ describe('GameEngine — restart()', () => {
     await engine.restart();
     expect(engine.round).toBe(1);
   });
+
+  it('completes a second game without exhausting reaction decks', async () => {
+    // Play a full first game through to GOBLET_PHASE (3 wrong answers), then restart.
+    // After restart, verify state/round are reset and that character reaction decks
+    // are still functional (riddle:answered fires with a non-null reactionLine).
+    const { engine, bus } = makeEngine();
+
+    // First game — reach GOBLET_PHASE via 3 wrong answers
+    await engine.startGame();
+    for (let i = 0; i < 3; i++) await engine.answerRiddle('wrong answer');
+    expect(engine.state).toBe(STATES.GOBLET_PHASE);
+
+    // Restart
+    await engine.restart();
+    expect(engine.state).toBe(STATES.RIDDLE_PHASE);
+    expect(engine.round).toBe(1);
+
+    // Answer one riddle in the second game and confirm riddle:answered fires
+    // with a non-null reactionLine, proving reaction decks are still usable.
+    const answered = [];
+    bus.on('riddle:answered', p => answered.push(p));
+    await engine.answerRiddle('anything');
+
+    expect(answered).toHaveLength(1);
+    expect(answered[0].reactionLine).not.toBeNull();
+    expect(typeof answered[0].reactionLine).toBe('string');
+    expect(answered[0].reactionLine.length).toBeGreaterThan(0);
+  });
 });
 
 // ── Async sequencing ──────────────────────────────────────────────────────────

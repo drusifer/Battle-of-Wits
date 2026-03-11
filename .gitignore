@@ -4,3 +4,4 @@
 .jscpdrc
 .prettierignore
 .prettierrc
+node_modules/

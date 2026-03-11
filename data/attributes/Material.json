@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Material:pewter",
+    "fragment": "fashioned from dull pewter worn grey by many hands",
+    "insults": [
+      "Your answer was as dull and lifeless as pewter left in the rain!",
+      "Even a pewter-brained simpleton could have done better!",
+      "Pewter! That is the worth of your so-called intellect — dull, common, unremarkable!",
+      "You have the mental acuity of a pewter spoon, and I am being generous!",
+      "A pewter mind in a golden age — how tragically fitting!"
+    ],
+    "compliments": [
+      "Tolerable, I suppose. Even pewter has its uses — though not many.",
+      "Correct. Like pewter, your answer is functional if utterly lacking in elegance.",
+      "You stumbled upon the answer like a pewter coin in the mud — by accident.",
+      "I grant you this one. A pewter victory, dull but technically valid.",
+      "Inconceivable that you got it right. As surprising as pewter turning to gold."
+    ],
+    "hints": [
+      "Sometimes what endures is not the brightest, but the most resilient.",
+      "Think of what is common yet indispensable — not precious, but present.",
+      "The answer is humble, like a craftsman's work rather than a king's treasure.",
+      "It is not silver. It is not gold. But it has served for centuries.",
+      "What is grey, cold to the touch, and found in every tavern in the land?"
+    ]
+  },
+  {
+    "id": "Material:silver",
+    "fragment": "wrought from polished silver that catches the light like a secret",
+    "insults": [
+      "Your answer had the silver-tongued charm of a roadside swindler — none!",
+      "Silver linings are wasted on someone with your leaden thinking!",
+      "Even a silver-plated excuse would serve you better than that answer!",
+      "As hollow as a silver bell cracked down the middle — that is your intellect!",
+      "Silver-spoon upbringing, silver-nothing brains!"
+    ],
+    "compliments": [
+      "A silver answer to a golden question — acceptable, if underwhelming.",
+      "Correct. Even a silver spoon occasionally finds good broth.",
+      "You answered as if by silver instinct rather than actual intelligence.",
+      "I concede the point. Like silver, your answer was at least worth something.",
+      "The silver lining of your otherwise catastrophic reasoning — you got it right."
+    ],
+    "hints": [
+      "What shines brightest in moonlight and is associated with purity and worth?",
+      "Think of something valuable but not the most valuable — second only to gold.",
+      "It is the colour of starlight and worn by those who wish to impress.",
+      "Cold to the touch, lustrous, and found in the coffers of those with taste.",
+      "It reflects your face back at you and has been traded for kingdoms."
+    ]
+  },
+  {
+    "id": "Material:oak",
+    "fragment": "hewn from dark oak that smells of old forests and older wars",
+    "insults": [
+      "Your reasoning is as thick and unyielding as a knotted oak plank!",
+      "An oak-headed response — dense, immovable, utterly wrong!",
+      "Oaken stubbornness is your only virtue, and even that is misplaced!",
+      "You are as hollow inside as a rotted oak — impressive outwardly, empty within!",
+      "The oak knows not why it stands — much like you know not why you answered that!"
+    ],
+    "compliments": [
+      "Correct, though I suspect you are as surprised as I am. Solid as oak, by accident.",
+      "An oaken answer — reliable, if lacking in any sophistication whatsoever.",
+      "Even the oak breaks eventually. You have not broken yet — give it time.",
+      "Like oak, your answer stood firm. It will be the last time, I assure you.",
+      "I grudgingly concede. Oaken stubbornness occasionally produces correct results."
+    ],
+    "hints": [
+      "Think of something ancient and enduring — something that grows slowly and lasts forever.",
+      "It comes from the forest, has been used for ships and castles alike.",
+      "What wood is most associated with strength, longevity, and the smell of old libraries?",
+      "It burns long and slow and provides the foundation for things meant to last.",
+      "Kings have sat upon thrones of this — and been buried in it too."
+    ]
+  },
+  {
+    "id": "Material:bone",
+    "fragment": "carved from yellowed bone smooth as river stone and cold as winter",
+    "insults": [
+      "Your answer chilled me to the bone — and not with respect!",
+      "Bone-dry of wit, bone-dry of sense — a remarkable achievement in emptiness!",
+      "Even the bones of the dead hold more wisdom than your response!",
+      "You have the hollow bravado of a bone without its marrow — impressive until examined!",
+      "A bone-headed answer in every sense of the word!"
+    ],
+    "compliments": [
+      "Correct. Even bones outlast their owners — as your answer has outlasted my expectations.",
+      "I am bone-weary of your occasional competence. Correct.",
+      "Like bone, your answer is stripped of everything unnecessary. Correct, if bleak.",
+      "You have answered correctly. I find this development as unsettling as bare bone.",
+      "The structural integrity of your answer surprises me. Like bone, it holds."
+    ],
+    "hints": [
+      "Think of what remains when everything else has gone — the lasting, inescapable core.",
+      "It is pale, hard, and carries the memory of what it once was.",
+      "What do the dead leave behind that the living still use?",
+      "Cold, smooth, carved — found in places of great age and quiet.",
+      "It is the architecture beneath all things — unseen until the end."
+    ]
+  },
+  {
+    "id": "Material:obsidian",
+    "fragment": "carved from obsidian black as a moonless night and sharp as spite",
+    "insults": [
+      "Your answer was as dark and unreflective as obsidian — nothing shines through!",
+      "Obsidian is sharp! Your answer was not!",
+      "Black as obsidian is your reasoning — opaque, volcanic, and ultimately useless to me!",
+      "You shatter like obsidian under the slightest pressure of actual thought!",
+      "The obsidian darkness of your intellect is truly something to behold — and pity!"
+    ],
+    "compliments": [
+      "Obsidian-sharp, that answer. Against all expectation, correct.",
+      "As dark and surprising as obsidian catching light — you got it right.",
+      "Correct. Like obsidian, your answer had an unexpected edge to it.",
+      "The volcanic clarity of your answer astonishes me. Correct.",
+      "Sharp as obsidian — which is the only thing I can say in your favour."
+    ],
+    "hints": [
+      "Think of something that comes from fire and pressure, forged in the earth's own violence.",
+      "It is black, volcanic, and sharper than any blade when broken right.",
+      "Ancient peoples made weapons of it — it is darkness given form and purpose.",
+      "What is made of glass but formed by no glassblower's breath?",
+      "It catches light unexpectedly — brilliant and dangerous in equal measure."
+    ]
+  },
+  {
+    "id": "Material:agate",
+    "fragment": "carved from banded agate with swirls of sunset orange and milky white",
+    "insults": [
+      "Your logic is as cloudy as unpolished agate — and just as common!",
+      "You stumble through the layers of the question like a blind man in an agate mine!",
+      "Translucent stupidity! That is what you offer me!",
+      "Even the patterns in agate have more direction than your thoughts!",
+      "Agate is a semi-precious stone. Your answer is a fully-precious error!"
+    ],
+    "compliments": [
+      "Correct. Like agate, your answer has unexpected depth.",
+      "A layered response. Correct, though I suspect it was by accident.",
+      "Even a common stone can be polished. You have polished this answer well.",
+      "Correct. The swirls of your reasoning somehow arrived at the truth.",
+      "Inconceivable! An agate victory — modest but undeniably right."
+    ],
+    "hints": [
+      "Look for the stone of many layers, each telling a story of time.",
+      "It is not precious, but it is beautiful in its complexity.",
+      "Think of sunset captured in a hard, polished surface.",
+      "What stone is known for its concentric bands of colour?",
+      "It is born of fire and water, a semi-precious heart for a high-stakes game."
+    ]
+  },
+  {
+    "id": "Material:leather",
+    "fragment": "fashioned from stiff black leather, stitched with silver wire",
+    "insults": [
+      "Leather-brained! Thick, tough, and utterly opaque!",
+      "Your reasoning smells of old hide and new failure!",
+      "As flexible as sun-dried leather — which is to say, not at all!",
+      "You are as hollow as a leather boot and half as useful!",
+      "Leather! A material for peasants, and you fit it well!"
+    ],
+    "compliments": [
+      "Correct. Rugged and functional, like a well-made leather strap.",
+      "You held on to the truth like a leather grip. Grudgingly acceptable.",
+      "Surprisingly correct. Even leather can be made to shine with enough work.",
+      "A leather victory — tough to get, but it holds under pressure.",
+      "I concede. Like leather, your answer is more durable than it looks."
+    ],
+    "hints": [
+      "Think of something that was once alive and now serves as a vessel.",
+      "It is not stone, not metal, but it carries its burden just as well.",
+      "It is stitched rather than forged, a craft of the hand and the needle.",
+      "What material is favoured by soldiers for its lightness and strength?",
+      "It carries the scent of the tannery and the endurance of the trail."
+    ]
+  },
+  {
+    "id": "Material:glass",
+    "fragment": "blown from Venetian glass that changes colour in the light",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "One tap of my wit and your argument shatters like a glass bubble!",
+      "You see through the world with glass eyes and a leaden brain!",
+      "As hollow and brittle as a defective glass flask!",
+      "Glass-headed simpleton! One crack in your reasoning and you're gone!"
+    ],
+    "compliments": [
+      "Correct. Brilliant and clear, for a brief, fleeting moment.",
+      "You caught the light of the truth like fine glass. Correct.",
+      "A transparently correct answer. I see right through your luck.",
+      "Like Venetian glass, your answer is sharp and unexpectedly colourful.",
+      "Inconceivable! A glass victory — clear, sharp, and undeniable."
+    ],
+    "hints": [
+      "What is born of fire and sand, and shatters when it fails?",
+      "It is clear as water but hard as stone, a paradox of the forge.",
+      "Think of the masters of Murano and their secret, burning fires.",
+      "It changes its hue when you look at it from a different angle.",
+      "What is beautiful precisely because of its terrifying fragility?"
+    ]
+  }
+]

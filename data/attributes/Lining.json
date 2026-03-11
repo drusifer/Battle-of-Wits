@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Lining:leaden",
+    "fragment": "lined with dull grey lead that gives the wine a metallic tang",
+    "insults": [
+      "Your logic is as leaden and toxic as a common sewer pipe!",
+      "Leaden-brained! You have a mind like a heavy and dull block!",
+      "You are trying to be substantial with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of lead has more wit than you do!",
+      "You have offered a heavy and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A leaden and perfectly substantial answer. I am annoyed.",
+      "You found the correct weight in the iron of the question. Correct.",
+      "Like a solid casting, your answer is subtle and undeniably right.",
+      "A victory of the metal! Correct, though I still find you a fool.",
+      "I concede. Your leaden correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both heavy and unrefined?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the weight of a thousand years of empire on your hand.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Lining:golden",
+    "fragment": "its interior lined with pure gold to protect the king from poison",
+    "insults": [
+      "Your answer is as gaudy and superficial as a merchant's ring!",
+      "Golden-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a gold leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A golden and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the king! Correct, though I still find you a fool.",
+      "I concede. Your golden correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the sun and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Lining:pitch-lined",
+    "fragment": "lined with black pitch to seal the porous clay",
+    "insults": [
+      "Your reasoning is as dark and sticky as a rotten peach in the mud!",
+      "Pitch-lined-brained! You have a mind like a trap for every error!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a black smear has more structure than you!",
+      "You have offered a cloying and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A pitch-lined and perfectly persistent answer. Correct.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the tar! Correct, though I shall need to wash.",
+      "I concede. Your pitch-lined correctness is as right as a trap."
+    ],
+    "hints": [
+      "What lining suggests a material that is both dark and sticky?",
+      "Look for the cup that feels as though it were made of pure night.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Lining:enamelled-interior",
+    "fragment": "the interior enamelled in a deep, bloody red",
+    "insults": [
+      "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
+      "Enamelled-brained! You have a mind like a pretty and empty skin!",
+      "You are trying to be colorful with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of glass has more wit than you do!",
+      "You have offered a bright and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. An enamelled and perfectly brilliant answer. Correct.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the kiln! Correct, though I still find you a fool.",
+      "I concede. Your enamelled correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the fire and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Lining:silvered",
+    "fragment": "silvered on the inside to catch the light of the wine",
+    "insults": [
+      "Your answer is as slippery and superficial as a merchant's tongue!",
+      "Silvered-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a silver leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A silvered and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the light! Correct, though I still find you a fool.",
+      "I concede. Your silvered correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the moon and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Lining:raw",
+    "fragment": "the interior left raw and unfinished, tasting of the earth",
+    "insults": [
+      "Your logic is as crude and unrefined as a barbarian's club!",
+      "Raw-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A raw and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the earth! Correct, though I find you brutish.",
+      "I concede. Your raw correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Lining:waxed",
+    "fragment": "lined with beeswax that smells of summer meadows",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Waxed-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A waxed and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the meadow! Correct, though I still find you a fool.",
+      "I concede. Your waxed correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Lining:glazed",
+    "fragment": "its interior glazed to a glass-like finish that reflects the drinker",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Glazed-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead glassblower has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A glazed and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the glaze! Correct, though I still find you a fool.",
+      "I concede. Your glazed correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What lining suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  }
+]

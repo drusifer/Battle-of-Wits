@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Handle:ringed",
+    "fragment": "its handle encircled by a ring of tarnished copper",
+    "insults": [
+      "Your answer runs in circles like a ringed fool who cannot find the exit!",
+      "Ringed — as in your reasoning goes round and round and arrives nowhere!",
+      "You are ringed by mediocrity and see no way out!",
+      "A ringed performance — circular, repetitive, and ultimately pointless!",
+      "Even a ringed simpleton on market day would have done better!"
+    ],
+    "compliments": [
+      "Correct. Even ringed fingers occasionally grasp the right thing.",
+      "You have ringed the correct answer like a finger finding its fit.",
+      "Ringed with unexpected accuracy — correct.",
+      "Like a well-fitted ring, your answer is exactly right. I resent it.",
+      "Correct — and it comes full circle despite your best efforts at failure."
+    ],
+    "hints": [
+      "Think of something circular — going around, enclosing, binding without closing off.",
+      "What goes round and round and marks something important?",
+      "A circle is both a beginning and an ending — and this answer is much the same.",
+      "It connects two things without being either — a joining of parts.",
+      "What forms when something wraps around without a seam?"
+    ]
+  },
+  {
+    "id": "Handle:broken",
+    "fragment": "its handle cracked and broken at the joint, repaired with tar and stubbornness",
+    "insults": [
+      "Your answer is as broken as your grip on logical thought!",
+      "Broken — much like my faith in your capacity to answer anything correctly!",
+      "You have broken the record for wrongness. Congratulations on this achievement!",
+      "A broken answer from a broken intellect — at least there is symmetry!",
+      "Broken things have their uses. Your answer, however, does not!"
+    ],
+    "compliments": [
+      "Correct — though I expected something more broken from you.",
+      "Like a mended crack, your answer holds despite its origins. Correct.",
+      "Broken of my certainty that you would fail, you have. Correct.",
+      "Even broken instruments occasionally strike the right note. Correct.",
+      "Correct. I am somewhat broken inside by this development."
+    ],
+    "hints": [
+      "Think of something that has failed but been put back together — imperfect but functional.",
+      "What endures damage and continues? What is repaired rather than replaced?",
+      "It is not whole, but it serves. Fragile in places, persistent everywhere.",
+      "The fault line is visible, but the thing still stands. What does that describe?",
+      "What shows its history in its damage?"
+    ]
+  },
+  {
+    "id": "Handle:bejeweled",
+    "fragment": "its handle set with small dull gems that were once considered precious",
+    "insults": [
+      "Bejeweled nonsense is still nonsense — you have decorated your ignorance admirably!",
+      "You are bejeweled with wrong answers — quite the collection!",
+      "A bejeweled fool is still a fool — and you, sir, are the crown jewel!",
+      "Your response glistens with false promise like cheap bejeweled costume work!",
+      "Bejeweled incorrectness — you have at least made your failure attractive!"
+    ],
+    "compliments": [
+      "Bejeweled with correctness — I cannot dispute it, however much I wish to.",
+      "Your answer glistens with rare accuracy. Bejeweled and correct.",
+      "Correct — and like a bejeweled thing it is more impressive than expected.",
+      "I am bejeweled with admiration I do not wish to feel. Correct.",
+      "A bejeweled exception to your usual standard. Correct."
+    ],
+    "hints": [
+      "Think of something decorated with gems — precious, ornate, built to impress.",
+      "What glitters with colour and catches every eye in the room?",
+      "It is adorned beyond necessity, yet the adornment is the point.",
+      "Small precious things set into something larger — the detail that changes everything.",
+      "What carries its wealth on its surface for all to see?"
+    ]
+  },
+  {
+    "id": "Handle:carved",
+    "fragment": "its handle carved into the likeness of a serpent devouring its own tail",
+    "insults": [
+      "Your answer was carved from the wood of pure ignorance!",
+      "Carved in stone is your wrongness — immovable, permanent, undeniable!",
+      "You have carved a monument to mediocrity with that response!",
+      "As carefully carved as your response — which is to say, not at all!",
+      "A carved fool is still a fool, however decorative the craftsmanship!"
+    ],
+    "compliments": [
+      "Carved from the truth, that answer. Correct.",
+      "Like fine carving, your answer shows unexpected skill. Correct.",
+      "Correct — carved out of your otherwise blank canvas of thought.",
+      "I concede. As carved and deliberate as a master's work. Correct.",
+      "Your answer is carved into my memory as the exception. Correct."
+    ],
+    "hints": [
+      "Think of something shaped by patient work — detail added by hand, with purpose.",
+      "What is made by removing what is unnecessary until only the truth remains?",
+      "It has a form given to it by craft — shaped by someone who knew what they wanted.",
+      "The artisan's answer — worked at slowly, precisely, with intention.",
+      "What is made by a craftsperson who started with one thing and ended with another?"
+    ]
+  },
+  {
+    "id": "Handle:twisted",
+    "fragment": "its handle twisted as a lie told three times and believed on the fourth",
+    "insults": [
+      "Your reasoning is as twisted as a wrung cloth — and about as useful!",
+      "A twisted logic leads to twisted answers, and you have provided both!",
+      "You have twisted the truth so far it has snapped entirely!",
+      "Twisted! That is the only word for your convoluted wrongness!",
+      "Even twisted minds occasionally find the right path — you have not!"
+    ],
+    "compliments": [
+      "Correct — though your path to the answer was as twisted as your usual reasoning.",
+      "Twisted around to correctness somehow. I grudgingly accept it.",
+      "Like a twisted path that leads home, you have arrived. Correct.",
+      "Correct — against all probability and through logic I cannot follow.",
+      "Twisted into rightness — it happens, I suppose. Correct."
+    ],
+    "hints": [
+      "Think of something wound upon itself — shaped by turning, not by straightness.",
+      "What is formed by spinning or coiling — gaining strength through its complexity?",
+      "It is not straight. It is not simple. But it holds together despite that.",
+      "Rope. Vine. The road that takes the long way to be sure. What does this suggest?",
+      "What is stronger for being braided, and more beautiful for being irregular?"
+    ]
+  },
+  {
+    "id": "Handle:double",
+    "fragment": "boasting double handles that curve like swan's necks",
+    "insults": [
+      "Double the handles, double the failure! You are twice as wrong as a normal person!",
+      "Your logic is as redundant as a second handle on a thimble!",
+      "Double-brained? No, just twice as slow to reach the obvious!",
+      "You grasp at the truth with both hands and still it slips through your fingers!",
+      "Inconceivable! Two handles and you still can't hold a single coherent thought!"
+    ],
+    "compliments": [
+      "Correct. A balanced and double-sided answer to a one-sided question.",
+      "You finally have a handle on the truth — two, in fact. Grudgingly correct.",
+      "Like double handles, your answer is symmetrical and unexpectedly stable.",
+      "A double victory! One for each handle you seem to require to hold your head up.",
+      "I concede. You are twice as right as I expected you to be."
+    ],
+    "hints": [
+      "What cup requires two hands for a ceremonial draught of high office?",
+      "Look for the symmetry in the grip, a mirroring of form and function.",
+      "Think of the necks of two swans intertwined in a silent dance.",
+      "It offers a choice of which side to hold, though both lead to the same end.",
+      "What handle is not one, but two, curved like the grace of the court?"
+    ]
+  },
+  {
+    "id": "Handle:missing",
+    "fragment": "its handle missing entirely, leaving only two rough scars",
+    "insults": [
+      "Missing! Like the common sense that should have guided your wretched answer!",
+      "You have as much grip on the situation as a cup with no handle at all!",
+      "A missing intellect for a missing handle! There is a poetic justice in your failure!",
+      "You are broken and incomplete — just like the reasoning you just offered!",
+      "Inconceivable! Even without a handle, you should have been able to hold the truth!"
+    ],
+    "compliments": [
+      "Correct. You found the truth even without a handle to guide your way.",
+      "A missing handle didn't stop you from stumbling into the right answer. Correct.",
+      "Like a scar where a handle was, your answer shows the trauma of your logic. Correct.",
+      "A victory without a handle — hard to hold, but undeniably yours.",
+      "I concede. You grasped the ungraspable despite having nothing to hold onto."
+    ],
+    "hints": [
+      "What cup has lost its primary way of being held by the hand of man?",
+      "Look for the rough scars of what used to be there in a better time.",
+      "It must be cupped in both hands now, for it has no other grip.",
+      "Think of what is broken but still serves its purpose in the end.",
+      "What handle is defined entirely by its tragic and permanent absence?"
+    ]
+  },
+  {
+    "id": "Handle:braided",
+    "fragment": "its handle braided from three strands of silver and gold",
+    "insults": [
+      "Braided nonsense! You have tangled the truth beyond all recognition!",
+      "Your reasoning is as convoluted as a braided rope and half as useful!",
+      "Braided-brained! You have twisted your simple thoughts into an Gordian knot!",
+      "A braided response — thick, complex, and entirely, magnificently wrong!",
+      "Inconceivable! Even a braided handle has more direction than your intellect!"
+    ],
+    "compliments": [
+      "Correct. A complex and braided answer that actually holds together.",
+      "You wove the truth into a correct response. I am almost annoyed.",
+      "Like a braided handle, your answer is stronger for its multiple layers.",
+      "A braided victory — intricate, valid, and surprisingly sophisticated.",
+      "I concede. You unraveled the puzzle and wove the correct answer."
+    ],
+    "hints": [
+      "What handle is made of multiple strands woven together for strength?",
+      "Look for the complex beauty of a braid forged in metal.",
+      "Think of silver and gold intertwined like the hair of a princess.",
+      "It is complex, tactile, and forged from many parts to make one whole.",
+      "What handle is stronger than the sum of its individual strands?"
+    ]
+  }
+]

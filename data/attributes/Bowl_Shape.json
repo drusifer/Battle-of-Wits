@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Bowl_Shape:fluted",
+    "fragment": "a fluted bowl that channels the wine like the columns of a temple",
+    "insults": [
+      "Your reasoning is as fluted and hollow as a common tavern cup!",
+      "Fluted-brained! You have channeled your logic into a dead end!",
+      "You are trying to be vertical with a horizontal and flat mind!",
+      "Inconceivable! Even a fluted pillar has more direction than you!",
+      "You have offered a rhythmic and empty display of your ignorance!"
+    ],
+    "compliments": [
+      "Correct. A fluted and well-proportioned answer to a hard question.",
+      "You found the correct channel in the fluting of the puzzle. Correct.",
+      "Like a fine pillar, your answer is both decorative and functional.",
+      "A victory of the groove! Correct, though I still find you a fool.",
+      "I concede. Your fluted correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "Look for the container that is not smooth, but made of many vertical ribs.",
+      "It mimics the architecture of the ancient world, a temple for the wine.",
+      "Think of a series of rhythmic, vertical channels from rim to base.",
+      "What bowl is strengthened by its own decorative folds?",
+      "It is the opposite of plain, a vertical dance of light and shadow."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:tulip",
+    "fragment": "shaped like a closing tulip, trapping the aroma within",
+    "insults": [
+      "Your answer is as wilted and pathetic as a week-old tulip!",
+      "Tulip-brained! You have offered a flowery and surface-level error!",
+      "You are trying to trap the truth in a narrow and weak mind!",
+      "Inconceivable! Even a closing flower is more open than you!",
+      "You have offered a pretty and ultimately useless display of failure!"
+    ],
+    "compliments": [
+      "Correct. A tulip-shaped and aromatic answer that won't easily fade.",
+      "You found the correct petal in the tulip of the question. Correct.",
+      "Like a closing flower, your answer traps the essence of the matter.",
+      "A victory of the bloom! Correct, though I find your logic gaudy.",
+      "I concede. Your tulip-shaped correctness is undeniably, vividly right."
+    ],
+    "hints": [
+      "Look for the container that narrows at the rim, like a flower in the evening.",
+      "It is not open and broad, but designed to concentrate the draught.",
+      "Think of the gardens of the Hollanders and their most precious prize.",
+      "What bowl is curved like a bulb and tapers toward the top?",
+      "It is a floral shape, a vessel made to protect and reveal."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:hemispherical",
+    "fragment": "a perfect hemispherical bowl, balanced and deep",
+    "insults": [
+      "Your reasoning is as half-baked and shallow as a broken hemisphere!",
+      "Hemispherical-brained! You have only half a mind for any actual thought!",
+      "You are trying to be balanced with an uneven and tipping intellect!",
+      "Inconceivable! Even a perfect half-sphere is deeper than your wit!",
+      "You have offered a symmetrical and empty display of your ignorance!"
+    ],
+    "compliments": [
+      "Correct. A hemispherical and perfectly balanced answer. I am annoyed.",
+      "You found the correct curve in the hemisphere of the puzzle. Correct.",
+      "Like a half-sphere, your answer is simple and undeniably right.",
+      "A victory of the circle! Correct, though I still find you a bore.",
+      "I concede. Your hemispherical correctness is undeniably, perfectly right."
+    ],
+    "hints": [
+      "Look for the container that is a perfect half of a sphere.",
+      "It is not vertical or tapered, but a smooth and equal curve.",
+      "Think of the dome of a cathedral, inverted to hold the wine.",
+      "What bowl is as wide as it is deep, a masterpiece of geometry?",
+      "It is the most ancient and balanced of shapes, a simple cup."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:conical",
+    "fragment": "a sharp conical bowl that tapers to a point at the stem",
+    "insults": [
+      "Your answer is as sharp and narrow as a conical fool's hat!",
+      "Conical-brained! You have tapered your logic to a single error!",
+      "You are trying to be precise with a blunt and clumsy intellect!",
+      "Inconceivable! Even a point has more dimension than your reasoning!",
+      "You have offered a sharp and ultimately useless display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A conical and precise answer that hits the point exactly.",
+      "You followed the taper of the logic to the truth. Correct.",
+      "Like a sharp cone, your answer is undeniable and multi-dimensional.",
+      "A victory of the point! Correct, though I find your brilliance gaudy.",
+      "I concede. Your conical correctness is undeniably sharp. Well done."
+    ],
+    "hints": [
+      "Look for the container that is a perfect triangle in profile.",
+      "It is not curved, but made of straight lines that meet at the bottom.",
+      "Think of a funnel or the horn of a beast, turned into a vessel.",
+      "What bowl is wide at the rim and sharp at the base?",
+      "It is a geometric classic, a vertical line that expands."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:ovoid",
+    "fragment": "an ovoid bowl that feels like holding a giant's egg",
+    "insults": [
+      "Your answer is as fragile and bird-brained as a rotten egg!",
+      "Ovoid-brained! You have offered a shapeless and surface-level error!",
+      "You are trying to hatch a truth from an empty and cold mind!",
+      "Inconceivable! Even an egg has more potential than your reasoning!",
+      "You have offered a smooth and ultimately useless display of failure!"
+    ],
+    "compliments": [
+      "Correct. An ovoid and surprisingly well-formed answer. Correct.",
+      "You found the correct curve in the egg of the question. Correct.",
+      "Like a giant's egg, your answer is substantial and undeniably right.",
+      "A victory of the oval! Correct, though I still find you a bore.",
+      "I concede. Your ovoid correctness is undeniably, naturally right."
+    ],
+    "hints": [
+      "Look for the container that is shaped like a vertical oval.",
+      "It is not round or tapered, but has the curve of new life.",
+      "Think of the treasure of a great beast of the air or sea.",
+      "What bowl is smooth, elongated, and wider at the middle?",
+      "It is a natural shape, a vessel made to cradle the draught."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:shallow",
+    "fragment": "a shallow bowl that forces the drinker to sip with care",
+    "insults": [
+      "Your logic is as shallow as a summer puddle and twice as muddy!",
+      "Shallow-brained! There is no room for even a single thought in there!",
+      "You are trying to swim in the depths with a shallow and weak mind!",
+      "Inconceivable! Even a shallow dish has more depth than your reasoning!",
+      "You have offered a wide and ultimately empty display of your ignorance!"
+    ],
+    "compliments": [
+      "Correct. A shallow and exact answer that doesn't overreach itself.",
+      "You found the correct depth in the puddle of the puzzle. Correct.",
+      "Like a shallow cup, your answer is wide and undeniably right.",
+      "A victory of the surface! Correct, though I expected more.",
+      "I concede. Your shallow correctness is undeniably, minimally right."
+    ],
+    "hints": [
+      "What bowl is wide and flat, with almost no depth for the wine?",
+      "Look for the container that is the opposite of a deep flagon.",
+      "It is not for a heavy draught, but for the most careful of sips.",
+      "Think of a saucer or the palm of a hand, turned into a vessel.",
+      "It is the most precarious of shapes, a horizontal plane."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:deep",
+    "fragment": "a deep, cavernous bowl that could hold a day's thirst",
+    "insults": [
+      "Your answer is as deep and dark as a well with no bottom and no water!",
+      "Deep-brained? No, just buried in the muck of your own stupidity!",
+      "You are lost in the depths of your own ignorance, you wretch!",
+      "Inconceivable! Even a cavern has more light than your reasoning!",
+      "You have offered a dark and ultimately empty display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A deep and substantial answer that carries real weight.",
+      "You found the correct depth in the well of the question. Correct.",
+      "Like a cavernous bowl, your answer contains a vast amount of truth.",
+      "A victory of the abyss! Correct, though I still find you a fool.",
+      "I concede. Your deep correctness has reached the base of the matter."
+    ],
+    "hints": [
+      "What bowl is much taller than it is wide, a flagon for the thirsty?",
+      "Look for the container that is like a well, leading deep into the cup.",
+      "It is not for elegance, but for a heavy and serious draught.",
+      "Think of a bucket or a vertical tunnel, made of precious metal.",
+      "It is the most generous of shapes, a vessel that refuses to end."
+    ]
+  },
+  {
+    "id": "Bowl_Shape:ribbed",
+    "fragment": "a ribbed bowl that provides a textured grip for a trembling hand",
+    "insults": [
+      "Your reasoning is as ribbed and bumpy as a common tavern cup!",
+      "Ribbed-brained! You have offered a textured and surface-level error!",
+      "You are trying to have a grip on the truth with a weak and sweaty mind!",
+      "Inconceivable! Even a rib on a cup has more structure than you!",
+      "You have offered a rhythmic and ultimately useless display of ignorance!"
+    ],
+    "compliments": [
+      "Correct. A ribbed and well-structured answer. I am almost annoyed.",
+      "You found the correct groove in the ribs of the puzzle. Correct.",
+      "Like a fine pillar, your answer is both decorative and functional.",
+      "A victory of the structure! Correct, though I still find you a bore.",
+      "I concede. Your ribbed correctness is undeniably, physically right."
+    ],
+    "hints": [
+      "Look for the container that is not smooth, but has horizontal lines.",
+      "It provides a grip for the hand, a series of ridges from top to bottom.",
+      "Think of the skeletal structure of a beast, turned into a vessel.",
+      "What bowl is strengthened by its own rhythmic and circular folds?",
+      "It is the opposite of plain, a tactile dance of material and form."
+    ]
+  }
+]

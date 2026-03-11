@@ -156,7 +156,20 @@ export class GameEngine {
     }
   }
 
-  /** Reset to IDLE and start a new game. */
+  /**
+   * Reset to IDLE and start a new game.
+   *
+   * NOTE — EventBus listeners are NOT cleared on restart. The UI subscribes
+   * once at app initialisation (not per game), so clearing listeners here
+   * would break the UI. Callers are responsible for managing their own
+   * subscriptions.
+   *
+   * NOTE — Characters (Vizzini, Buttercup, Gramps, Boy) persist across
+   * restarts because their reactionDecks are built with autoReshuffle:true.
+   * They will never be exhausted and do not need to be rebuilt. This is
+   * safe by design — startGame() re-injects fresh per-round decks via
+   * setRoundDecks() / setRoundDeck() before any reactions are drawn.
+   */
   async restart() {
     this.#state = STATES.IDLE;
     await this.startGame();

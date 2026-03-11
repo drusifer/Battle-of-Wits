@@ -9,6 +9,10 @@ import { Character } from './Character.js';
  * it with the current riddle's hint text.
  *
  * Reaction outcomes: hint:requested, goblet:correct, goblet:poisoned
+ *
+ * NOTE — Buttercup intentionally has NO riddle:correct or riddle:wrong
+ * reaction outcomes. Per PRD §4, Buttercup only reacts to hints and goblet
+ * choices. She is the player's ally, not a riddle commentator.
  */
 export class Buttercup extends Character {
   #gobletHintDeck = null;

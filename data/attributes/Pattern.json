@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Pattern:geometric",
+    "fragment": "covered in a geometric pattern of interlocking squares and circles",
+    "insults": [
+      "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
+      "Geometric-brained! You have a mind like a maze with no exit!",
+      "You are trying to be complex with a blunt and clumsy intellect!",
+      "Inconceivable! Even a piece of paper has more structure than you!",
+      "You have offered a twisted and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A geometric and perfectly complex answer. I am annoyed.",
+      "You found the correct thread in the knot of the question. Correct.",
+      "Like a fine pattern, your answer is subtle and undeniably right.",
+      "A victory of the square! Correct, though I still find you a fool.",
+      "I concede. Your geometric correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both beautiful and complex?",
+      "Look for the cup that is covered in a series of rhythmic lines.",
+      "It is not for a plain court, but for a dark and final draught.",
+      "Think of the forest and the mist of a lost and green kingdom.",
+      "It is the most dynamic of histories, a vertical line that turns."
+    ]
+  },
+  {
+    "id": "Pattern:floral",
+    "fragment": "decorated with a floral pattern of roses and thorns",
+    "insults": [
+      "Your reasoning is as wilted and pathetic as a week-old tulip!",
+      "Floral-brained! You have decorated your ignorance with a pretty skin!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a piece of velvet has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A floral and perfectly elegant answer. I am almost annoyed.",
+      "You found the correct glide in the texture of the puzzle. Correct.",
+      "Like a fine fabric, your answer is subtle and undeniably right.",
+      "A victory of the bloom! Correct, though I find you gaudy.",
+      "I concede. Your floral correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What pattern is so soft it seems to absorb the very light around it?",
+      "Look for the cup that is as silent as a cat on a winter night.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of a peach or the wing of a moth, turned into a vessel.",
+      "It is the most polite of sensations, a whisper of a cup."
+    ]
+  },
+  {
+    "id": "Pattern:heraldic",
+    "fragment": "bearing the heraldic pattern of a family that died out in the plague",
+    "insults": [
+      "Your answer is as gaudy and superficial as a merchant's ring!",
+      "Heraldic-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a gold leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A heraldic and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the family! Correct, though I still find you a fool.",
+      "I concede. Your heraldic correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the sun and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Pattern:mythological",
+    "fragment": "depicting a mythological pattern of gods and monsters in conflict",
+    "insults": [
+      "Your logic is as ancient and irrelevant as a broken ruin!",
+      "Mythological-brained! You have a mind like a dusty and empty tomb!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead pharaoh has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A mythological and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the god! Correct, though I still find you a fool.",
+      "I concede. Your mythological correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the desert and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Pattern:astronomical",
+    "fragment": "engraved with an astronomical pattern of stars and planets",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Astronomical-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead glassblower has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. An astronomical and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the star! Correct, though I still find you a fool.",
+      "I concede. Your astronomical correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Pattern:abstract",
+    "fragment": "a chaotic abstract pattern that seems to change when you blink",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Abstract-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. An abstract and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the chaos! Correct, though I still find you a fool.",
+      "I concede. Your abstract correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Pattern:wave",
+    "fragment": "a rhythmic wave pattern that suggests the movement of the sea",
+    "insults": [
+      "Your logic is as slippery and superficial as a merchant's tongue!",
+      "Wave-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a silver leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A wave and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the sea! Correct, though I still find you a fool.",
+      "I concede. Your wave correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the moon and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Pattern:vine",
+    "fragment": "a trailing vine pattern that wraps around the cup like a living thing",
+    "insults": [
+      "Your logic is as crude and unrefined as a barbarian's club!",
+      "Vine-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A vine and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the growth! Correct, though I find you brutish.",
+      "I concede. Your vine correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What pattern suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  }
+]

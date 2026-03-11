@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Weight:heavy",
+    "fragment": "so heavy it feels as though it were cast from the heart of a star",
+    "insults": [
+      "Your answer is as heavy and clumsy as a leaden boot in the mud!",
+      "Heavy-brained! You have no lift in your intellect whatsoever!",
+      "You are sinking under the weight of your own immense stupidity!",
+      "Inconceivable! Even a heavy rock has more wit than you do!",
+      "You have offered a leaden and immovable display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A heavy and substantial answer that carries real weight.",
+      "You found the correct mass in the gravity of the question. Correct.",
+      "Like a solid casting, your answer is undeniably right. Correct.",
+      "A victory of the heart of a star! Correct, though I find you brutish.",
+      "I concede. Your heavy correctness is as solid as bedrock. Correct."
+    ],
+    "hints": [
+      "What weight suggests a material that is much denser than it appears?",
+      "Look for the cup that requires a strong hand to lift from the table.",
+      "It is not for a light toast, but for a serious and final draught.",
+      "Think of the weight of a planet, captured in a small vessel.",
+      "It is the most substantial of sensations, a physical presence."
+    ]
+  },
+  {
+    "id": "Weight:feather-light",
+    "fragment": "feather-light, as though it were fashioned from nothing but air and light",
+    "insults": [
+      "Your reasoning is as light and empty as a hollow bird's bone!",
+      "Feather-light-brained! You have no weight in your thoughts at all!",
+      "You are drifting in the wind of your own ignorance, you wisp!",
+      "Inconceivable! Even a feather has more structure than your argument!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A feather-light and elegant answer. I am almost annoyed.",
+      "You found the correct weight in the air of the puzzle. Correct.",
+      "Like a wisp of light, your answer is subtle and undeniably right.",
+      "A victory of the wind! Correct, though I still find you a fool.",
+      "I concede. Your light correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What weight is so minimal it barely registers in the hand?",
+      "Look for the cup that feels as though it might float from the table.",
+      "It is not for a heavy draught, but for the most delicate of elixirs.",
+      "Think of a bubble or a cloud, turned into a physical vessel.",
+      "It is the most ethereal of sensations, a ghost of a cup."
+    ]
+  },
+  {
+    "id": "Weight:unbalanced",
+    "fragment": "curiously unbalanced, always leaning toward the left",
+    "insults": [
+      "Your logic is as unbalanced and crooked as a one-legged table!",
+      "Unbalanced-brained! You have only half a mind for any actual thought!",
+      "You are tipping over into absolute and total failure, you wretch!",
+      "Inconceivable! Even a crooked cup is more stable than you are!",
+      "You have offered an uneven and precarious display of ignorance!"
+    ],
+    "compliments": [
+      "Correct. An unbalanced but surprisingly correct answer. Correct.",
+      "You found the correct tilt in the leaning of the puzzle. Correct.",
+      "Like a crooked cup, your answer is undeniable and multi-dimensional.",
+      "A victory of the lean! Correct, though I expected more.",
+      "I concede. Your unbalanced correctness is undeniably right."
+    ],
+    "hints": [
+      "What weight is not equal in the hand, but pulls in one direction?",
+      "Look for the cup that refuses to stay straight on the table.",
+      "It is a vessel that feels like it has a mind and a will of its own.",
+      "Think of a lopsided world, a weight that is not in the centre.",
+      "It is a precarious and unsettling sensation, a tilt of the hand."
+    ]
+  },
+  {
+    "id": "Weight:solid",
+    "fragment": "a solid, substantial weight that speaks of honesty and iron",
+    "insults": [
+      "Your answer is as solid and stupid as a block of common street stone!",
+      "Solid-brained! You have no room for any actual, subtle thought!",
+      "You are grasping at a solid argument with a hollow mind!",
+      "Inconceivable! Even a solid block has more wit than you do!",
+      "You have offered a heavy and unrefined display of failure!"
+    ],
+    "compliments": [
+      "Correct. A solid and substantial answer that carries real weight.",
+      "You found the correct mass in the solidity of the question. Correct.",
+      "Like a block of iron, your answer is undeniably right. Correct.",
+      "A victory of honesty! Correct, though I find your logic crude.",
+      "I concede. Your solid correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What weight suggests a material that is exactly what it appears?",
+      "Look for the cup that feels as though it were forged of pure honesty.",
+      "It is not for a light toast, but for a serious and final draught.",
+      "Think of the weight of a hammer or a sword, turned into a vessel.",
+      "It is the most dependable of sensations, a physical truth."
+    ]
+  },
+  {
+    "id": "Weight:hollow-sounding",
+    "fragment": "light and hollow-sounding, like a dried gourd",
+    "insults": [
+      "Your answer is as light and hollow as your empty, echoing head!",
+      "Hollow-sounding-brained! There is nothing in there but wind!",
+      "You have a hollow argument that collapses the moment I touch it!",
+      "Inconceivable! Even a dried gourd has more substance than you!",
+      "You have offered a thin and echoing display of your total ignorance!"
+    ],
+    "compliments": [
+      "Correct. A hollow-sounding and surprising truth. Correct.",
+      "You found the correct resonance in the void of the puzzle. Correct.",
+      "Like an empty shell, your answer contains more than it seems to.",
+      "A victory of the echo! Correct, though I still find you a fool.",
+      "I concede. Your hollow correctness has reached the base of things."
+    ],
+    "hints": [
+      "What weight is so minimal it suggests a container that is mostly air?",
+      "Look for the cup that makes a light and dry noise when handled.",
+      "It is not for a heavy draught, but for the most subtle of elixirs.",
+      "Think of a nut shell or a dried plant, turned into a vessel.",
+      "It is the most echoing of sensations, a voice from a void."
+    ]
+  },
+  {
+    "id": "Weight:substantial",
+    "fragment": "possessing a substantial weight that demands respect",
+    "insults": [
+      "Your logic is as substantial and heavy as a pile of wet sand!",
+      "Substantial-brained! No, just buried in the muck of your own error!",
+      "You are sinking under the weight of your own immense stupidity!",
+      "Inconceivable! Even a substantial rock has more wit than you!",
+      "You have offered a heavy and immovable display of failure!"
+    ],
+    "compliments": [
+      "Correct. A substantial and well-proportioned answer. I am annoyed.",
+      "You found the correct mass in the weight of the question. Correct.",
+      "Like a fine casting, your answer is undeniably right. Correct.",
+      "A victory of respect! Correct, though I find you brutish.",
+      "I concede. Your substantial correctness is as solid as bedrock."
+    ],
+    "hints": [
+      "What weight suggests a material that is both dense and high-quality?",
+      "Look for the cup that requires a steady and sure hand to lift.",
+      "It is not for a light toast, but for a serious and final draught.",
+      "Think of the weight of a gold coin or a silver ingot.",
+      "It is the most reliable of sensations, a physical authority."
+    ]
+  },
+  {
+    "id": "Weight:dainty",
+    "fragment": "a dainty weight, meant for a lady's chamber",
+    "insults": [
+      "Your reasoning is as dainty and weak as a lace handkerchief!",
+      "Dainty-brained! You have no weight in your thoughts at all!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dainty cup is stronger than your argument!",
+      "You have offered a thin and superficial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A dainty and elegant answer to a heavy and dark question.",
+      "You found the correct weight in the grace of the puzzle. Correct.",
+      "Like a fine ornament, your answer is subtle and undeniably right.",
+      "A victory of the chamber! Correct, though I still find you a fool.",
+      "I concede. Your dainty correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What weight is so minimal it seems it was built for a poet's desk?",
+      "Look for the cup that is the opposite of a giant's flagon.",
+      "It is not for a heavy draught, but for the most refined of sips.",
+      "Think of a blossom or a fine ribbon, turned into a vessel.",
+      "It is the most polite of sensations, a whisper of a cup."
+    ]
+  },
+  {
+    "id": "Weight:dense",
+    "fragment": "remarkably dense, as though it occupied more space than it appears to",
+    "insults": [
+      "Your answer is as dense and impenetrable as a fortress wall!",
+      "Dense-brained! You have no room for even the thinnest of truths!",
+      "You are sinking under the weight of your own immense stupidity!",
+      "Inconceivable! Even a dense stone has more wit than you do!",
+      "You have offered a heavy and immovable display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A dense and well-proportioned answer. I am annoyed.",
+      "You found the correct mass in the gravity of the question. Correct.",
+      "Like a fine casting, your answer is undeniably right. Correct.",
+      "A victory of the core! Correct, though I find you brutish.",
+      "I concede. Your dense correctness is as solid as bedrock. Correct."
+    ],
+    "hints": [
+      "What weight suggests a material that is heavier than any metal?",
+      "Look for the cup that feels like it is pulling toward the table.",
+      "It is not for a light toast, but for a serious and final draught.",
+      "Think of a piece of a star, captured in a small and hard vessel.",
+      "It is the most concentrated of sensations, a black hole of a cup."
+    ]
+  }
+]

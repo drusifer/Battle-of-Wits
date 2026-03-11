@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Opacity:translucent",
+    "fragment": "translucent as a ghost, revealing the shadow of the wine within",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Translucent-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a ghost has more substance than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A translucent and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the shadow! Correct, though I still find you a fool.",
+      "I concede. Your translucent correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Opacity:opaque",
+    "fragment": "utterly opaque, hiding its contents from the most curious eye",
+    "insults": [
+      "Your logic is as leaden and toxic as a common sewer pipe!",
+      "Opaque-brained! You have a mind like a heavy and dull block!",
+      "You are trying to be substantial with a blunt and clumsy mind!",
+      "Inconceivable! Even a lead sheet has more wit than you do!",
+      "You have offered a heavy and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. An opaque and perfectly substantial answer. I am annoyed.",
+      "You found the correct weight in the iron of the question. Correct.",
+      "Like a solid casting, your answer is subtle and undeniably right.",
+      "A victory of the secret! Correct, though I still find you a fool.",
+      "I concede. Your opaque correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both heavy and unrefined?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the weight of a thousand years of empire on your hand.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Opacity:cloudy",
+    "fragment": "cloudy and milky, like a sky before a storm",
+    "insults": [
+      "Your reasoning is as chaotic and poorly-formed as a desert sandstorm!",
+      "Cloudy-brained! You have a mind like a maze with no exit!",
+      "You are trying to be complex with a blunt and clumsy intellect!",
+      "Inconceivable! Even a storm cloud has more structure than you!",
+      "You have offered a twisted and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A cloudy and perfectly complex answer. I am annoyed.",
+      "You found the correct thread in the knot of the question. Correct.",
+      "Like a fine pattern, your answer is subtle and undeniably right.",
+      "A victory of the mist! Correct, though I still find you a fool.",
+      "I concede. Your cloudy correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both beautiful and complex?",
+      "Look for the cup that is covered in a series of rhythmic lines.",
+      "It is not for a plain court, but for a dark and final draught.",
+      "Think of the forest and the mist of a lost and green kingdom.",
+      "It is the most dynamic of histories, a vertical line that turns."
+    ]
+  },
+  {
+    "id": "Opacity:clear",
+    "fragment": "clear as a mountain stream, almost invisible on the table",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Clear-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a mountain stream has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A clear and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the stream! Correct, though I still find you a fool.",
+      "I concede. Your clear correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Opacity:smoke-filled",
+    "fragment": "it has a smoke-filled appearance, as though fire were trapped inside",
+    "insults": [
+      "Your reasoning is as dark and sticky as a rotten peach in the mud!",
+      "Smoke-filled-brained! You have a mind like a trap for every error!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a black smear has more structure than you!",
+      "You have offered a cloying and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A smoke-filled and perfectly persistent answer. Correct.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the fire! Correct, though I shall need to wash.",
+      "I concede. Your smoke-filled correctness is as right as a trap."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both dark and sticky?",
+      "Look for the cup that feels as though it were made of pure night.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Opacity:iridescent",
+    "fragment": "shimmering with an iridescent sheen like an oil slick",
+    "insults": [
+      "Your logic is as slippery and superficial as a merchant's tongue!",
+      "Iridescent-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even an oil slick has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. An iridescent and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the sheen! Correct, though I still find you a fool.",
+      "I concede. Your iridescent correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the sun and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Opacity:light-drinking",
+    "fragment": "a dark material that seems to drink the light around it",
+    "insults": [
+      "Your answer is as dark and unreflective as obsidian!",
+      "Light-drinking-brained! You have a mind like a black hole!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a black smear has more structure than you!",
+      "You have offered a cloying and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A light-drinking and perfectly persistent answer. Correct.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the void! Correct, though I shall need to wash.",
+      "I concede. Your dark correctness is as right as a trap."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both dark and sticky?",
+      "Look for the cup that feels as though it were made of pure night.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Opacity:reflective",
+    "fragment": "so reflective it serves as a mirror for the entire room",
+    "insults": [
+      "Your logic is as slippery and superficial as a merchant's tongue!",
+      "Reflective-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a mirror has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A reflective and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the mirror! Correct, though I still find you a fool.",
+      "I concede. Your reflective correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What opacity suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the sun and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  }
+]

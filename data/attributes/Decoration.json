@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Decoration:filigree",
+    "fragment": "adorned with delicate silver filigree like frozen spiderwebs",
+    "insults": [
+      "Your logic is as fragile and useless as a silver spiderweb!",
+      "Filigree-brained! You have decorated your ignorance with tiny wires!",
+      "You are trying to catch a heavy truth with a delicate net of lies!",
+      "Inconceivable! Even fine filigree is stronger than your argument!",
+      "You have offered an ornate and empty display of your stupidity!"
+    ],
+    "compliments": [
+      "Correct. A delicate and complex truth that actually holds together.",
+      "You wove the filigree of the question into a correct response. Correct.",
+      "Like fine silver wire, your answer is surprisingly resilient.",
+      "A victory of the detail! Correct, though I still find you a fool.",
+      "I concede. Your filigree of correctness is undeniably right."
+    ],
+    "hints": [
+      "Look for the surface work that is as thin and silver as a dream.",
+      "It is a web of wire, twisted and fused by a master's hand.",
+      "Think of the frost on a window in a winter morning.",
+      "What decoration is made of nothing but threads of precious metal?",
+      "It is a gossamer layer of beauty over a hard, cold surface."
+    ]
+  },
+  {
+    "id": "Decoration:repousse",
+    "fragment": "featuring repousse work of a hunt that leaps from the surface",
+    "insults": [
+      "Your answer is a low-relief performance of a high-speed failure!",
+      "Repousse-brained! You have hammered your thoughts into a bump!",
+      "You are pushing your luck and pushing your logic, and both are failing!",
+      "Inconceivable! Even a metal bump has more wit than you do!",
+      "You have distorted the truth until it is unrecognizable as fact!"
+    ],
+    "compliments": [
+      "Correct. A three-dimensional and bold answer. I am almost annoyed.",
+      "You hammered out a solid argument with real skill. Correct.",
+      "Like repousse work, your answer stands out from the surface.",
+      "A victory of the hammer! Correct, though I find your logic crude.",
+      "I concede. Your answer is as bold and clear as a master's repousse."
+    ],
+    "hints": [
+      "Look for the decoration that is hammered out from the inside.",
+      "It is not added on, but raised up from the material itself.",
+      "Think of figures and scenes that project into the air we breathe.",
+      "What decoration is tactile, rhythmic, and physically substantial?",
+      "It is a sculptured surface, a story told in the metal's own flesh."
+    ]
+  },
+  {
+    "id": "Decoration:inscribed",
+    "fragment": "inscribed with a poem in a language that has been dead for a thousand years",
+    "insults": [
+      "Your answer might as well be written in a dead language for all I can read it!",
+      "Inscribed-brained! You have carved your errors into permanent record!",
+      "You are trying to be deep with a shallow and illiterate mind!",
+      "Inconceivable! Even a dead poem is livelier than your reasoning!",
+      "You have engraved your failure into the very stone of the room!"
+    ],
+    "compliments": [
+      "Correct. An inscribed and permanent truth that I cannot improve.",
+      "You read the inscriptions of the puzzle and found the answer. Correct.",
+      "Like a permanent message, your answer will last as long as the cup.",
+      "A victory of the word! Correct, though I still find you a pedant.",
+      "I concede. Your inscribed correctness is undeniably, eternally right."
+    ],
+    "hints": [
+      "Look for the surface that carries a message in a forgotten tongue.",
+      "It is not a pattern, but a series of deliberate and ancient marks.",
+      "Think of a tombstone or a decree from a king of a lost empire.",
+      "What decoration is meant to be read as well as seen?",
+      "It is the archive of the cup, a record of a story no one remembers."
+    ]
+  },
+  {
+    "id": "Decoration:enamelled",
+    "fragment": "brightly enamelled with scenes of a garden that never wilts",
+    "insults": [
+      "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
+      "Enamelled-brained! You have painted a pretty face on a blank mind!",
+      "You are trying to hide your ignorance behind a layer of bright glass!",
+      "Inconceivable! Even an enamelled flower is deeper than your wit!",
+      "You have offered a colorful and fragile display of your total failure!"
+    ],
+    "compliments": [
+      "Correct. A bright and vivid answer that won't easily fade.",
+      "You found the color of the truth in the garden of your errors. Correct.",
+      "Like fire-fused glass, your answer is permanent and brilliant.",
+      "A victory of the kiln! Correct, though I find your logic showy.",
+      "I concede. Your enamelled correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "Look for the surface that is covered in a brilliant, glass-like coating.",
+      "It is not metal or wood, but a fusion of earth and fire.",
+      "Think of the colors of a garden that will never see the autumn.",
+      "What decoration is fused to the material in a high-heat forge?",
+      "It is a bright and hard layer of beauty over a structural core."
+    ]
+  },
+  {
+    "id": "Decoration:cloisonne",
+    "fragment": "decorated in the cloisonne style with wires of gold separating vibrant pastes",
+    "insults": [
+      "Your logic is a chaotic and poorly-separated mess of vibrant nonsense!",
+      "Cloisonne-brained! You have tried to compartmentalize your failures!",
+      "You are trying to fence in your ignorance with thin gold wires!",
+      "Inconceivable! Even a wire fence has more direction than your reasoning!",
+      "You have offered a complex and expensive display of your stupidity!"
+    ],
+    "compliments": [
+      "Correct. A complex and well-separated truth that I cannot dispute.",
+      "You found the correct cell in the cloisonne of the question. Correct.",
+      "Like a master's work, your answer is precise and multi-colored.",
+      "A victory of the wire! Correct, though I still find you an ornament.",
+      "I concede. Your cloisonne of correctness is undeniably right."
+    ],
+    "hints": [
+      "Look for the decoration that is made of many cells of color.",
+      "It is separated by thin lines of gold or silver, like a puzzle.",
+      "Think of a mosaic, but made of molten glass and precious wire.",
+      "What decoration is a complex marriage of metallurgy and painting?",
+      "It is a cellular world of beauty, each part distinct and perfect."
+    ]
+  },
+  {
+    "id": "Decoration:niello",
+    "fragment": "bearing dark niello inlays that trace the history of a forgotten war",
+    "insults": [
+      "Your answer is a dark and sulfurous smear on the surface of fact!",
+      "Niello-brained! You have inlaid your thoughts with black failure!",
+      "You are trying to be mysterious with a plain and empty intellect!",
+      "Inconceivable! Even a black smear is more descriptive than you!",
+      "You have offered a grim and opaque display of your total ignorance!"
+    ],
+    "compliments": [
+      "Correct. A dark and permanent truth that I cannot wash away.",
+      "You followed the black lines of the puzzle to the truth. Correct.",
+      "Like a sulfur-fused inlay, your answer is undeniably there.",
+      "A victory of the dark! Correct, though I find your logic unsettling.",
+      "I concede. Your niello of correctness is undeniably, grimly right."
+    ],
+    "hints": [
+      "Look for the dark, black lines that are fused into the silver.",
+      "It is not a shadow, but a material made of sulfur and metal.",
+      "Think of the history of a war told in the language of darkness.",
+      "What decoration is permanent, black, and fused by high heat?",
+      "It is the opposite of the silver's brilliance, a story of the night."
+    ]
+  },
+  {
+    "id": "Decoration:etched",
+    "fragment": "lightly etched with the map of a city that was swallowed by the sea",
+    "insults": [
+      "Your reasoning is a faint and disappearing map of a lost cause!",
+      "Etched-brained! You have scratched your errors into the surface!",
+      "You are trying to be detailed with a blunt and clumsy mind!",
+      "Inconceivable! Even a scratch on a cup has more purpose than you!",
+      "You have offered a shallow and easily-missed display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A subtle and detailed truth that I almost overlooked.",
+      "You found the correct path on the etched map of the puzzle. Correct.",
+      "Like a fine line in metal, your answer is precise and permanent.",
+      "A victory of the acid! Correct, though I still find you a bore.",
+      "I concede. Your etched correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "Look for the surface that has been bitten into by acid and time.",
+      "It is not a raised pattern, but a series of precise and shallow lines.",
+      "Think of a map of a place that no longer exists in the world.",
+      "What decoration is created by removing a part of the whole?",
+      "It is a delicate and permanent record of a master's needle."
+    ]
+  },
+  {
+    "id": "Decoration:painted",
+    "fragment": "painted with tiny figures who seem to move when the wine is swirled",
+    "insults": [
+      "Your logic is a painted lie that doesn't even have the decency to dry!",
+      "Painted-brained! You have offered a colorful and surface-level error!",
+      "You are trying to distract me with tiny figures of your own making!",
+      "Inconceivable! Even a painted figure has more life than your reasoning!",
+      "You have offered a pretty and ultimately useless display of your failure!"
+    ],
+    "compliments": [
+      "Correct. A bright and animated answer that caught my eye. Correct.",
+      "You found the correct figure in the painting of the puzzle. Correct.",
+      "Like a fine miniature, your answer is detailed and surprisingly correct.",
+      "A victory of the brush! Correct, though I still find you an amateur.",
+      "I concede. Your painted correctness is undeniably, vividly right."
+    ],
+    "hints": [
+      "Look for the surface that carries the work of a master miniature-painter.",
+      "It is not metal or stone, but a layer of color and light.",
+      "Think of tiny people and beasts that dance when the wine moves.",
+      "What decoration is applied with a brush of a single, fine hair?",
+      "It is a surface-level story, a world of color over a structural core."
+    ]
+  }
+]

@@ -16,13 +16,24 @@
 - **withFrequency() returns a Deck**: Not an array. Cannot call .filter() on the result.
 - **Operator precedence risk**: `Deck.coinFlip() ? 'left' : 'right' === x` evaluates wrong. Always parenthesise: `(Deck.coinFlip() ? 'left' : 'right') === x`.
 
-## Sprint 2 Architecture Gaps to Close
+## Sprint 2 Architecture Review Findings (2026-03-10)
 
-- Characters (Vizzini, Buttercup, Gramps, Boy) — implement Character base + subclasses
-- EventBus.js — lightweight pub/sub
-- GameEngine.js — async state machine, await chatUI.whenIdle()
-- Data expansion: 100+ riddles, 20+ attribute categories × 8+ variants
-- Update UAT script for Sprint 2 coverage
+Sprint 2 delivered and reviewed. Verdict: SHIP IT. Key notes:
+
+- 'goblets:described' event (payload: {left, right}) is undocumented in ARCH.md — needs to be added to the event table.
+- #buildCharacters() is constructor-only. Safe because reactionDecks are autoReshuffle:true, but this contract is undocumented in code. Add a comment.
+- Buttercup intentionally has no riddle:correct / riddle:wrong reactions — add a comment in Buttercup.js before a future dev adds them by mistake.
+- restart() re-initialises managers via factory calls in startGame() — characters persist, which is correct but subtle.
+- describeGoblet() is singular/called twice (one per goblet) rather than a combined describeGoblets(roundContext). Functionally equivalent and arguably cleaner.
+
+## Sprint 3 Architecture Gaps to Close
+
+- UI layer: ChatUI (async + whenIdle), StatusBar, GobletDisplay, TypingIndicator
+- GameEngine integration with real ChatUI (not mock)
+- main.js bootstrap: DataLoader → GameEngine → mount UI
+- Visual differentiation: gameplay vs banter message styles
+- Update ARCH.md event table with 'goblets:described' event
+- UAT Sprint 3 script
 
 ---
-*Last updated: 2026-03-10 by Morpheus (post Sprint 1 review)*
+*Last updated: 2026-03-10 by Morpheus (post Sprint 2 review)*
