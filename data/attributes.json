@@ -1,0 +1,637 @@
+{
+  "Material": [
+    {
+      "id": "Material:pewter",
+      "fragment": "fashioned from dull pewter worn grey by many hands",
+      "insults": [
+        "Your answer was as dull and lifeless as pewter left in the rain!",
+        "Even a pewter-brained simpleton could have done better!",
+        "Pewter! That is the worth of your so-called intellect — dull, common, unremarkable!",
+        "You have the mental acuity of a pewter spoon, and I am being generous!",
+        "A pewter mind in a golden age — how tragically fitting!"
+      ],
+      "compliments": [
+        "Tolerable, I suppose. Even pewter has its uses — though not many.",
+        "Correct. Like pewter, your answer is functional if utterly lacking in elegance.",
+        "You stumbled upon the answer like a pewter coin in the mud — by accident.",
+        "I grant you this one. A pewter victory, dull but technically valid.",
+        "Inconceivable that you got it right. As surprising as pewter turning to gold."
+      ],
+      "hints": [
+        "Sometimes what endures is not the brightest, but the most resilient.",
+        "Think of what is common yet indispensable — not precious, but present.",
+        "The answer is humble, like a craftsman's work rather than a king's treasure.",
+        "It is not silver. It is not gold. But it has served for centuries.",
+        "What is grey, cold to the touch, and found in every tavern in the land?"
+      ]
+    },
+    {
+      "id": "Material:silver",
+      "fragment": "wrought from polished silver that catches the light like a secret",
+      "insults": [
+        "Your answer had the silver-tongued charm of a roadside swindler — none!",
+        "Silver linings are wasted on someone with your leaden thinking!",
+        "Even a silver-plated excuse would serve you better than that answer!",
+        "As hollow as a silver bell cracked down the middle — that is your intellect!",
+        "Silver-spoon upbringing, silver-nothing brains!"
+      ],
+      "compliments": [
+        "A silver answer to a golden question — acceptable, if underwhelming.",
+        "Correct. Even a silver spoon occasionally finds good broth.",
+        "You answered as if by silver instinct rather than actual intelligence.",
+        "I concede the point. Like silver, your answer was at least worth something.",
+        "The silver lining of your otherwise catastrophic reasoning — you got it right."
+      ],
+      "hints": [
+        "What shines brightest in moonlight and is associated with purity and worth?",
+        "Think of something valuable but not the most valuable — second only to gold.",
+        "It is the colour of starlight and worn by those who wish to impress.",
+        "Cold to the touch, lustrous, and found in the coffers of those with taste.",
+        "It reflects your face back at you and has been traded for kingdoms."
+      ]
+    },
+    {
+      "id": "Material:oak",
+      "fragment": "hewn from dark oak that smells of old forests and older wars",
+      "insults": [
+        "Your reasoning is as thick and unyielding as a knotted oak plank!",
+        "An oak-headed response — dense, immovable, utterly wrong!",
+        "Oaken stubbornness is your only virtue, and even that is misplaced!",
+        "You are as hollow inside as a rotted oak — impressive outwardly, empty within!",
+        "The oak knows not why it stands — much like you know not why you answered that!"
+      ],
+      "compliments": [
+        "Correct, though I suspect you are as surprised as I am. Solid as oak, by accident.",
+        "An oaken answer — reliable, if lacking in any sophistication whatsoever.",
+        "Even the oak breaks eventually. You have not broken yet — give it time.",
+        "Like oak, your answer stood firm. It will be the last time, I assure you.",
+        "I grudgingly concede. Oaken stubbornness occasionally produces correct results."
+      ],
+      "hints": [
+        "Think of something ancient and enduring — something that grows slowly and lasts forever.",
+        "It comes from the forest, has been used for ships and castles alike.",
+        "What wood is most associated with strength, longevity, and the smell of old libraries?",
+        "It burns long and slow and provides the foundation for things meant to last.",
+        "Kings have sat upon thrones of this — and been buried in it too."
+      ]
+    },
+    {
+      "id": "Material:bone",
+      "fragment": "carved from yellowed bone smooth as river stone and cold as winter",
+      "insults": [
+        "Your answer chilled me to the bone — and not with respect!",
+        "Bone-dry of wit, bone-dry of sense — a remarkable achievement in emptiness!",
+        "Even the bones of the dead hold more wisdom than your response!",
+        "You have the hollow bravado of a bone without its marrow — impressive until examined!",
+        "A bone-headed answer in every sense of the word!"
+      ],
+      "compliments": [
+        "Correct. Even bones outlast their owners — as your answer has outlasted my expectations.",
+        "I am bone-weary of your occasional competence. Correct.",
+        "Like bone, your answer is stripped of everything unnecessary. Correct, if bleak.",
+        "You have answered correctly. I find this development as unsettling as bare bone.",
+        "The structural integrity of your answer surprises me. Like bone, it holds."
+      ],
+      "hints": [
+        "Think of what remains when everything else has gone — the lasting, inescapable core.",
+        "It is pale, hard, and carries the memory of what it once was.",
+        "What do the dead leave behind that the living still use?",
+        "Cold, smooth, carved — found in places of great age and quiet.",
+        "It is the architecture beneath all things — unseen until the end."
+      ]
+    },
+    {
+      "id": "Material:obsidian",
+      "fragment": "carved from obsidian black as a moonless night and sharp as spite",
+      "insults": [
+        "Your answer was as dark and unreflective as obsidian — nothing shines through!",
+        "Obsidian is sharp! Your answer was not!",
+        "Black as obsidian is your reasoning — opaque, volcanic, and ultimately useless to me!",
+        "You shatter like obsidian under the slightest pressure of actual thought!",
+        "The obsidian darkness of your intellect is truly something to behold — and pity!"
+      ],
+      "compliments": [
+        "Obsidian-sharp, that answer. Against all expectation, correct.",
+        "As dark and surprising as obsidian catching light — you got it right.",
+        "Correct. Like obsidian, your answer had an unexpected edge to it.",
+        "The volcanic clarity of your answer astonishes me. Correct.",
+        "Sharp as obsidian — which is the only thing I can say in your favour."
+      ],
+      "hints": [
+        "Think of something that comes from fire and pressure, forged in the earth's own violence.",
+        "It is black, volcanic, and sharper than any blade when broken right.",
+        "Ancient peoples made weapons of it — it is darkness given form and purpose.",
+        "What is made of glass but formed by no glassblower's breath?",
+        "It catches light unexpectedly — brilliant and dangerous in equal measure."
+      ]
+    }
+  ],
+  "Rim": [
+    {
+      "id": "Rim:gilded",
+      "fragment": "its rim gilded in flaking gold that was once magnificent",
+      "insults": [
+        "Gilded foolishness is still foolishness — your answer proves it!",
+        "You dress up your ignorance like a gilded cage — beautiful from afar, wrong up close!",
+        "A gilded response with nothing genuine beneath the gold — typical!",
+        "Even gilded nonsense remains nonsense, and yours is the finest I have encountered!",
+        "You are all gilded surface and no substance whatsoever!"
+      ],
+      "compliments": [
+        "Correct. Even gilded accidents are still correct.",
+        "A gilded answer — correct, and entirely more attractive than it deserves to be.",
+        "You have gilded your reputation slightly with this answer. Do not get used to it.",
+        "Correct, though your gilded luck cannot hold forever.",
+        "Like gilded trim on a common cup — surprisingly pleasing. Correct."
+      ],
+      "hints": [
+        "What suggests wealth and importance without necessarily possessing either?",
+        "Think of something decorated beyond its worth — the ornament, not the substance.",
+        "Gold applied to the surface of something — beautiful, perhaps dishonest.",
+        "It catches the eye and suggests value. The eye is easily fooled.",
+        "What do kings put on things to make them seem more important than they are?"
+      ]
+    },
+    {
+      "id": "Rim:salted",
+      "fragment": "its rim crusted with salt as though the sea itself had drunk from it",
+      "insults": [
+        "Your answer leaves a salty taste — and not the good kind!",
+        "Salty ignorance, brined in years of not thinking — that is what you offer me!",
+        "As preserved in brine as your outdated notions — salted and useless!",
+        "You have rubbed salt into the wound of my patience with that answer!",
+        "A salty response from someone whose wit has been preserved past its prime!"
+      ],
+      "compliments": [
+        "Correct. Like salt, your answer was unexpected and curiously useful.",
+        "Worth its salt, that answer — which is the only compliment I will offer.",
+        "I am preserved in astonishment. Salted by surprise at your correctness.",
+        "Like salt in a wound — your correctness stings me. Well done.",
+        "A salty correctness, I will grant you that."
+      ],
+      "hints": [
+        "Think of something that preserves, that seasons, that comes from the sea.",
+        "It is found on every table and at the edge of every ocean.",
+        "Ancient civilisations paid wages in this — it is worth more than it appears.",
+        "What leaves a white crust when seawater dries? What seasons the world?",
+        "It burns wounds and flavours feasts in equal measure."
+      ]
+    },
+    {
+      "id": "Rim:chipped",
+      "fragment": "its rim chipped and ragged as though it had survived several arguments",
+      "insults": [
+        "Your answer is as chipped and broken as your capacity for rational thought!",
+        "Chipped — like your dignity after offering that response!",
+        "You are chipped at the edges and hollow at the centre — a perfect metaphor!",
+        "Like something chipped away at by incompetence — that is what you have done to my patience!",
+        "A chipped response! Cracked, incomplete, and showing its damage proudly!"
+      ],
+      "compliments": [
+        "Correct — and I feel somewhat chipped at by the surprise of it.",
+        "Chipped away at my certainty of your failure, you have. Correct.",
+        "Like something chipped and yet still functional — your answer holds. Correct.",
+        "Even chipped things serve their purpose. As, apparently, do you. Correct.",
+        "I am chipped at my patience but impressed despite myself. Correct."
+      ],
+      "hints": [
+        "What shows the damage of age and hard use — worn, but still here?",
+        "Think of something that has been through much but persists despite its wounds.",
+        "It is imperfect, scarred by time and use, yet still serves its function.",
+        "The edges are broken but the whole remains. What endures despite damage?",
+        "What do things look like after a long journey and many years?"
+      ]
+    },
+    {
+      "id": "Rim:engraved",
+      "fragment": "its rim engraved with symbols too small and strange to read",
+      "insults": [
+        "Your answer might as well be engraved in gibberish — it means as much!",
+        "Engraved in the annals of terrible responses — that is where yours belongs!",
+        "You have engraved your incompetence on the memory of everyone present!",
+        "As elaborate and ultimately illegible as bad engraving — your answer!",
+        "Beautifully engraved nonsense is still nonsense, as you have demonstrated!"
+      ],
+      "compliments": [
+        "Correct. Engraved in my memory as the time you surprised me.",
+        "Like fine engraving, your answer is detailed and unexpectedly correct.",
+        "I shall have it engraved: you were right. Just this once.",
+        "Your answer has the precision of engraving. Correct.",
+        "Engraved correctness — rare, elaborate, and somehow genuine."
+      ],
+      "hints": [
+        "Think of something decorated with purpose — words or patterns cut deliberately into it.",
+        "What bears marks meant to last — a message made permanent?",
+        "It carries a message in a language of lines and shapes.",
+        "Permanence is its hallmark — once carved, it cannot be uncarved.",
+        "What contains writing that was put there with great effort and intent?"
+      ]
+    },
+    {
+      "id": "Rim:wide",
+      "fragment": "its rim wide and flat as a country road welcoming every traveller",
+      "insults": [
+        "Your answer was as wide of the mark as a wide-mouthed fool shouting into the wind!",
+        "Wide open spaces between your ears — that is where your answer came from!",
+        "Wide-eyed ignorance has never impressed me, and it does not start now!",
+        "Your reasoning is as wide and shallow as a summer puddle!",
+        "Wide-ranging in your wrongness — I will give you that much!"
+      ],
+      "compliments": [
+        "Wide of the wrong answer, which puts you squarely in the right. Correct.",
+        "A wide and generous correctness. I accept it grudgingly.",
+        "Correct — and it came to you with all the wide confidence of the truly lucky.",
+        "Wide open correctness, as surprising as a clear horizon.",
+        "You cast wide and caught the right answer. Beginner's luck."
+      ],
+      "hints": [
+        "Think of something broad, open, and welcoming — that does not narrow or restrict.",
+        "What offers the most room? What is most open to possibilities?",
+        "It is expansive, unhurried, built for generosity rather than precision.",
+        "The answer is not hidden or narrow — it is broad and in plain sight.",
+        "What do you find at the top of something meant to be filled?"
+      ]
+    }
+  ],
+  "Handle": [
+    {
+      "id": "Handle:ringed",
+      "fragment": "its handle encircled by a ring of tarnished copper",
+      "insults": [
+        "Your answer runs in circles like a ringed fool who cannot find the exit!",
+        "Ringed — as in your reasoning goes round and round and arrives nowhere!",
+        "You are ringed by mediocrity and see no way out!",
+        "A ringed performance — circular, repetitive, and ultimately pointless!",
+        "Even a ringed simpleton on market day would have done better!"
+      ],
+      "compliments": [
+        "Correct. Even ringed fingers occasionally grasp the right thing.",
+        "You have ringed the correct answer like a finger finding its fit.",
+        "Ringed with unexpected accuracy — correct.",
+        "Like a well-fitted ring, your answer is exactly right. I resent it.",
+        "Correct — and it comes full circle despite your best efforts at failure."
+      ],
+      "hints": [
+        "Think of something circular — going around, enclosing, binding without closing off.",
+        "What goes round and round and marks something important?",
+        "A circle is both a beginning and an ending — and this answer is much the same.",
+        "It connects two things without being either — a joining of parts.",
+        "What forms when something wraps around without a seam?"
+      ]
+    },
+    {
+      "id": "Handle:broken",
+      "fragment": "its handle cracked and broken at the joint, repaired with tar and stubbornness",
+      "insults": [
+        "Your answer is as broken as your grip on logical thought!",
+        "Broken — much like my faith in your capacity to answer anything correctly!",
+        "You have broken the record for wrongness. Congratulations on this achievement!",
+        "A broken answer from a broken intellect — at least there is symmetry!",
+        "Broken things have their uses. Your answer, however, does not!"
+      ],
+      "compliments": [
+        "Correct — though I expected something more broken from you.",
+        "Like a mended crack, your answer holds despite its origins. Correct.",
+        "Broken of my certainty that you would fail, you have. Correct.",
+        "Even broken instruments occasionally strike the right note. Correct.",
+        "Correct. I am somewhat broken inside by this development."
+      ],
+      "hints": [
+        "Think of something that has failed but been put back together — imperfect but functional.",
+        "What endures damage and continues? What is repaired rather than replaced?",
+        "It is not whole, but it serves. Fragile in places, persistent everywhere.",
+        "The fault line is visible, but the thing still stands. What does that describe?",
+        "What shows its history in its damage?"
+      ]
+    },
+    {
+      "id": "Handle:bejeweled",
+      "fragment": "its handle set with small dull gems that were once considered precious",
+      "insults": [
+        "Bejeweled nonsense is still nonsense — you have decorated your ignorance admirably!",
+        "You are bejeweled with wrong answers — quite the collection!",
+        "A bejeweled fool is still a fool — and you, sir, are the crown jewel!",
+        "Your response glistens with false promise like cheap bejeweled costume work!",
+        "Bejeweled incorrectness — you have at least made your failure attractive!"
+      ],
+      "compliments": [
+        "Bejeweled with correctness — I cannot dispute it, however much I wish to.",
+        "Your answer glistens with rare accuracy. Bejeweled and correct.",
+        "Correct — and like a bejeweled thing it is more impressive than expected.",
+        "I am bejeweled with admiration I do not wish to feel. Correct.",
+        "A bejeweled exception to your usual standard. Correct."
+      ],
+      "hints": [
+        "Think of something decorated with gems — precious, ornate, built to impress.",
+        "What glitters with colour and catches every eye in the room?",
+        "It is adorned beyond necessity, yet the adornment is the point.",
+        "Small precious things set into something larger — the detail that changes everything.",
+        "What carries its wealth on its surface for all to see?"
+      ]
+    },
+    {
+      "id": "Handle:carved",
+      "fragment": "its handle carved into the likeness of a serpent devouring its own tail",
+      "insults": [
+        "Your answer was carved from the wood of pure ignorance!",
+        "Carved in stone is your wrongness — immovable, permanent, undeniable!",
+        "You have carved a monument to mediocrity with that response!",
+        "As carefully carved as your response — which is to say, not at all!",
+        "A carved fool is still a fool, however decorative the craftsmanship!"
+      ],
+      "compliments": [
+        "Carved from the truth, that answer. Correct.",
+        "Like fine carving, your answer shows unexpected skill. Correct.",
+        "Correct — carved out of your otherwise blank canvas of thought.",
+        "I concede. As carved and deliberate as a master's work. Correct.",
+        "Your answer is carved into my memory as the exception. Correct."
+      ],
+      "hints": [
+        "Think of something shaped by patient work — detail added by hand, with purpose.",
+        "What is made by removing what is unnecessary until only the truth remains?",
+        "It has a form given to it by craft — shaped by someone who knew what they wanted.",
+        "The artisan's answer — worked at slowly, precisely, with intention.",
+        "What is made by a craftsperson who started with one thing and ended with another?"
+      ]
+    },
+    {
+      "id": "Handle:twisted",
+      "fragment": "its handle twisted as a lie told three times and believed on the fourth",
+      "insults": [
+        "Your reasoning is as twisted as a wrung cloth — and about as useful!",
+        "A twisted logic leads to twisted answers, and you have provided both!",
+        "You have twisted the truth so far it has snapped entirely!",
+        "Twisted! That is the only word for your convoluted wrongness!",
+        "Even twisted minds occasionally find the right path — you have not!"
+      ],
+      "compliments": [
+        "Correct — though your path to the answer was as twisted as your usual reasoning.",
+        "Twisted around to correctness somehow. I grudgingly accept it.",
+        "Like a twisted path that leads home, you have arrived. Correct.",
+        "Correct — against all probability and through logic I cannot follow.",
+        "Twisted into rightness — it happens, I suppose. Correct."
+      ],
+      "hints": [
+        "Think of something wound upon itself — shaped by turning, not by straightness.",
+        "What is formed by spinning or coiling — gaining strength through its complexity?",
+        "It is not straight. It is not simple. But it holds together despite that.",
+        "Rope. Vine. The road that takes the long way to be sure. What does this suggest?",
+        "What is stronger for being braided, and more beautiful for being irregular?"
+      ]
+    }
+  ],
+  "Base": [
+    {
+      "id": "Base:flat",
+      "fragment": "sitting on a flat base as steady and unremarkable as common sense",
+      "insults": [
+        "Your answer falls flat — as flat as the plainest floor in the dullest building!",
+        "Flat-footed wrongness — you stumbled over your own answer!",
+        "As flat and uninteresting as your response! Utterly one-dimensional!",
+        "A flat answer from a flat mind — geometry has never been so disappointing!",
+        "Flat as the world before men knew better — and wrong in the same direction!"
+      ],
+      "compliments": [
+        "Correct. Flat as the truth when there is nowhere left to hide.",
+        "A flat, sturdy correct answer. It holds.",
+        "Correct — and it lies flat on the table of fact where it belongs.",
+        "Flat correctness. Unglamorous, reliable, right.",
+        "As flat and dependable as bedrock. Correct."
+      ],
+      "hints": [
+        "Think of something level, stable, and offering no surprises.",
+        "What provides the most reliable foundation — never tilting, never shifting?",
+        "It is the simplest form. No height. No depth. Just there.",
+        "What is at the very bottom, holding everything above it in place?",
+        "The answer that supports everything else — plain, solid, essential."
+      ]
+    },
+    {
+      "id": "Base:cracked",
+      "fragment": "its base cracked in a long spiderweb of a fracture barely held together",
+      "insults": [
+        "Your argument is as cracked as a drought-split mud plain — and as empty!",
+        "Cracked! Your reasoning has cracked under the slightest pressure of examination!",
+        "The cracked foundation of your thinking has collapsed, as I expected!",
+        "A cracked intellect — fascinating in its fragility, useless in its purpose!",
+        "You have cracked the record for wrongness yet again!"
+      ],
+      "compliments": [
+        "Cracked me open with surprise, you have. Correct.",
+        "Correct — even through the cracked surface of your thinking, light got in.",
+        "Like something cracked but not broken, your answer holds. Correct.",
+        "The cracked surface hides structural integrity — correct against expectation.",
+        "I am cracked with surprise at this correctness. Well done."
+      ],
+      "hints": [
+        "Think of something that shows its age and its journey in its damage.",
+        "What is still standing despite the visible fractures?",
+        "It is not perfect. It shows the record of what it has endured.",
+        "The cracks are a map of all the stresses that tried and failed to break it.",
+        "What is near to breaking, yet somehow still whole?"
+      ]
+    },
+    {
+      "id": "Base:inlaid",
+      "fragment": "its base inlaid with a pattern of pale stone set in dark mortar",
+      "insults": [
+        "Your answer has all the depth of inlaid floor tile — decorative, flat, underfoot!",
+        "Inlaid into the very stone of failure — that is where your answer belongs!",
+        "As inlaid with false confidence as a floor that believes itself a ceiling!",
+        "You have inlaid wrong answers into the permanent record of this conversation!",
+        "Inlaid wrongness — decorative, at least, but still completely wrong!"
+      ],
+      "compliments": [
+        "Correct. Inlaid into the mosaic of your rare competence.",
+        "Like fine inlaid work, your answer is precise and unexpectedly beautiful. Correct.",
+        "Inlaid into the record of your achievements — small but real. Correct.",
+        "Correct. As intricate and deliberately placed as fine inlay work.",
+        "You have inlaid correctness where I expected only blankness. Well done."
+      ],
+      "hints": [
+        "Think of something set into a surface — embedded, deliberate, part of the whole.",
+        "It is placed with precision in a larger context, inseparable from what surrounds it.",
+        "What is put into something else so carefully that it seems to have always been there?",
+        "A pattern within a pattern — the small thing that completes the large thing.",
+        "What is fitted into place with purpose, neither protruding nor receding?"
+      ]
+    },
+    {
+      "id": "Base:rough",
+      "fragment": "its base rough and unfinished as though the craftsman lost interest at the end",
+      "insults": [
+        "Rough — as rough as your grasp of the obvious, which is to say, not at all!",
+        "A rough and unfinished answer — started badly and abandoned worse!",
+        "Rough around the edges and hollow in the middle — your answer in full!",
+        "You have roughed out an answer without ever refining it into correctness!",
+        "Rough work from a rough mind. I expected little and you delivered less!"
+      ],
+      "compliments": [
+        "Rough correctness is still correctness. Correct.",
+        "Like rough stone that holds a castle together — correct beneath the surface.",
+        "Correct — rough in arrival but sound at the core.",
+        "A rough-hewn correct answer. Workmanlike but right.",
+        "You have roughed your way to correctness. I cannot deny it."
+      ],
+      "hints": [
+        "Think of something unpolished, unfinished, closer to nature than to craft.",
+        "What is strong without being pretty — functional without ceremony?",
+        "It is not refined. It does not pretend to be. And it is stronger for that.",
+        "The first form of something, before the work of smoothing begins.",
+        "What texture do things have before someone cares enough to change them?"
+      ]
+    },
+    {
+      "id": "Base:polished",
+      "fragment": "its base polished to a mirror-shine that reflects the table beneath it",
+      "insults": [
+        "Polished ignorance — you have buffed your wrongness to a fine sheen!",
+        "As polished as your delivery and as empty as your answer!",
+        "You have polished your incompetence until it gleams — I will give you that!",
+        "Polished! The surface shines but the depths are hollow!",
+        "A polished fool — gleaming with confidence, empty of substance!"
+      ],
+      "compliments": [
+        "Polished correctness. It reflects well on you. Correct.",
+        "Correct — as clean and polished as it is unexpected.",
+        "Like a polished surface, your answer reveals more than it conceals. Correct.",
+        "I see myself in this correct answer, and I am polished into admitting it.",
+        "Polished to perfection — your answer is right, however improbable."
+      ],
+      "hints": [
+        "Think of something refined to its finest state — worked until no roughness remains.",
+        "What has been improved by patient attention until it shines?",
+        "It reflects the world back at you, smooth and without distortion.",
+        "What is the result of removing everything imperfect?",
+        "When something is at its most complete form — smooth, bright, finished."
+      ]
+    }
+  ],
+  "Condition": [
+    {
+      "id": "Condition:ancient",
+      "fragment": "bearing the look of something ancient enough to have a legend attached",
+      "insults": [
+        "Ancient! Your answer belongs in the time before thinking was invented!",
+        "As ancient and irrelevant as the error you have just committed!",
+        "You dredge up ancient wrongness as though age were an excuse!",
+        "Your answer is as ancient as bad ideas and just as persistent!",
+        "Ancient mediocrity — preserved through centuries by sheer stubbornness!"
+      ],
+      "compliments": [
+        "Correct. Ancient wisdom occasionally trickles down even to you.",
+        "Like something ancient, your answer has survived the test of examination. Correct.",
+        "Ancient and correct — I find this as unsettling as I find most old things.",
+        "Correct. The ancient ways sometimes work, and today is apparently one such day.",
+        "Ancient correctness. Time has proven it, and so have you."
+      ],
+      "hints": [
+        "Think of something with deep history — older than memory, present before language.",
+        "What has been here since before anyone can remember, and will be here after?",
+        "It carries the weight of centuries and the dignity of endurance.",
+        "What do we call things that existed before the world was explained?",
+        "Older than the kingdom, older than the road — what has always been?"
+      ]
+    },
+    {
+      "id": "Condition:pristine",
+      "fragment": "kept in pristine condition as though never once used for its purpose",
+      "insults": [
+        "Pristine wrongness — you have kept your error in perfect, unmarked condition!",
+        "Your answer is pristine — completely untouched by correctness!",
+        "Pristine as the blank space where your answer should have been!",
+        "You have pristinely avoided the truth in every direction!",
+        "Pristine in its total wrongness — I almost admire the consistency!"
+      ],
+      "compliments": [
+        "Correct — pristine and exact and surprisingly untarnished by your usual method.",
+        "Pristine correctness. Not a flaw in it. Well done.",
+        "Like something pristine kept behind glass, your answer is perfect. Correct.",
+        "Correct. Pristine. I find I have nothing to complain about, which is its own problem.",
+        "Pristinely correct. Not a scratch on it."
+      ],
+      "hints": [
+        "Think of something kept perfect — unmarked by use, untouched by time.",
+        "What is exactly as it was the day it was made — no wear, no age?",
+        "It has never been used for its purpose. It exists to be preserved.",
+        "Perfect condition speaks of care, wealth, and perhaps a reluctance to live in the world.",
+        "What looks as though it has just been made and never since touched?"
+      ]
+    },
+    {
+      "id": "Condition:tarnished",
+      "fragment": "tarnished to a warm brown that suggests decades of neglect and occasional use",
+      "insults": [
+        "Tarnished! Your reputation for correct answers, already questionable, is further tarnished!",
+        "Your answer has tarnished whatever credibility remained to you!",
+        "As tarnished and dull as the thinking that produced that response!",
+        "Tarnished logic yields tarnished results — and you have yielded magnificently!",
+        "You have tarnished the fine tradition of attempting to answer correctly!"
+      ],
+      "compliments": [
+        "Correct — tarnished by surprise but correct nonetheless.",
+        "Like something tarnished that still holds its value, your answer does too. Correct.",
+        "Tarnished by the long road to get here, but correct upon arrival.",
+        "Correct. Even tarnished silver is still silver.",
+        "I concede. Tarnished but true."
+      ],
+      "hints": [
+        "Think of something that has aged — not broken, but marked by time and weather.",
+        "What loses its surface brightness without losing its essential nature?",
+        "It was once brilliant and still has worth — changed by time but not ruined by it.",
+        "The patina of long years and hard use — what wears it honestly?",
+        "What shows its history on its surface in the form of colour and texture?"
+      ]
+    },
+    {
+      "id": "Condition:scorched",
+      "fragment": "scorched along one side as though it survived something it should not have",
+      "insults": [
+        "Scorched! Your answer scorches the very concept of logical thinking!",
+        "You have scorched the earth of this conversation with that response!",
+        "As scorched and ruined as your chances of being correct!",
+        "Scorched-earth wrongness — you have burned every bridge to the right answer!",
+        "That answer scorched my patience to the roots!"
+      ],
+      "compliments": [
+        "Scorched me with surprise, you have. Correct.",
+        "Correct — like something scorched but not destroyed.",
+        "You have scorched your way through to the right answer. Correct.",
+        "Scorched but standing — your answer survives. Correct.",
+        "Correct. It burns me to say so, but it is right."
+      ],
+      "hints": [
+        "Think of something that has been through fire — marked by it, but not destroyed.",
+        "What carries the evidence of great heat upon its surface?",
+        "It survived something that should have ended it. The damage is the proof.",
+        "Blackened on one side, whole on the other — what does this image suggest?",
+        "What is changed by fire but not consumed by it?"
+      ]
+    },
+    {
+      "id": "Condition:ornate",
+      "fragment": "so ornate as to suggest it was made to impress rather than to be used",
+      "insults": [
+        "Ornate in its wrongness — you have decorated your failure magnificently!",
+        "As ornate and useless as an answer that looks right and isn't!",
+        "Ornate foolishness is the worst kind — it wastes everyone's time, including the fool's!",
+        "You have offered an ornate display with no substance — typical!",
+        "Ornate! Elaborate! Completely, magnificently wrong!"
+      ],
+      "compliments": [
+        "Ornate correctness. It has everything. Including being right. Correct.",
+        "Correct — ornate in its arrival but genuine in its content.",
+        "Like something ornate that is also functional — rare and correct.",
+        "Correct. I am ornately furious at having to say so.",
+        "Ornately correct. I cannot improve upon it, and I find that irritating."
+      ],
+      "hints": [
+        "Think of something made with excessive decoration — beautiful for its own sake.",
+        "What is built not for use but for impression? For ceremony rather than function?",
+        "It is more than it needs to be, and it knows this, and it doesn't care.",
+        "What is created to declare importance rather than to serve it?",
+        "Elaborate beyond necessity — what fits this description?"
+      ]
+    }
+  ]
+}

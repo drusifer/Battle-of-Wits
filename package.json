@@ -1,0 +1,28 @@
+{
+  "name": "battle-of-wits",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --check src/ tests/",
+    "format:fix": "prettier --write src/ tests/",
+    "duplication": "jscpd src/",
+    "complexity": "eslint src/ --rule '{\"complexity\": [\"error\", 10], \"max-depth\": [\"error\", 4], \"max-lines-per-function\": [\"error\", 40], \"max-params\": [\"error\", 4]}'",
+    "security": "eslint src/ --plugin security",
+    "dead-code": "eslint src/ --rule '{\"no-unused-vars\": \"error\", \"no-unreachable\": \"error\", \"no-unused-expressions\": \"error\"}'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^3.0.0",
+    "eslint": "^10.0.3",
+    "eslint-plugin-security": "^4.0.0",
+    "globals": "^17.4.0",
+    "jscpd": "^4.0.8",
+    "prettier": "^3.8.1",
+    "vitest": "^3.0.0"
+  }
+}
