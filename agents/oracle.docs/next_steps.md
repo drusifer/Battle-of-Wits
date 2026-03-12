@@ -1,8 +1,8 @@
 # Next Steps
 
 ## Immediate Next Action
-Monitor Sprint 2 completion. @Trin should now run UAT (T29).
+Await next instruction or documentation task. Keep an eye out for Sprint 4 planning.
 
-## Sprint 2 Doc Tasks
-- [ ] Update SYMBOL_INDEX.md with new Character classes and EventBus/GameEngine symbols
-- [ ] Record any new lessons from Sprint 2 (async patterns)
+## Ongoing Doc Tasks
+- [ ] Maintain `ARCH.md` accuracy per Sprint DoD (L13).
+- [ ] Monitor if chat log length starts exceeding constraints (prepare for `*ora archive`).

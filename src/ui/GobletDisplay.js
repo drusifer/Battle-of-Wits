@@ -119,7 +119,7 @@ export class GobletDisplay extends BaseSubscriber {
 
   /** @param {boolean} visible */
   #setVisible(visible) {
-    const display = visible ? '' : 'none';
+    const display = visible ? 'flex' : 'none';
     this.#leftEl.style.display = display;
     this.#rightEl.style.display = display;
   }
@@ -138,7 +138,7 @@ export class GobletDisplay extends BaseSubscriber {
 
   /** @param {boolean} visible */
   #setCtaVisible(visible) {
-    const display = visible ? '' : 'none';
+    const display = visible ? 'inline-block' : 'none';
     const leftCta = this.#leftEl.querySelector('.goblet-cta');
     const rightCta = this.#rightEl.querySelector('.goblet-cta');
     if (leftCta) leftCta.style.display = display;

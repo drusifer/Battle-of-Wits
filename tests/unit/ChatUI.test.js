@@ -185,6 +185,28 @@ describe('ChatUI — whenIdle()', () => {
   });
 });
 
+describe('ChatUI — FAST_MODE', () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+    global.window = { FAST_MODE: true };
+  });
+
+  afterEach(() => {
+    delete global.window;
+    vi.useRealTimers();
+  });
+
+  it('FAST_MODE=true clamps typing delay to 1ms — real setTimeout path, minimum timer resolution', async () => {
+    const container = makeMockElement('div');
+    const chatUI = new ChatUI(container);
+    chatUI.render([{ char: 'Vizzini', line: 'Inconceivable!' }]);
+    // 1ms advance fires the 1ms setTimeout — real event loop cycle preserved
+    await vi.advanceTimersByTimeAsync(1);
+    await chatUI.whenIdle();
+    expect(container._children.length).toBe(1);
+  });
+});
+
 describe('ChatUI — EventBus subscriptions', () => {
   let container;
   let bus;
@@ -474,8 +496,8 @@ describe('GobletDisplay — goblets:described event', () => {
 
     bus.emit('goblets:described', { left: 'Left desc', right: 'Right desc' });
 
-    expect(leftEl.style.display).toBe('');
-    expect(rightEl.style.display).toBe('');
+    expect(leftEl.style.display).toBe('flex');
+    expect(rightEl.style.display).toBe('flex');
   });
 
   it('enables goblets after goblets:described', () => {
@@ -557,8 +579,8 @@ describe('GobletDisplay — goblet-cta visibility', () => {
     const rightCtaFound = rightEl.querySelector('.goblet-cta');
     expect(leftCtaFound).not.toBeNull();
     expect(rightCtaFound).not.toBeNull();
-    expect(leftCtaFound.style.display).not.toBe('none');
-    expect(rightCtaFound.style.display).not.toBe('none');
+    expect(leftCtaFound.style.display).toBe('inline-block');
+    expect(rightCtaFound.style.display).toBe('inline-block');
   });
 
   it('goblet-cta is hidden again when goblets are hidden', () => {
@@ -595,8 +617,8 @@ describe('GobletDisplay — phase:changed hides goblets', () => {
 
     bus.emit('phase:changed', { to: STATES.GOBLET_PHASE });
 
-    expect(leftEl.style.display).toBe('');
-    expect(rightEl.style.display).toBe('');
+    expect(leftEl.style.display).toBe('flex');
+    expect(rightEl.style.display).toBe('flex');
   });
 
   it('phase:changed away from GOBLET_PHASE hides goblets', () => {

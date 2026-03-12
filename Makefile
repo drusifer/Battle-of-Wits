@@ -1,10 +1,16 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help tldr install npm-install test test-watch test-coverage uat uat2 uat3 \
-        lint lint-fix lint-format lint-format-fix lint-complexity lint-dead-code lint-security lint-structure lint-duplication
+COUNT ?= 10
 
-help: ## Show available make targets
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
+ifdef MKF_ACTIVE
+
+# ── Real recipes (invoked by mkf, not directly by the user) ─────────────────
+
+.PHONY: tldr npm-install merge-attributes test test-watch test-coverage \
+        uat uat2 uat3 uat-gui goblet-preview \
+        lint lint-fix lint-format lint-format-fix lint-complexity \
+        lint-dead-code lint-security lint-structure lint-duplication \
+        install
 
 tldr: ## Show TL;DR summaries from all project files (quick orientation for agents)
 	@rg --no-heading "TL;DR:" --glob "*.md" -N | sed 's|^\./||' | sort
@@ -33,11 +39,13 @@ uat2: ## Run Sprint 2 UAT acceptance checks
 uat3: ## Run Sprint 3 UAT acceptance checks (UI layer contracts)
 	node agents/tools/uat_sprint3.mjs
 
-COUNT ?= 10
+uat-gui: ## Run headless Playwright GUI tests — validates SPRINT3_Feedback UX contracts (starts/stops dev server)
+	PORT=$$(python3 -c "import socket; s=socket.socket(); s.bind(('',0)); p=s.getsockname()[1]; s.close(); print(p)") npx playwright test
+
 goblet-preview: ## Print COUNT goblet description pairs for human eval (default: 10)
 	node agents/tools/goblet_preview.mjs $(COUNT)
 
-# ── Code Quality ────────────────────────────────────────────────────────────
+# ── Code Quality ─────────────────────────────────────────────────────────────
 
 lint: ## Run all lint checks (ESLint + format + duplication)
 	npm run lint
@@ -91,3 +99,47 @@ install: ## Copy agents into a project and set up skill links (usage: make insta
 	@echo ""
 	@echo "Done. BobProtocol installed in $(TARGET)"
 	@echo "Run 'make tldr' inside $(TARGET) to verify."
+
+else
+
+# ── Interception layer ───────────────────────────────────────────────────────
+# All targets except help route through mkf (scripts/mkf).
+# mkf captures output to build/build.out, posts status to CHAT.md,
+# and prints the last 10 lines on exit.
+#
+# Verbosity (set V=):
+#   make test              silent  — exit code only, full log in build/build.out
+#   make test V=-v         stderr to terminal
+#   make test V=-vv        stderr + filtered failures to terminal
+#   make test V=-vvv       stderr + full stdout to terminal
+
+.PHONY: help preview
+
+help: ## Show available make targets
+	@echo ""
+	@echo "  Build output filter (mkf) is active. All targets route through scripts/mkf."
+	@echo "  Full log: build/build.out   Status posted to: agents/CHAT.md"
+	@echo ""
+	@echo "  Verbosity: append V=-v | V=-vv | V=-vvv to any target"
+	@echo "    (none)   silent — exit code only"
+	@echo "    -v       stderr to terminal"
+	@echo "    -vv      stderr + failures/errors to terminal"
+	@echo "    -vvv     stderr + full stdout to terminal"
+	@echo ""
+	@echo "  Examples:"
+	@echo "    make test              # silent, log → build/build.out"
+	@echo "    make test V=-vv        # show failures only"
+	@echo "    make lint V=-vvv       # full output"
+	@echo ""
+	@echo "  Targets:"
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "    \033[36m%-22s\033[0m %s\n", $$1, $$2}'
+	@echo ""
+
+preview: ## Start dev server on 0.0.0.0 with an available port (Ctrl+C to stop)
+	@echo "Starting dev server — press Ctrl+C to stop"
+	npx vite --host 0.0.0.0
+
+%:
+	@./scripts/mkf $(V) $@
+
+endif

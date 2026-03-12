@@ -27,10 +27,13 @@ const AVATARS = {
 
 /**
  * Typing delay: proportional to text length, clamped to [400, 2500] ms.
+ * Returns 1ms when window.FAST_MODE is true (e.g. Playwright GUI tests) —
+ * keeps the real setTimeout event-loop cycle but runs at minimum timer resolution.
  * @param {string} text
  * @returns {number}
  */
 function typingDelay(text) {
+  if (typeof window !== 'undefined' && window.FAST_MODE) return 1;
   return Math.min(TYPING_MIN_MS + text.length * TYPING_CHAR_MS, TYPING_MAX_MS);
 }
 

@@ -53,14 +53,27 @@ See [`agents/morpheus.docs/ARCH.md`](agents/morpheus.docs/ARCH.md) for full arch
 
 ## Documentation
 
+### Core Documents
 | Doc | Purpose |
 |-----|---------|
+| [`USER_GUIDE.md`](USER_GUIDE.md) | How to play, rules, and game mechanics |
 | [`agents/DOCUMENTATION_INDEX.md`](agents/DOCUMENTATION_INDEX.md) | Full doc index + make targets |
 | [`agents/cypher.docs/PRD.md`](agents/cypher.docs/PRD.md) | Product requirements |
 | [`agents/morpheus.docs/ARCH.md`](agents/morpheus.docs/ARCH.md) | Architecture |
-| [`agents/oracle.docs/LESSONS.md`](agents/oracle.docs/LESSONS.md) | Engineering gotchas (read before Sprint 2) |
+| [`agents/oracle.docs/LESSONS.md`](agents/oracle.docs/LESSONS.md) | Engineering gotchas |
 | [`agents/oracle.docs/SYMBOL_INDEX.md`](agents/oracle.docs/SYMBOL_INDEX.md) | All classes + functions |
 | [`task.md`](task.md) | Sprint task board |
+
+### Agent Folders
+| Folder | Role |
+|--------|------|
+| [`agents/bob.docs/`](agents/bob.docs/) | Prompt Engineer |
+| [`agents/cypher.docs/`](agents/cypher.docs/) | Product Manager |
+| [`agents/morpheus.docs/`](agents/morpheus.docs/) | Tech Lead |
+| [`agents/neo.docs/`](agents/neo.docs/) | Software Engineer |
+| [`agents/oracle.docs/`](agents/oracle.docs/) | Knowledge Officer |
+| [`agents/trin.docs/`](agents/trin.docs/) | QA Guardian |
+| [`agents/mouse.docs/`](agents/mouse.docs/) | Scrum Master |
 
 ---
 

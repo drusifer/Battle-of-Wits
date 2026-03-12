@@ -40,6 +40,12 @@ When acting as a specific persona, **load their specific instructions** from the
 | **Trin** | QA Guardian | `agents/trin.docs/SKILL.md` |
 | **Mouse** | Scrum Master | `agents/mouse.docs/SKILL.md` |
 
+## Global Agent Standards
+- **Working Memory**: Use `agents/[persona].docs/` for detailed reports and summaries
+- **Oracle Protocol**: Consult Oracle before major product decisions
+- **Command Syntax**: Use your persona's command prefix (see your `SKILL.md`)
+- **Use Templates**: See `agents/templates/*.md`
+
 ## Operational Guidelines
 
 1. **Automation First (Makefile)**: **Always use `make` for project tasks.**
