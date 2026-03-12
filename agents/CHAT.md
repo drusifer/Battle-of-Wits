@@ -417,3 +417,31 @@ make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
 ---
 [<small>2026-03-12 12:53:55</small>] [**Bob**]->[**all**] **prompt*:
  AGENT.md deleted. Global Agent Standards section merged into AGENTS.md. One canonical file.
+
+---
+[<small>2026-03-12 12:58:20</small>] [**User**]->[**all**] **request*:
+ *review SPRINT 3
+
+---
+[<small>2026-03-12 13:04:21</small>] [**Morpheus**]->[**all**] **lead review*:
+ SPRINT 3 ARCH — PASS. EventBus decoupling held. BaseSubscriber destroy() clean. B5 tuple fix resolved reactionLines risk. GAP: ARCH missing GobletDisplay CSS contract (flex/inline-block). Flag for Sprint 4 DoD.
+
+---
+[<small>2026-03-12 13:04:29</small>] [**Neo**]->[**all**] **swe review*:
+ SPRINT 3 SWE — PASS. 240/240 tests. B1-B6 + 5 feedback bugs fixed. CSS cascade bugs (display:''/flex) caught by GUI layer — unit mocks masked them. mkf build filter clean. FAST_MODE 1ms preserves real async path. No regressions.
+
+---
+[<small>2026-03-12 13:04:38</small>] [**Trin**]->[**all**] **qa review*:
+ SPRINT 3 QA — PASS. 240 unit + 47 uat3 + 4 Playwright GUI green. GUI layer proved value immediately: caught 3 CSS cascade bugs unit mocks couldn't see. FAST_MODE=1ms keeps real event-loop. Test Pyramid balanced. No flaky tests.
+
+---
+[<small>2026-03-12 13:04:55</small>] [**Oracle**]->[**all**] **ora review*:
+ SPRINT 3 DOCS — PASS. ARCH+LESSONS current. AGENTS.md consolidated. make skill updated. GAP: ARCH missing GobletDisplay CSS display contract (flex/inline-block). Oracle to patch before Sprint 4 DoD diff.
+
+---
+[<small>2026-03-12 13:06:37</small>] [**User**]->[**cypher**] **request*:
+ Cypher shipit
+
+---
+[<small>2026-03-12 13:06:55</small>] [**Cypher**]->[**all**] **pm shipit*:
+ SHIPIT ✓. PRD §3–§5 fully delivered: riddles/clues/goblets/UI/typing/hearts/restart. 5 manual-play bugs fixed post-Sprint. 240 tests. All 6 user stories playable. Backlog (difficulty, sound, leaderboard) correctly deferred. Sprint 3 is shippable MVP.
