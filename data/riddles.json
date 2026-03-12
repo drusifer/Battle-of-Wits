@@ -1,0 +1,608 @@
+[
+  {
+    "question": "What has roots as nobody sees, is taller than trees, up, up it goes and yet never grows?",
+    "answer": "mountain",
+    "alternates": ["mountains"],
+    "hint": "Think of something ancient and immovable that touches the sky yet was never planted."
+  },
+  {
+    "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
+    "answer": "echo",
+    "alternates": ["echoes"],
+    "hint": "It returns your own words to you, faithful but never original."
+  },
+  {
+    "question": "The more you take, the more you leave behind. What am I?",
+    "answer": "footsteps",
+    "alternates": ["footstep", "steps", "step"],
+    "hint": "Every departure creates them, yet they are made of absence as much as presence."
+  },
+  {
+    "question": "I have a mouth but never eat, I run but never walk, I have a bed but never sleep. What am I?",
+    "answer": "river",
+    "alternates": ["rivers", "stream"],
+    "hint": "It is both restless and patient, always moving yet never arriving."
+  },
+  {
+    "question": "I have hands but cannot clap, a face but no expression, and I tell the truth without speaking. What am I?",
+    "answer": "clock",
+    "alternates": ["clocks", "timepiece"],
+    "hint": "It marks every moment of your life and asks nothing in return."
+  },
+  {
+    "question": "I have cities but no houses live there. I have mountains but no trees grow there. I have water but no fish swim there. What am I?",
+    "answer": "map",
+    "alternates": ["maps"],
+    "hint": "The world in miniature — everything is present except life itself."
+  },
+  {
+    "question": "The more you have of it, the less you see. What am I?",
+    "answer": "darkness",
+    "alternates": ["dark"],
+    "hint": "It is defined entirely by the absence of something else."
+  },
+  {
+    "question": "What gets wetter the more it dries?",
+    "answer": "towel",
+    "alternates": ["towels", "cloth"],
+    "hint": "It sacrifices itself so that you may be clean."
+  },
+  {
+    "question": "I am always hungry and must always be fed. The finger I touch will soon turn red. What am I?",
+    "answer": "fire",
+    "alternates": ["flame", "flames"],
+    "hint": "It is the oldest servant of mankind, and the most treacherous."
+  },
+  {
+    "question": "I have a tail and a head yet I have no body. Kings have made me and beggars have spent me. What am I?",
+    "answer": "coin",
+    "alternates": ["coins"],
+    "hint": "Its two faces have decided more fates than any sword."
+  },
+  {
+    "question": "I have an eye but I cannot see. I help bind things together but I am not rope. What am I?",
+    "answer": "needle",
+    "alternates": ["needles"],
+    "hint": "The smaller it is, the more indispensable it becomes."
+  },
+  {
+    "question": "What is full of holes yet holds water faithfully?",
+    "answer": "sponge",
+    "alternates": ["sponges"],
+    "hint": "Its weakness is also its strength — the holes are the point."
+  },
+  {
+    "question": "The more of this there is, the less you see. It rolls in from the sea without being called. What am I?",
+    "answer": "fog",
+    "alternates": ["mist"],
+    "hint": "It obscures the world without malice — it simply is what it is."
+  },
+  {
+    "question": "It belongs to you but others use it more than you do. What is it?",
+    "answer": "name",
+    "alternates": ["names"],
+    "hint": "You were given it at birth, yet you rarely call upon it yourself."
+  },
+  {
+    "question": "Feed me and I live. Give me water and I die. What am I?",
+    "answer": "ember",
+    "alternates": ["embers", "coal", "coals"],
+    "hint": "It slumbers beneath ash, waiting for a breath to wake it."
+  },
+  {
+    "question": "I have no voice yet I can teach. I have no eyes yet I can show the way. I can live forever yet I can be destroyed in moments. What am I?",
+    "answer": "book",
+    "alternates": ["books", "tome", "scroll"],
+    "hint": "The oldest living things are not trees but these — they carry the dead."
+  },
+  {
+    "question": "I follow you all day long but when night comes I am gone. What am I?",
+    "answer": "shadow",
+    "alternates": ["shadows"],
+    "hint": "It is loyal only so long as the light holds."
+  },
+  {
+    "question": "I show you yourself, yet I am not you. I show you truth, yet I cannot lie. What am I?",
+    "answer": "mirror",
+    "alternates": ["mirrors", "reflection"],
+    "hint": "It gives back exactly what it receives — no more, no less."
+  },
+  {
+    "question": "I fly without wings. I am counted but never touched. I heal all wounds yet I cannot be purchased. What am I?",
+    "answer": "time",
+    "alternates": [],
+    "hint": "The one thing Vizzini himself cannot outwit — and neither can you."
+  },
+  {
+    "question": "I move through the trees without hands and through the sails without arms. I am felt but never seen. What am I?",
+    "answer": "wind",
+    "alternates": ["breeze", "gust"],
+    "hint": "Invisible, it shapes everything — the ocean, the flame, the course of ships."
+  },
+  {
+    "question": "I have no legs but I travel farther than any horse. I have no wings but I can circle the world. What am I?",
+    "answer": "light",
+    "alternates": ["sunlight"],
+    "hint": "Nothing outpaces it — not even thought comes close."
+  },
+  {
+    "question": "I begin at the end and end at the beginning. What am I?",
+    "answer": "death",
+    "alternates": [],
+    "hint": "It is the only appointment that cannot be postponed, cancelled, or delegated."
+  },
+  {
+    "question": "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet I am used by almost every person. What am I?",
+    "answer": "pencil",
+    "alternates": ["pencils"],
+    "hint": "Its heart is dark but its purpose is to illuminate."
+  },
+  {
+    "question": "I am always in front of you but can never be seen. What am I?",
+    "answer": "future",
+    "alternates": [],
+    "hint": "Every step you take is toward it, yet it retreats at the same speed."
+  },
+  {
+    "question": "The more you share me, the more of me you keep. The less you share me, the less of me you have. What am I?",
+    "answer": "knowledge",
+    "alternates": ["wisdom"],
+    "hint": "It grows by giving — a paradox Vizzini would appreciate and never practice."
+  },
+  {
+    "question": "I have teeth but cannot bite. I have a spine but cannot stand. What am I?",
+    "answer": "comb",
+    "alternates": ["combs"],
+    "hint": "It brings order to chaos, one strand at a time."
+  },
+  {
+    "question": "I can run but never walk, have a mouth but never talk, have a head but never weep, have a bed but never sleep. What am I?",
+    "answer": "stream",
+    "alternates": ["brook", "creek"],
+    "hint": "Smaller than a river, but equally restless — always moving toward the sea."
+  },
+  {
+    "question": "What breaks but never falls, and falls but never breaks?",
+    "answer": "dawn",
+    "alternates": ["day", "daybreak"],
+    "hint": "One is the end of night; one is the end of day. Each has its hour."
+  },
+  {
+    "question": "I have a ring but no finger. I have a tower but no castle. I have a note but no music. What am I?",
+    "answer": "telephone",
+    "alternates": ["phone"],
+    "hint": "It carries a voice across impossible distances, as if by magic."
+  },
+  {
+    "question": "You see me once in June, twice in November, but not at all in May. What am I?",
+    "answer": "letter",
+    "alternates": ["the letter e"],
+    "hint": "Look not at the meaning of the months but at their forms."
+  },
+  {
+    "question": "I have two hands and no arms, one face and no head. I mark every moment but I have never lived. What am I?",
+    "answer": "watch",
+    "alternates": ["watches", "wristwatch"],
+    "hint": "Smaller than a clock but no less faithful — it travels with you."
+  },
+  {
+    "question": "I am the beginning of everything, the end of everywhere. I am the beginning of eternity, the end of time and space. What am I?",
+    "answer": "the letter e",
+    "alternates": ["letter e", "e"],
+    "hint": "Seek me not in meaning but in spelling."
+  },
+  {
+    "question": "What has one eye but cannot see?",
+    "answer": "storm",
+    "alternates": ["hurricane", "cyclone"],
+    "hint": "At its calmest centre, everything around it rages."
+  },
+  {
+    "question": "The more you remove from me, the bigger I become. What am I?",
+    "answer": "hole",
+    "alternates": ["holes", "pit"],
+    "hint": "It is made entirely of absence, yet absence is a thing."
+  },
+  {
+    "question": "I am light as a feather, yet even the strongest person cannot hold me for more than a few minutes. What am I?",
+    "answer": "breath",
+    "alternates": ["air", "breathing"],
+    "hint": "You cannot live without it, yet you rarely think about it until it is gone."
+  },
+  {
+    "question": "What has a neck but no head?",
+    "answer": "bottle",
+    "alternates": ["bottles", "flask"],
+    "hint": "It holds what it is given but never drinks."
+  },
+  {
+    "question": "I go up but never come down. What am I?",
+    "answer": "age",
+    "alternates": [],
+    "hint": "It is the one thing Vizzini resents and cannot argue with."
+  },
+  {
+    "question": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "answer": "the letter m",
+    "alternates": ["letter m", "m"],
+    "hint": "It is not a concept but a shape."
+  },
+  {
+    "question": "I travel around the world but stay in one corner. What am I?",
+    "answer": "stamp",
+    "alternates": ["stamps", "postage stamp"],
+    "hint": "It is small, sticky, and represents a journey it will never complete itself."
+  },
+  {
+    "question": "I have no wings but I fly, no sword but I can cut through stone given enough time. What am I?",
+    "answer": "water",
+    "alternates": [],
+    "hint": "The gentlest force in nature is also the most relentless."
+  },
+  {
+    "question": "I am bought by the yard but worn by the foot. What am I?",
+    "answer": "carpet",
+    "alternates": ["rug", "carpets"],
+    "hint": "Every hall in every castle has one — even in Florin."
+  },
+  {
+    "question": "What has a single horn and gives milk?",
+    "answer": "cow",
+    "alternates": ["cows", "dairy cow"],
+    "hint": "Remove the fantastical part of the answer and only the useful part remains."
+  },
+  {
+    "question": "I can be caught but not thrown. The faster you run, the faster I follow. What am I?",
+    "answer": "cold",
+    "alternates": ["a cold", "chill"],
+    "hint": "It is not kind to leave unattended in the night air."
+  },
+  {
+    "question": "I am white when I am dirty and black when I am clean. What am I?",
+    "answer": "blackboard",
+    "alternates": ["chalkboard", "chalk board"],
+    "hint": "It holds what is written on it and yields it up when wiped."
+  },
+  {
+    "question": "I weigh nothing but even the strongest man cannot hold me for long. What am I?",
+    "answer": "secret",
+    "alternates": ["secrets"],
+    "hint": "Vizzini has many of these. He is not good at keeping them."
+  },
+  {
+    "question": "What can you hold in your right hand but not in your left?",
+    "answer": "left hand",
+    "alternates": ["your left hand"],
+    "hint": "The answer is in the question — you are simply not reading carefully enough."
+  },
+  {
+    "question": "I have three feet but I cannot walk. What am I?",
+    "answer": "ruler",
+    "alternates": ["yardstick", "yard stick"],
+    "hint": "It measures the world without ever moving through it."
+  },
+  {
+    "question": "I am not alive but I grow. I have no lungs but I need air. I have no mouth but water kills me. What am I?",
+    "answer": "candle",
+    "alternates": ["candles", "flame"],
+    "hint": "It has served more vigils and banquets than any servant in history."
+  },
+  {
+    "question": "Cut me and I will not bleed. Break me and I give you more of myself. What am I?",
+    "answer": "silence",
+    "alternates": ["quiet"],
+    "hint": "It is what you find in the moment before an answer. Or an execution."
+  },
+  {
+    "question": "I am full in summer, empty in winter, but I never hold water. What am I?",
+    "answer": "tree",
+    "alternates": ["trees"],
+    "hint": "It stands in every season, but its appearance changes entirely with time."
+  },
+  {
+    "question": "What goes up when rain comes down?",
+    "answer": "umbrella",
+    "alternates": ["umbrellas"],
+    "hint": "It exists only in the relationship between sky and shelter."
+  },
+  {
+    "question": "I have keys but no locks, space but no room, and you can enter but cannot go inside. What am I?",
+    "answer": "keyboard",
+    "alternates": ["piano", "harpsichord"],
+    "hint": "It unlocks expression but holds no physical secrets."
+  },
+  {
+    "question": "I sleep in the day and scream in the night. I have one eye and make many. What am I?",
+    "answer": "owl",
+    "alternates": ["owls"],
+    "hint": "It is wiser than its expression suggests. Or so it claims."
+  },
+  {
+    "question": "What has four legs in the morning, two at noon, and three at night?",
+    "answer": "human",
+    "alternates": ["man", "person", "people", "humans"],
+    "hint": "The Sphinx asked this question. The answer is always among those answering."
+  },
+  {
+    "question": "I have hundreds of limbs but cannot walk. I have a crown but no kingdom. I fall without moving. What am I?",
+    "answer": "oak",
+    "alternates": ["oak tree"],
+    "hint": "It asks nothing of the world and gives everything to it."
+  },
+  {
+    "question": "I protect like a knight but I am made of nothing. I am real only when threatened. What am I?",
+    "answer": "courage",
+    "alternates": ["bravery"],
+    "hint": "It does not exist until you need it. And then it either is there — or it is not."
+  },
+  {
+    "question": "What is in your pocket that you cannot give to another?",
+    "answer": "memory",
+    "alternates": ["memories"],
+    "hint": "It is yours entirely — and yet you cannot keep it forever."
+  },
+  {
+    "question": "I can be broken without being touched. I can be kept without being held. What am I?",
+    "answer": "promise",
+    "alternates": ["promises", "oath", "vow"],
+    "hint": "Vizzini broke many. A man of principle keeps one."
+  },
+  {
+    "question": "I have a golden head and a silver tail. I fly straight and true. What am I?",
+    "answer": "arrow",
+    "alternates": ["arrows", "bolt"],
+    "hint": "It is made for a single purpose and it fulfils it with terrible honesty."
+  },
+  {
+    "question": "The more you stir me, the thicker I get. What am I?",
+    "answer": "mud",
+    "alternates": ["clay", "mire"],
+    "hint": "It traps those who hurry through it and rewards those who step carefully."
+  },
+  {
+    "question": "I am always present in a court but never in a forest. Always in a battle but never in a duel. What am I?",
+    "answer": "the letter t",
+    "alternates": ["letter t", "t"],
+    "hint": "Spell it carefully."
+  },
+  {
+    "question": "What begins with a T, ends with a T, and has T in it?",
+    "answer": "teapot",
+    "alternates": ["teapots", "tea pot"],
+    "hint": "It is full of something warm and civilised."
+  },
+  {
+    "question": "I run without feet over mountains and plain. I fly without wings through the sky and the rain. What am I?",
+    "answer": "road",
+    "alternates": ["roads", "path", "paths"],
+    "hint": "It goes where it is told and never asks where it is going."
+  },
+  {
+    "question": "You must keep it after giving it. What is it?",
+    "answer": "word",
+    "alternates": ["your word"],
+    "hint": "A man of honour gives one and a man of dishonour pretends to."
+  },
+  {
+    "question": "I can't be seen, touched, or heard, but I am always changing. I am behind every decision and beneath every fear. What am I?",
+    "answer": "thought",
+    "alternates": ["thoughts", "mind"],
+    "hint": "Vizzini believes his are extraordinary. He is not entirely wrong."
+  },
+  {
+    "question": "What can fill a room but takes up no space?",
+    "answer": "warmth",
+    "alternates": ["heat"],
+    "hint": "It costs nothing and is worth everything on a cold night."
+  },
+  {
+    "question": "I am found in the sea and on the land but do not walk or swim. I travel by foot but have no legs. What am I?",
+    "answer": "salt",
+    "alternates": ["sea salt"],
+    "hint": "It has preserved kings and ruined meals in equal measure."
+  },
+  {
+    "question": "I have no beginning and no end, yet I am the oldest shape in the world. What am I?",
+    "answer": "circle",
+    "alternates": ["ring", "sphere"],
+    "hint": "Every wedding band, every moon, every coin shares this form."
+  },
+  {
+    "question": "What belongs to you but everyone else uses it more?",
+    "answer": "reputation",
+    "alternates": ["fame"],
+    "hint": "You build it over a lifetime and can lose it in a moment — as Vizzini discovered."
+  },
+  {
+    "question": "I can build a castle or tear one down, cause laughter or bring tears. I cost nothing to give but can mean everything to receive. What am I?",
+    "answer": "words",
+    "alternates": ["word"],
+    "hint": "Vizzini wields many of them. Not all to good effect."
+  },
+  {
+    "question": "What runs all day and night but never moves?",
+    "answer": "spring",
+    "alternates": ["well", "fountain"],
+    "hint": "It flows where it is and goes nowhere."
+  },
+  {
+    "question": "I grow older with time but stay fresh in the mind. I am gone the moment I happen. What am I?",
+    "answer": "moment",
+    "alternates": ["instant", "second"],
+    "hint": "The present tense. You are always in it and never able to hold it."
+  },
+  {
+    "question": "The more you take away from me, the larger I become. Take nothing, and I am zero. What am I?",
+    "answer": "debt",
+    "alternates": ["debts"],
+    "hint": "Kings have fallen for want of understanding this."
+  },
+  {
+    "question": "I have a shoulder and no arms, a body and no legs, a foot and no toes. What am I?",
+    "answer": "cliff",
+    "alternates": ["bluff", "precipice"],
+    "hint": "Look at the anatomy of landscape rather than of living things."
+  },
+  {
+    "question": "I have a bark but I am not a dog. I have leaves but no flowers. I stand tall but cannot walk. What am I?",
+    "answer": "birch",
+    "alternates": ["birch tree", "elm", "oak", "pine"],
+    "hint": "It has stood longer than most empires."
+  },
+  {
+    "question": "What do you throw out when you want to use it and take back in when you don't?",
+    "answer": "anchor",
+    "alternates": ["anchors"],
+    "hint": "It is the heaviest form of staying put."
+  },
+  {
+    "question": "I can travel the world without moving from my place. What am I?",
+    "answer": "sun",
+    "alternates": ["moon", "star"],
+    "hint": "Every sky in every land carries it."
+  },
+  {
+    "question": "The poor have me and the rich need me. If you eat me you die. What am I?",
+    "answer": "nothing",
+    "alternates": [],
+    "hint": "Think of what the destitute are never without, and what the wealthy never have enough of."
+  },
+  {
+    "question": "I am not alive but I can die. I cannot see but I can blind. What am I?",
+    "answer": "rust",
+    "alternates": ["corrosion"],
+    "hint": "Even the finest sword is not immune to time and neglect."
+  },
+  {
+    "question": "What gets stronger the more you use it?",
+    "answer": "habit",
+    "alternates": ["habits", "muscle"],
+    "hint": "Virtue and vice grow by the same mechanism."
+  },
+  {
+    "question": "I am always confused with my twin but I am my own thing entirely. What am I?",
+    "answer": "dusk",
+    "alternates": ["twilight", "dawn"],
+    "hint": "It and its opposite are often mistaken for one another at a glance."
+  },
+  {
+    "question": "I have no weight, no colour, no form — yet every great man has carried me. What am I?",
+    "answer": "burden",
+    "alternates": ["responsibility", "duty"],
+    "hint": "Leadership is inseparable from it."
+  },
+  {
+    "question": "I am born in the morning, die at night, yet am born again tomorrow unchanged. What am I?",
+    "answer": "day",
+    "alternates": ["daylight"],
+    "hint": "It is the most reliable thing in the world, and still it passes."
+  },
+  {
+    "question": "I have a bottom at the top. What am I?",
+    "answer": "leg",
+    "alternates": ["legs"],
+    "hint": "Anatomy, if considered from an unusual angle."
+  },
+  {
+    "question": "I have one foot on the ground and one in the sky and I grow the more I fall. What am I?",
+    "answer": "rain",
+    "alternates": ["rainfall", "raindrop"],
+    "hint": "Its fall nourishes what its absence would destroy."
+  },
+  {
+    "question": "What falls but never breaks, and breaks but never falls?",
+    "answer": "night",
+    "alternates": ["nightfall"],
+    "hint": "One thing falls reliably every evening. Another breaks every morning."
+  },
+  {
+    "question": "I am a word of letters three. Add two and fewer there will be. What am I?",
+    "answer": "few",
+    "alternates": [],
+    "hint": "The answer contains its own logic."
+  },
+  {
+    "question": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
+    "answer": "waterfall",
+    "alternates": ["cascade"],
+    "hint": "More dramatic than a river, more relentless than rain."
+  },
+  {
+    "question": "I am a path between high walls, open to the sky. What am I?",
+    "answer": "alley",
+    "alternates": ["lane", "passage"],
+    "hint": "Those who know cities know me. Those who know danger know me better."
+  },
+  {
+    "question": "I turn everything around yet stay still. What am I?",
+    "answer": "lens",
+    "alternates": ["prism"],
+    "hint": "Left becomes right. East becomes west. The world reversed without moving."
+  },
+  {
+    "question": "I am heavier than gold but lighter than a feather. What am I?",
+    "answer": "loneliness",
+    "alternates": ["grief", "sorrow"],
+    "hint": "It has no weight and yet those who carry it stoop under it."
+  },
+  {
+    "question": "I am a green house inside a white house inside a red house inside a brown house. What am I?",
+    "answer": "watermelon",
+    "alternates": [],
+    "hint": "It is made of layers, like a mystery — or like Vizzini's plans."
+  },
+  {
+    "question": "What has one thumb and four fingers but is not alive?",
+    "answer": "glove",
+    "alternates": ["gloves", "gauntlet"],
+    "hint": "It serves the hand that wears it and is useless without one."
+  },
+  {
+    "question": "I grow in water and die when wet. What am I?",
+    "answer": "crystal",
+    "alternates": ["crystals"],
+    "hint": "Structure emerges slowly from stillness — destroy it with the wrong touch."
+  },
+  {
+    "question": "What can travel around the world and yet stay in one corner?",
+    "answer": "postage",
+    "alternates": ["postage stamp", "wax seal"],
+    "hint": "Small, sticky, and possessed of remarkable ambition."
+  },
+  {
+    "question": "I have a spine but no bones, chapters but no verses, a cover but no roof. What am I?",
+    "answer": "novel",
+    "alternates": ["story", "tale"],
+    "hint": "It holds more truth than a history and more lies than a courtier."
+  },
+  {
+    "question": "I can fly without wings and swim without fins. I can see without eyes and speak without a tongue. What am I?",
+    "answer": "dream",
+    "alternates": ["dreams"],
+    "hint": "It visits everyone and answers to no one."
+  },
+  {
+    "question": "I have a surface but no depth. I show truth but I am not real. What am I?",
+    "answer": "painting",
+    "alternates": ["portrait", "picture"],
+    "hint": "The finest ones make you forget you are looking at pigment and cloth."
+  },
+  {
+    "question": "I grow downward when everything else grows up. What am I?",
+    "answer": "root",
+    "alternates": ["roots"],
+    "hint": "The unseen foundation. Every tall thing has them."
+  },
+  {
+    "question": "What is harder to catch the faster you run?",
+    "answer": "composure",
+    "alternates": ["calm", "poise"],
+    "hint": "Exertion undoes it; stillness restores it."
+  },
+  {
+    "question": "I rise with wealth and fall with wisdom. What am I?",
+    "answer": "pride",
+    "alternates": ["arrogance", "vanity"],
+    "hint": "Vizzini had abundant quantities of it. It did not serve him well."
+  }
+]

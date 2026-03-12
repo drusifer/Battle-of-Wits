@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Rim:gilded",
+    "fragment": "its rim gilded in flaking gold that was once magnificent",
+    "insults": [
+      "Gilded foolishness is still foolishness — your answer proves it!",
+      "You dress up your ignorance like a gilded cage — beautiful from afar, wrong up close!",
+      "A gilded response with nothing genuine beneath the gold — typical!",
+      "Even gilded nonsense remains nonsense, and yours is the finest I have encountered!",
+      "You are all gilded surface and no substance whatsoever!"
+    ],
+    "compliments": [
+      "Correct. Even gilded accidents are still correct.",
+      "A gilded answer — correct, and entirely more attractive than it deserves to be.",
+      "You have gilded your reputation slightly with this answer. Do not get used to it.",
+      "Correct, though your gilded luck cannot hold forever.",
+      "Like gilded trim on a common coin — surprisingly pleasing. Correct."
+    ],
+    "hints": [
+      "What suggests wealth and importance without necessarily possessing either?",
+      "Think of something decorated beyond its worth — the ornament, not the substance.",
+      "Gold applied to the surface of something — beautiful, perhaps dishonest.",
+      "It catches the eye and suggests value. The eye is easily fooled.",
+      "What do kings put on things to make them seem more important than they are?"
+    ]
+  },
+  {
+    "id": "Rim:salted",
+    "fragment": "its rim crusted with salt as though the sea itself had drunk from it",
+    "insults": [
+      "Your answer leaves a salty taste — and not the good kind!",
+      "Salty ignorance, brined in years of not thinking — that is what you offer me!",
+      "As preserved in brine as your outdated notions — salted and useless!",
+      "You have rubbed salt into the wound of my patience with that answer!",
+      "A salty response from someone whose wit has been preserved past its prime!"
+    ],
+    "compliments": [
+      "Correct. Like salt, your answer was unexpected and curiously useful.",
+      "Worth its salt, that answer — which is the only compliment I will offer.",
+      "I am preserved in astonishment. Salted by surprise at your correctness.",
+      "Like salt in a wound — your correctness stings me. Well done.",
+      "A salty correctness, I will grant you that."
+    ],
+    "hints": [
+      "Think of something that preserves, that seasons, that comes from the sea.",
+      "It is found on every table and at the edge of every ocean.",
+      "Ancient civilisations paid wages in this — it is worth more than it appears.",
+      "What leaves a white crust when seawater dries? What seasons the world?",
+      "It burns wounds and flavours feasts in equal measure."
+    ]
+  },
+  {
+    "id": "Rim:chipped",
+    "fragment": "its rim chipped and ragged as though it had survived several arguments",
+    "insults": [
+      "Your answer is as chipped and broken as your capacity for rational thought!",
+      "Chipped — like your dignity after offering that response!",
+      "You are chipped at the edges and hollow at the centre — a perfect metaphor!",
+      "Like something chipped away at by incompetence — that is what you have done to my patience!",
+      "A chipped response! Cracked, incomplete, and showing its damage proudly!"
+    ],
+    "compliments": [
+      "Correct — and I feel somewhat chipped at by the surprise of it.",
+      "Chipped away at my certainty of your failure, you have. Correct.",
+      "Like something chipped and yet still functional — your answer holds. Correct.",
+      "Even chipped things serve their purpose. As, apparently, do you. Correct.",
+      "I am chipped at my patience but impressed despite myself. Correct."
+    ],
+    "hints": [
+      "What shows the damage of age and hard use — worn, but still here?",
+      "Think of something that has been through much but persists despite its wounds.",
+      "It is imperfect, scarred by time and use, yet still serves its function.",
+      "The edges are broken but the whole remains. What endures despite damage?",
+      "What do things look like after a long journey and many years?"
+    ]
+  },
+  {
+    "id": "Rim:engraved",
+    "fragment": "its rim engraved with symbols too small and strange to read",
+    "insults": [
+      "Your answer might as well be engraved in gibberish — it means as much!",
+      "Engraved in the annals of terrible responses — that is where yours belongs!",
+      "You have engraved your incompetence on the memory of everyone present!",
+      "As elaborate and ultimately illegible as bad engraving — your answer!",
+      "Beautifully engraved nonsense is still nonsense, as you have demonstrated!"
+    ],
+    "compliments": [
+      "Correct. Engraved in my memory as the time you surprised me.",
+      "Like fine engraving, your answer is detailed and unexpectedly correct.",
+      "I shall have it engraved: you were right. Just this once.",
+      "Your answer has the precision of engraving. Correct.",
+      "Engraved correctness — rare, elaborate, and somehow genuine."
+    ],
+    "hints": [
+      "Think of something decorated with purpose — words or patterns cut deliberately into it.",
+      "What bears marks meant to last — a message made permanent?",
+      "It carries a message in a language of lines and shapes.",
+      "Permanence is its hallmark — once carved, it cannot be uncarved.",
+      "What contains writing that was put there with great effort and intent?"
+    ]
+  },
+  {
+    "id": "Rim:wide",
+    "fragment": "its rim wide and flat as a country road welcoming every traveller",
+    "insults": [
+      "Your answer was as wide of the mark as a wide-mouthed fool shouting into the wind!",
+      "Wide open spaces between your ears — that is where your answer came from!",
+      "Wide-eyed ignorance has never impressed me, and it does not start now!",
+      "Your reasoning is as wide and shallow as a summer puddle!",
+      "Wide-ranging in your wrongness — I will give you that much!"
+    ],
+    "compliments": [
+      "Wide of the wrong answer, which puts you squarely in the right. Correct.",
+      "A wide and generous correctness. I accept it grudgingly.",
+      "Correct — and it came to you with all the wide confidence of the truly lucky.",
+      "Wide open correctness, as surprising as a clear horizon.",
+      "You cast wide and caught the right answer. Beginner's luck."
+    ],
+    "hints": [
+      "Think of something broad, open, and welcoming — that does not narrow or restrict.",
+      "What offers the most room? What is most open to possibilities?",
+      "It is expansive, unhurried, built for generosity rather than precision.",
+      "The answer is not hidden or narrow — it is broad and in plain sight.",
+      "What do you find at the top of something meant to be filled?"
+    ]
+  },
+  {
+    "id": "Rim:scalloped",
+    "fragment": "its rim scalloped like the edge of a sea-shell",
+    "insults": [
+      "Scalloped logic! Curvy, indirect, and ultimately empty!",
+      "You are as shallow as a scalloped dish in a peasant's cottage!",
+      "Your answer has the scalloped edge of a half-eaten crust!",
+      "Scalloped-brained! All decoration and no substance whatsoever!",
+      "Inconceivable! Even a scallop has more sense than to answer like that!"
+    ],
+    "compliments": [
+      "Correct. A decorative truth, but truth nonetheless.",
+      "You navigated the scalloped edges of the question admirably.",
+      "Like a scalloped rim, your answer is surprisingly well-formed.",
+      "A scalloped victory — pretty but fragile. I accept it.",
+      "I conceed. You are right, by the narrowest of scalloped margins."
+    ],
+    "hints": [
+      "Look for the edge that mimics the shapes of the sea.",
+      "It is wavy, ornate, and decorative without being gaudy.",
+      "Think of the shell of a Great Scallop on a distant shore.",
+      "What rim is not straight, but follows a rhythmic curve?",
+      "It is the edge of beauty and the border of function."
+    ]
+  },
+  {
+    "id": "Rim:flared",
+    "fragment": "its rim flared outward like the bell of a trumpet",
+    "insults": [
+      "Flared! As loud and empty as a trumpet's blast in a vacuum!",
+      "Your ignorance flares up like a guttering candle in a storm!",
+      "A flared response from a narrow, constricted mind!",
+      "You are all flare and no fire whatsoever!",
+      "Flared-brained! You broadcast your failure to the whole world."
+    ],
+    "compliments": [
+      "Correct. A flared and generous answer to a difficult question.",
+      "You flared with brilliance for a second. Do not let it go to your head.",
+      "Like a flared rim, your answer is easy to swallow. Correct.",
+      "A flared victory — obvious and undeniable.",
+      "Inconceivable. You flared into correctness against all odds."
+    ],
+    "hints": [
+      "What rim turns outward to meet the lips with generosity?",
+      "It is broad at the top, like a flower in full, glorious bloom.",
+      "Think of the shape of a horn or a trumpet in a king's court.",
+      "It is the most welcoming of edges, built for a deep draught.",
+      "What flares out precisely to prevent a spill?"
+    ]
+  },
+  {
+    "id": "Rim:narrow",
+    "fragment": "its rim narrow and sharp as a razor's edge",
+    "insults": [
+      "Narrow-minded! Even for you, that answer is regressively small!",
+      "Your logic is as narrow as a spider's thread and half as strong!",
+      "A narrow response from a vastly overestimated intellect!",
+      "You have narrowed your chances to zero with a single stupid word!",
+      "Narrow-brained! Even a cockle has more room for a second thought!"
+    ],
+    "compliments": [
+      "Correct. A narrow and precise answer. I am almost impressed.",
+      "You found the narrow path to the truth. Correct.",
+      "Like a narrow rim, your answer requires careful handling. Correct.",
+      "A narrow victory, but a victory nonetheless.",
+      "Inconceivable. You hit the narrow target while aiming at the wrong one."
+    ],
+    "hints": [
+      "What rim is thin and delicate, demanding the utmost respect?",
+      "It is the opposite of wide and welcoming, built for the elite.",
+      "Think of the edge of a sharp blade or a fine quill.",
+      "It is precise, minimal, and entirely unforgiving.",
+      "What rim makes every sip a calculated risk for the unwary?"
+    ]
+  }
+]

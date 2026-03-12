@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Origin:byzantine",
+    "fragment": "a Byzantine origin, heavy with the weight of empire and intrigue",
+    "insults": [
+      "Your answer is as convoluted and terminal as a Byzantine plot!",
+      "Byzantine-brained! You have a mind like a labyrinth with no exit!",
+      "You are trying to be complex with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead empire has more life than you!",
+      "You have offered a dark and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Byzantine and perfectly complex answer. I am annoyed.",
+      "You found the correct intrigue in the history of the puzzle.",
+      "Like a fine plot, your answer is subtle and undeniably right.",
+      "A victory of the empire! Correct, though I still find you a fool.",
+      "I concede. Your Byzantine correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both ancient and complex?",
+      "Look for the cup that feels as though it were made of pure intrigue.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the weight of a thousand years of empire on your hand.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Origin:moorish",
+    "fragment": "a Moorish craftsmanship, covered in complex geometric patterns",
+    "insults": [
+      "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
+      "Moorish-brained! You have a mind like a maze of tiny, useless rooms!",
+      "You are trying to be geometric with a blunt and clumsy mind!",
+      "Inconceivable! Even a desert has more structure than you!",
+      "You have offered a complex and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Moorish and perfectly patterned answer. I am annoyed.",
+      "You found the correct tile in the mosaic of the question.",
+      "Like a fine pattern, your answer is subtle and undeniably right.",
+      "A victory of the geometry! Correct, though I still find you a fool.",
+      "I concede. Your Moorish correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both beautiful and complex?",
+      "Look for the cup that is covered in a series of rhythmic lines.",
+      "It is not for a plain court, but for a dark and final draught.",
+      "Think of the desert and the gardens of a lost and bright kingdom.",
+      "It is the most dynamic of histories, a vertical line that turns."
+    ]
+  },
+  {
+    "id": "Origin:venetian",
+    "fragment": "a Venetian glasswork by a master who was executed to keep the secret",
+    "insults": [
+      "Your logic is as fragile as glass and twice as transparent!",
+      "Venetian-brained! You have a mind like a bubble of hot air!",
+      "You are trying to be sharp with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead glassblower has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Venetian and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the secret! Correct, though I still find you a fool.",
+      "I concede. Your Venetian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from air.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the lagoon and the fires of a city that never sleeps.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Origin:viking",
+    "fragment": "a rugged Viking vessel, built for mead and conquest",
+    "insults": [
+      "Your reasoning is as crude and unrefined as a barbarian's club!",
+      "Viking-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Viking and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the conquest! Correct, though I find you brutish.",
+      "I concede. Your Viking correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold north coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Origin:roman",
+    "fragment": "a classic Roman chalice, dignified and efficient",
+    "insults": [
+      "Your logic is as ancient and irrelevant as a broken ruin!",
+      "Roman-brained! You have a mind like a dusty and empty tomb!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead emperor has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Roman and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the law! Correct, though I still find you a fool.",
+      "I concede. Your Roman correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the forum and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Origin:celtic",
+    "fragment": "a Celtic design of knots that have no beginning and no end",
+    "insults": [
+      "Your reasoning is a never-ending knot of total and absolute failure!",
+      "Celtic-brained! You have a mind like a tangled nest of snakes!",
+      "You are trying to be complex with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead druid has more direction than you!",
+      "You have offered a twisted and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Celtic and perfectly complex answer. I am annoyed.",
+      "You found the correct thread in the knot of the question. Correct.",
+      "Like a fine pattern, your answer is subtle and undeniably right.",
+      "A victory of the knot! Correct, though I still find you a fool.",
+      "I concede. Your Celtic correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both beautiful and complex?",
+      "Look for the cup that is covered in a series of rhythmic lines.",
+      "It is not for a plain court, but for a dark and final draught.",
+      "Think of the forest and the mist of a lost and green kingdom.",
+      "It is the most dynamic of histories, a vertical line that turns."
+    ]
+  },
+  {
+    "id": "Origin:egyptian",
+    "fragment": "an Egyptian origin, inscribed with hieroglyphs that promise eternal life",
+    "insults": [
+      "Your logic is as dead and dusty as a dried-up old mummy!",
+      "Egyptian-brained! You have a mind like a tomb with no exit!",
+      "You are trying to be eternal with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead pharaoh has more wit than you!",
+      "You have offered a dark and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. An Egyptian and perfectly permanent answer. I am annoyed.",
+      "You found the correct mark in the stone of the question. Correct.",
+      "Like a fine inscription, your answer is subtle and undeniably right.",
+      "A victory of the afterlife! Correct, though I still find you a fool.",
+      "I concede. Your Egyptian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both ancient and mysterious?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sand and the weight of a thousand years of empire.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Origin:persian",
+    "fragment": "a Persian masterpiece, delicate and rich with the smell of jasmine",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Persian-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A Persian and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the garden! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What origin suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  }
+]

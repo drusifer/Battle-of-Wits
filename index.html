@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle of Wits</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 id="game-title">⚔️ Battle of Wits ⚔️</h1>
+
+      <div id="status-bar" role="status" aria-live="polite">
+        <!-- Populated by StatusBar.js -->
+      </div>
+
+      <div id="chat-container" aria-label="Game conversation" aria-live="polite">
+        <!-- Populated by ChatUI.js -->
+      </div>
+
+      <div id="goblet-area">
+        <button id="goblet-left" type="button" aria-label="Choose left goblet">
+          <span class="goblet-icon">🏆</span>
+          <span class="goblet-label">Left Goblet</span>
+          <span class="goblet-desc"></span>
+          <span class="goblet-cta" style="display:none">Choose this goblet</span>
+        </button>
+        <button id="goblet-right" type="button" aria-label="Choose right goblet">
+          <span class="goblet-icon">🏆</span>
+          <span class="goblet-label">Right Goblet</span>
+          <span class="goblet-desc"></span>
+          <span class="goblet-cta" style="display:none">Choose this goblet</span>
+        </button>
+      </div>
+
+      <div id="input-area">
+        <input
+          type="text"
+          id="answer-input"
+          placeholder="Your answer..."
+          autocomplete="off"
+          aria-label="Riddle answer"
+          maxlength="200"
+          disabled
+        />
+        <button id="submit-btn" type="button" disabled>Submit</button>
+        <button id="hint-btn" type="button">Hint</button>
+      </div>
+
+      <div id="control-bar">
+        <button id="restart-btn" type="button">↺ Restart</button>
+      </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

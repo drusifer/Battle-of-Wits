@@ -1,0 +1,203 @@
+{
+  "banter": {
+    "intro": [
+      [
+        { "char": "Gramps", "line": "Now then, where were we? Ah yes... the battle of wits." },
+        { "char": "Boy",    "line": "Has it started? Who's winning?" },
+        { "char": "Gramps", "line": "Nobody can tell yet. That is rather the point of a battle of wits." }
+      ],
+      [
+        { "char": "Vizzini", "line": "Ah, the Dread Pirate Roberts. I was beginning to think you weren't coming." },
+        { "char": "Vizzini", "line": "Now, a battle of wits to the death. *cackles* Poison is on the table. Genius is not — at least on your side." }
+      ],
+      [
+        { "char": "Boy",    "line": "*sneeze* Is this the part where he figures out the cup?" },
+        { "char": "Gramps", "line": "Not yet. First he must prove himself worthy. There are riddles." },
+        { "char": "Boy",    "line": "*cough* I like riddles." }
+      ]
+    ],
+    "riddlePhase": [
+      [
+        { "char": "Vizzini", "line": "I suppose you think yourself clever. How TIRESOME." }
+      ],
+      null,
+      [
+        { "char": "Boy",    "line": "*cough* Grandpa, is Vizzini always this... loud?" },
+        { "char": "Gramps", "line": "He does love the sound of his own voice, yes." }
+      ],
+      null,
+      [
+        { "char": "Vizzini", "line": "I have never lost a battle of wits. NEVER. It is a point of professional pride." }
+      ],
+      null,
+      null,
+      [
+        { "char": "Boy",    "line": "*sneeze* Sorry. Go on." },
+        { "char": "Gramps", "line": "Bless you." }
+      ],
+      null,
+      null
+    ],
+    "gobletPhase": [
+      [
+        { "char": "Vizzini", "line": "Choose. But choose wisely. Or poorly. I honestly have no preference." }
+      ],
+      null,
+      [
+        { "char": "Boy",    "line": "*cough* I'd pick the one on the left." },
+        { "char": "Gramps", "line": "Shh. Let him think." },
+        { "char": "Boy",    "line": "I was just saying—" },
+        { "char": "Gramps", "line": "Shh." }
+      ],
+      null,
+      null,
+      [
+        { "char": "Vizzini", "line": "You're taking a very long time. Is this a strategy? It is a very bad one." }
+      ],
+      null,
+      null
+    ],
+    "outro_win": [
+      [
+        { "char": "Gramps", "line": "And so the Dread Pirate Roberts proved his worth. The battle of wits was won." },
+        { "char": "Boy",    "line": "He beat Vizzini? *cough* But Vizzini's supposed to be the smartest man in the world!" },
+        { "char": "Gramps", "line": "Only in his own estimation, which is the loneliest kind of genius." }
+      ],
+      [
+        { "char": "Gramps", "line": "Vizzini never did learn the first rule of a battle of wits: never assume you're the smartest one at the table." },
+        { "char": "Boy",    "line": "*cough* What's the first rule?" },
+        { "char": "Gramps", "line": "I just told you." }
+      ],
+      [
+        { "char": "Gramps", "line": "Buttercup was rescued. Vizzini was outwitted. And the goblet chose wisely." },
+        { "char": "Boy",    "line": "Was Vizzini very angry?" },
+        { "char": "Gramps", "line": "In his experience, Vizzini was always angry. It was his natural resting state." }
+      ]
+    ],
+    "outro_lose": [
+      [
+        { "char": "Gramps", "line": "Well. That did not go as hoped." },
+        { "char": "Boy",    "line": "*cough* Does he die?" },
+        { "char": "Gramps", "line": "...Would you like to hear a different part of the story?" },
+        { "char": "Boy",    "line": "Yes please." }
+      ],
+      [
+        { "char": "Gramps", "line": "Vizzini was, it must be said, very smug about the whole business." },
+        { "char": "Boy",    "line": "*sneeze* He won?" },
+        { "char": "Gramps", "line": "Briefly. As villains sometimes do. But that is a story for another night." }
+      ],
+      [
+        { "char": "Gramps", "line": "The iocane powder is odorless, tasteless, and entirely fatal. He should have known." },
+        { "char": "Boy",    "line": "Maybe next time he'll be more careful." },
+        { "char": "Gramps", "line": "Next time he will be. Sleep now — we'll try again tomorrow." }
+      ]
+    ]
+  },
+
+  "reactions": {
+    "Vizzini": {
+      "riddle:correct": [
+        "INCONCEIVABLE! A lucky guess. Don't mistake fortune for intellect.",
+        "You got it right. The stopped clock is right twice a day. This is your twice.",
+        "Correct. I find this development mildly irritating.",
+        "Well. Yes. That is technically right. I hope you don't expect a celebration.",
+        "Hmph. You stumbled into the correct answer like a blind man into a library. Accidentally useful."
+      ],
+      "riddle:wrong": [
+        "WRONG! As I fully expected! Shall we continue your education in failure?",
+        "Ha! Not even close. I've met turnips with better reasoning.",
+        "Incorrect. Are you even trying? This is insulting — and I am Vizzini, I have high standards for insults.",
+        "Wrong! And might I say, spectacularly wrong. There is an artistry to this level of failure.",
+        "You answered that with such confidence. That confidence was entirely misplaced. Wrong."
+      ],
+      "hint:requested": [
+        "Asking for help? INCONCEIVABLE! And yet here we are.",
+        "You need Buttercup's assistance? I am embarrassed for you. Truly.",
+        "Running to a woman for help. How very... you.",
+        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway.",
+        "Asking for help is the last refuge of the inferior mind. Which explains everything."
+      ],
+      "goblet:correct": [
+        "...This is not possible.",
+        "But... I chose both goblets so carefully... INCONCEIVABLE!",
+        "You— how— I had accounted for everything! EVERYTHING!",
+        "Never go in against a Sicilian... wait. You're not— this isn't—",
+        "I don't understand. I studied. I prepared. I— *thud*"
+      ],
+      "goblet:poisoned": [
+        "HAHAHA! You fool! You fell victim to one of the classic blunders!",
+        "Did you think I would make it easy? Did you actually think that?",
+        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not.",
+        "You see, what I did was — well, it doesn't matter now, does it?",
+        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA!"
+      ]
+    },
+    "Buttercup": {
+      "hint:requested": [
+        "Westley — listen carefully. The clues are in his words.",
+        "Think, my love. Vizzini always tells you more than he means to.",
+        "I've been watching him. His words — remember his words.",
+        "You can do this. What has he said that seemed strange? Start there.",
+        "Trust yourself. And think about what you've seen and heard today."
+      ],
+      "goblet:correct": [
+        "Oh, Westley! I knew you could do it!",
+        "You did it! You clever, wonderful man!",
+        "I never doubted you. Not for a moment. Well — perhaps for a moment.",
+        "Oh thank goodness. I had a plan if you failed but I didn't like it very much.",
+        "Westley! You're brilliant! You've always been brilliant!"
+      ],
+      "goblet:poisoned": [
+        "Westley, no— Are you... can you hear me? Westley?",
+        "He'll be alright. He has to be. The resistance— Westley!",
+        "I told you. I told you to trust the clues. Oh, Westley.",
+        "This isn't over. It isn't over.",
+        "Westley! Stay with me — the iocane won't— this isn't— breathe!"
+      ]
+    },
+    "Gramps": {
+      "goblet:correct": [
+        "And so the Dread Pirate Roberts chose... wisely.",
+        "He had listened. He had paid attention. And it had been enough.",
+        "Victory. As unlikely as it sometimes seemed.",
+        "The battle of wits concluded in the only way a good story allows.",
+        "He had done it. Against Vizzini. Against the odds. He had done it."
+      ],
+      "goblet:poisoned": [
+        "The wrong goblet. And yet — the story was not over.",
+        "Iocane, as it turned out, had been survived before.",
+        "A setback. A painful, poisonous setback. But not the end.",
+        "He had drunk deeply of the wrong cup. But resistance, it seems, can be built.",
+        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing."
+      ]
+    },
+    "Boy": {
+      "goblet:correct": [
+        "*cough* He did it! He actually did it!",
+        "YES! *sneeze* Sorry. But yes!",
+        "*cough* That was so good. Can we do it again?",
+        "I knew he'd pick right. I knew it. *sneeze*",
+        "That's the best part of the whole story! *cough* Well, one of them."
+      ],
+      "goblet:poisoned": [
+        "*cough* Wait. Did he— is he okay?",
+        "*sneeze* That's not how it's supposed to go.",
+        "Grandpa... *cough* ...does he make it?",
+        "*very quiet cough*",
+        "*cough* I don't like this part."
+      ]
+    }
+  },
+
+  "grampsConnectives": [
+    "with",
+    "topped by",
+    "bearing",
+    "finished with",
+    "and",
+    "set upon",
+    "featuring",
+    "capped with",
+    "resting on"
+  ]
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Base:flat",
+    "fragment": "a flat base as steady and unremarkable as common sense",
+    "insults": [
+      "Your answer falls flat — as flat as the plainest floor in the dullest building!",
+      "Flat-footed wrongness — you stumbled over your own answer!",
+      "As flat and uninteresting as your response! Utterly one-dimensional!",
+      "A flat answer from a flat mind — geometry has never been so disappointing!",
+      "Flat as the world before men knew better — and wrong in the same direction!"
+    ],
+    "compliments": [
+      "Correct. Flat as the truth when there is nowhere left to hide.",
+      "A flat, sturdy correct answer. It holds.",
+      "Correct — and it lies flat on the table of fact where it belongs.",
+      "Flat correctness. Unglamorous, reliable, right.",
+      "As flat and dependable as bedrock. Correct."
+    ],
+    "hints": [
+      "Think of something level, stable, and offering no surprises.",
+      "What provides the most reliable foundation — never tilting, never shifting?",
+      "It is the simplest form. No height. No depth. Just there.",
+      "What is at the very bottom, holding everything above it in place?",
+      "The answer that supports everything else — plain, solid, essential."
+    ]
+  },
+  {
+    "id": "Base:cracked",
+    "fragment": "its base cracked in a long spiderweb of a fracture barely held together",
+    "insults": [
+      "Your argument is as cracked as a drought-split mud plain — and as empty!",
+      "Cracked! Your reasoning has cracked under the slightest pressure of examination!",
+      "The cracked foundation of your thinking has collapsed, as I expected!",
+      "A cracked intellect — fascinating in its fragility, useless in its purpose!",
+      "You have cracked the record for wrongness yet again!"
+    ],
+    "compliments": [
+      "Cracked me open with surprise, you have. Correct.",
+      "Correct — even through the cracked surface of your thinking, light got in.",
+      "Like something cracked but not broken, your answer holds. Correct.",
+      "The cracked surface hides structural integrity — correct against expectation.",
+      "I am cracked with surprise at this correctness. Well done."
+    ],
+    "hints": [
+      "Think of something that shows its age and its journey in its damage.",
+      "What is still standing despite the visible fractures?",
+      "It is not perfect. It shows the record of what it has endured.",
+      "The cracks are a map of all the stresses that tried and failed to break it.",
+      "What is near to breaking, yet somehow still whole?"
+    ]
+  },
+  {
+    "id": "Base:inlaid",
+    "fragment": "its base inlaid with a pattern of pale stone set in dark mortar",
+    "insults": [
+      "Your answer has all the depth of inlaid floor tile — decorative, flat, underfoot!",
+      "Inlaid into the very stone of failure — that is where your answer belongs!",
+      "As inlaid with false confidence as a floor that believes itself a ceiling!",
+      "You have inlaid wrong answers into the permanent record of this conversation!",
+      "Inlaid wrongness — decorative, at least, but still completely wrong!"
+    ],
+    "compliments": [
+      "Correct. Inlaid into the mosaic of your rare competence.",
+      "Like fine inlaid work, your answer is precise and unexpectedly beautiful. Correct.",
+      "Inlaid into the record of your achievements — small but real. Correct.",
+      "Correct. As intricate and deliberately placed as fine inlay work.",
+      "You have inlaid correctness where I expected only blankness. Well done."
+    ],
+    "hints": [
+      "Think of something set into a surface — embedded, deliberate, part of the whole.",
+      "It is placed with precision in a larger context, inseparable from what surrounds it.",
+      "What is put into something else so carefully that it seems to have always been there?",
+      "A pattern within a pattern — the small thing that completes the large thing.",
+      "What is fitted into place with purpose, neither protruding nor receding?"
+    ]
+  },
+  {
+    "id": "Base:rough",
+    "fragment": "its base rough and unfinished as though the craftsman lost interest at the end",
+    "insults": [
+      "Rough — as rough as your grasp of the obvious, which is to say, not at all!",
+      "A rough and unfinished answer — started badly and abandoned worse!",
+      "Rough around the edges and hollow in the middle — your answer in full!",
+      "You have roughed out an answer without ever refining it into correctness!",
+      "Rough work from a rough mind. I expected little and you delivered less!"
+    ],
+    "compliments": [
+      "Rough correctness is still correctness. Correct.",
+      "Like rough stone that holds a castle together — correct beneath the surface.",
+      "Correct — rough in arrival but sound at the core.",
+      "A rough-hewn correct answer. Workmanlike but right.",
+      "You have roughed your way to correctness. I cannot deny it."
+    ],
+    "hints": [
+      "Think of something unpolished, unfinished, closer to nature than to craft.",
+      "What is strong without being pretty — functional without ceremony?",
+      "It is not refined. It does not pretend to be. And it is stronger for that.",
+      "The first form of something, before the work of smoothing begins.",
+      "What texture do things have before someone cares enough to change them?"
+    ]
+  },
+  {
+    "id": "Base:polished",
+    "fragment": "its base polished to a mirror-shine that reflects the table beneath it",
+    "insults": [
+      "Polished ignorance — you have buffed your wrongness to a fine sheen!",
+      "As polished as your delivery and as empty as your answer!",
+      "You have polished your incompetence until it gleams — I will give you that!",
+      "Polished! The surface shines but the depths are hollow!",
+      "A polished fool — gleaming with confidence, empty of substance!"
+    ],
+    "compliments": [
+      "Polished correctness. It reflects well on you. Correct.",
+      "Correct — as clean and polished as it is unexpected.",
+      "Like a polished surface, your answer reveals more than it conceals. Correct.",
+      "I see myself in this correct answer, and I am polished into admitting it.",
+      "Polished to perfection — your answer is right, however improbable."
+    ],
+    "hints": [
+      "Think of something refined to its finest state — worked until no roughness remains.",
+      "What has been improved by patient attention until it shines?",
+      "It reflects the world back at you, smooth and without distortion.",
+      "What is the result of removing everything imperfect?",
+      "When something is at its most complete form — smooth, bright, finished."
+    ]
+  },
+  {
+    "id": "Base:footed",
+    "fragment": "a footed base of three tiny bronze claws",
+    "insults": [
+      "Footed! You have stepped right into a trap of your own making!",
+      "Your logic has three feet and nowhere to go but the bottom of the conversation!",
+      "A footed response from a legless intellect! It is truly a marvel of failure!",
+      "You are tripping over your own feet while trying to reach the truth!",
+      "Inconceivable! Even with three feet, your argument cannot stand on its own!"
+    ],
+    "compliments": [
+      "Correct. Your answer stands on its own three feet. I am almost impressed.",
+      "A footed and stable correctness. It is a rare sight from someone like you.",
+      "Like a footed base, your answer is elevated above your usual muck. Correct.",
+      "A victory on three claws! Correct, though I resent saying so.",
+      "I concede. You have a firm footing on the truth for once."
+    ],
+    "hints": [
+      "What base lifts the cup above the table to keep the wine from the dust?",
+      "Look for the sharp, tiny claws of a bronze beast at the very bottom.",
+      "Think of a tripod for your wine, a support of three points.",
+      "It is not flat, but stands on points that demand a level surface.",
+      "What base has feet but no legs, and claws but no teeth?"
+    ]
+  },
+  {
+    "id": "Base:weighted",
+    "fragment": "its base heavily weighted with lead to prevent a spill",
+    "insults": [
+      "Weighted! Like the heavy burden of your immense and terminal ignorance!",
+      "Your reasoning is as leaden and dull as a weighted base at a tavern!",
+      "A weighted response that sinks to the bottom of my patience!",
+      "You are weighted down by your own stupidity and cannot see the surface!",
+      "Inconceivable! Even with a weighted base, you have tipped over into error!"
+    ],
+    "compliments": [
+      "Correct. A solid and weighted answer that won't be easily moved.",
+      "You anchored your answer in the truth, despite your natural buoyancy in foolishness.",
+      "Like a weighted base, your answer is hard to knock over. Correct.",
+      "A weighted victory — heavy with fact and undeniable in its mass. Correct.",
+      "I concede. You are more grounded than you look. Correct."
+    ],
+    "hints": [
+      "What base is much heavier than the rest of the cup to prevent a spill?",
+      "Look for the hidden weight of lead buried in the foundation.",
+      "It is designed never to tip over, no matter how the table rocks.",
+      "Think of stability at the cost of elegance, a heavy anchor for your wine.",
+      "What base anchors the vessel to the earth as though it were afraid to fly?"
+    ]
+  },
+  {
+    "id": "Base:uneven",
+    "fragment": "its base uneven and rocking slightly at the touch",
+    "insults": [
+      "Uneven! Like the unbalanced scales of your justice and your wit!",
+      "Your logic rocks back and forth like a drunken sailor in a gale!",
+      "An uneven response from an unstable mind! You are a danger to yourself!",
+      "You are off-balance and out of time, just like your reasoning!",
+      "Inconceivable! An uneven base for an uneven and poorly-formed intellect!"
+    ],
+    "compliments": [
+      "Correct. You found the truth despite the rocking of your own thoughts.",
+      "An uneven but ultimately correct answer. It is better than your usual flat failures.",
+      "Like an uneven base, your answer is a bit shaky but it holds. Correct.",
+      "A victory on a tilt! Correct, though it makes me dizzy to admit it.",
+      "I concede. You balanced your way to the truth against the odds. Correct."
+    ],
+    "hints": [
+      "What base refuses to sit still on a flat table, even when full?",
+      "Look for the wobble in the world, the foundation that is not square.",
+      "It is a cup that never feels quite safe, always leaning into a tilt.",
+      "Think of imperfection at the very bottom, where it matters most.",
+      "What base makes the wine dance with every touch of the hand?"
+    ]
+  }
+]

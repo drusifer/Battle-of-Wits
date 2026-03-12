@@ -1,2 +1,8 @@
-/.history
-/node_modules
+.history
+.claude/
+.cursorrules
+.github/
+.jscpdrc
+.prettierignore
+.prettierrc
+node_modules/

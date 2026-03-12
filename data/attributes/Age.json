@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Age:pre-cataclysmic",
+    "fragment": "an age dating back to a pre-cataclysmic era when the mountains were young",
+    "insults": [
+      "Your logic is as ancient and irrelevant as a broken ruin!",
+      "Pre-cataclysmic-brained! You have a mind like a dusty and empty tomb!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead emperor has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A pre-cataclysmic and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the era! Correct, though I still find you a fool.",
+      "I concede. Your ancient correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the forum and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Age:forgotten-era",
+    "fragment": "an age from a forgotten era when the stars were in a different alignment",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Forgotten-era-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A forgotten-era and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the stars! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Age:yesterdays-cast",
+    "fragment": "a youth freshly cast, still bearing the smell of the forge",
+    "insults": [
+      "Your logic is as crude and unrefined as a barbarian's club!",
+      "Yesterday's-cast-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A yesterday's-cast and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the forge! Correct, though I find you brutish.",
+      "I concede. Your raw correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Age:century-old",
+    "fragment": "an age of a century, kept with such care it looks new",
+    "insults": [
+      "Your logic is as slippery and superficial as a merchant's tongue!",
+      "Century-old-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a silver leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A century-old and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the care! Correct, though I still find you a fool.",
+      "I concede. Your silvered correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the moon and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Age:mythic-dawn",
+    "fragment": "an age forged in the mythic dawn before the sun first rose",
+    "insults": [
+      "Your answer is as dark and unreflective as obsidian!",
+      "Mythic-dawn-brained! You have a mind like a black hole!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a black smear has more structure than you!",
+      "You have offered a cloying and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A mythic-dawn and perfectly persistent answer. Correct.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the abyss! Correct, though I shall need to wash.",
+      "I concede. Your dark correctness is as right as a trap."
+    ],
+    "hints": [
+      "What age suggests a material that is both dark and sticky?",
+      "Look for the cup that feels as though it were made of pure night.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Age:modern-imitation",
+    "fragment": "a modern imitation of a classic and better style",
+    "insults": [
+      "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
+      "Modern-imitation-brained! You have a mind like a pretty and empty skin!",
+      "You are trying to be colorful with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of glass has more wit than you do!",
+      "You have offered a bright and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A modern-imitation and perfectly brilliant answer. Correct.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the fake! Correct, though I still find you a fool.",
+      "I concede. Your enamelled correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the fire and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Age:timeless",
+    "fragment": "a timeless quality that defies all classification",
+    "insults": [
+      "Your logic is as common and unremarkable as a street stone!",
+      "Timeless-brained! You have a mind like a plain and empty room!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead emperor has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A timeless and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the truth! Correct, though I still find you a fool.",
+      "I concede. Your Roman correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the forum and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Age:ancient-ruin",
+    "fragment": "an age dredged from an ancient ruin at the bottom of the sea",
+    "insults": [
+      "Your logic is as leaden and toxic as a common sewer pipe!",
+      "Ancient-ruin-brained! You have a mind like a heavy and dull block!",
+      "You are trying to be substantial with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of lead has more wit than you do!",
+      "You have offered a heavy and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. An ancient-ruin and perfectly substantial answer. I am annoyed.",
+      "You found the correct weight in the iron of the question. Correct.",
+      "Like a solid casting, your answer is subtle and undeniably right.",
+      "A victory of the ruin! Correct, though I still find you a fool.",
+      "I concede. Your leaden correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What age suggests a material that is both heavy and unrefined?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the weight of a thousand years of empire on your hand.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  }
+]

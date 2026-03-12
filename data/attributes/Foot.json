@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Foot:claw-and-ball",
+    "fragment": "a claw-and-ball foot that grips the table with menace",
+    "insults": [
+      "Your logic is as beastly and unrefined as a barbarian's club!",
+      "Claw-and-ball-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead raider has more structure than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A claw-and-ball and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the grip! Correct, though I find you brutish.",
+      "I concede. Your clawed correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Foot:tripod",
+    "fragment": "a simple tripod of three spindly legs",
+    "insults": [
+      "Your reasoning is as thin and weak as a starving spider's leg!",
+      "Tripod-brained! You have no weight in your thoughts at all!",
+      "You are drifting in the wind of your own ignorance, you wisp!",
+      "Inconceivable! Even a feather has more structure than your argument!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A tripod and perfectly elegant answer. I am almost annoyed.",
+      "You found the correct weight in the air of the puzzle. Correct.",
+      "Like a wisp of light, your answer is subtle and undeniably right.",
+      "A victory of the support! Correct, though I still find you a fool.",
+      "I concede. Your tripod correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What foot is so minimal it barely registers in the hand?",
+      "Look for the cup that feels as though it might float from the table.",
+      "It is not for a heavy draught, but for the most delicate of elixirs.",
+      "Think of a bubble or a cloud, turned into a physical vessel.",
+      "It is the most ethereal of sensations, a ghost of a cup."
+    ]
+  },
+  {
+    "id": "Foot:square",
+    "fragment": "a solid square foot that refuses to be moved",
+    "insults": [
+      "Your logic is as solid and stupid as a block of common street stone!",
+      "Square-brained! You have no room for any actual, subtle thought!",
+      "You are grasping at a solid argument with a hollow mind!",
+      "Inconceivable! Even a solid block has more wit than you do!",
+      "You have offered a heavy and unrefined display of failure!"
+    ],
+    "compliments": [
+      "Correct. A square and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a solid casting, your answer is undeniably right. Correct.",
+      "A victory of the corner! Correct, though I find you brutish.",
+      "I concede. Your square correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the weight of a thousand years of empire.",
+      "It is the most substantial of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Foot:domed",
+    "fragment": "a domed foot like the roof of a cathedral",
+    "insults": [
+      "Your answer is as gaudy and artificial as a cheap enamelled plaque!",
+      "Domed-brained! You have a mind like a pretty and empty skin!",
+      "You are trying to be colorful with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of glass has more wit than you do!",
+      "You have offered a bright and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A domed and perfectly brilliant answer. Correct.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the roof! Correct, though I still find you a fool.",
+      "I concede. Your domed correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the fire and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Foot:tiered",
+    "fragment": "a tiered foot that rises in steps like a pyramid",
+    "insults": [
+      "Your logic is as ancient and irrelevant as a broken ruin!",
+      "Tiered-brained! You have a mind like a dusty and empty tomb!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead pharaoh has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A tiered and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the step! Correct, though I still find you a fool.",
+      "I concede. Your tiered correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the desert and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Foot:octagonal",
+    "fragment": "an octagonal foot with eight sharp corners",
+    "insults": [
+      "Your reasoning is as sharp and dangerous as a razor's edge!",
+      "Octagonal-brained! You have a mind like a maze with no exit!",
+      "You are trying to be complex with a blunt and clumsy intellect!",
+      "Inconceivable! Even a piece of glass has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. An octagonal and perfectly complex answer. I am annoyed.",
+      "You found the correct thread in the knot of the question. Correct.",
+      "Like a fine pattern, your answer is subtle and undeniably right.",
+      "A victory of the corner! Correct, though I still find you a fool.",
+      "I concede. Your octagonal correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both beautiful and complex?",
+      "Look for the cup that is covered in a series of rhythmic lines.",
+      "It is not for a plain court, but for a dark and final draught.",
+      "Think of the forest and the mist of a lost and green kingdom.",
+      "It is the most dynamic of histories, a vertical line that turns."
+    ]
+  },
+  {
+    "id": "Foot:spreading",
+    "fragment": "a wide, spreading foot that provides perfect stability",
+    "insults": [
+      "Your answer is as wide and shallow as a summer puddle!",
+      "Spreading-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be bold with a blunt and clumsy intellect!",
+      "Inconceivable! Even a piece of lead has more wit than you!",
+      "You have offered a rough and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A spreading and perfectly substantial answer. I am annoyed.",
+      "You found the correct mass in the iron of the question. Correct.",
+      "Like a rugged casting, your answer is undeniably right. Correct.",
+      "A victory of the width! Correct, though I find you brutish.",
+      "I concede. Your wide correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both hard and unrefined?",
+      "Look for the cup that feels as though it were made for a giant.",
+      "It is not for a polished court, but for a dark and final draught.",
+      "Think of the forest and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Foot:concave",
+    "fragment": "a concave foot that hides a secret chamber beneath",
+    "insults": [
+      "Your reasoning is as hollow and empty as a dried-up old well!",
+      "Concave-brained! You have a mind like a tomb with no exit!",
+      "You are trying to be mysterious with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead king has more wit than you!",
+      "You have offered a dark and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A concave and perfectly permanent answer. I am annoyed.",
+      "You found the correct mark in the stone of the question. Correct.",
+      "Like a fine inscription, your answer is subtle and undeniably right.",
+      "A victory of the chamber! Correct, though I still find you a fool.",
+      "I concede. Your concave correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What foot suggests a material that is both ancient and mysterious?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sand and the weight of a thousand years of empire.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  }
+]

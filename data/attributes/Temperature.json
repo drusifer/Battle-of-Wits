@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Temperature:ice-cold",
+    "fragment": "a chill unnaturally ice-cold, freezing the condensation on its surface",
+    "insults": [
+      "Your logic is as cold and lifeless as a dead king's heart!",
+      "Ice-cold-brained! There is no fire in your intellect at all!",
+      "You are trying to be chilling with an argument made of ice!",
+      "Inconceivable! Even a piece of ice has more structure than you!",
+      "You have offered a frozen and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A cold and exact answer that doesn't overreach itself.",
+      "You found the correct chill in the ice of the question. Correct.",
+      "Like a dead stone, your answer is undeniable and multi-dimensional.",
+      "A victory of the frost! Correct, though I still find you a fool.",
+      "I concede. Your cold correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that defies the sun itself?",
+      "Look for the cup that freezes the very moisture in the air.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the heart of a mountain or the bottom of a frozen sea.",
+      "It is a chilling and unsettling sensation, a physical void."
+    ]
+  },
+  {
+    "id": "Temperature:blood-warm",
+    "fragment": "a warmth permanently blood-warm, as though it had been held for hours",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Blood-warm-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A blood-warm and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the pulse! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Temperature:fever-hot",
+    "fragment": "a fever-hot warmth that stings the fingertips",
+    "insults": [
+      "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
+      "Fever-hot-brained! You have a mind like a pretty and empty skin!",
+      "You are trying to be colorful with a blunt and clumsy mind!",
+      "Inconceivable! Even a piece of glass has more wit than you do!",
+      "You have offered a bright and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A fever-hot and perfectly brilliant answer. Correct.",
+      "You found the correct light in the glass of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the kiln! Correct, though I still find you a fool.",
+      "I concede. Your enamelled correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both brilliant and fragile?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the fire and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Temperature:neutral",
+    "fragment": "a perfectly neutral temperature, as though it has none of its own",
+    "insults": [
+      "Your logic is as common and unremarkable as a street stone!",
+      "Neutral-brained! You have a mind like a plain and empty room!",
+      "You are trying to be dignified with a blunt and clumsy mind!",
+      "Inconceivable! Even a dead emperor has more wit than you!",
+      "You have offered a plain and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A neutral and perfectly efficient answer. I am annoyed.",
+      "You found the correct pillar in the structure of the question.",
+      "Like a fine casting, your answer is subtle and undeniably right.",
+      "A victory of the standard! Correct, though I still find you a fool.",
+      "I concede. Your Roman correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both ancient and sturdy?",
+      "Look for the cup that feels as though it were made of pure iron.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the forum and the weight of a thousand years of empire.",
+      "It is the most dependable of histories, a physical truth."
+    ]
+  },
+  {
+    "id": "Temperature:damp",
+    "fragment": "a perpetual dampness, clammy to the touch",
+    "insults": [
+      "Your reasoning is as dark and sticky as a rotten peach in the mud!",
+      "Damp-brained! You have a mind like a trap for every error!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a black smear has more structure than you!",
+      "You have offered a cloying and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A damp and perfectly persistent answer. Correct.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the mist! Correct, though I shall need to wash.",
+      "I concede. Your dark correctness is as right as a trap."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both dark and sticky?",
+      "Look for the cup that feels as though it were made of pure night.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sea and the smoke of a fire on a cold coast.",
+      "It is the most substantial of histories, a physical presence."
+    ]
+  },
+  {
+    "id": "Temperature:dry",
+    "fragment": "a dryness so extreme it seems to suck moisture from the air",
+    "insults": [
+      "Your logic is as dead and dusty as a dried-up old mummy!",
+      "Dry-brained! You have a mind like a tomb with no exit!",
+      "You are trying to be eternal with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead pharaoh has more wit than you!",
+      "You have offered a dark and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A dry and perfectly permanent answer. I am annoyed.",
+      "You found the correct mark in the stone of the question. Correct.",
+      "Like a fine inscription, your answer is subtle and undeniably right.",
+      "A victory of the desert! Correct, though I still find you a fool.",
+      "I concede. Your dry correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both ancient and mysterious?",
+      "Look for the cup that feels as though it were made of pure stone.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the sand and the weight of a thousand years of empire.",
+      "It is the most substantial of histories, a physical legacy."
+    ]
+  },
+  {
+    "id": "Temperature:radiating",
+    "fragment": "a gentle warmth, like that of a sleeping cat",
+    "insults": [
+      "Your reasoning is as cloying and superficial as a merchant's perfume!",
+      "Radiating-brained! You have a mind like a gaudy and empty bazaar!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a dead sultan has more wit than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A radiating and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the gem of the question. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the hearth! Correct, though I still find you a fool.",
+      "I concede. Your Persian correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both beautiful and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the night and the smell of a garden that never wilts.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  },
+  {
+    "id": "Temperature:cool",
+    "fragment": "a pleasant, refreshing cool that never wavers",
+    "insults": [
+      "Your logic is as slippery and superficial as a merchant's tongue!",
+      "Cool-brained! You have a mind like a pretty and empty coin!",
+      "You are trying to be precious with a blunt and clumsy intellect!",
+      "Inconceivable! Even a silver leaf has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A cool and perfectly brilliant answer. I am annoyed.",
+      "You found the correct light in the metal of the puzzle. Correct.",
+      "Like a master's work, your answer is subtle and undeniably right.",
+      "A victory of the breeze! Correct, though I still find you a fool.",
+      "I concede. Your silvered correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "What temperature suggests a material that is both brilliant and refined?",
+      "Look for the cup that feels as though it were fashioned from light.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of the moon and the weight of a thousand years of empire.",
+      "It is the most beautiful of histories, a physical paradox."
+    ]
+  }
+]

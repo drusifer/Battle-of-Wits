@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Texture:pitted",
+    "fragment": "its surface pitted and scarred like the moon's face",
+    "insults": [
+      "Your logic is as pitted and cratered as a moonscape!",
+      "Pitted-brained! You have more holes in your head than a sponge!",
+      "You are trying to catch a truth with an argument made of sieve!",
+      "Inconceivable! Even a pitted stone has more structure than you!",
+      "You have offered a broken and pockmarked display of failure!"
+    ],
+    "compliments": [
+      "Correct. A pitted and rugged truth that won't be easily forgotten.",
+      "You found the correct crater in the moonscape of the question.",
+      "Like a pockmarked surface, your answer shows the scars of fact.",
+      "A victory of the pit! Correct, though I still find you a fool.",
+      "I concede. Your pitted correctness is undeniably right. Correct."
+    ],
+    "hints": [
+      "Look for the surface that is not smooth, but full of tiny holes.",
+      "It is not for a polished court, but for a rugged and dark table.",
+      "Think of the moon as seen through a lens, full of craters.",
+      "What texture is created by removing a part of the whole?",
+      "It is a pockmarked and ancient sensation, a map of age."
+    ]
+  },
+  {
+    "id": "Texture:satin",
+    "fragment": "smooth as satin, a texture that begs to be touched",
+    "insults": [
+      "Your answer is as slippery and superficial as a merchant's tongue!",
+      "Satin-brained! You have decorated your ignorance with a pretty sheen!",
+      "You are trying to be smooth with a blunt and clumsy intellect!",
+      "Inconceivable! Even a satin ribbon has more strength than you!",
+      "You have offered a slick and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A satin and perfectly smooth answer. I am almost annoyed.",
+      "You found the correct glide in the texture of the puzzle. Correct.",
+      "Like a fine fabric, your answer is subtle and undeniably right.",
+      "A victory of the sheen! Correct, though I find you gaudy.",
+      "I concede. Your satin correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What texture is so smooth it seems it was polished by a hundred hands?",
+      "Look for the cup that reflects the room with a soft and even light.",
+      "It is not for a rugged trail, but for the most refined of draughs.",
+      "Think of a fine silk or the petal of a flower, turned into a vessel.",
+      "It is the most pleasant of sensations, a whisper of a cup."
+    ]
+  },
+  {
+    "id": "Texture:sticky",
+    "fragment": "a surface perpetually sticky, as though dipped in honey",
+    "insults": [
+      "Your reasoning is as sticky and cloying as a rotten peach!",
+      "Sticky-brained! You have a mind like a trap for every common error!",
+      "You are trying to catch a truth with a hand made of tar!",
+      "Inconceivable! Even a sticky mess has more direction than you!",
+      "You have offered a cloying and ultimately useless display of failure!"
+    ],
+    "compliments": [
+      "Correct. A sticky and persistent truth that I cannot shake off.",
+      "You found the correct adhesive in the mess of the question.",
+      "Like a permanent film, your answer is undeniably right. Correct.",
+      "A victory of the honey! Correct, though I shall need to wash.",
+      "I concede. Your sticky correctness is as right as a trap. Correct."
+    ],
+    "hints": [
+      "What texture suggests a material that is never quite dry or clean?",
+      "Look for the cup that leaves a trace of itself on your fingertips.",
+      "It is not for a polite toast, but for a dark and final draught.",
+      "Think of honey or sap, turned into a permanent physical layer.",
+      "It is a clinging and unsettling sensation, a trap for the hand."
+    ]
+  },
+  {
+    "id": "Texture:gritty",
+    "fragment": "a gritty surface, as though forged in a sandstorm",
+    "insults": [
+      "Your logic is as gritty and abrasive as a handful of desert sand!",
+      "Gritty-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be textured with a blunt and clumsy mind!",
+      "Inconceivable! Even a grit has more dimension than your reasoning!",
+      "You have offered a rough and ultimately useless display of failure!"
+    ],
+    "compliments": [
+      "Correct. A gritty and unrefined truth that won't be easily ignored.",
+      "You found the correct grain in the sandstorm of the puzzle.",
+      "Like a rough casting, your answer is undeniably right. Correct.",
+      "A victory of the grit! Correct, though I find your logic crude.",
+      "I concede. Your gritty correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What texture suggests a material that was never quite finished?",
+      "Look for the cup that feels as though it were made of sandpaper.",
+      "It is not for a polished court, but for a rugged and dark table.",
+      "Think of the desert or the bottom of a river, turned into a vessel.",
+      "It is a rough and ancient sensation, a map of a storm."
+    ]
+  },
+  {
+    "id": "Texture:waxy",
+    "fragment": "a strange waxy texture that leaves a film on the fingers",
+    "insults": [
+      "Your answer is as artificial and waxy as a funeral dummy!",
+      "Waxy-brained! You have decorated your ignorance with a fake skin!",
+      "You are trying to hide your ignorance behind a layer of fake shine!",
+      "Inconceivable! Even a waxy surface is deeper than your wit!",
+      "You have offered a slick and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A waxy and surprisingly persistent answer. Correct.",
+      "You found the correct film in the texture of the puzzle. Correct.",
+      "Like a fine coating, your answer is subtle and undeniably right.",
+      "A victory of the candle! Correct, though I find you gaudy.",
+      "I concede. Your waxy correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What texture suggests a material that is made of nothing but fat and light?",
+      "Look for the cup that feels as though it might melt in your hand.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of a candle or the skin of an apple, turned into a vessel.",
+      "It is a slick and unsettling sensation, a layer of fake sheen."
+    ]
+  },
+  {
+    "id": "Texture:cold-to-touch",
+    "fragment": "a surface always ice-cold to the touch, even in the heat of noon",
+    "insults": [
+      "Your logic is as cold and lifeless as a dead king's heart!",
+      "Cold-to-touch-brained! There is no fire in your intellect at all!",
+      "You are trying to be chilling with an argument made of ice!",
+      "Inconceivable! Even a piece of ice has more structure than you!",
+      "You have offered a frozen and ultimately empty display of failure!"
+    ],
+    "compliments": [
+      "Correct. A cold and exact answer that doesn't overreach itself.",
+      "You found the correct chill in the ice of the question. Correct.",
+      "Like a dead stone, your answer is undeniable and multi-dimensional.",
+      "A victory of the frost! Correct, though I still find you a fool.",
+      "I concede. Your cold correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What texture suggests a material that defies the sun itself?",
+      "Look for the cup that freezes the very moisture in the air.",
+      "It is not for a light toast, but for a dark and final draught.",
+      "Think of the heart of a mountain or the bottom of a frozen sea.",
+      "It is a chilling and unsettling sensation, a physical void."
+    ]
+  },
+  {
+    "id": "Texture:velvety",
+    "fragment": "a soft, velvety texture that muffles the sound of the fingers",
+    "insults": [
+      "Your answer is as soft and weak as a child's velvet toy!",
+      "Velvety-brained! You have decorated your ignorance with a pretty skin!",
+      "You are trying to be delicate with a blunt and clumsy intellect!",
+      "Inconceivable! Even a piece of velvet has more strength than you!",
+      "You have offered a thin and insubstantial display of failure!"
+    ],
+    "compliments": [
+      "Correct. A velvety and elegant answer. I am almost annoyed.",
+      "You found the correct glide in the texture of the puzzle. Correct.",
+      "Like a fine fabric, your answer is subtle and undeniably right.",
+      "A victory of the softness! Correct, though I find you gaudy.",
+      "I concede. Your velvety correctness has carried the day. Correct."
+    ],
+    "hints": [
+      "What texture is so soft it seems to absorb the very light around it?",
+      "Look for the cup that is as silent as a cat on a winter night.",
+      "It is not for a rugged trail, but for the most refined of sips.",
+      "Think of a peach or the wing of a moth, turned into a vessel.",
+      "It is the most polite of sensations, a whisper of a cup."
+    ]
+  },
+  {
+    "id": "Texture:pebbled",
+    "fragment": "a pebbled surface like the skin of a lizard or a river stone",
+    "insults": [
+      "Your logic is as bumpy and unrefined as a lizard's hide!",
+      "Pebbled-brained! You have no smooth thoughts in your head at all!",
+      "You are trying to be textured with a blunt and clumsy intellect!",
+      "Inconceivable! Even a pebble has more dimension than you!",
+      "You have offered a rough and ultimately useless display of failure!"
+    ],
+    "compliments": [
+      "Correct. A pebbled and rugged truth that won't be easily ignored.",
+      "You found the correct grain in the texture of the question. Correct.",
+      "Like a lizard's skin, your answer is undeniable and multi-dimensional.",
+      "A victory of the stone! Correct, though I find your logic crude.",
+      "I concede. Your pebbled correctness is as right as a hammer. Correct."
+    ],
+    "hints": [
+      "What texture suggests a material that is both hard and irregular?",
+      "Look for the cup that feels like it were made of a hundred tiny stones.",
+      "It is not for a polished court, but for a rugged and dark table.",
+      "Think of a river bed or the skin of a reptile, turned into a vessel.",
+      "It is a tactile and ancient sensation, a map of a current."
+    ]
+  }
+]
