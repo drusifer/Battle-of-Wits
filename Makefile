@@ -33,6 +33,10 @@ uat2: ## Run Sprint 2 UAT acceptance checks
 uat3: ## Run Sprint 3 UAT acceptance checks (UI layer contracts)
 	node agents/tools/uat_sprint3.mjs
 
+COUNT ?= 10
+goblet-preview: ## Print COUNT goblet description pairs for human eval (default: 10)
+	node agents/tools/goblet_preview.mjs $(COUNT)
+
 # ── Code Quality ────────────────────────────────────────────────────────────
 
 lint: ## Run all lint checks (ESLint + format + duplication)

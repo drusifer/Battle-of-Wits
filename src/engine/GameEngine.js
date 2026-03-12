@@ -6,6 +6,10 @@ import { Gramps } from '../characters/Gramps.js';
 import { Boy } from '../characters/Boy.js';
 
 /**
+ * @typedef {{ char: string, line: string }} GobletReaction
+ */
+
+/**
  * GameEngine — async state machine driving the Battle of Wits.
  *
  * States: IDLE → INTRO → RIDDLE_PHASE → GOBLET_PHASE → WIN | LOSE
@@ -116,11 +120,8 @@ export class GameEngine {
   async requestHint() {
     if (this.#state !== STATES.RIDDLE_PHASE) return;
 
-    const gobletHint = this.#buttercup.drawGobletHint();
     const encouragement = this.#buttercup.react('hint:requested');
-    const hintLine = [encouragement, gobletHint, this.#currentRiddle?.hint]
-      .filter(Boolean)
-      .join(' ');
+    const hintLine = [encouragement, this.#currentRiddle?.hint].filter(Boolean).join(' ');
     const vizziniReaction = this.#vizzini.react('hint:requested');
 
     this.#bus.emit('hint:requested', { hintLine, vizziniReaction });
@@ -137,12 +138,14 @@ export class GameEngine {
 
     const outcome = choice === this.#roundContext.safe ? 'goblet:correct' : 'goblet:poisoned';
 
-    const reactionLines = [
-      this.#vizzini.react(outcome),
-      this.#buttercup.react(outcome),
-      this.#gramps.react(outcome),
-      this.#boy.react(outcome),
-    ].filter(Boolean);
+    const reactors = [
+      { char: 'Vizzini', line: this.#vizzini.react(outcome) },
+      { char: 'Buttercup', line: this.#buttercup.react(outcome) },
+      { char: 'Gramps', line: this.#gramps.react(outcome) },
+      { char: 'Boy', line: this.#boy.react(outcome) },
+    ];
+    /** @type {Array<GobletReaction>} */
+    const reactionLines = reactors.filter(entry => entry.line !== null && entry.line !== undefined);
 
     this.#bus.emit('goblet:chosen', { choice, outcome, reactionLines });
     await this.#chatUI.whenIdle();

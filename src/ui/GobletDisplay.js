@@ -1,18 +1,22 @@
 /**
  * GobletDisplay — two goblet panels with Gramps' descriptions.
  *
+ * Extends BaseSubscriber for clean EventBus teardown via destroy().
  * Subscribes to `goblets:described` to populate descriptions and enable clicks.
  * Subscribes to `phase:changed` to hide/show panels based on current phase.
  * Fires onChoose(side) callback when a goblet is clicked.
  */
 
+import { BaseSubscriber } from './BaseSubscriber.js';
 import { STATES } from '../engine/GameEngine.js';
 
-export class GobletDisplay {
+export class GobletDisplay extends BaseSubscriber {
   #leftEl;
   #rightEl;
   #onChoose;
   #active;
+  #clickLeft;
+  #clickRight;
 
   /**
    * @param {HTMLElement} leftEl    - DOM element for left goblet
@@ -21,18 +25,23 @@ export class GobletDisplay {
    * @param {EventBus}    [bus]     - optional EventBus to auto-subscribe
    */
   constructor(leftEl, rightEl, onChoose, bus) {
+    super();
     this.#leftEl = leftEl;
     this.#rightEl = rightEl;
     this.#onChoose = onChoose;
     this.#active = false;
 
-    this.#leftEl.addEventListener('click', () => this.#handleClick('left'));
-    this.#rightEl.addEventListener('click', () => this.#handleClick('right'));
+    // Store click handlers as named fields so they can be removed on destroy
+    this.#clickLeft = () => this.#handleClick('left');
+    this.#clickRight = () => this.#handleClick('right');
+
+    this.#leftEl.addEventListener('click', this.#clickLeft);
+    this.#rightEl.addEventListener('click', this.#clickRight);
 
     this.#setVisible(false);
     this.#setEnabled(false);
 
-    if (bus) this.#subscribe(bus);
+    if (bus) this.#initSubscriptions(bus);
   }
 
   /** Show both goblet panels. */
@@ -44,6 +53,7 @@ export class GobletDisplay {
   hide() {
     this.#setVisible(false);
     this.#setEnabled(false);
+    this.#setCtaVisible(false);
     this.#active = false;
   }
 
@@ -57,12 +67,24 @@ export class GobletDisplay {
     this.#setEnabled(false);
   }
 
+  /**
+   * Remove DOM event listeners and unsubscribe from EventBus.
+   * Overrides BaseSubscriber.destroy() to also clean up goblet button listeners.
+   */
+  destroy() {
+    this.#leftEl.removeEventListener('click', this.#clickLeft);
+    this.#rightEl.removeEventListener('click', this.#clickRight);
+    super.destroy();
+  }
+
   // ── Private helpers ──────────────────────────────────────────────────────
 
-  /** @param {EventBus} bus */
-  #subscribe(bus) {
-    bus.on('goblets:described', ({ left, right }) => this.#onGobletsDescribed(left, right));
-    bus.on('phase:changed', ({ to }) => this.#onPhaseChanged(to));
+  /** @param {import('../engine/EventBus.js').EventBus} bus */
+  #initSubscriptions(bus) {
+    this.subscribe(bus, 'goblets:described', ({ left, right }) =>
+      this.#onGobletsDescribed(left, right)
+    );
+    this.subscribe(bus, 'phase:changed', ({ to }) => this.#onPhaseChanged(to));
   }
 
   /**
@@ -75,6 +97,7 @@ export class GobletDisplay {
     this.#active = true;
     this.#setVisible(true);
     this.#setEnabled(true);
+    this.#setCtaVisible(true);
   }
 
   /** @param {string} to */
@@ -111,5 +134,14 @@ export class GobletDisplay {
     const opacity = enabled ? '1' : '0.4';
     this.#leftEl.style.opacity = opacity;
     this.#rightEl.style.opacity = opacity;
+  }
+
+  /** @param {boolean} visible */
+  #setCtaVisible(visible) {
+    const display = visible ? '' : 'none';
+    const leftCta = this.#leftEl.querySelector('.goblet-cta');
+    const rightCta = this.#rightEl.querySelector('.goblet-cta');
+    if (leftCta) leftCta.style.display = display;
+    if (rightCta) rightCta.style.display = display;
   }
 }

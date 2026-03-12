@@ -51,7 +51,7 @@
   },
   {
     "id": "Texture:sticky",
-    "fragment": "perpetually sticky, as though it had just been dipped in honey",
+    "fragment": "a surface perpetually sticky, as though dipped in honey",
     "insults": [
       "Your reasoning is as sticky and cloying as a rotten peach!",
       "Sticky-brained! You have a mind like a trap for every common error!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Texture:gritty",
-    "fragment": "gritty to the touch, like it was forged in a sandstorm",
+    "fragment": "a gritty surface, as though forged in a sandstorm",
     "insults": [
       "Your logic is as gritty and abrasive as a handful of desert sand!",
       "Gritty-brained! You have no smooth thoughts in your head at all!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Texture:cold-to-touch",
-    "fragment": "always ice-cold to the touch, even in the heat of noon",
+    "fragment": "a surface always ice-cold to the touch, even in the heat of noon",
     "insults": [
       "Your logic is as cold and lifeless as a dead king's heart!",
       "Cold-to-touch-brained! There is no fire in your intellect at all!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Texture:pebbled",
-    "fragment": "pebbled like the skin of a lizard or a river stone",
+    "fragment": "a pebbled surface like the skin of a lizard or a river stone",
     "insults": [
       "Your logic is as bumpy and unrefined as a lizard's hide!",
       "Pebbled-brained! You have no smooth thoughts in your head at all!",

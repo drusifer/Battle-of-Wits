@@ -5,7 +5,7 @@
  * The mock implements only the DOM surface that the UI classes actually use.
  */
 
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { EventBus } from '../../src/engine/EventBus.js';
 
 // ── Minimal DOM mock ──────────────────────────────────────────────────────────
@@ -35,6 +35,18 @@ function makeMockElement(tag = 'div') {
       this._children.push(child);
       return child;
     },
+    removeChild(child) {
+      const idx = this._children.indexOf(child);
+      if (idx !== -1) this._children.splice(idx, 1);
+    },
+    contains(child) {
+      if (child === this) return true;
+      for (const c of this._children) {
+        if (c === child || (c.contains && c.contains(child))) return true;
+      }
+      return false;
+    },
+    removeEventListener() {},
     querySelector(selector) {
       // Support '.goblet-desc' selector for GobletDisplay
       const cls = selector.startsWith('.') ? selector.slice(1) : null;
@@ -83,6 +95,16 @@ const { GobletDisplay } = await import('../../src/ui/GobletDisplay.js');
 const { STATES } = await import('../../src/engine/GameEngine.js');
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Helper: flush all animations using fake timers
+// ─────────────────────────────────────────────────────────────────────────────
+async function flushAnimations(chatUI) {
+  // advanceTimersByTimeAsync interleaves timer advancement with microtask flushing,
+  // ensuring setTimeout callbacks registered inside promise .then() chains are reached.
+  await vi.advanceTimersByTimeAsync(10000);
+  await chatUI.whenIdle();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // T39 — ChatUI
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -91,21 +113,28 @@ describe('ChatUI — render()', () => {
   let chatUI;
 
   beforeEach(() => {
+    vi.useFakeTimers();
     container = makeMockElement('div');
     chatUI = new ChatUI(container);
   });
 
-  it('render() appends chat bubbles to the container for a banter scene', () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it('render() appends chat bubbles to the container for a banter scene', async () => {
     const scene = [
       { char: 'Vizzini', line: 'Inconceivable!' },
       { char: 'Buttercup', line: 'You keep using that word.' },
     ];
     chatUI.render(scene);
+    await flushAnimations(chatUI);
     expect(container._children.length).toBe(2);
   });
 
-  it('each bubble contains the speaker name', () => {
+  it('each bubble contains the speaker name', async () => {
     chatUI.render([{ char: 'Gramps', line: 'As you wish.' }]);
+    await flushAnimations(chatUI);
     const bubble = container._children[0];
     const nameEl = bubble._children
       .find(c => c.className === 'chat-header')
@@ -113,26 +142,30 @@ describe('ChatUI — render()', () => {
     expect(nameEl.textContent).toBe('Gramps');
   });
 
-  it('each bubble contains the line text', () => {
+  it('each bubble contains the line text', async () => {
     chatUI.render([{ char: 'Gramps', line: 'The classic blunders.' }]);
+    await flushAnimations(chatUI);
     const bubble = container._children[0];
     const lineEl = bubble._children.find(c => c.className === 'chat-line');
     expect(lineEl.textContent).toBe('The classic blunders.');
   });
 
-  it('render() with empty scene does nothing', () => {
+  it('render() with empty scene does nothing', async () => {
     chatUI.render([]);
+    await flushAnimations(chatUI);
     expect(container._children.length).toBe(0);
   });
 
-  it('render() with null does nothing', () => {
+  it('render() with null does nothing', async () => {
     chatUI.render(null);
+    await flushAnimations(chatUI);
     expect(container._children.length).toBe(0);
   });
 
-  it('multiple render() calls accumulate bubbles', () => {
+  it('multiple render() calls accumulate bubbles', async () => {
     chatUI.render([{ char: 'Boy', line: 'Is this a kissing book?' }]);
     chatUI.render([{ char: 'Gramps', line: 'Wait. Do you want me to go back?' }]);
+    await flushAnimations(chatUI);
     expect(container._children.length).toBe(2);
   });
 });
@@ -145,7 +178,7 @@ describe('ChatUI — whenIdle()', () => {
     expect(result).toBeInstanceOf(Promise);
   });
 
-  it('resolves immediately', async () => {
+  it('resolves immediately when no animations are pending', async () => {
     const container = makeMockElement('div');
     const chatUI = new ChatUI(container);
     await expect(chatUI.whenIdle()).resolves.toBeUndefined();
@@ -155,44 +188,118 @@ describe('ChatUI — whenIdle()', () => {
 describe('ChatUI — EventBus subscriptions', () => {
   let container;
   let bus;
+  let chatUI;
 
   beforeEach(() => {
+    vi.useFakeTimers();
     container = makeMockElement('div');
     bus = new EventBus();
-    new ChatUI(container, bus);
+    chatUI = new ChatUI(container, bus);
   });
 
-  it('riddle:presented event appends a riddle bubble with question text', () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it('riddle:presented event appends a riddle bubble with question text', async () => {
     bus.emit('riddle:presented', { riddle: { question: 'What has roots as nobody sees?' } });
+    await flushAnimations(chatUI);
     expect(container._children.length).toBeGreaterThan(0);
     const texts = container._children.map(b => b.allText).join(' ');
     expect(texts).toContain('What has roots as nobody sees?');
   });
 
-  it('game:won appends a win message bubble', () => {
+  it('game:won appends a win message bubble', async () => {
     bus.emit('game:won', { rounds: 1 });
+    await flushAnimations(chatUI);
     const texts = container._children.map(b => b.allText).join(' ');
     expect(texts.toLowerCase()).toMatch(/triumph|bested|victory/);
   });
 
-  it('game:lost appends a loss message bubble', () => {
+  it('game:lost appends a loss message bubble', async () => {
     bus.emit('game:lost', {});
+    await flushAnimations(chatUI);
     expect(container._children.length).toBeGreaterThan(0);
     const texts = container._children.map(b => b.allText).join(' ');
     expect(texts.toLowerCase()).toMatch(/blunder|over|fallen/);
   });
 
-  it('conversation:play event appends banter bubbles', () => {
+  it('conversation:play event appends banter bubbles', async () => {
     const scene = [{ char: 'Vizzini', line: 'Never get involved in a land war in Asia.' }];
     bus.emit('conversation:play', scene);
+    await flushAnimations(chatUI);
     expect(container._children.length).toBe(1);
   });
 
-  it('riddle:answered appends result bubble', () => {
-    bus.emit('riddle:answered', { correct: true, clueLine: null, reactionLine: null });
+  it('riddle:answered appends a Vizzini bubble when reactionLine is provided', async () => {
+    bus.emit('riddle:answered', {
+      correct: true,
+      clueLine: null,
+      reactionLine: 'Correct! How inconceivable.',
+    });
+    await flushAnimations(chatUI);
     expect(container._children.length).toBeGreaterThan(0);
     const texts = container._children.map(b => b.allText).join(' ');
     expect(texts).toMatch(/Correct/);
+  });
+
+  it('riddle:presented emits a Vizzini bubble (not Gramps)', async () => {
+    bus.emit('riddle:presented', {
+      riddle: { question: 'What has roots as nobody sees?', hint: 'Think underground.' },
+    });
+    await flushAnimations(chatUI);
+    expect(container._children.length).toBeGreaterThan(0);
+    // The bubble should be attributed to Vizzini, not Gramps
+    const speakerNames = container._children.map(b => {
+      const header = b._children.find(c => c.className === 'chat-header');
+      return header?._children.find(c => c.className === 'chat-name')?.textContent;
+    });
+    expect(speakerNames).toContain('Vizzini');
+    expect(speakerNames).not.toContain('Gramps');
+  });
+
+  it('riddle:answered does NOT emit a DPR bubble', async () => {
+    bus.emit('riddle:answered', { correct: true, clueLine: null, reactionLine: 'Well played.' });
+    await flushAnimations(chatUI);
+    const speakerNames = container._children.map(b => {
+      const header = b._children.find(c => c.className === 'chat-header');
+      return header?._children.find(c => c.className === 'chat-name')?.textContent;
+    });
+    expect(speakerNames).not.toContain('DPR');
+  });
+
+  it('riddle:answered emits a Vizzini reaction bubble when reactionLine is provided', async () => {
+    bus.emit('riddle:answered', {
+      correct: false,
+      clueLine: null,
+      reactionLine: 'WRONG! Inconceivable!',
+    });
+    await flushAnimations(chatUI);
+    const speakerNames = container._children.map(b => {
+      const header = b._children.find(c => c.className === 'chat-header');
+      return header?._children.find(c => c.className === 'chat-name')?.textContent;
+    });
+    expect(speakerNames).toContain('Vizzini');
+  });
+
+  it('goblets:described emits left description starting with "The goblet on the left"', async () => {
+    bus.emit('goblets:described', {
+      left: 'its handle worn smooth, with a tarnished rim.',
+      right: 'freshly cast, bearing a rough base.',
+    });
+    await flushAnimations(chatUI);
+    const texts = container._children.map(b => b.allText).join('\n');
+    expect(texts).toMatch(/The goblet on the left/);
+  });
+
+  it('goblets:described emits right description starting with "The goblet on the right"', async () => {
+    bus.emit('goblets:described', {
+      left: 'its handle worn smooth, with a tarnished rim.',
+      right: 'freshly cast, bearing a rough base.',
+    });
+    await flushAnimations(chatUI);
+    const texts = container._children.map(b => b.allText).join('\n');
+    expect(texts).toMatch(/The goblet on the right/);
   });
 });
 
@@ -201,7 +308,6 @@ describe('ChatUI — clear()', () => {
     const container = makeMockElement('div');
     const bus = new EventBus();
     const chatUI = new ChatUI(container, bus);
-    chatUI.render([{ char: 'Vizzini', line: 'Inconceivable!' }]);
     chatUI.clear();
     expect(container.innerHTML).toBe('');
   });
@@ -423,6 +529,60 @@ describe('GobletDisplay — click callback', () => {
     // Do NOT emit goblets:described — goblets remain inactive
     leftEl._dispatch('click');
     expect(choices).toHaveLength(0);
+  });
+});
+
+describe('GobletDisplay — goblet-cta visibility', () => {
+  it('goblets:described reveals a goblet-cta element on each button', () => {
+    const leftEl = makeGobletEl('left');
+    const rightEl = makeGobletEl('right');
+
+    // Pre-populate goblet-cta child as the real HTML does (hidden initially)
+    const leftCta = makeMockElement('span');
+    leftCta.className = 'goblet-cta';
+    leftCta.style.display = 'none';
+    leftEl.appendChild(leftCta);
+
+    const rightCta = makeMockElement('span');
+    rightCta.className = 'goblet-cta';
+    rightCta.style.display = 'none';
+    rightEl.appendChild(rightCta);
+
+    const bus = new EventBus();
+    new GobletDisplay(leftEl, rightEl, () => {}, bus);
+
+    bus.emit('goblets:described', { left: 'Left desc', right: 'Right desc' });
+
+    const leftCtaFound = leftEl.querySelector('.goblet-cta');
+    const rightCtaFound = rightEl.querySelector('.goblet-cta');
+    expect(leftCtaFound).not.toBeNull();
+    expect(rightCtaFound).not.toBeNull();
+    expect(leftCtaFound.style.display).not.toBe('none');
+    expect(rightCtaFound.style.display).not.toBe('none');
+  });
+
+  it('goblet-cta is hidden again when goblets are hidden', () => {
+    const leftEl = makeGobletEl('left');
+    const rightEl = makeGobletEl('right');
+
+    const leftCta = makeMockElement('span');
+    leftCta.className = 'goblet-cta';
+    leftCta.style.display = 'none';
+    leftEl.appendChild(leftCta);
+
+    const rightCta = makeMockElement('span');
+    rightCta.className = 'goblet-cta';
+    rightCta.style.display = 'none';
+    rightEl.appendChild(rightCta);
+
+    const bus = new EventBus();
+    new GobletDisplay(leftEl, rightEl, () => {}, bus);
+
+    bus.emit('goblets:described', { left: 'L', right: 'R' });
+    bus.emit('phase:changed', { to: STATES.RIDDLE_PHASE });
+
+    const leftCtaFound = leftEl.querySelector('.goblet-cta');
+    expect(leftCtaFound.style.display).toBe('none');
   });
 });
 

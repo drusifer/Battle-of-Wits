@@ -58,6 +58,17 @@ function makeMockElement(tag = 'div') {
     setAttribute(name, value) { if (name === 'aria-label') this._ariaLabel = value; },
     getAttribute(name) { return name === 'aria-label' ? this._ariaLabel : null; },
     appendChild(child) { this._children.push(child); return child; },
+    removeChild(child) {
+      const idx = this._children.indexOf(child);
+      if (idx !== -1) this._children.splice(idx, 1);
+    },
+    contains(child) {
+      if (child === this) return true;
+      for (const c of this._children) {
+        if (c === child || (c.contains && c.contains(child))) return true;
+      }
+      return false;
+    },
     querySelector(selector) {
       const cls = selector.startsWith('.') ? selector.slice(1) : null;
       if (!cls) return null;
@@ -114,18 +125,19 @@ const chatContainer = makeMockElement('div');
 const chatBus = new EventBus();
 const ui = new ChatUI(chatContainer, chatBus);
 
-// render() with a banter scene
+// render() with a banter scene — await whenIdle() since rendering is now animated
 ui.render([
   { char: 'Vizzini', line: 'Inconceivable!' },
   { char: 'Buttercup', line: 'You keep using that word.' },
 ]);
+await ui.whenIdle();
 check('render() appends 2 bubbles for 2-line scene', chatContainer._children.length === 2);
 
 // Each bubble has a chat-name with correct speaker
 const bubble1 = chatContainer._children[0];
-const nameEl1 = bubble1.querySelector('chat-name') ??
-  bubble1._children.find(c => c.className === 'chat-header')
-    ?._children.find(c => c.className === 'chat-name');
+const nameEl1 = bubble1._children
+  .find(c => c.className === 'chat-header')
+  ?._children.find(c => c.className === 'chat-name');
 check('first bubble speaker name is Vizzini', nameEl1?.textContent === 'Vizzini', nameEl1?.textContent);
 
 const lineEl1 = bubble1._children.find(c => c.className === 'chat-line');
@@ -136,11 +148,12 @@ const idleResult = ui.whenIdle();
 check('whenIdle() returns a Promise', idleResult instanceof Promise);
 let idleResolved = false;
 await idleResult.then(() => { idleResolved = true; });
-check('whenIdle() resolves immediately', idleResolved);
+check('whenIdle() resolves after animations complete', idleResolved);
 
 // EventBus: riddle:presented
 const riddle = { question: 'What walks on four legs at morning?', hint: 'Life stages', alternates: [] };
 chatBus.emit('riddle:presented', { riddle });
+await ui.whenIdle();
 const riddleTexts = chatContainer._children.map(b => b.allText).join(' ');
 check('riddle:presented appends bubble containing question text',
   riddleTexts.includes(riddle.question), riddleTexts.slice(0, 80));
@@ -148,8 +161,9 @@ check('riddle:presented appends bubble containing question text',
 // EventBus: game:won
 const wonContainer = makeMockElement('div');
 const wonBus = new EventBus();
-new ChatUI(wonContainer, wonBus);
+const wonUI = new ChatUI(wonContainer, wonBus);
 wonBus.emit('game:won', { rounds: 1 });
+await wonUI.whenIdle();
 const wonTexts = wonContainer._children.map(b => b.allText).join(' ').toLowerCase();
 check('game:won appends win message',
   wonTexts.match(/triumph|bested|victory|wisely/) !== null, wonTexts.slice(0, 80));
@@ -157,13 +171,14 @@ check('game:won appends win message',
 // EventBus: game:lost
 const lostContainer = makeMockElement('div');
 const lostBus = new EventBus();
-new ChatUI(lostContainer, lostBus);
+const lostUI = new ChatUI(lostContainer, lostBus);
 lostBus.emit('game:lost', {});
+await lostUI.whenIdle();
 const lostTexts = lostContainer._children.map(b => b.allText).join(' ').toLowerCase();
 check('game:lost appends loss message',
   lostTexts.match(/blunder|over|fallen|poorly/) !== null, lostTexts.slice(0, 80));
 
-// clear() resets innerHTML
+// clear() resets innerHTML — clear() is synchronous so no await needed
 const clearContainer = makeMockElement('div');
 const clearUI = new ChatUI(clearContainer);
 clearUI.render([{ char: 'Boy', line: 'Is this a kissing book?' }]);

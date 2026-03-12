@@ -289,12 +289,12 @@ WIN / LOSE
 | Event | Payload |
 |-------|---------|
 | `conversation:play` | `[{ char, line }, ...]` |
-| `phase:changed` | `{ from, to, round }` |
+| `phase:changed` | `{ from, to, round }` — **Note:** `round` is `0` during the `IDLE→INTRO` transition (game start). All `phase:changed` subscribers must guard `round > 0` before using the round value. |
 | `riddle:presented` | `{ riddle }` |
 | `riddle:answered` | `{ correct, clueLine, reactionLine }` |
 | `hint:requested` | `{ hintLine, vizziniReaction }` |
 | `goblets:described` | `{ left: string, right: string }` |
-| `goblet:chosen` | `{ choice: 'left'\|'right', outcome: 'goblet:correct'\|'goblet:poisoned', reactionLines: string[] }` — array ordered [Vizzini, Buttercup, Gramps, Boy]; nulls filtered by ChatUI |
+| `goblet:chosen` | `{ choice: 'left'\|'right', outcome: 'goblet:correct'\|'goblet:poisoned', reactionLines: Array<GobletReaction> }` — `GobletReaction = { char: string, line: string }`; nulls filtered by GameEngine before emit; ChatUI uses `entry.char` / `entry.line` directly |
 | `game:won` | `{ rounds }` |
 | `game:lost` | `{}` |
 

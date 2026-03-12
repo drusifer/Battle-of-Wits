@@ -1,7 +1,7 @@
 [
   {
     "id": "Base:flat",
-    "fragment": "sitting on a flat base as steady and unremarkable as common sense",
+    "fragment": "a flat base as steady and unremarkable as common sense",
     "insults": [
       "Your answer falls flat — as flat as the plainest floor in the dullest building!",
       "Flat-footed wrongness — you stumbled over your own answer!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Base:footed",
-    "fragment": "resting on a footed base of three tiny bronze claws",
+    "fragment": "a footed base of three tiny bronze claws",
     "insults": [
       "Footed! You have stepped right into a trap of your own making!",
       "Your logic has three feet and nowhere to go but the bottom of the conversation!",

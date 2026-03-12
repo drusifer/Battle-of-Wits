@@ -1,7 +1,7 @@
 [
   {
     "id": "Temperature:ice-cold",
-    "fragment": "unnaturaly ice-cold, freezing the condensation on its surface",
+    "fragment": "a chill unnaturally ice-cold, freezing the condensation on its surface",
     "insults": [
       "Your logic is as cold and lifeless as a dead king's heart!",
       "Ice-cold-brained! There is no fire in your intellect at all!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Temperature:blood-warm",
-    "fragment": "permanently blood-warm, as though it had just been held for hours",
+    "fragment": "a warmth permanently blood-warm, as though it had been held for hours",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Blood-warm-brained! You have a mind like a gaudy and empty bazaar!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Temperature:fever-hot",
-    "fragment": "radiating a fever-hot warmth that stings the fingertips",
+    "fragment": "a fever-hot warmth that stings the fingertips",
     "insults": [
       "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
       "Fever-hot-brained! You have a mind like a pretty and empty skin!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Temperature:neutral",
-    "fragment": "perfectly neutral, having no temperature of its own",
+    "fragment": "a perfectly neutral temperature, as though it has none of its own",
     "insults": [
       "Your logic is as common and unremarkable as a street stone!",
       "Neutral-brained! You have a mind like a plain and empty room!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Temperature:damp",
-    "fragment": "feeling perpetually damp and clammy to the touch",
+    "fragment": "a perpetual dampness, clammy to the touch",
     "insults": [
       "Your reasoning is as dark and sticky as a rotten peach in the mud!",
       "Damp-brained! You have a mind like a trap for every error!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Temperature:dry",
-    "fragment": "so dry it seems to suck the moisture from the air",
+    "fragment": "a dryness so extreme it seems to suck moisture from the air",
     "insults": [
       "Your logic is as dead and dusty as a dried-up old mummy!",
       "Dry-brained! You have a mind like a tomb with no exit!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Temperature:radiating",
-    "fragment": "radiating a gentle warmth like a sleeping cat",
+    "fragment": "a gentle warmth, like that of a sleeping cat",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Radiating-brained! You have a mind like a gaudy and empty bazaar!",

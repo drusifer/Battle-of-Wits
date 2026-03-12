@@ -154,6 +154,43 @@ describe('GameEngine — requestHint()', () => {
     expect(hints[0].hintLine.length).toBeGreaterThan(0);
   });
 
+  it('requestHint() emits hintLine containing the riddle hint text', async () => {
+    // Capture the riddle:presented event to know what riddle hint to expect
+    const { engine, bus } = makeEngine();
+    const hints = [];
+    const presented = [];
+    bus.on('riddle:presented', p => presented.push(p));
+    bus.on('hint:requested', p => hints.push(p));
+
+    await engine.startGame();
+    expect(presented.length).toBeGreaterThan(0);
+    const riddleHint = presented[0].riddle.hint;
+
+    await engine.requestHint();
+
+    expect(hints).toHaveLength(1);
+    expect(hints[0].hintLine).toContain(riddleHint);
+  });
+
+  it('requestHint() emits hintLine that does NOT include goblet attribute hint text', async () => {
+    // Goblet attribute hints contain phrases like "Look for the cup" or "Think of"
+    // These come from attribute variant hints[] arrays — they should NOT be in the riddle hint line
+    const { engine, bus } = makeEngine();
+    const hints = [];
+    bus.on('hint:requested', p => hints.push(p));
+
+    await engine.startGame();
+    await engine.requestHint();
+
+    expect(hints).toHaveLength(1);
+    // Goblet attribute hints always start with patterns from attributes.json hints[] arrays
+    // like "Look for the cup", "What age suggests", "Think of the", "It is the most"
+    expect(hints[0].hintLine).not.toMatch(/Look for the cup/);
+    expect(hints[0].hintLine).not.toMatch(/What age suggests/);
+    expect(hints[0].hintLine).not.toMatch(/Think of the forum/);
+    expect(hints[0].hintLine).not.toMatch(/It is the most dependable/);
+  });
+
   it('does not change state', async () => {
     const { engine } = makeEngine();
     await engine.startGame();
@@ -253,7 +290,7 @@ describe('GameEngine — chooseGoblet() WIN path', () => {
     expect(Array.isArray(chosen[0].reactionLines)).toBe(true);
   });
 
-  it('reactionLines from chooseGoblet contains non-empty strings', async () => {
+  it('reactionLines from chooseGoblet contains GobletReaction tuples with non-empty char and line', async () => {
     const { engine, bus } = makeEngine();
     const chosen = [];
     bus.on('goblet:chosen', p => chosen.push(p));
@@ -263,7 +300,17 @@ describe('GameEngine — chooseGoblet() WIN path', () => {
     await engine.chooseGoblet('left');
 
     expect(chosen[0].reactionLines.length).toBeGreaterThan(0);
-    expect(chosen[0].reactionLines.every(l => typeof l === 'string' && l.length > 0)).toBe(true);
+    expect(
+      chosen[0].reactionLines.every(
+        entry =>
+          typeof entry === 'object' &&
+          entry !== null &&
+          typeof entry.char === 'string' &&
+          entry.char.length > 0 &&
+          typeof entry.line === 'string' &&
+          entry.line.length > 0
+      )
+    ).toBe(true);
   });
 });
 

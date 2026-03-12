@@ -1,7 +1,7 @@
 [
   {
     "id": "Material:pewter",
-    "fragment": "fashioned from dull pewter worn grey by many hands",
+    "fragment": "dull pewter worn grey by many hands",
     "insults": [
       "Your answer was as dull and lifeless as pewter left in the rain!",
       "Even a pewter-brained simpleton could have done better!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Material:silver",
-    "fragment": "wrought from polished silver that catches the light like a secret",
+    "fragment": "polished silver that catches the light like a secret",
     "insults": [
       "Your answer had the silver-tongued charm of a roadside swindler — none!",
       "Silver linings are wasted on someone with your leaden thinking!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Material:oak",
-    "fragment": "hewn from dark oak that smells of old forests and older wars",
+    "fragment": "dark oak that smells of old forests and older wars",
     "insults": [
       "Your reasoning is as thick and unyielding as a knotted oak plank!",
       "An oak-headed response — dense, immovable, utterly wrong!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Material:bone",
-    "fragment": "carved from yellowed bone smooth as river stone and cold as winter",
+    "fragment": "yellowed bone smooth as river stone and cold as winter",
     "insults": [
       "Your answer chilled me to the bone — and not with respect!",
       "Bone-dry of wit, bone-dry of sense — a remarkable achievement in emptiness!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Material:obsidian",
-    "fragment": "carved from obsidian black as a moonless night and sharp as spite",
+    "fragment": "obsidian black as a moonless night and sharp as spite",
     "insults": [
       "Your answer was as dark and unreflective as obsidian — nothing shines through!",
       "Obsidian is sharp! Your answer was not!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Material:agate",
-    "fragment": "carved from banded agate with swirls of sunset orange and milky white",
+    "fragment": "banded agate with swirls of sunset orange and milky white",
     "insults": [
       "Your logic is as cloudy as unpolished agate — and just as common!",
       "You stumble through the layers of the question like a blind man in an agate mine!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Material:leather",
-    "fragment": "fashioned from stiff black leather, stitched with silver wire",
+    "fragment": "stiff black leather stitched with silver wire",
     "insults": [
       "Leather-brained! Thick, tough, and utterly opaque!",
       "Your reasoning smells of old hide and new failure!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Material:glass",
-    "fragment": "blown from Venetian glass that changes colour in the light",
+    "fragment": "Venetian glass that changes colour in the light",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "One tap of my wit and your argument shatters like a glass bubble!",

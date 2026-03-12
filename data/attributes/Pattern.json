@@ -1,7 +1,7 @@
 [
   {
     "id": "Pattern:geometric",
-    "fragment": "covered in a geometric pattern of interlocking squares and circles",
+    "fragment": "a geometric pattern of interlocking squares and circles",
     "insults": [
       "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
       "Geometric-brained! You have a mind like a maze with no exit!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Pattern:floral",
-    "fragment": "decorated with a floral pattern of roses and thorns",
+    "fragment": "a floral pattern of roses and thorns",
     "insults": [
       "Your reasoning is as wilted and pathetic as a week-old tulip!",
       "Floral-brained! You have decorated your ignorance with a pretty skin!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Pattern:heraldic",
-    "fragment": "bearing the heraldic pattern of a family that died out in the plague",
+    "fragment": "the heraldic pattern of a family that died out in the plague",
     "insults": [
       "Your answer is as gaudy and superficial as a merchant's ring!",
       "Heraldic-brained! You have a mind like a pretty and empty coin!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Pattern:mythological",
-    "fragment": "depicting a mythological pattern of gods and monsters in conflict",
+    "fragment": "a mythological pattern of gods and monsters in conflict",
     "insults": [
       "Your logic is as ancient and irrelevant as a broken ruin!",
       "Mythological-brained! You have a mind like a dusty and empty tomb!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Pattern:astronomical",
-    "fragment": "engraved with an astronomical pattern of stars and planets",
+    "fragment": "an astronomical pattern of stars and planets",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Astronomical-brained! You have a mind like a bubble of hot air!",

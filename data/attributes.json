@@ -2,7 +2,7 @@
   "Age": [
     {
       "id": "Age:pre-cataclysmic",
-      "fragment": "dating back to a pre-cataclysmic era when the mountains were young",
+      "fragment": "an age dating back to a pre-cataclysmic era when the mountains were young",
       "insults": [
         "Your logic is as ancient and irrelevant as a broken ruin!",
         "Pre-cataclysmic-brained! You have a mind like a dusty and empty tomb!",
@@ -27,7 +27,7 @@
     },
     {
       "id": "Age:forgotten-era",
-      "fragment": "from a forgotten era when the stars were in a different alignment",
+      "fragment": "an age from a forgotten era when the stars were in a different alignment",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Forgotten-era-brained! You have a mind like a gaudy and empty bazaar!",
@@ -52,7 +52,7 @@
     },
     {
       "id": "Age:yesterdays-cast",
-      "fragment": "freshly cast only yesterday, still bearing the smell of the forge",
+      "fragment": "a youth freshly cast, still bearing the smell of the forge",
       "insults": [
         "Your logic is as crude and unrefined as a barbarian's club!",
         "Yesterday's-cast-brained! You have no smooth thoughts in your head at all!",
@@ -77,7 +77,7 @@
     },
     {
       "id": "Age:century-old",
-      "fragment": "a century old, but kept with such care it looks new",
+      "fragment": "an age of a century, kept with such care it looks new",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Century-old-brained! You have a mind like a pretty and empty coin!",
@@ -102,7 +102,7 @@
     },
     {
       "id": "Age:mythic-dawn",
-      "fragment": "forged in the mythic dawn before the sun first rose",
+      "fragment": "an age forged in the mythic dawn before the sun first rose",
       "insults": [
         "Your answer is as dark and unreflective as obsidian!",
         "Mythic-dawn-brained! You have a mind like a black hole!",
@@ -152,7 +152,7 @@
     },
     {
       "id": "Age:timeless",
-      "fragment": "possessing a timeless quality that defies all classification",
+      "fragment": "a timeless quality that defies all classification",
       "insults": [
         "Your logic is as common and unremarkable as a street stone!",
         "Timeless-brained! You have a mind like a plain and empty room!",
@@ -177,7 +177,7 @@
     },
     {
       "id": "Age:ancient-ruin",
-      "fragment": "dredged from an ancient ruin at the bottom of the sea",
+      "fragment": "an age dredged from an ancient ruin at the bottom of the sea",
       "insults": [
         "Your logic is as leaden and toxic as a common sewer pipe!",
         "Ancient-ruin-brained! You have a mind like a heavy and dull block!",
@@ -204,7 +204,7 @@
   "Aura": [
     {
       "id": "Aura:sinister",
-      "fragment": "projecting a sinister aura that makes the wine look like poison",
+      "fragment": "a sinister aura that makes the wine look like poison",
       "insults": [
         "Your answer is as dark and unreflective as obsidian!",
         "Sinister-brained! You have a mind like a black hole!",
@@ -229,7 +229,7 @@
     },
     {
       "id": "Aura:holy",
-      "fragment": "bearing a holy aura that seems to purify the air around it",
+      "fragment": "a holy aura that seems to purify the air around it",
       "insults": [
         "Your answer is as gaudy and superficial as a merchant's ring!",
         "Holy-brained! You have a mind like a pretty and empty coin!",
@@ -304,7 +304,7 @@
     },
     {
       "id": "Aura:cursed",
-      "fragment": "shrouded in a cursed aura that suggests bad luck to follow",
+      "fragment": "a cursed aura, shrouded in shadow, that suggests bad luck to follow",
       "insults": [
         "Your reasoning is as dark and sticky as a rotten peach in the mud!",
         "Cursed-brained! You have a mind like a trap for every error!",
@@ -329,7 +329,7 @@
     },
     {
       "id": "Aura:lucky",
-      "fragment": "possessing a lucky aura that makes the drinker feel invincible",
+      "fragment": "a lucky aura that makes the drinker feel invincible",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Lucky-brained! You have a mind like a pretty and empty coin!",
@@ -406,7 +406,7 @@
   "Base": [
     {
       "id": "Base:flat",
-      "fragment": "sitting on a flat base as steady and unremarkable as common sense",
+      "fragment": "a flat base as steady and unremarkable as common sense",
       "insults": [
         "Your answer falls flat — as flat as the plainest floor in the dullest building!",
         "Flat-footed wrongness — you stumbled over your own answer!",
@@ -531,7 +531,7 @@
     },
     {
       "id": "Base:footed",
-      "fragment": "resting on a footed base of three tiny bronze claws",
+      "fragment": "a footed base of three tiny bronze claws",
       "insults": [
         "Footed! You have stepped right into a trap of your own making!",
         "Your logic has three feet and nowhere to go but the bottom of the conversation!",
@@ -610,7 +610,7 @@
       "id": "Bowl_Shape:fluted",
       "fragment": "a fluted bowl that channels the wine like the columns of a temple",
       "insults": [
-        "Your reasoning is as fluted and hollow as a common tavern cup!",
+        "Your reasoning is as fluted and hollow as a common tavern post!",
         "Fluted-brained! You have channeled your logic into a dead end!",
         "You are trying to be vertical with a horizontal and flat mind!",
         "Inconceivable! Even a fluted pillar has more direction than you!",
@@ -633,7 +633,7 @@
     },
     {
       "id": "Bowl_Shape:tulip",
-      "fragment": "shaped like a closing tulip, trapping the aroma within",
+      "fragment": "a tulip shape that closes at the rim, trapping the aroma within",
       "insults": [
         "Your answer is as wilted and pathetic as a week-old tulip!",
         "Tulip-brained! You have offered a flowery and surface-level error!",
@@ -744,7 +744,7 @@
       "compliments": [
         "Correct. A shallow and exact answer that doesn't overreach itself.",
         "You found the correct depth in the puddle of the puzzle. Correct.",
-        "Like a shallow cup, your answer is wide and undeniably right.",
+        "Like a shallow pool, your answer is wide and undeniably right.",
         "A victory of the surface! Correct, though I expected more.",
         "I concede. Your shallow correctness is undeniably, minimally right."
       ],
@@ -785,10 +785,10 @@
       "id": "Bowl_Shape:ribbed",
       "fragment": "a ribbed bowl that provides a textured grip for a trembling hand",
       "insults": [
-        "Your reasoning is as ribbed and bumpy as a common tavern cup!",
+        "Your reasoning is as ribbed and bumpy as a common barrel stave!",
         "Ribbed-brained! You have offered a textured and surface-level error!",
         "You are trying to have a grip on the truth with a weak and sweaty mind!",
-        "Inconceivable! Even a rib on a cup has more structure than you!",
+        "Inconceivable! Even a rib on a barrel has more structure than you!",
         "You have offered a rhythmic and ultimately useless display of ignorance!"
       ],
       "compliments": [
@@ -810,7 +810,7 @@
   "Capacity": [
     {
       "id": "Capacity:oversized",
-      "fragment": "grossly oversized, more of a bucket than a chalice",
+      "fragment": "a capacity grossly oversized, more bucket than chalice",
       "insults": [
         "Your logic is as bloated and oversized as a common sewer pipe!",
         "Oversized-brained! You have a mind like a heavy and dull block!",
@@ -835,7 +835,7 @@
     },
     {
       "id": "Capacity:thimble-sized",
-      "fragment": "no larger than a thimble, meant for the most potent of elixirs",
+      "fragment": "a capacity no larger than a thimble, meant for the most potent of elixirs",
       "insults": [
         "Your answer is as regressive and tiny as a common thimble!",
         "Thimble-sized-brained! You have a mind like a pretty and empty coin!",
@@ -885,19 +885,19 @@
     },
     {
       "id": "Capacity:flagon-like",
-      "fragment": "it has the flagon-like capacity of a tavern's best vessel",
+      "fragment": "a flagon-like capacity fit for a tavern's best vessel",
       "insults": [
         "Your reasoning is as crude and unrefined as a barbarian's club!",
-        "Flagon-like-brained! You have no smooth thoughts in your head at all!",
+        "Tavern-brained! You have no smooth thoughts in your head at all!",
         "You are trying to be bold with a blunt and clumsy intellect!",
         "Inconceivable! Even a dead raider has more structure than you!",
         "You have offered a rough and ultimately empty display of failure!"
       ],
       "compliments": [
-        "Correct. A flagon-like and perfectly substantial answer. I am annoyed.",
+        "Correct. A hefty and perfectly substantial answer. I am annoyed.",
         "You found the correct mass in the iron of the question. Correct.",
         "Like a rugged casting, your answer is undeniably right. Correct.",
-        "A victory of the flagon! Correct, though I find you brutish.",
+        "A victory of the ale hall! Correct, though I find you brutish.",
         "I concede. Your Viking correctness is as right as a hammer. Correct."
       ],
       "hints": [
@@ -935,7 +935,7 @@
     },
     {
       "id": "Capacity:measure-marked",
-      "fragment": "inscribed with lines to measure the exact depth of the draught",
+      "fragment": "a capacity marked with fine lines to measure the exact depth of the draught",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Measure-marked-brained! You have a mind like a bubble of hot air!",
@@ -960,7 +960,7 @@
     },
     {
       "id": "Capacity:overflowing",
-      "fragment": "it seems perpetually overflowing, even when half-full",
+      "fragment": "a capacity that seems perpetually overflowing, even when half-full",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Overflowing-brained! You have a mind like a gaudy and empty bazaar!",
@@ -985,7 +985,7 @@
     },
     {
       "id": "Capacity:shallow-fill",
-      "fragment": "it appears deep but is surprisingly shallow-filled",
+      "fragment": "a depth that appears bottomless but holds surprisingly little",
       "insults": [
         "Your reasoning is as hollow and empty as a dried-up old well!",
         "Shallow-fill-brained! You have a mind like a tomb with no exit!",
@@ -1012,7 +1012,7 @@
   "Condition": [
     {
       "id": "Condition:ancient",
-      "fragment": "bearing the look of something ancient enough to have a legend attached",
+      "fragment": "the look of something ancient enough to have a legend attached",
       "insults": [
         "Ancient! Your answer belongs in the time before thinking was invented!",
         "As ancient and irrelevant as the error you have just committed!",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "Condition:pristine",
-      "fragment": "kept in pristine condition as though never once used for its purpose",
+      "fragment": "a pristine condition, as though never once used for its purpose",
       "insults": [
         "Pristine wrongness — you have kept your error in perfect, unmarked condition!",
         "Your answer is pristine — completely untouched by correctness!",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": "Condition:tarnished",
-      "fragment": "tarnished to a warm brown that suggests decades of neglect and occasional use",
+      "fragment": "a tarnish worn to a warm brown, suggesting decades of neglect",
       "insults": [
         "Tarnished! Your reputation for correct answers, already questionable, is further tarnished!",
         "Your answer has tarnished whatever credibility remained to you!",
@@ -1087,7 +1087,7 @@
     },
     {
       "id": "Condition:scorched",
-      "fragment": "scorched along one side as though it survived something it should not have",
+      "fragment": "a scorch along one side, as though it survived something it should not have",
       "insults": [
         "Scorched! Your answer scorches the very concept of logical thinking!",
         "You have scorched the earth of this conversation with that response!",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "Condition:ornate",
-      "fragment": "so ornate as to suggest it was made to impress rather than to be used",
+      "fragment": "an ornamentation so excessive it was clearly made to impress, not to be used",
       "insults": [
         "Ornate in its wrongness — you have decorated your failure magnificently!",
         "As ornate and useless as an answer that looks right and isn't!",
@@ -1137,7 +1137,7 @@
     },
     {
       "id": "Condition:bloodstained",
-      "fragment": "marked by a single dark bloodstain that will not wash away",
+      "fragment": "a single dark bloodstain that will not wash away",
       "insults": [
         "Bloodstained! A permanent, grim reminder of your murdered logic!",
         "Your answer is stained with the failure of a thousand of your ancestors!",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": "Condition:dusty",
-      "fragment": "covered in a fine layer of grey dust that smells of libraries",
+      "fragment": "a fine layer of grey dust covering it, smelling faintly of libraries",
       "insults": [
         "Dusty! Like the ancient and forgotten scraps of your own mind!",
         "Your reasoning is as dry and lifeless as a desert tomb in high summer!",
@@ -1187,7 +1187,7 @@
     },
     {
       "id": "Condition:weathered",
-      "fragment": "weathered and worn by exposure to sun, wind, and rain",
+      "fragment": "a weathered look worn by long exposure to sun, wind, and rain",
       "insults": [
         "Weathered! Like a face that has seen too many winters and too little sense!",
         "Your reasoning is as eroded as a cliff-side path after a spring flood!",
@@ -1214,7 +1214,7 @@
   "Decoration": [
     {
       "id": "Decoration:filigree",
-      "fragment": "adorned with delicate silver filigree like frozen spiderwebs",
+      "fragment": "a delicate silver filigree like frozen spiderwebs",
       "insults": [
         "Your logic is as fragile and useless as a silver spiderweb!",
         "Filigree-brained! You have decorated your ignorance with tiny wires!",
@@ -1239,7 +1239,7 @@
     },
     {
       "id": "Decoration:repousse",
-      "fragment": "featuring repousse work of a hunt that leaps from the surface",
+      "fragment": "a repousse scene of a hunt that leaps from the surface",
       "insults": [
         "Your answer is a low-relief performance of a high-speed failure!",
         "Repousse-brained! You have hammered your thoughts into a bump!",
@@ -1264,7 +1264,7 @@
     },
     {
       "id": "Decoration:inscribed",
-      "fragment": "inscribed with a poem in a language that has been dead for a thousand years",
+      "fragment": "an inscription in a language that has been dead for a thousand years",
       "insults": [
         "Your answer might as well be written in a dead language for all I can read it!",
         "Inscribed-brained! You have carved your errors into permanent record!",
@@ -1275,7 +1275,7 @@
       "compliments": [
         "Correct. An inscribed and permanent truth that I cannot improve.",
         "You read the inscriptions of the puzzle and found the answer. Correct.",
-        "Like a permanent message, your answer will last as long as the cup.",
+        "Like a permanent message, your answer will last as long as the stone.",
         "A victory of the word! Correct, though I still find you a pedant.",
         "I concede. Your inscribed correctness is undeniably, eternally right."
       ],
@@ -1289,7 +1289,7 @@
     },
     {
       "id": "Decoration:enamelled",
-      "fragment": "brightly enamelled with scenes of a garden that never wilts",
+      "fragment": "bright enamel scenes of a garden that never wilts",
       "insults": [
         "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
         "Enamelled-brained! You have painted a pretty face on a blank mind!",
@@ -1314,7 +1314,7 @@
     },
     {
       "id": "Decoration:cloisonne",
-      "fragment": "decorated in the cloisonne style with wires of gold separating vibrant pastes",
+      "fragment": "a cloisonne pattern of wires of gold separating vibrant coloured pastes",
       "insults": [
         "Your logic is a chaotic and poorly-separated mess of vibrant nonsense!",
         "Cloisonne-brained! You have tried to compartmentalize your failures!",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": "Decoration:niello",
-      "fragment": "bearing dark niello inlays that trace the history of a forgotten war",
+      "fragment": "dark niello inlays that trace the history of a forgotten war",
       "insults": [
         "Your answer is a dark and sulfurous smear on the surface of fact!",
         "Niello-brained! You have inlaid your thoughts with black failure!",
@@ -1364,12 +1364,12 @@
     },
     {
       "id": "Decoration:etched",
-      "fragment": "lightly etched with the map of a city that was swallowed by the sea",
+      "fragment": "a faint etching of a city that was swallowed by the sea",
       "insults": [
         "Your reasoning is a faint and disappearing map of a lost cause!",
         "Etched-brained! You have scratched your errors into the surface!",
         "You are trying to be detailed with a blunt and clumsy mind!",
-        "Inconceivable! Even a scratch on a cup has more purpose than you!",
+        "Inconceivable! Even a scratch on a stone has more purpose than you!",
         "You have offered a shallow and easily-missed display of your failure!"
       ],
       "compliments": [
@@ -1389,7 +1389,7 @@
     },
     {
       "id": "Decoration:painted",
-      "fragment": "painted with tiny figures who seem to move when the wine is swirled",
+      "fragment": "tiny painted figures who seem to move when the wine is swirled",
       "insults": [
         "Your logic is a painted lie that doesn't even have the decency to dry!",
         "Painted-brained! You have offered a colorful and surface-level error!",
@@ -1416,7 +1416,7 @@
   "Foot": [
     {
       "id": "Foot:claw-and-ball",
-      "fragment": "resting on a claw-and-ball foot that grips the table with menace",
+      "fragment": "a claw-and-ball foot that grips the table with menace",
       "insults": [
         "Your logic is as beastly and unrefined as a barbarian's club!",
         "Claw-and-ball-brained! You have no smooth thoughts in your head at all!",
@@ -1441,7 +1441,7 @@
     },
     {
       "id": "Foot:tripod",
-      "fragment": "standing on a simple tripod of three spindly legs",
+      "fragment": "a simple tripod of three spindly legs",
       "insults": [
         "Your reasoning is as thin and weak as a starving spider's leg!",
         "Tripod-brained! You have no weight in your thoughts at all!",
@@ -1743,7 +1743,7 @@
     },
     {
       "id": "Handle:double",
-      "fragment": "boasting double handles that curve like swan's necks",
+      "fragment": "a pair of double handles that curve like swan's necks",
       "insults": [
         "Double the handles, double the failure! You are twice as wrong as a normal person!",
         "Your logic is as redundant as a second handle on a thimble!",
@@ -1771,7 +1771,7 @@
       "fragment": "its handle missing entirely, leaving only two rough scars",
       "insults": [
         "Missing! Like the common sense that should have guided your wretched answer!",
-        "You have as much grip on the situation as a cup with no handle at all!",
+        "You have as much grip on the situation as a doorknob with no door!",
         "A missing intellect for a missing handle! There is a poetic justice in your failure!",
         "You are broken and incomplete — just like the reasoning you just offered!",
         "Inconceivable! Even without a handle, you should have been able to hold the truth!"
@@ -1820,7 +1820,7 @@
   "Lining": [
     {
       "id": "Lining:leaden",
-      "fragment": "lined with dull grey lead that gives the wine a metallic tang",
+      "fragment": "a lining of dull grey lead that gives the wine a metallic tang",
       "insults": [
         "Your logic is as leaden and toxic as a common sewer pipe!",
         "Leaden-brained! You have a mind like a heavy and dull block!",
@@ -1870,7 +1870,7 @@
     },
     {
       "id": "Lining:pitch-lined",
-      "fragment": "lined with black pitch to seal the porous clay",
+      "fragment": "a lining of black pitch to seal the porous clay",
       "insults": [
         "Your reasoning is as dark and sticky as a rotten peach in the mud!",
         "Pitch-lined-brained! You have a mind like a trap for every error!",
@@ -1920,7 +1920,7 @@
     },
     {
       "id": "Lining:silvered",
-      "fragment": "silvered on the inside to catch the light of the wine",
+      "fragment": "a silver lining that catches the light of the wine",
       "insults": [
         "Your answer is as slippery and superficial as a merchant's tongue!",
         "Silvered-brained! You have a mind like a pretty and empty coin!",
@@ -1970,7 +1970,7 @@
     },
     {
       "id": "Lining:waxed",
-      "fragment": "lined with beeswax that smells of summer meadows",
+      "fragment": "a lining of beeswax that smells of summer meadows",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Waxed-brained! You have a mind like a gaudy and empty bazaar!",
@@ -2022,7 +2022,7 @@
   "Material": [
     {
       "id": "Material:pewter",
-      "fragment": "fashioned from dull pewter worn grey by many hands",
+      "fragment": "dull pewter worn grey by many hands",
       "insults": [
         "Your answer was as dull and lifeless as pewter left in the rain!",
         "Even a pewter-brained simpleton could have done better!",
@@ -2047,7 +2047,7 @@
     },
     {
       "id": "Material:silver",
-      "fragment": "wrought from polished silver that catches the light like a secret",
+      "fragment": "polished silver that catches the light like a secret",
       "insults": [
         "Your answer had the silver-tongued charm of a roadside swindler — none!",
         "Silver linings are wasted on someone with your leaden thinking!",
@@ -2072,7 +2072,7 @@
     },
     {
       "id": "Material:oak",
-      "fragment": "hewn from dark oak that smells of old forests and older wars",
+      "fragment": "dark oak that smells of old forests and older wars",
       "insults": [
         "Your reasoning is as thick and unyielding as a knotted oak plank!",
         "An oak-headed response — dense, immovable, utterly wrong!",
@@ -2097,7 +2097,7 @@
     },
     {
       "id": "Material:bone",
-      "fragment": "carved from yellowed bone smooth as river stone and cold as winter",
+      "fragment": "yellowed bone smooth as river stone and cold as winter",
       "insults": [
         "Your answer chilled me to the bone — and not with respect!",
         "Bone-dry of wit, bone-dry of sense — a remarkable achievement in emptiness!",
@@ -2122,7 +2122,7 @@
     },
     {
       "id": "Material:obsidian",
-      "fragment": "carved from obsidian black as a moonless night and sharp as spite",
+      "fragment": "obsidian black as a moonless night and sharp as spite",
       "insults": [
         "Your answer was as dark and unreflective as obsidian — nothing shines through!",
         "Obsidian is sharp! Your answer was not!",
@@ -2147,7 +2147,7 @@
     },
     {
       "id": "Material:agate",
-      "fragment": "carved from banded agate with swirls of sunset orange and milky white",
+      "fragment": "banded agate with swirls of sunset orange and milky white",
       "insults": [
         "Your logic is as cloudy as unpolished agate — and just as common!",
         "You stumble through the layers of the question like a blind man in an agate mine!",
@@ -2172,7 +2172,7 @@
     },
     {
       "id": "Material:leather",
-      "fragment": "fashioned from stiff black leather, stitched with silver wire",
+      "fragment": "stiff black leather stitched with silver wire",
       "insults": [
         "Leather-brained! Thick, tough, and utterly opaque!",
         "Your reasoning smells of old hide and new failure!",
@@ -2197,7 +2197,7 @@
     },
     {
       "id": "Material:glass",
-      "fragment": "blown from Venetian glass that changes colour in the light",
+      "fragment": "Venetian glass that changes colour in the light",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "One tap of my wit and your argument shatters like a glass bubble!",
@@ -2224,7 +2224,7 @@
   "Opacity": [
     {
       "id": "Opacity:translucent",
-      "fragment": "translucent as a ghost, revealing the shadow of the wine within",
+      "fragment": "a translucence like a ghost, revealing the shadow of the wine within",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Translucent-brained! You have a mind like a bubble of hot air!",
@@ -2249,7 +2249,7 @@
     },
     {
       "id": "Opacity:opaque",
-      "fragment": "utterly opaque, hiding its contents from the most curious eye",
+      "fragment": "an opacity utterly impenetrable, hiding its contents from the most curious eye",
       "insults": [
         "Your logic is as leaden and toxic as a common sewer pipe!",
         "Opaque-brained! You have a mind like a heavy and dull block!",
@@ -2274,7 +2274,7 @@
     },
     {
       "id": "Opacity:cloudy",
-      "fragment": "cloudy and milky, like a sky before a storm",
+      "fragment": "a cloudy, milky appearance like a sky before a storm",
       "insults": [
         "Your reasoning is as chaotic and poorly-formed as a desert sandstorm!",
         "Cloudy-brained! You have a mind like a maze with no exit!",
@@ -2299,7 +2299,7 @@
     },
     {
       "id": "Opacity:clear",
-      "fragment": "clear as a mountain stream, almost invisible on the table",
+      "fragment": "a clarity clear as a mountain stream, almost invisible on the table",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Clear-brained! You have a mind like a bubble of hot air!",
@@ -2324,7 +2324,7 @@
     },
     {
       "id": "Opacity:smoke-filled",
-      "fragment": "it has a smoke-filled appearance, as though fire were trapped inside",
+      "fragment": "a smoke-filled appearance, as though fire were trapped inside",
       "insults": [
         "Your reasoning is as dark and sticky as a rotten peach in the mud!",
         "Smoke-filled-brained! You have a mind like a trap for every error!",
@@ -2349,7 +2349,7 @@
     },
     {
       "id": "Opacity:iridescent",
-      "fragment": "shimmering with an iridescent sheen like an oil slick",
+      "fragment": "an iridescent sheen like an oil slick",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Iridescent-brained! You have a mind like a pretty and empty coin!",
@@ -2374,7 +2374,7 @@
     },
     {
       "id": "Opacity:light-drinking",
-      "fragment": "a dark material that seems to drink the light around it",
+      "fragment": "a darkness so complete it seems to drink the light around it",
       "insults": [
         "Your answer is as dark and unreflective as obsidian!",
         "Light-drinking-brained! You have a mind like a black hole!",
@@ -2399,7 +2399,7 @@
     },
     {
       "id": "Opacity:reflective",
-      "fragment": "so reflective it serves as a mirror for the entire room",
+      "fragment": "a surface so reflective it serves as a mirror for the entire room",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Reflective-brained! You have a mind like a pretty and empty coin!",
@@ -2426,7 +2426,7 @@
   "Origin": [
     {
       "id": "Origin:byzantine",
-      "fragment": "of Byzantine origin, heavy with the weight of empire and intrigue",
+      "fragment": "a Byzantine origin, heavy with the weight of empire and intrigue",
       "insults": [
         "Your answer is as convoluted and terminal as a Byzantine plot!",
         "Byzantine-brained! You have a mind like a labyrinth with no exit!",
@@ -2451,7 +2451,7 @@
     },
     {
       "id": "Origin:moorish",
-      "fragment": "crafted in the Moorish style with complex geometric patterns",
+      "fragment": "a Moorish craftsmanship, covered in complex geometric patterns",
       "insults": [
         "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
         "Moorish-brained! You have a mind like a maze of tiny, useless rooms!",
@@ -2476,7 +2476,7 @@
     },
     {
       "id": "Origin:venetian",
-      "fragment": "blown by a Venetian master who was executed to keep the secret",
+      "fragment": "a Venetian glasswork by a master who was executed to keep the secret",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Venetian-brained! You have a mind like a bubble of hot air!",
@@ -2551,7 +2551,7 @@
     },
     {
       "id": "Origin:celtic",
-      "fragment": "adorned with Celtic knots that have no beginning and no end",
+      "fragment": "a Celtic design of knots that have no beginning and no end",
       "insults": [
         "Your reasoning is a never-ending knot of total and absolute failure!",
         "Celtic-brained! You have a mind like a tangled nest of snakes!",
@@ -2576,7 +2576,7 @@
     },
     {
       "id": "Origin:egyptian",
-      "fragment": "inscribed with Egyptian hieroglyphs that promise eternal life",
+      "fragment": "an Egyptian origin, inscribed with hieroglyphs that promise eternal life",
       "insults": [
         "Your logic is as dead and dusty as a dried-up old mummy!",
         "Egyptian-brained! You have a mind like a tomb with no exit!",
@@ -2628,7 +2628,7 @@
   "Pattern": [
     {
       "id": "Pattern:geometric",
-      "fragment": "covered in a geometric pattern of interlocking squares and circles",
+      "fragment": "a geometric pattern of interlocking squares and circles",
       "insults": [
         "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
         "Geometric-brained! You have a mind like a maze with no exit!",
@@ -2653,7 +2653,7 @@
     },
     {
       "id": "Pattern:floral",
-      "fragment": "decorated with a floral pattern of roses and thorns",
+      "fragment": "a floral pattern of roses and thorns",
       "insults": [
         "Your reasoning is as wilted and pathetic as a week-old tulip!",
         "Floral-brained! You have decorated your ignorance with a pretty skin!",
@@ -2678,7 +2678,7 @@
     },
     {
       "id": "Pattern:heraldic",
-      "fragment": "bearing the heraldic pattern of a family that died out in the plague",
+      "fragment": "the heraldic pattern of a family that died out in the plague",
       "insults": [
         "Your answer is as gaudy and superficial as a merchant's ring!",
         "Heraldic-brained! You have a mind like a pretty and empty coin!",
@@ -2703,7 +2703,7 @@
     },
     {
       "id": "Pattern:mythological",
-      "fragment": "depicting a mythological pattern of gods and monsters in conflict",
+      "fragment": "a mythological pattern of gods and monsters in conflict",
       "insults": [
         "Your logic is as ancient and irrelevant as a broken ruin!",
         "Mythological-brained! You have a mind like a dusty and empty tomb!",
@@ -2728,7 +2728,7 @@
     },
     {
       "id": "Pattern:astronomical",
-      "fragment": "engraved with an astronomical pattern of stars and planets",
+      "fragment": "an astronomical pattern of stars and planets",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Astronomical-brained! You have a mind like a bubble of hot air!",
@@ -2843,7 +2843,7 @@
         "A gilded answer — correct, and entirely more attractive than it deserves to be.",
         "You have gilded your reputation slightly with this answer. Do not get used to it.",
         "Correct, though your gilded luck cannot hold forever.",
-        "Like gilded trim on a common cup — surprisingly pleasing. Correct."
+        "Like gilded trim on a common coin — surprisingly pleasing. Correct."
       ],
       "hints": [
         "What suggests wealth and importance without necessarily possessing either?",
@@ -3032,7 +3032,7 @@
   "Smell": [
     {
       "id": "Smell:metallic",
-      "fragment": "it carries a sharp metallic smell like a fresh-forged blade",
+      "fragment": "a sharp metallic smell like a fresh-forged blade",
       "insults": [
         "Your logic is as leaden and toxic as a common sewer pipe!",
         "Metallic-brained! You have a mind like a heavy and dull block!",
@@ -3057,7 +3057,7 @@
     },
     {
       "id": "Smell:cedar-scented",
-      "fragment": "smelling faintly of cedar and old forests",
+      "fragment": "a faint smell of cedar and old forests",
       "insults": [
         "Your reasoning is as thick and unyielding as a knotted oak plank!",
         "Cedar-scented-brained! You have a mind like a dusty and empty room!",
@@ -3082,7 +3082,7 @@
     },
     {
       "id": "Smell:earthy",
-      "fragment": "possessing a deep earthy smell like rain on dry ground",
+      "fragment": "a deep earthy smell like rain on dry ground",
       "insults": [
         "Your logic is as crude and unrefined as a barbarian's club!",
         "Earthy-brained! You have no smooth thoughts in your head at all!",
@@ -3107,7 +3107,7 @@
     },
     {
       "id": "Smell:wine-stained",
-      "fragment": "permanently wine-stained in scent, even when empty",
+      "fragment": "a scent permanently wine-stained, even when empty",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Wine-stained-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3132,7 +3132,7 @@
     },
     {
       "id": "Smell:salty",
-      "fragment": "smelling of the sea and salted fish",
+      "fragment": "a smell of the sea and salted fish",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Salty-brained! You have a mind like a pretty and empty coin!",
@@ -3182,7 +3182,7 @@
     },
     {
       "id": "Smell:sweet",
-      "fragment": "carrying a sweet, cloying scent like rotting lilies",
+      "fragment": "a sweet, cloying scent like rotting lilies",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Sweet-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3207,7 +3207,7 @@
     },
     {
       "id": "Smell:musty",
-      "fragment": "smelling musty and old, like a tomb that has just been opened",
+      "fragment": "a musty smell, like a tomb that has just been opened",
       "insults": [
         "Your logic is as dead and dusty as a dried-up old mummy!",
         "Musty-brained! You have a mind like a tomb with no exit!",
@@ -3234,7 +3234,7 @@
   "Sound": [
     {
       "id": "Sound:bell-like",
-      "fragment": "it rings with a clear, bell-like tone when struck",
+      "fragment": "a clear, bell-like tone when struck",
       "insults": [
         "Your logic is as fragile as glass and twice as transparent!",
         "Bell-like-brained! You have a mind like a bubble of hot air!",
@@ -3259,7 +3259,7 @@
     },
     {
       "id": "Sound:dull-thud",
-      "fragment": "it produces only a dull thud, as though it were made of leaden dough",
+      "fragment": "a dull thud when struck, as though made of leaden dough",
       "insults": [
         "Your logic is as leaden and toxic as a common sewer pipe!",
         "Dull-thud-brained! You have a mind like a heavy and dull block!",
@@ -3284,7 +3284,7 @@
     },
     {
       "id": "Sound:high-pitched",
-      "fragment": "it emits a high-pitched whine when the rim is rubbed",
+      "fragment": "a high-pitched whine when the rim is rubbed",
       "insults": [
         "Your answer is as cloying and superficial as a merchant's perfume!",
         "High-pitched-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3309,7 +3309,7 @@
     },
     {
       "id": "Sound:hollow-echo",
-      "fragment": "it has a hollow echo, as though it contained a vast space",
+      "fragment": "a hollow echo, as though it contained a vast space",
       "insults": [
         "Your reasoning is as hollow and empty as a dried-up old well!",
         "Hollow-echo-brained! You have a mind like a tomb with no exit!",
@@ -3334,7 +3334,7 @@
     },
     {
       "id": "Sound:silent",
-      "fragment": "it is perfectly silent, absorbing every sound that hits it",
+      "fragment": "a perfect silence, absorbing every sound that hits it",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Silent-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3359,7 +3359,7 @@
     },
     {
       "id": "Sound:rattling",
-      "fragment": "something small and hard rattles within the stem",
+      "fragment": "a rattle of something small and hard within the stem",
       "insults": [
         "Your logic is as slippery and superficial as a merchant's tongue!",
         "Rattling-brained! You have a mind like a pretty and empty coin!",
@@ -3384,7 +3384,7 @@
     },
     {
       "id": "Sound:resonant",
-      "fragment": "it vibrates with a resonant hum long after it is set down",
+      "fragment": "a resonant hum that lingers long after it is set down",
       "insults": [
         "Your logic is as ancient and irrelevant as a broken ruin!",
         "Resonant-brained! You have a mind like a dusty and empty tomb!",
@@ -3409,7 +3409,7 @@
     },
     {
       "id": "Sound:flat",
-      "fragment": "it makes a flat, dead sound, like a stone hitting mud",
+      "fragment": "a flat, dead sound, like a stone hitting mud",
       "insults": [
         "Your logic is as crude and unrefined as a barbarian's club!",
         "Flat-sound-brained! You have no smooth thoughts in your head at all!",
@@ -3638,7 +3638,7 @@
   "Temperature": [
     {
       "id": "Temperature:ice-cold",
-      "fragment": "unnaturaly ice-cold, freezing the condensation on its surface",
+      "fragment": "a chill unnaturally ice-cold, freezing the condensation on its surface",
       "insults": [
         "Your logic is as cold and lifeless as a dead king's heart!",
         "Ice-cold-brained! There is no fire in your intellect at all!",
@@ -3663,7 +3663,7 @@
     },
     {
       "id": "Temperature:blood-warm",
-      "fragment": "permanently blood-warm, as though it had just been held for hours",
+      "fragment": "a warmth permanently blood-warm, as though it had been held for hours",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Blood-warm-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3688,7 +3688,7 @@
     },
     {
       "id": "Temperature:fever-hot",
-      "fragment": "radiating a fever-hot warmth that stings the fingertips",
+      "fragment": "a fever-hot warmth that stings the fingertips",
       "insults": [
         "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
         "Fever-hot-brained! You have a mind like a pretty and empty skin!",
@@ -3713,7 +3713,7 @@
     },
     {
       "id": "Temperature:neutral",
-      "fragment": "perfectly neutral, having no temperature of its own",
+      "fragment": "a perfectly neutral temperature, as though it has none of its own",
       "insults": [
         "Your logic is as common and unremarkable as a street stone!",
         "Neutral-brained! You have a mind like a plain and empty room!",
@@ -3738,7 +3738,7 @@
     },
     {
       "id": "Temperature:damp",
-      "fragment": "feeling perpetually damp and clammy to the touch",
+      "fragment": "a perpetual dampness, clammy to the touch",
       "insults": [
         "Your reasoning is as dark and sticky as a rotten peach in the mud!",
         "Damp-brained! You have a mind like a trap for every error!",
@@ -3763,7 +3763,7 @@
     },
     {
       "id": "Temperature:dry",
-      "fragment": "so dry it seems to suck the moisture from the air",
+      "fragment": "a dryness so extreme it seems to suck moisture from the air",
       "insults": [
         "Your logic is as dead and dusty as a dried-up old mummy!",
         "Dry-brained! You have a mind like a tomb with no exit!",
@@ -3788,7 +3788,7 @@
     },
     {
       "id": "Temperature:radiating",
-      "fragment": "radiating a gentle warmth like a sleeping cat",
+      "fragment": "a gentle warmth, like that of a sleeping cat",
       "insults": [
         "Your reasoning is as cloying and superficial as a merchant's perfume!",
         "Radiating-brained! You have a mind like a gaudy and empty bazaar!",
@@ -3890,7 +3890,7 @@
     },
     {
       "id": "Texture:sticky",
-      "fragment": "perpetually sticky, as though it had just been dipped in honey",
+      "fragment": "a surface perpetually sticky, as though dipped in honey",
       "insults": [
         "Your reasoning is as sticky and cloying as a rotten peach!",
         "Sticky-brained! You have a mind like a trap for every common error!",
@@ -3915,7 +3915,7 @@
     },
     {
       "id": "Texture:gritty",
-      "fragment": "gritty to the touch, like it was forged in a sandstorm",
+      "fragment": "a gritty surface, as though forged in a sandstorm",
       "insults": [
         "Your logic is as gritty and abrasive as a handful of desert sand!",
         "Gritty-brained! You have no smooth thoughts in your head at all!",
@@ -3965,7 +3965,7 @@
     },
     {
       "id": "Texture:cold-to-touch",
-      "fragment": "always ice-cold to the touch, even in the heat of noon",
+      "fragment": "a surface always ice-cold to the touch, even in the heat of noon",
       "insults": [
         "Your logic is as cold and lifeless as a dead king's heart!",
         "Cold-to-touch-brained! There is no fire in your intellect at all!",
@@ -4015,7 +4015,7 @@
     },
     {
       "id": "Texture:pebbled",
-      "fragment": "pebbled like the skin of a lizard or a river stone",
+      "fragment": "a pebbled surface like the skin of a lizard or a river stone",
       "insults": [
         "Your logic is as bumpy and unrefined as a lizard's hide!",
         "Pebbled-brained! You have no smooth thoughts in your head at all!",
@@ -4042,7 +4042,7 @@
   "Weight": [
     {
       "id": "Weight:heavy",
-      "fragment": "so heavy it feels as though it were cast from the heart of a star",
+      "fragment": "a weight so heavy it feels as though cast from the heart of a star",
       "insults": [
         "Your answer is as heavy and clumsy as a leaden boot in the mud!",
         "Heavy-brained! You have no lift in your intellect whatsoever!",
@@ -4067,7 +4067,7 @@
     },
     {
       "id": "Weight:feather-light",
-      "fragment": "feather-light, as though it were fashioned from nothing but air and light",
+      "fragment": "a feather-light weight, as though fashioned from nothing but air and light",
       "insults": [
         "Your reasoning is as light and empty as a hollow bird's bone!",
         "Feather-light-brained! You have no weight in your thoughts at all!",
@@ -4092,18 +4092,18 @@
     },
     {
       "id": "Weight:unbalanced",
-      "fragment": "curiously unbalanced, always leaning toward the left",
+      "fragment": "a weight curiously unbalanced, always leaning toward the left",
       "insults": [
         "Your logic is as unbalanced and crooked as a one-legged table!",
         "Unbalanced-brained! You have only half a mind for any actual thought!",
         "You are tipping over into absolute and total failure, you wretch!",
-        "Inconceivable! Even a crooked cup is more stable than you are!",
+        "Inconceivable! Even a crooked table is more stable than you are!",
         "You have offered an uneven and precarious display of ignorance!"
       ],
       "compliments": [
         "Correct. An unbalanced but surprisingly correct answer. Correct.",
         "You found the correct tilt in the leaning of the puzzle. Correct.",
-        "Like a crooked cup, your answer is undeniable and multi-dimensional.",
+        "Like a crooked coin, your answer is undeniable and multi-dimensional.",
         "A victory of the lean! Correct, though I expected more.",
         "I concede. Your unbalanced correctness is undeniably right."
       ],
@@ -4142,7 +4142,7 @@
     },
     {
       "id": "Weight:hollow-sounding",
-      "fragment": "light and hollow-sounding, like a dried gourd",
+      "fragment": "a light, hollow weight like a dried gourd",
       "insults": [
         "Your answer is as light and hollow as your empty, echoing head!",
         "Hollow-sounding-brained! There is nothing in there but wind!",
@@ -4167,7 +4167,7 @@
     },
     {
       "id": "Weight:substantial",
-      "fragment": "possessing a substantial weight that demands respect",
+      "fragment": "a substantial weight that demands respect",
       "insults": [
         "Your logic is as substantial and heavy as a pile of wet sand!",
         "Substantial-brained! No, just buried in the muck of your own error!",
@@ -4197,7 +4197,7 @@
         "Your reasoning is as dainty and weak as a lace handkerchief!",
         "Dainty-brained! You have no weight in your thoughts at all!",
         "You are trying to be delicate with a blunt and clumsy intellect!",
-        "Inconceivable! Even a dainty cup is stronger than your argument!",
+        "Inconceivable! Even a dainty thimble is stronger than your argument!",
         "You have offered a thin and superficial display of failure!"
       ],
       "compliments": [
@@ -4217,7 +4217,7 @@
     },
     {
       "id": "Weight:dense",
-      "fragment": "remarkably dense, as though it occupied more space than it appears to",
+      "fragment": "a density so remarkable it seems to occupy more space than it appears to",
       "insults": [
         "Your answer is as dense and impenetrable as a fortress wall!",
         "Dense-brained! You have no room for even the thinnest of truths!",

@@ -205,6 +205,20 @@ body {
   line-height: 1.4;
 }
 
+.goblet-cta {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f0d87c;
+  border: 1px solid #c8a840;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
 /* ── Input Area ────────────────────────────────────────────────── */
 
 #input-area {

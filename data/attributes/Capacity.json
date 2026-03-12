@@ -1,7 +1,7 @@
 [
   {
     "id": "Capacity:oversized",
-    "fragment": "grossly oversized, more of a bucket than a chalice",
+    "fragment": "a capacity grossly oversized, more bucket than chalice",
     "insults": [
       "Your logic is as bloated and oversized as a common sewer pipe!",
       "Oversized-brained! You have a mind like a heavy and dull block!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Capacity:thimble-sized",
-    "fragment": "no larger than a thimble, meant for the most potent of elixirs",
+    "fragment": "a capacity no larger than a thimble, meant for the most potent of elixirs",
     "insults": [
       "Your answer is as regressive and tiny as a common thimble!",
       "Thimble-sized-brained! You have a mind like a pretty and empty coin!",
@@ -76,19 +76,19 @@
   },
   {
     "id": "Capacity:flagon-like",
-    "fragment": "it has the flagon-like capacity of a tavern's best vessel",
+    "fragment": "a flagon-like capacity fit for a tavern's best vessel",
     "insults": [
       "Your reasoning is as crude and unrefined as a barbarian's club!",
-      "Flagon-like-brained! You have no smooth thoughts in your head at all!",
+      "Tavern-brained! You have no smooth thoughts in your head at all!",
       "You are trying to be bold with a blunt and clumsy intellect!",
       "Inconceivable! Even a dead raider has more structure than you!",
       "You have offered a rough and ultimately empty display of failure!"
     ],
     "compliments": [
-      "Correct. A flagon-like and perfectly substantial answer. I am annoyed.",
+      "Correct. A hefty and perfectly substantial answer. I am annoyed.",
       "You found the correct mass in the iron of the question. Correct.",
       "Like a rugged casting, your answer is undeniably right. Correct.",
-      "A victory of the flagon! Correct, though I find you brutish.",
+      "A victory of the ale hall! Correct, though I find you brutish.",
       "I concede. Your Viking correctness is as right as a hammer. Correct."
     ],
     "hints": [
@@ -126,7 +126,7 @@
   },
   {
     "id": "Capacity:measure-marked",
-    "fragment": "inscribed with lines to measure the exact depth of the draught",
+    "fragment": "a capacity marked with fine lines to measure the exact depth of the draught",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Measure-marked-brained! You have a mind like a bubble of hot air!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Capacity:overflowing",
-    "fragment": "it seems perpetually overflowing, even when half-full",
+    "fragment": "a capacity that seems perpetually overflowing, even when half-full",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Overflowing-brained! You have a mind like a gaudy and empty bazaar!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Capacity:shallow-fill",
-    "fragment": "it appears deep but is surprisingly shallow-filled",
+    "fragment": "a depth that appears bottomless but holds surprisingly little",
     "insults": [
       "Your reasoning is as hollow and empty as a dried-up old well!",
       "Shallow-fill-brained! You have a mind like a tomb with no exit!",

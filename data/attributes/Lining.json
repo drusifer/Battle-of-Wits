@@ -1,7 +1,7 @@
 [
   {
     "id": "Lining:leaden",
-    "fragment": "lined with dull grey lead that gives the wine a metallic tang",
+    "fragment": "a lining of dull grey lead that gives the wine a metallic tang",
     "insults": [
       "Your logic is as leaden and toxic as a common sewer pipe!",
       "Leaden-brained! You have a mind like a heavy and dull block!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Lining:pitch-lined",
-    "fragment": "lined with black pitch to seal the porous clay",
+    "fragment": "a lining of black pitch to seal the porous clay",
     "insults": [
       "Your reasoning is as dark and sticky as a rotten peach in the mud!",
       "Pitch-lined-brained! You have a mind like a trap for every error!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Lining:silvered",
-    "fragment": "silvered on the inside to catch the light of the wine",
+    "fragment": "a silver lining that catches the light of the wine",
     "insults": [
       "Your answer is as slippery and superficial as a merchant's tongue!",
       "Silvered-brained! You have a mind like a pretty and empty coin!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Lining:waxed",
-    "fragment": "lined with beeswax that smells of summer meadows",
+    "fragment": "a lining of beeswax that smells of summer meadows",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Waxed-brained! You have a mind like a gaudy and empty bazaar!",

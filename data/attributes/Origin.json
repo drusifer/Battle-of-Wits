@@ -1,7 +1,7 @@
 [
   {
     "id": "Origin:byzantine",
-    "fragment": "of Byzantine origin, heavy with the weight of empire and intrigue",
+    "fragment": "a Byzantine origin, heavy with the weight of empire and intrigue",
     "insults": [
       "Your answer is as convoluted and terminal as a Byzantine plot!",
       "Byzantine-brained! You have a mind like a labyrinth with no exit!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Origin:moorish",
-    "fragment": "crafted in the Moorish style with complex geometric patterns",
+    "fragment": "a Moorish craftsmanship, covered in complex geometric patterns",
     "insults": [
       "Your logic is as chaotic and poorly-formed as a desert sandstorm!",
       "Moorish-brained! You have a mind like a maze of tiny, useless rooms!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Origin:venetian",
-    "fragment": "blown by a Venetian master who was executed to keep the secret",
+    "fragment": "a Venetian glasswork by a master who was executed to keep the secret",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Venetian-brained! You have a mind like a bubble of hot air!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Origin:celtic",
-    "fragment": "adorned with Celtic knots that have no beginning and no end",
+    "fragment": "a Celtic design of knots that have no beginning and no end",
     "insults": [
       "Your reasoning is a never-ending knot of total and absolute failure!",
       "Celtic-brained! You have a mind like a tangled nest of snakes!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Origin:egyptian",
-    "fragment": "inscribed with Egyptian hieroglyphs that promise eternal life",
+    "fragment": "an Egyptian origin, inscribed with hieroglyphs that promise eternal life",
     "insults": [
       "Your logic is as dead and dusty as a dried-up old mummy!",
       "Egyptian-brained! You have a mind like a tomb with no exit!",

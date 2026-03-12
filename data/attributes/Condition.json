@@ -1,7 +1,7 @@
 [
   {
     "id": "Condition:ancient",
-    "fragment": "bearing the look of something ancient enough to have a legend attached",
+    "fragment": "the look of something ancient enough to have a legend attached",
     "insults": [
       "Ancient! Your answer belongs in the time before thinking was invented!",
       "As ancient and irrelevant as the error you have just committed!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Condition:pristine",
-    "fragment": "kept in pristine condition as though never once used for its purpose",
+    "fragment": "a pristine condition, as though never once used for its purpose",
     "insults": [
       "Pristine wrongness — you have kept your error in perfect, unmarked condition!",
       "Your answer is pristine — completely untouched by correctness!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Condition:tarnished",
-    "fragment": "tarnished to a warm brown that suggests decades of neglect and occasional use",
+    "fragment": "a tarnish worn to a warm brown, suggesting decades of neglect",
     "insults": [
       "Tarnished! Your reputation for correct answers, already questionable, is further tarnished!",
       "Your answer has tarnished whatever credibility remained to you!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Condition:scorched",
-    "fragment": "scorched along one side as though it survived something it should not have",
+    "fragment": "a scorch along one side, as though it survived something it should not have",
     "insults": [
       "Scorched! Your answer scorches the very concept of logical thinking!",
       "You have scorched the earth of this conversation with that response!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Condition:ornate",
-    "fragment": "so ornate as to suggest it was made to impress rather than to be used",
+    "fragment": "an ornamentation so excessive it was clearly made to impress, not to be used",
     "insults": [
       "Ornate in its wrongness — you have decorated your failure magnificently!",
       "As ornate and useless as an answer that looks right and isn't!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Condition:bloodstained",
-    "fragment": "marked by a single dark bloodstain that will not wash away",
+    "fragment": "a single dark bloodstain that will not wash away",
     "insults": [
       "Bloodstained! A permanent, grim reminder of your murdered logic!",
       "Your answer is stained with the failure of a thousand of your ancestors!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Condition:dusty",
-    "fragment": "covered in a fine layer of grey dust that smells of libraries",
+    "fragment": "a fine layer of grey dust covering it, smelling faintly of libraries",
     "insults": [
       "Dusty! Like the ancient and forgotten scraps of your own mind!",
       "Your reasoning is as dry and lifeless as a desert tomb in high summer!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Condition:weathered",
-    "fragment": "weathered and worn by exposure to sun, wind, and rain",
+    "fragment": "a weathered look worn by long exposure to sun, wind, and rain",
     "insults": [
       "Weathered! Like a face that has seen too many winters and too little sense!",
       "Your reasoning is as eroded as a cliff-side path after a spring flood!",

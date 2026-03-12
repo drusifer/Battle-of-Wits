@@ -1,7 +1,7 @@
 [
   {
     "id": "Decoration:filigree",
-    "fragment": "adorned with delicate silver filigree like frozen spiderwebs",
+    "fragment": "a delicate silver filigree like frozen spiderwebs",
     "insults": [
       "Your logic is as fragile and useless as a silver spiderweb!",
       "Filigree-brained! You have decorated your ignorance with tiny wires!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Decoration:repousse",
-    "fragment": "featuring repousse work of a hunt that leaps from the surface",
+    "fragment": "a repousse scene of a hunt that leaps from the surface",
     "insults": [
       "Your answer is a low-relief performance of a high-speed failure!",
       "Repousse-brained! You have hammered your thoughts into a bump!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Decoration:inscribed",
-    "fragment": "inscribed with a poem in a language that has been dead for a thousand years",
+    "fragment": "an inscription in a language that has been dead for a thousand years",
     "insults": [
       "Your answer might as well be written in a dead language for all I can read it!",
       "Inscribed-brained! You have carved your errors into permanent record!",
@@ -62,7 +62,7 @@
     "compliments": [
       "Correct. An inscribed and permanent truth that I cannot improve.",
       "You read the inscriptions of the puzzle and found the answer. Correct.",
-      "Like a permanent message, your answer will last as long as the cup.",
+      "Like a permanent message, your answer will last as long as the stone.",
       "A victory of the word! Correct, though I still find you a pedant.",
       "I concede. Your inscribed correctness is undeniably, eternally right."
     ],
@@ -76,7 +76,7 @@
   },
   {
     "id": "Decoration:enamelled",
-    "fragment": "brightly enamelled with scenes of a garden that never wilts",
+    "fragment": "bright enamel scenes of a garden that never wilts",
     "insults": [
       "Your logic is as gaudy and artificial as a cheap enamelled plaque!",
       "Enamelled-brained! You have painted a pretty face on a blank mind!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Decoration:cloisonne",
-    "fragment": "decorated in the cloisonne style with wires of gold separating vibrant pastes",
+    "fragment": "a cloisonne pattern of wires of gold separating vibrant coloured pastes",
     "insults": [
       "Your logic is a chaotic and poorly-separated mess of vibrant nonsense!",
       "Cloisonne-brained! You have tried to compartmentalize your failures!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Decoration:niello",
-    "fragment": "bearing dark niello inlays that trace the history of a forgotten war",
+    "fragment": "dark niello inlays that trace the history of a forgotten war",
     "insults": [
       "Your answer is a dark and sulfurous smear on the surface of fact!",
       "Niello-brained! You have inlaid your thoughts with black failure!",
@@ -151,12 +151,12 @@
   },
   {
     "id": "Decoration:etched",
-    "fragment": "lightly etched with the map of a city that was swallowed by the sea",
+    "fragment": "a faint etching of a city that was swallowed by the sea",
     "insults": [
       "Your reasoning is a faint and disappearing map of a lost cause!",
       "Etched-brained! You have scratched your errors into the surface!",
       "You are trying to be detailed with a blunt and clumsy mind!",
-      "Inconceivable! Even a scratch on a cup has more purpose than you!",
+      "Inconceivable! Even a scratch on a stone has more purpose than you!",
       "You have offered a shallow and easily-missed display of your failure!"
     ],
     "compliments": [
@@ -176,7 +176,7 @@
   },
   {
     "id": "Decoration:painted",
-    "fragment": "painted with tiny figures who seem to move when the wine is swirled",
+    "fragment": "tiny painted figures who seem to move when the wine is swirled",
     "insults": [
       "Your logic is a painted lie that doesn't even have the decency to dry!",
       "Painted-brained! You have offered a colorful and surface-level error!",

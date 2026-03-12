@@ -1,7 +1,7 @@
 [
   {
     "id": "Age:pre-cataclysmic",
-    "fragment": "dating back to a pre-cataclysmic era when the mountains were young",
+    "fragment": "an age dating back to a pre-cataclysmic era when the mountains were young",
     "insults": [
       "Your logic is as ancient and irrelevant as a broken ruin!",
       "Pre-cataclysmic-brained! You have a mind like a dusty and empty tomb!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Age:forgotten-era",
-    "fragment": "from a forgotten era when the stars were in a different alignment",
+    "fragment": "an age from a forgotten era when the stars were in a different alignment",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Forgotten-era-brained! You have a mind like a gaudy and empty bazaar!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Age:yesterdays-cast",
-    "fragment": "freshly cast only yesterday, still bearing the smell of the forge",
+    "fragment": "a youth freshly cast, still bearing the smell of the forge",
     "insults": [
       "Your logic is as crude and unrefined as a barbarian's club!",
       "Yesterday's-cast-brained! You have no smooth thoughts in your head at all!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Age:century-old",
-    "fragment": "a century old, but kept with such care it looks new",
+    "fragment": "an age of a century, kept with such care it looks new",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Century-old-brained! You have a mind like a pretty and empty coin!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Age:mythic-dawn",
-    "fragment": "forged in the mythic dawn before the sun first rose",
+    "fragment": "an age forged in the mythic dawn before the sun first rose",
     "insults": [
       "Your answer is as dark and unreflective as obsidian!",
       "Mythic-dawn-brained! You have a mind like a black hole!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Age:timeless",
-    "fragment": "possessing a timeless quality that defies all classification",
+    "fragment": "a timeless quality that defies all classification",
     "insults": [
       "Your logic is as common and unremarkable as a street stone!",
       "Timeless-brained! You have a mind like a plain and empty room!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Age:ancient-ruin",
-    "fragment": "dredged from an ancient ruin at the bottom of the sea",
+    "fragment": "an age dredged from an ancient ruin at the bottom of the sea",
     "insults": [
       "Your logic is as leaden and toxic as a common sewer pipe!",
       "Ancient-ruin-brained! You have a mind like a heavy and dull block!",

@@ -1,7 +1,7 @@
 [
   {
     "id": "Foot:claw-and-ball",
-    "fragment": "resting on a claw-and-ball foot that grips the table with menace",
+    "fragment": "a claw-and-ball foot that grips the table with menace",
     "insults": [
       "Your logic is as beastly and unrefined as a barbarian's club!",
       "Claw-and-ball-brained! You have no smooth thoughts in your head at all!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Foot:tripod",
-    "fragment": "standing on a simple tripod of three spindly legs",
+    "fragment": "a simple tripod of three spindly legs",
     "insults": [
       "Your reasoning is as thin and weak as a starving spider's leg!",
       "Tripod-brained! You have no weight in your thoughts at all!",

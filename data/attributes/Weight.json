@@ -1,7 +1,7 @@
 [
   {
     "id": "Weight:heavy",
-    "fragment": "so heavy it feels as though it were cast from the heart of a star",
+    "fragment": "a weight so heavy it feels as though cast from the heart of a star",
     "insults": [
       "Your answer is as heavy and clumsy as a leaden boot in the mud!",
       "Heavy-brained! You have no lift in your intellect whatsoever!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Weight:feather-light",
-    "fragment": "feather-light, as though it were fashioned from nothing but air and light",
+    "fragment": "a feather-light weight, as though fashioned from nothing but air and light",
     "insults": [
       "Your reasoning is as light and empty as a hollow bird's bone!",
       "Feather-light-brained! You have no weight in your thoughts at all!",
@@ -51,18 +51,18 @@
   },
   {
     "id": "Weight:unbalanced",
-    "fragment": "curiously unbalanced, always leaning toward the left",
+    "fragment": "a weight curiously unbalanced, always leaning toward the left",
     "insults": [
       "Your logic is as unbalanced and crooked as a one-legged table!",
       "Unbalanced-brained! You have only half a mind for any actual thought!",
       "You are tipping over into absolute and total failure, you wretch!",
-      "Inconceivable! Even a crooked cup is more stable than you are!",
+      "Inconceivable! Even a crooked table is more stable than you are!",
       "You have offered an uneven and precarious display of ignorance!"
     ],
     "compliments": [
       "Correct. An unbalanced but surprisingly correct answer. Correct.",
       "You found the correct tilt in the leaning of the puzzle. Correct.",
-      "Like a crooked cup, your answer is undeniable and multi-dimensional.",
+      "Like a crooked coin, your answer is undeniable and multi-dimensional.",
       "A victory of the lean! Correct, though I expected more.",
       "I concede. Your unbalanced correctness is undeniably right."
     ],
@@ -101,7 +101,7 @@
   },
   {
     "id": "Weight:hollow-sounding",
-    "fragment": "light and hollow-sounding, like a dried gourd",
+    "fragment": "a light, hollow weight like a dried gourd",
     "insults": [
       "Your answer is as light and hollow as your empty, echoing head!",
       "Hollow-sounding-brained! There is nothing in there but wind!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Weight:substantial",
-    "fragment": "possessing a substantial weight that demands respect",
+    "fragment": "a substantial weight that demands respect",
     "insults": [
       "Your logic is as substantial and heavy as a pile of wet sand!",
       "Substantial-brained! No, just buried in the muck of your own error!",
@@ -156,7 +156,7 @@
       "Your reasoning is as dainty and weak as a lace handkerchief!",
       "Dainty-brained! You have no weight in your thoughts at all!",
       "You are trying to be delicate with a blunt and clumsy intellect!",
-      "Inconceivable! Even a dainty cup is stronger than your argument!",
+      "Inconceivable! Even a dainty thimble is stronger than your argument!",
       "You have offered a thin and superficial display of failure!"
     ],
     "compliments": [
@@ -176,7 +176,7 @@
   },
   {
     "id": "Weight:dense",
-    "fragment": "remarkably dense, as though it occupied more space than it appears to",
+    "fragment": "a density so remarkable it seems to occupy more space than it appears to",
     "insults": [
       "Your answer is as dense and impenetrable as a fortress wall!",
       "Dense-brained! You have no room for even the thinnest of truths!",

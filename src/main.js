@@ -67,7 +67,7 @@ function wireRiddleListeners(bus) {
 }
 
 /** Wire button click handlers to engine methods. */
-function wireControls(engine, chatUI, statusBar) {
+function wireControls(engine, chatUI, statusBar, gobletDisplay) {
   const submitAnswer = () => {
     const raw = answerInput.value.trim();
     if (!raw) return;
@@ -80,6 +80,9 @@ function wireControls(engine, chatUI, statusBar) {
   });
   hintBtn.addEventListener('click', () => engine.requestHint());
   restartBtn.addEventListener('click', async () => {
+    chatUI.destroy();
+    statusBar.destroy();
+    gobletDisplay.destroy();
     chatUI.clear();
     statusBar.reset();
     await engine.restart();
@@ -107,7 +110,7 @@ async function init() {
 
   wirePhaseListener(bus, gobletDisplay);
   wireRiddleListeners(bus);
-  wireControls(engine, chatUI, statusBar);
+  wireControls(engine, chatUI, statusBar, gobletDisplay);
 
   restartBtn.disabled = true;
   await engine.startGame();

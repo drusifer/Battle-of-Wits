@@ -211,13 +211,16 @@ describe('Gramps', () => {
   it('describeGoblet() includes all attribute fragments', () => {
     const attrs = makeAttrs(5);
     const desc = makeGramps().describeGoblet(attrs);
+    // Compare case-insensitively since the first fragment is capitalised
+    const descLower = desc.toLowerCase();
     for (const attr of attrs) {
-      expect(desc).toContain(attr.fragment);
+      expect(descLower).toContain(attr.fragment.toLowerCase());
     }
   });
 
-  it('describeGoblet() starts with "The cup before you is"', () => {
-    expect(makeGramps().describeGoblet(makeAttrs(3))).toMatch(/^The cup before you is/);
+  it('describeGoblet() does NOT include "The cup before you is"', () => {
+    const desc = makeGramps().describeGoblet(makeAttrs(3));
+    expect(desc).not.toMatch(/The cup before you is/);
   });
 
   it('describeGoblet() ends with a period', () => {
@@ -238,9 +241,24 @@ describe('Gramps', () => {
     expect(makeGramps().describeGoblet([])).toBe('');
   });
 
+  it('describeGoblet() never includes "The cup before you is" across 20+ calls', () => {
+    const g = makeGramps();
+    for (let i = 0; i < 25; i++) {
+      const desc = g.describeGoblet(makeAttrs(5));
+      expect(desc).not.toMatch(/The cup before you is/);
+    }
+  });
+
+  it('describeGoblet() returns a non-empty sentence ending in "."', () => {
+    const desc = makeGramps().describeGoblet(makeAttrs(5));
+    expect(desc.length).toBeGreaterThan(0);
+    expect(desc).toMatch(/\.$/);
+  });
+
   it('describeGoblet() handles single attribute without connective', () => {
     const desc = makeGramps().describeGoblet(makeAttrs(1));
-    expect(desc).toContain('fragment 0');
+    // First letter is capitalised; test case-insensitively
+    expect(desc.toLowerCase()).toContain('fragment 0');
   });
 });
 

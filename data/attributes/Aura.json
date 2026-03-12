@@ -1,7 +1,7 @@
 [
   {
     "id": "Aura:sinister",
-    "fragment": "projecting a sinister aura that makes the wine look like poison",
+    "fragment": "a sinister aura that makes the wine look like poison",
     "insults": [
       "Your answer is as dark and unreflective as obsidian!",
       "Sinister-brained! You have a mind like a black hole!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Aura:holy",
-    "fragment": "bearing a holy aura that seems to purify the air around it",
+    "fragment": "a holy aura that seems to purify the air around it",
     "insults": [
       "Your answer is as gaudy and superficial as a merchant's ring!",
       "Holy-brained! You have a mind like a pretty and empty coin!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Aura:cursed",
-    "fragment": "shrouded in a cursed aura that suggests bad luck to follow",
+    "fragment": "a cursed aura, shrouded in shadow, that suggests bad luck to follow",
     "insults": [
       "Your reasoning is as dark and sticky as a rotten peach in the mud!",
       "Cursed-brained! You have a mind like a trap for every error!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Aura:lucky",
-    "fragment": "possessing a lucky aura that makes the drinker feel invincible",
+    "fragment": "a lucky aura that makes the drinker feel invincible",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Lucky-brained! You have a mind like a pretty and empty coin!",

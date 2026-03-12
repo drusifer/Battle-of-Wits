@@ -145,6 +145,22 @@ describe('data/attributes.json', () => {
       }
     }
   });
+
+  it('no compliment or insult line directly names a vessel (goblet/cup/chalice/flagon/vessel)', () => {
+    // Vizzini draws from these lines as clues — they must never reference the goblet directly.
+    const vesselWords = /\b(goblet|chalice|cup|flagon|vessel)\b/i;
+    const violations = [];
+    for (const [cat, variants] of categories) {
+      for (const v of variants) {
+        for (const line of [...v.compliments, ...v.insults]) {
+          if (vesselWords.test(line)) {
+            violations.push(`${cat}:${v.id} — "${line}"`);
+          }
+        }
+      }
+    }
+    expect(violations).toEqual([]);
+  });
 });
 
 // ── conversations.json ─────────────────────────────────────────────────────────
@@ -189,5 +205,18 @@ describe('data/conversations.json', () => {
 
   it('grampsConnectives has at least 5 entries', () => {
     expect(rawConversations.grampsConnectives.length).toBeGreaterThanOrEqual(5);
+  });
+
+  it('banter.intro has at least 3 scene entries', () => {
+    const nonNull = rawConversations.banter.intro.filter(Boolean);
+    expect(nonNull.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('each banter.intro scene has at least 2 lines', () => {
+    const scenes = rawConversations.banter.intro.filter(Boolean);
+    for (const scene of scenes) {
+      expect(Array.isArray(scene), 'each scene must be an array').toBe(true);
+      expect(scene.length, 'each intro scene must have at least 2 lines').toBeGreaterThanOrEqual(2);
+    }
   });
 });

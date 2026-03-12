@@ -1,7 +1,7 @@
 [
   {
     "id": "Sound:bell-like",
-    "fragment": "it rings with a clear, bell-like tone when struck",
+    "fragment": "a clear, bell-like tone when struck",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Bell-like-brained! You have a mind like a bubble of hot air!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Sound:dull-thud",
-    "fragment": "it produces only a dull thud, as though it were made of leaden dough",
+    "fragment": "a dull thud when struck, as though made of leaden dough",
     "insults": [
       "Your logic is as leaden and toxic as a common sewer pipe!",
       "Dull-thud-brained! You have a mind like a heavy and dull block!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Sound:high-pitched",
-    "fragment": "it emits a high-pitched whine when the rim is rubbed",
+    "fragment": "a high-pitched whine when the rim is rubbed",
     "insults": [
       "Your answer is as cloying and superficial as a merchant's perfume!",
       "High-pitched-brained! You have a mind like a gaudy and empty bazaar!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Sound:hollow-echo",
-    "fragment": "it has a hollow echo, as though it contained a vast space",
+    "fragment": "a hollow echo, as though it contained a vast space",
     "insults": [
       "Your reasoning is as hollow and empty as a dried-up old well!",
       "Hollow-echo-brained! You have a mind like a tomb with no exit!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Sound:silent",
-    "fragment": "it is perfectly silent, absorbing every sound that hits it",
+    "fragment": "a perfect silence, absorbing every sound that hits it",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Silent-brained! You have a mind like a gaudy and empty bazaar!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Sound:rattling",
-    "fragment": "something small and hard rattles within the stem",
+    "fragment": "a rattle of something small and hard within the stem",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Rattling-brained! You have a mind like a pretty and empty coin!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Sound:resonant",
-    "fragment": "it vibrates with a resonant hum long after it is set down",
+    "fragment": "a resonant hum that lingers long after it is set down",
     "insults": [
       "Your logic is as ancient and irrelevant as a broken ruin!",
       "Resonant-brained! You have a mind like a dusty and empty tomb!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Sound:flat",
-    "fragment": "it makes a flat, dead sound, like a stone hitting mud",
+    "fragment": "a flat, dead sound, like a stone hitting mud",
     "insults": [
       "Your logic is as crude and unrefined as a barbarian's club!",
       "Flat-sound-brained! You have no smooth thoughts in your head at all!",

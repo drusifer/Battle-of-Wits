@@ -1,7 +1,7 @@
 [
   {
     "id": "Smell:metallic",
-    "fragment": "it carries a sharp metallic smell like a fresh-forged blade",
+    "fragment": "a sharp metallic smell like a fresh-forged blade",
     "insults": [
       "Your logic is as leaden and toxic as a common sewer pipe!",
       "Metallic-brained! You have a mind like a heavy and dull block!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Smell:cedar-scented",
-    "fragment": "smelling faintly of cedar and old forests",
+    "fragment": "a faint smell of cedar and old forests",
     "insults": [
       "Your reasoning is as thick and unyielding as a knotted oak plank!",
       "Cedar-scented-brained! You have a mind like a dusty and empty room!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Smell:earthy",
-    "fragment": "possessing a deep earthy smell like rain on dry ground",
+    "fragment": "a deep earthy smell like rain on dry ground",
     "insults": [
       "Your logic is as crude and unrefined as a barbarian's club!",
       "Earthy-brained! You have no smooth thoughts in your head at all!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Smell:wine-stained",
-    "fragment": "permanently wine-stained in scent, even when empty",
+    "fragment": "a scent permanently wine-stained, even when empty",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Wine-stained-brained! You have a mind like a gaudy and empty bazaar!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Smell:salty",
-    "fragment": "smelling of the sea and salted fish",
+    "fragment": "a smell of the sea and salted fish",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Salty-brained! You have a mind like a pretty and empty coin!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Smell:sweet",
-    "fragment": "carrying a sweet, cloying scent like rotting lilies",
+    "fragment": "a sweet, cloying scent like rotting lilies",
     "insults": [
       "Your reasoning is as cloying and superficial as a merchant's perfume!",
       "Sweet-brained! You have a mind like a gaudy and empty bazaar!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Smell:musty",
-    "fragment": "smelling musty and old, like a tomb that has just been opened",
+    "fragment": "a musty smell, like a tomb that has just been opened",
     "insults": [
       "Your logic is as dead and dusty as a dried-up old mummy!",
       "Musty-brained! You have a mind like a tomb with no exit!",

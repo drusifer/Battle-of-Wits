@@ -141,7 +141,7 @@ check('drawGobletHint() returns string after setRoundDeck',
 console.log('\n[2] Characters — Gramps describeGoblet()');
 const desc = gramps.describeGoblet(roundCtx.leftGoblet.attributes);
 check('describeGoblet returns non-empty string', typeof desc === 'string' && desc.length > 10, desc.slice(0, 40));
-check('describeGoblet starts with "The cup before you is"', desc.startsWith('The cup before you is'));
+check('describeGoblet does NOT start with "The cup before you is"', !desc.startsWith('The cup before you is'));
 check('describeGoblet ends with "."', desc.endsWith('.'));
 check('describeGoblet empty array returns ""', gramps.describeGoblet([]) === '');
 
@@ -364,23 +364,8 @@ for (let i = 0; i < INTEGRITY_ROUNDS; i++) {
 check('correct-answer clue sourced from safe goblet compliments (5/5 rounds)',
   clueIntegrityPassed >= INTEGRITY_ROUNDS, `${clueIntegrityPassed}/${INTEGRITY_ROUNDS}`);
 
-// Verify Vizzini never names a goblet explicitly
-const banterSample = [];
-for (let i = 0; i < 20; i++) {
-  const gd = buildGameData(rawRiddles, rawAttributes, rawConversations);
-  const { GobletManager } = await import('../../src/engine/GobletManager.js');
-  const gm3 = new GobletManager(gd.createAttributeDeck());
-  const ctx3 = gm3.generateGobletPair();
-  const v3 = new Vizzini(gd.reactions['Vizzini']);
-  v3.setRoundDecks(ctx3.vizziniComplimentDeck, ctx3.vizziniInsultDeck);
-  const line = v3.drawClue(true);
-  if (line) banterSample.push(line);
-}
-// "left/right" are common English words (correct, direction) — only flag explicit vessel nouns
-const gobletWords = /\b(goblet|chalice|cup|flagon|vessel)\b/i;
-const directRefs = banterSample.filter(l => gobletWords.test(l));
-check(`Vizzini clues don't directly name goblets (${banterSample.length} samples)`,
-  directRefs.length === 0, directRefs.join(' | '));
+// Vessel-word check moved to DataIntegrity.test.js (exhaustive, deterministic).
+// This UAT only verifies the engine-level clue sourcing contract above.
 
 // ─────────────────────────────────────────────────────────────────────────────
 // [8] SPRINT 1 REGRESSION — batch sim still clean

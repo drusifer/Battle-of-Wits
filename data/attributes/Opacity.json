@@ -1,7 +1,7 @@
 [
   {
     "id": "Opacity:translucent",
-    "fragment": "translucent as a ghost, revealing the shadow of the wine within",
+    "fragment": "a translucence like a ghost, revealing the shadow of the wine within",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Translucent-brained! You have a mind like a bubble of hot air!",
@@ -26,7 +26,7 @@
   },
   {
     "id": "Opacity:opaque",
-    "fragment": "utterly opaque, hiding its contents from the most curious eye",
+    "fragment": "an opacity utterly impenetrable, hiding its contents from the most curious eye",
     "insults": [
       "Your logic is as leaden and toxic as a common sewer pipe!",
       "Opaque-brained! You have a mind like a heavy and dull block!",
@@ -51,7 +51,7 @@
   },
   {
     "id": "Opacity:cloudy",
-    "fragment": "cloudy and milky, like a sky before a storm",
+    "fragment": "a cloudy, milky appearance like a sky before a storm",
     "insults": [
       "Your reasoning is as chaotic and poorly-formed as a desert sandstorm!",
       "Cloudy-brained! You have a mind like a maze with no exit!",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Opacity:clear",
-    "fragment": "clear as a mountain stream, almost invisible on the table",
+    "fragment": "a clarity clear as a mountain stream, almost invisible on the table",
     "insults": [
       "Your logic is as fragile as glass and twice as transparent!",
       "Clear-brained! You have a mind like a bubble of hot air!",
@@ -101,7 +101,7 @@
   },
   {
     "id": "Opacity:smoke-filled",
-    "fragment": "it has a smoke-filled appearance, as though fire were trapped inside",
+    "fragment": "a smoke-filled appearance, as though fire were trapped inside",
     "insults": [
       "Your reasoning is as dark and sticky as a rotten peach in the mud!",
       "Smoke-filled-brained! You have a mind like a trap for every error!",
@@ -126,7 +126,7 @@
   },
   {
     "id": "Opacity:iridescent",
-    "fragment": "shimmering with an iridescent sheen like an oil slick",
+    "fragment": "an iridescent sheen like an oil slick",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Iridescent-brained! You have a mind like a pretty and empty coin!",
@@ -151,7 +151,7 @@
   },
   {
     "id": "Opacity:light-drinking",
-    "fragment": "a dark material that seems to drink the light around it",
+    "fragment": "a darkness so complete it seems to drink the light around it",
     "insults": [
       "Your answer is as dark and unreflective as obsidian!",
       "Light-drinking-brained! You have a mind like a black hole!",
@@ -176,7 +176,7 @@
   },
   {
     "id": "Opacity:reflective",
-    "fragment": "so reflective it serves as a mirror for the entire room",
+    "fragment": "a surface so reflective it serves as a mirror for the entire room",
     "insults": [
       "Your logic is as slippery and superficial as a merchant's tongue!",
       "Reflective-brained! You have a mind like a pretty and empty coin!",
