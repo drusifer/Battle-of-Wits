@@ -1,6 +1,6 @@
-import { Deck } from '../utils/Deck.js';
-import { GobletManager } from './GobletManager.js';
-import { RiddleManager } from './RiddleManager.js';
+import { Deck } from "../utils/Deck.js";
+import { GobletManager } from "./GobletManager.js";
+import { RiddleManager } from "./RiddleManager.js";
 
 const RIDDLES_PER_ROUND = 3;
 const MAX_ROUNDS = 2;
@@ -42,9 +42,10 @@ export class GameSimulator {
       allVariantIds.push(...this.#collectVariantIds(ctx));
       clueLines.push(...this.#runRiddlePhase(ctx, riddleMgr));
 
-      const playerChoice = Deck.coinFlip() ? 'left' : 'right';
+      const playerChoice = Deck.coinFlip() ? "left" : "right";
       const choseCorrectly = playerChoice === ctx.safe;
-      if (choseCorrectly) return { won: true, rounds: round, clueLines, allVariantIds };
+      if (choseCorrectly)
+        return { won: true, rounds: round, clueLines, allVariantIds };
     }
 
     return { won: false, rounds: MAX_ROUNDS, clueLines, allVariantIds };
@@ -55,7 +56,9 @@ export class GameSimulator {
     const lines = [];
     for (let i = 0; i < RIDDLES_PER_ROUND; i++) {
       if (!riddleMgr.drawRiddle()) break;
-      const deck = Deck.coinFlip() ? ctx.vizziniComplimentDeck : ctx.vizziniInsultDeck;
+      const deck = Deck.coinFlip()
+        ? ctx.vizziniComplimentDeck
+        : ctx.vizziniInsultDeck;
       const line = deck.draw();
       if (line) lines.push(line);
     }
@@ -65,8 +68,8 @@ export class GameSimulator {
   /** Extract all attribute variant IDs from both goblets in a round context. */
   #collectVariantIds(ctx) {
     return [
-      ...ctx.leftGoblet.attributes.map(v => v.id),
-      ...ctx.rightGoblet.attributes.map(v => v.id),
+      ...ctx.leftGoblet.attributes.map((v) => v.id),
+      ...ctx.rightGoblet.attributes.map((v) => v.id),
     ];
   }
 
@@ -77,7 +80,12 @@ export class GameSimulator {
    * @returns {BatchResult}
    */
   runBatch(n) {
-    const acc = { wins: 0, totalRounds: 0, variantCollisions: 0, clueLineFrequency: {} };
+    const acc = {
+      wins: 0,
+      totalRounds: 0,
+      variantCollisions: 0,
+      clueLineFrequency: {},
+    };
 
     for (let i = 0; i < n; i++) {
       const result = this.runGame();
@@ -110,7 +118,10 @@ export class GameSimulator {
   }
 
   /** Compute final batch metrics from raw accumulators. */
-  #buildBatchResult(n, { wins, totalRounds, variantCollisions, clueLineFrequency }) {
+  #buildBatchResult(
+    n,
+    { wins, totalRounds, variantCollisions, clueLineFrequency },
+  ) {
     const samples = Object.values(clueLineFrequency).reduce((a, b) => a + b, 0);
     const maxClueRepeatRate =
       samples > 0 ? Math.max(...Object.values(clueLineFrequency)) / samples : 0;

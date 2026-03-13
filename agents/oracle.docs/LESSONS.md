@@ -165,4 +165,23 @@
 
 ---
 
-*Last updated: 2026-03-11 by Oracle (Sprint 3 review)*
+## Tech Debt Sprint Lessons
+
+### L19 — destroy() Is for Teardown, Not Restart
+**Context:** Tech Debt Sprint TD1 — main.js restart handler called `destroy()` on ChatUI/StatusBar/GobletDisplay before `engine.restart()`.
+**Bug:** `destroy()` calls `bus.off()` for every subscription, permanently removing them. After restart, game events (conversation:play, riddle:presented, etc.) fired but no UI components were listening — chat stayed empty, status bar froze, goblets never appeared. The game was silently broken on every second play.
+**Why tests missed it:** All 4 GUI tests covered single-game flows. No test played to completion → restart → full second game.
+**Fix:** Restart path uses `clear()`/`reset()`/`hide()` (DOM-only reset, subscriptions preserved). `destroy()` is reserved for genuine SPA teardown where the instance will not be reused.
+**Rule:** `destroy()` = permanent. `clear()`/`reset()`/`hide()` = within-lifecycle. Never call `destroy()` on an object you intend to reuse.
+
+---
+
+### L20 — UAT Assertions Must Match Actual CSS Display Values
+**Context:** Tech Debt Sprint — uat_sprint3.mjs asserted `style.display === ''` for GobletDisplay visibility, testing the old (broken) empty-string behavior.
+**Bug:** The Sprint 3 CSS cascade fix changed `#setVisible(true)` from `style.display = ''` to `style.display = 'flex'`. The UAT assertion was not updated, so it was testing behavior that had been fixed.
+**Fix:** Updated assertion to `style.display === 'flex'`.
+**Rule:** When fixing a CSS display value in source code, grep for UAT/unit test assertions on that same `style.display` property and update them in the same commit.
+
+---
+
+*Last updated: 2026-03-12 by Oracle (Tech Debt Sprint)*

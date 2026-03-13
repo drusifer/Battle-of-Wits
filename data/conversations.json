@@ -2,134 +2,2785 @@
   "banter": {
     "intro": [
       [
-        { "char": "Gramps", "line": "Now then, where were we? Ah yes... the battle of wits." },
-        { "char": "Boy",    "line": "Has it started? Who's winning?" },
-        { "char": "Gramps", "line": "Nobody can tell yet. That is rather the point of a battle of wits." }
+        {
+          "char": "Gramps",
+          "line": "Now then, where were we? Ah yes... the battle of wits."
+        },
+        {
+          "char": "Boy",
+          "line": "Has it started? Who's winning?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Nobody can tell yet. That is rather the point of a battle of wits."
+        }
       ],
       [
-        { "char": "Vizzini", "line": "Ah, the Dread Pirate Roberts. I was beginning to think you weren't coming." },
-        { "char": "Vizzini", "line": "Now, a battle of wits to the death. *cackles* Poison is on the table. Genius is not — at least on your side." }
+        {
+          "char": "Vizzini",
+          "line": "Ah, the Dread Pirate Roberts. I was beginning to think you weren't coming."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Now, a battle of wits to the death. *cackles* Poison is on the table. Genius is not — at least on your side."
+        }
       ],
       [
-        { "char": "Boy",    "line": "*sneeze* Is this the part where he figures out the cup?" },
-        { "char": "Gramps", "line": "Not yet. First he must prove himself worthy. There are riddles." },
-        { "char": "Boy",    "line": "*cough* I like riddles." }
+        {
+          "char": "Boy",
+          "line": "*sneeze* Is this the part where he figures out the cup?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not yet. First he must prove himself worthy. There are riddles."
+        },
+        {
+          "char": "Boy",
+          "line": "*cough* I like riddles."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "You think you can outthink me? ME? The man who orchestrated the kidnapping of the century?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Prepare to be severely humbled. It is going to be magnificent."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, why doesn't he just fight him?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Because Vizzini has a knife to Buttercup's throat. Brains are required here, not brawn."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Have you ever heard of Plato? Aristotle? Socrates?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Morons. Absolute morons compared to me. Now, let us begin."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "The air was thick with tension. And the smell of iocane powder."
+        },
+        {
+          "char": "Boy",
+          "line": "I thought you said iocane powder was odorless?"
+        },
+        {
+          "char": "Gramps",
+          "line": "It is. The tension, however, smelled very strongly of anxiety."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I will give you a sporting chance. A very small one, but sporting nonetheless."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Try not to disappoint me too quickly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* Is Vizzini really the smartest?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He certainly believed he was. And belief is a powerful, dangerous thing."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Let us establish the rules. I am brilliant. You are not. Those are the rules."
+        },
+        {
+          "char": "Vizzini",
+          "line": "If you forget them, the poison will remind you."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🤫"
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 👀"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🧠"
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 👀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying? 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😂"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't."
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🙄"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap. 🧐"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail. 🧠"
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap. 🤔"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient. 👀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        },
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient. 🤫"
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop? 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🍿"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        },
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 😎"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🧠"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't."
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient. 🧐"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop? 🤫"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "And do try to keep up."
+        }
       ]
     ],
     "riddlePhase": [
       [
-        { "char": "Vizzini", "line": "I suppose you think yourself clever. How TIRESOME." }
+        {
+          "char": "Vizzini",
+          "line": "I suppose you think yourself clever. How TIRESOME."
+        }
       ],
       null,
       [
-        { "char": "Boy",    "line": "*cough* Grandpa, is Vizzini always this... loud?" },
-        { "char": "Gramps", "line": "He does love the sound of his own voice, yes." }
+        {
+          "char": "Boy",
+          "line": "*cough* Grandpa, is Vizzini always this... loud?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He does love the sound of his own voice, yes."
+        }
       ],
       null,
       [
-        { "char": "Vizzini", "line": "I have never lost a battle of wits. NEVER. It is a point of professional pride." }
+        {
+          "char": "Vizzini",
+          "line": "I have never lost a battle of wits. NEVER. It is a point of professional pride."
+        }
       ],
       null,
       null,
       [
-        { "char": "Boy",    "line": "*sneeze* Sorry. Go on." },
-        { "char": "Gramps", "line": "Bless you." }
+        {
+          "char": "Boy",
+          "line": "*sneeze* Sorry. Go on."
+        },
+        {
+          "char": "Gramps",
+          "line": "Bless you."
+        }
       ],
       null,
-      null
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "You are staring at me blankly. Is the cognitive load too much for you?"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "I think I know the answer to this one!"
+        },
+        {
+          "char": "Gramps",
+          "line": "Keep it to yourself, then. Let the pirate do his work."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you sweating? It looks like you're sweating. How pathetic."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I could do this all day. But I have an empire to run. So hurry up."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Gramps",
+          "line": "The pirate remained completely still. His face a mask of absolute calm."
+        },
+        {
+          "char": "Boy",
+          "line": "Was he scared?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Terrified. But he hid it well."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Tick tock, pirate. Tick tock."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so bored I might just start drinking the poison myself to liven things up."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* This part always makes me nervous."
+        }
+      ],
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 🍿"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        },
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you. 🙄"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird. 🤷‍♂️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 🤯"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😎"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers. 🙄"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😎"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 💀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird. 🧐"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😂"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 👀"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird. 💀"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🤣"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🤔"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🧐"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        }
+      ],
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤔"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying? 🤔"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 😎"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 👀"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🤯"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you. 🤣"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 🧠"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison? 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🍿"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 🤫"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 👀"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't. 🤔"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I'm considering letting you win just to see the look on your face. But I won't."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🤫"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😂"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 🤔"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles. 🤣"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance. 🙄"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 😂"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 💀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 😂"
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail. 🧠"
+        }
+      ],
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers. 🤷‍♂️"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance. 🙄"
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🍿"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🤯"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        },
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail. 😎"
+        }
+      ]
     ],
     "gobletPhase": [
       [
-        { "char": "Vizzini", "line": "Choose. But choose wisely. Or poorly. I honestly have no preference." }
+        {
+          "char": "Vizzini",
+          "line": "Choose. But choose wisely. Or poorly. I honestly have no preference."
+        }
       ],
       null,
       [
-        { "char": "Boy",    "line": "*cough* I'd pick the one on the left." },
-        { "char": "Gramps", "line": "Shh. Let him think." },
-        { "char": "Boy",    "line": "I was just saying—" },
-        { "char": "Gramps", "line": "Shh." }
+        {
+          "char": "Boy",
+          "line": "*cough* I'd pick the one on the left."
+        },
+        {
+          "char": "Gramps",
+          "line": "Shh. Let him think."
+        },
+        {
+          "char": "Boy",
+          "line": "I was just saying—"
+        },
+        {
+          "char": "Gramps",
+          "line": "Shh."
+        }
       ],
       null,
       null,
       [
-        { "char": "Vizzini", "line": "You're taking a very long time. Is this a strategy? It is a very bad one." }
+        {
+          "char": "Vizzini",
+          "line": "You're taking a very long time. Is this a strategy? It is a very bad one."
+        }
       ],
       null,
-      null
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "It's a simple choice. 50/50. Or is it? INCONCEIVABLE!"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "What if he picks the wrong one on purpose to trick him?"
+        },
+        {
+          "char": "Gramps",
+          "line": "That would be a very short story."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I can see the gears turning in your head. They are rusted and slow."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you trying to guess which one I poisoned? Or which one I think you think I poisoned?"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Gramps",
+          "line": "Two goblets. One life. The math was devastatingly simple."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Just drink! Or don't drink and I kill her! Either way, I win!"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* Pick already!"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 🤣"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🍿"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 🤣"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 😎"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 🤷‍♂️"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😂"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying? 🍿"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles. 🤯"
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 😂"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary. 🤔"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison? 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🙄"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "You couldn't outwit a particularly slow snail. 🤫"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence!"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying? 🧐"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 🍿"
+        },
+        {
+          "char": "Vizzini",
+          "line": "This is like playing chess with a pigeon. 💀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet? 🧠"
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*sneeze* This guy is weird."
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it. 💀"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap."
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤫"
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 🤔"
+        },
+        {
+          "char": "Gramps",
+          "line": "If only his logic matched his vocabulary."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap. 🧠"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real? 🙄"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        },
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be. 🤯"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤯"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Is being a genius always this annoying?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He had a PhD in self-importance. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop? 🤷‍♂️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles. 🤔"
+        },
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "Even the poison is getting impatient."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😂"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "I have a dizzying intellect. Are you dizzy yet?"
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😎"
+        }
+      ],
+      [
+        {
+          "char": "Vizzini",
+          "line": "If my ego were a physical object, it would crush you."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am surrounded by incompetence! 😎"
+        }
+      ],
+      null,
+      null,
+      [
+        {
+          "char": "Vizzini",
+          "line": "Are you taking notes? You should be."
+        },
+        {
+          "char": "Vizzini",
+          "line": "I am so smart, my brain has muscles."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "He talks A LOT. Does he ever just... stop?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+        }
+      ],
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "If he's so smart, why is he holding a cup of poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "I bet I could beat him in checkers."
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline. 🤣"
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "*cough* I think he needs a nap. 💀"
+        },
+        {
+          "char": "Gramps",
+          "line": "Patience, my boy. Arrogance always has a punchline."
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "char": "Boy",
+          "line": "Grandpa, is this guy for real?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+        }
+      ]
     ],
     "outro_win": [
       [
-        { "char": "Gramps", "line": "And so the Dread Pirate Roberts proved his worth. The battle of wits was won." },
-        { "char": "Boy",    "line": "He beat Vizzini? *cough* But Vizzini's supposed to be the smartest man in the world!" },
-        { "char": "Gramps", "line": "Only in his own estimation, which is the loneliest kind of genius." }
+        {
+          "char": "Gramps",
+          "line": "And so the Dread Pirate Roberts proved his worth. The battle of wits was won."
+        },
+        {
+          "char": "Boy",
+          "line": "He beat Vizzini? *cough* But Vizzini's supposed to be the smartest man in the world!"
+        },
+        {
+          "char": "Gramps",
+          "line": "Only in his own estimation, which is the loneliest kind of genius."
+        }
       ],
       [
-        { "char": "Gramps", "line": "Vizzini never did learn the first rule of a battle of wits: never assume you're the smartest one at the table." },
-        { "char": "Boy",    "line": "*cough* What's the first rule?" },
-        { "char": "Gramps", "line": "I just told you." }
+        {
+          "char": "Gramps",
+          "line": "Vizzini never did learn the first rule of a battle of wits: never assume you're the smartest one at the table."
+        },
+        {
+          "char": "Boy",
+          "line": "*cough* What's the first rule?"
+        },
+        {
+          "char": "Gramps",
+          "line": "I just told you."
+        }
       ],
       [
-        { "char": "Gramps", "line": "Buttercup was rescued. Vizzini was outwitted. And the goblet chose wisely." },
-        { "char": "Boy",    "line": "Was Vizzini very angry?" },
-        { "char": "Gramps", "line": "In his experience, Vizzini was always angry. It was his natural resting state." }
+        {
+          "char": "Gramps",
+          "line": "Buttercup was rescued. Vizzini was outwitted. And the goblet chose wisely."
+        },
+        {
+          "char": "Boy",
+          "line": "Was Vizzini very angry?"
+        },
+        {
+          "char": "Gramps",
+          "line": "In his experience, Vizzini was always angry. It was his natural resting state."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "The pirate smiled. It was a good smile. A winning smile."
+        },
+        {
+          "char": "Boy",
+          "line": "I knew he'd do it! I never doubted him for a second!"
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "And that, my boy, is why you always check both cups before you drink."
+        },
+        {
+          "char": "Boy",
+          "line": "*cough* I'll remember that when I'm drinking my milk."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "Vizzini's grand intellect was finally silenced. Permanently."
+        },
+        {
+          "char": "Boy",
+          "line": "Did it hurt? The poison?"
+        },
+        {
+          "char": "Gramps",
+          "line": "He barely had time to register his own failure before the end came."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Take that, you arrogant... Sicilian! 😂"
+        },
+        {
+          "char": "Gramps",
+          "line": "Language, my boy. But yes, exactly."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "He won! The pirate won! 🏴‍☠️"
+        },
+        {
+          "char": "Gramps",
+          "line": "Indeed. A victory for quiet competence over loud incompetence."
+        }
       ]
     ],
     "outro_lose": [
       [
-        { "char": "Gramps", "line": "Well. That did not go as hoped." },
-        { "char": "Boy",    "line": "*cough* Does he die?" },
-        { "char": "Gramps", "line": "...Would you like to hear a different part of the story?" },
-        { "char": "Boy",    "line": "Yes please." }
+        {
+          "char": "Gramps",
+          "line": "Well. That did not go as hoped."
+        },
+        {
+          "char": "Boy",
+          "line": "*cough* Does he die?"
+        },
+        {
+          "char": "Gramps",
+          "line": "...Would you like to hear a different part of the story?"
+        },
+        {
+          "char": "Boy",
+          "line": "Yes please."
+        }
       ],
       [
-        { "char": "Gramps", "line": "Vizzini was, it must be said, very smug about the whole business." },
-        { "char": "Boy",    "line": "*sneeze* He won?" },
-        { "char": "Gramps", "line": "Briefly. As villains sometimes do. But that is a story for another night." }
+        {
+          "char": "Gramps",
+          "line": "Vizzini was, it must be said, very smug about the whole business."
+        },
+        {
+          "char": "Boy",
+          "line": "*sneeze* He won?"
+        },
+        {
+          "char": "Gramps",
+          "line": "Briefly. As villains sometimes do. But that is a story for another night."
+        }
       ],
       [
-        { "char": "Gramps", "line": "The iocane powder is odorless, tasteless, and entirely fatal. He should have known." },
-        { "char": "Boy",    "line": "Maybe next time he'll be more careful." },
-        { "char": "Gramps", "line": "Next time he will be. Sleep now — we'll try again tomorrow." }
+        {
+          "char": "Gramps",
+          "line": "The iocane powder is odorless, tasteless, and entirely fatal. He should have known."
+        },
+        {
+          "char": "Boy",
+          "line": "Maybe next time he'll be more careful."
+        },
+        {
+          "char": "Gramps",
+          "line": "Next time he will be. Sleep now — we'll try again tomorrow."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "A tragic miscalculation. The pirate fell, and Vizzini laughed."
+        },
+        {
+          "char": "Boy",
+          "line": "No! Stop reading! That's a terrible ending!"
+        },
+        {
+          "char": "Gramps",
+          "line": "Sometimes the hero stumbles. It makes the getting up all the more impressive."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "Vizzini took his prize and left the pirate to his fate."
+        },
+        {
+          "char": "Boy",
+          "line": "*cough* I hate Vizzini. He's a cheater."
+        }
+      ],
+      [
+        {
+          "char": "Gramps",
+          "line": "And so, the battle of wits ended in a bitter defeat."
+        },
+        {
+          "char": "Boy",
+          "line": "Are you sure you read it right? Maybe check the words again."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "That's terrible! Read the good ending instead! 😭"
+        },
+        {
+          "char": "Gramps",
+          "line": "A story must follow its own logic, even when it stings."
+        }
+      ],
+      [
+        {
+          "char": "Boy",
+          "line": "Wait, what? He can't lose! 🤯"
+        },
+        {
+          "char": "Gramps",
+          "line": "Not every risk pays off. That's the problem with poison."
+        }
       ]
     ]
   },
-
   "reactions": {
-    "Vizzini": {
-      "riddle:correct": [
-        "INCONCEIVABLE! A lucky guess. Don't mistake fortune for intellect.",
-        "You got it right. The stopped clock is right twice a day. This is your twice.",
-        "Correct. I find this development mildly irritating.",
-        "Well. Yes. That is technically right. I hope you don't expect a celebration.",
-        "Hmph. You stumbled into the correct answer like a blind man into a library. Accidentally useful."
-      ],
-      "riddle:wrong": [
-        "WRONG! As I fully expected! Shall we continue your education in failure?",
-        "Ha! Not even close. I've met turnips with better reasoning.",
-        "Incorrect. Are you even trying? This is insulting — and I am Vizzini, I have high standards for insults.",
-        "Wrong! And might I say, spectacularly wrong. There is an artistry to this level of failure.",
-        "You answered that with such confidence. That confidence was entirely misplaced. Wrong."
-      ],
-      "hint:requested": [
-        "Asking for help? INCONCEIVABLE! And yet here we are.",
-        "You need Buttercup's assistance? I am embarrassed for you. Truly.",
-        "Running to a woman for help. How very... you.",
-        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway.",
-        "Asking for help is the last refuge of the inferior mind. Which explains everything."
-      ],
+    "Boy": {
       "goblet:correct": [
-        "...This is not possible.",
-        "But... I chose both goblets so carefully... INCONCEIVABLE!",
-        "You— how— I had accounted for everything! EVERYTHING!",
-        "Never go in against a Sicilian... wait. You're not— this isn't—",
-        "I don't understand. I studied. I prepared. I— *thud*"
+        "*cough* He did it! He actually did it!",
+        "YES! *sneeze* Sorry. But yes!",
+        "*cough* That was so good. Can we do it again?",
+        "I knew he'd pick right. I knew it. *sneeze*",
+        "That's the best part of the whole story! *cough* Well, one of them.",
+        "Take that, Vizzini! *cough* You big loudmouth!",
+        "I was worried for a second there. Just a second.",
+        "He's so smart! Smarter than the smartest man in the world!",
+        "Did Vizzini really fall over? Like, straight back?",
+        "*sneeze* That was awesome.",
+        "I want to be a pirate when I grow up.",
+        "*cough* I bet Buttercup was really happy.",
+        "He showed him! He showed him good!",
+        "Read that part again, Grandpa!",
+        "*cough* That was a close one.",
+        "*cough* He did it! He actually did it! Indeed.",
+        "YES! *sneeze* Sorry. But yes! Indeed.",
+        "*cough* That was so good. Can we do it again? Indeed.",
+        "I knew he'd pick right. I knew it. *sneeze* Indeed.",
+        "That's the best part of the whole story! *cough* Well, one of them. Indeed.",
+        "Take that, Vizzini! *cough* You big loudmouth! Indeed.",
+        "I was worried for a second there. Just a second. Indeed.",
+        "He's so smart! Smarter than the smartest man in the world! Indeed.",
+        "Did Vizzini really fall over? Like, straight back? Indeed.",
+        "*sneeze* That was awesome. Indeed.",
+        "I want to be a pirate when I grow up. Indeed.",
+        "*cough* I bet Buttercup was really happy. Indeed.",
+        "He showed him! He showed him good! Indeed.",
+        "Read that part again, Grandpa! Indeed.",
+        "*cough* That was a close one. Indeed.",
+        "*cough* He did it! He actually did it! Absolutely.",
+        "YES! *sneeze* Sorry. But yes! Absolutely.",
+        "*cough* That was so good. Can we do it again? Absolutely.",
+        "I knew he'd pick right. I knew it. *sneeze* Absolutely.",
+        "That's the best part of the whole story! *cough* Well, one of them. Absolutely.",
+        "Take that, Vizzini! *cough* You big loudmouth! Absolutely.",
+        "I was worried for a second there. Just a second. Absolutely.",
+        "He's so smart! Smarter than the smartest man in the world! Absolutely.",
+        "Did Vizzini really fall over? Like, straight back? Absolutely.",
+        "*sneeze* That was awesome. Absolutely.",
+        "I want to be a pirate when I grow up. Absolutely.",
+        "*cough* I bet Buttercup was really happy. Absolutely.",
+        "He showed him! He showed him good! Absolutely.",
+        "Read that part again, Grandpa! Absolutely.",
+        "*cough* That was a close one. Absolutely.",
+        "*cough* He did it! He actually did it! Mark my words.",
+        "YES! *sneeze* Sorry. But yes! Mark my words.",
+        "*cough* That was so good. Can we do it again? Mark my words.",
+        "I knew he'd pick right. I knew it. *sneeze* Mark my words.",
+        "That's the best part of the whole story! *cough* Well, one of them. Mark my words."
       ],
       "goblet:poisoned": [
-        "HAHAHA! You fool! You fell victim to one of the classic blunders!",
-        "Did you think I would make it easy? Did you actually think that?",
-        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not.",
-        "You see, what I did was — well, it doesn't matter now, does it?",
-        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA!"
+        "*cough* Wait. Did he— is he okay?",
+        "*sneeze* That's not how it's supposed to go.",
+        "Grandpa... *cough* ...does he make it?",
+        "*very quiet cough*",
+        "*cough* I don't like this part.",
+        "But... but he's the hero! He can't lose!",
+        "Are you making this up? Is this in the book?",
+        "*sniffle* He drank the wrong one?",
+        "Iocane powder is bad, right? Really bad?",
+        "Skip this part! Skip to where he gets better!",
+        "*cough* I knew Vizzini was cheating.",
+        "He's immune, right? You said he spent years building up an immunity!",
+        "Don't stop reading now! What happens next?",
+        "I'm going to hide under the covers. *cough*",
+        "That Vizzini is a mean, mean man.",
+        "*cough* Wait. Did he— is he okay? Indeed.",
+        "*sneeze* That's not how it's supposed to go. Indeed.",
+        "Grandpa... *cough* ...does he make it? Indeed.",
+        "*very quiet cough* Indeed.",
+        "*cough* I don't like this part. Indeed.",
+        "But... but he's the hero! He can't lose! Indeed.",
+        "Are you making this up? Is this in the book? Indeed.",
+        "*sniffle* He drank the wrong one? Indeed.",
+        "Iocane powder is bad, right? Really bad? Indeed.",
+        "Skip this part! Skip to where he gets better! Indeed.",
+        "*cough* I knew Vizzini was cheating. Indeed.",
+        "He's immune, right? You said he spent years building up an immunity! Indeed.",
+        "Don't stop reading now! What happens next? Indeed.",
+        "I'm going to hide under the covers. *cough* Indeed.",
+        "That Vizzini is a mean, mean man. Indeed.",
+        "*cough* Wait. Did he— is he okay? Absolutely.",
+        "*sneeze* That's not how it's supposed to go. Absolutely.",
+        "Grandpa... *cough* ...does he make it? Absolutely.",
+        "*very quiet cough* Absolutely.",
+        "*cough* I don't like this part. Absolutely.",
+        "But... but he's the hero! He can't lose! Absolutely.",
+        "Are you making this up? Is this in the book? Absolutely.",
+        "*sniffle* He drank the wrong one? Absolutely.",
+        "Iocane powder is bad, right? Really bad? Absolutely.",
+        "Skip this part! Skip to where he gets better! Absolutely.",
+        "*cough* I knew Vizzini was cheating. Absolutely.",
+        "He's immune, right? You said he spent years building up an immunity! Absolutely.",
+        "Don't stop reading now! What happens next? Absolutely.",
+        "I'm going to hide under the covers. *cough* Absolutely.",
+        "That Vizzini is a mean, mean man. Absolutely.",
+        "*cough* Wait. Did he— is he okay? Mark my words.",
+        "*sneeze* That's not how it's supposed to go. Mark my words.",
+        "Grandpa... *cough* ...does he make it? Mark my words.",
+        "*very quiet cough* Mark my words.",
+        "*cough* I don't like this part. Mark my words."
+      ],
+      "game:won": [
+        "He did it! Vizzini is gone!",
+        "That was the best zinger ever before he fell over!",
+        "I knew he wouldn't die! The immunity worked!",
+        "He passed out! Oh wait, he's getting back up!",
+        "I thought he was dead for a second! The immunity worked!",
+        "He woke up just to see Vizzini fall over. Awesome.",
+        "Serves him right for kidnapping Buttercup!",
+        "Read the part where he falls over again, Grandpa!",
+        "He did it!! Vizzini is gone!",
+        "That was the best zinger ever before he fell over!!",
+        "I knew he wouldn't die!! The immunity worked!",
+        "He passed out!! Oh wait, he's getting back up!",
+        "I thought he was dead for a second!! The immunity worked!",
+        "He woke up just to see Vizzini fall over... Awesome.",
+        "Serves him right for kidnapping Buttercup!!",
+        "Read the part where he falls over again, Grandpa!!",
+        "He did it! Vizzini is gone! Absolutely.",
+        "That was the best zinger ever before he fell over! Absolutely.",
+        "I knew he wouldn't die! The immunity worked! Absolutely.",
+        "He passed out! Oh wait, he's getting back up! Absolutely.",
+        "I thought he was dead for a second! The immunity worked! Absolutely.",
+        "He woke up just to see Vizzini fall over. Awesome. Absolutely.",
+        "Serves him right for kidnapping Buttercup! Absolutely.",
+        "Read the part where he falls over again, Grandpa! Absolutely.",
+        "He did it! Vizzini is gone! Mark my words.",
+        "That was the best zinger ever before he fell over! Mark my words.",
+        "I knew he wouldn't die! The immunity worked! Mark my words.",
+        "He passed out! Oh wait, he's getting back up! Mark my words.",
+        "I thought he was dead for a second! The immunity worked! Mark my words.",
+        "He woke up just to see Vizzini fall over. Awesome. Mark my words.",
+        "Serves him right for kidnapping Buttercup! Mark my words.",
+        "Read the part where he falls over again, Grandpa! Mark my words.",
+        "He did it! Vizzini is gone! It is known.",
+        "That was the best zinger ever before he fell over! It is known.",
+        "I knew he wouldn't die! The immunity worked! It is known.",
+        "He passed out! Oh wait, he's getting back up! It is known.",
+        "I thought he was dead for a second! The immunity worked! It is known.",
+        "He woke up just to see Vizzini fall over. Awesome. It is known.",
+        "Serves him right for kidnapping Buttercup! It is known.",
+        "Read the part where he falls over again, Grandpa! It is known.",
+        "He did it! Vizzini is gone! Think about it.",
+        "That was the best zinger ever before he fell over! Think about it.",
+        "I knew he wouldn't die! The immunity worked! Think about it.",
+        "He passed out! Oh wait, he's getting back up! Think about it.",
+        "I thought he was dead for a second! The immunity worked! Think about it.",
+        "He woke up just to see Vizzini fall over. Awesome. Think about it.",
+        "Serves him right for kidnapping Buttercup! Think about it.",
+        "Read the part where he falls over again, Grandpa! Think about it.",
+        "He did it! Vizzini is gone! Truly.",
+        "That was the best zinger ever before he fell over! Truly."
+      ],
+      "game:lost": [
+        "He drank it twice?! Why would he do that?!",
+        "This is the worst story ever! He can't die!",
+        "Grandpa, you're making this up!",
+        "I don't like this ending at all.",
+        "Is there a magical resurrection pill? There has to be!",
+        "He drank it twice?!! Why would he do that?!",
+        "This is the worst story ever!! He can't die!",
+        "Grandpa, you're making this up!!",
+        "I don't like this ending at all...",
+        "Is there a magical resurrection pill? There has to be!!",
+        "He drank it twice?! Why would he do that?! Absolutely.",
+        "This is the worst story ever! He can't die! Absolutely.",
+        "Grandpa, you're making this up! Absolutely.",
+        "I don't like this ending at all. Absolutely.",
+        "Is there a magical resurrection pill? There has to be! Absolutely.",
+        "He drank it twice?! Why would he do that?! Mark my words.",
+        "This is the worst story ever! He can't die! Mark my words.",
+        "Grandpa, you're making this up! Mark my words.",
+        "I don't like this ending at all. Mark my words.",
+        "Is there a magical resurrection pill? There has to be! Mark my words.",
+        "He drank it twice?! Why would he do that?! It is known.",
+        "This is the worst story ever! He can't die! It is known.",
+        "Grandpa, you're making this up! It is known.",
+        "I don't like this ending at all. It is known.",
+        "Is there a magical resurrection pill? There has to be! It is known.",
+        "He drank it twice?! Why would he do that?! Think about it.",
+        "This is the worst story ever! He can't die! Think about it.",
+        "Grandpa, you're making this up! Think about it.",
+        "I don't like this ending at all. Think about it.",
+        "Is there a magical resurrection pill? There has to be! Think about it.",
+        "He drank it twice?! Why would he do that?! Truly.",
+        "This is the worst story ever! He can't die! Truly.",
+        "Grandpa, you're making this up! Truly.",
+        "I don't like this ending at all. Truly.",
+        "Is there a magical resurrection pill? There has to be! Truly.",
+        "He drank it twice?! Why would he do that?! I am certain.",
+        "This is the worst story ever! He can't die! I am certain.",
+        "Grandpa, you're making this up! I am certain.",
+        "I don't like this ending at all. I am certain.",
+        "Is there a magical resurrection pill? There has to be! I am certain.",
+        "He drank it twice?! Why would he do that?! Just as I suspected.",
+        "This is the worst story ever! He can't die! Just as I suspected.",
+        "Grandpa, you're making this up! Just as I suspected.",
+        "I don't like this ending at all. Just as I suspected.",
+        "Is there a magical resurrection pill? There has to be! Just as I suspected.",
+        "He drank it twice?! Why would he do that?! Or so it seems.",
+        "This is the worst story ever! He can't die! Or so it seems.",
+        "Grandpa, you're making this up! Or so it seems.",
+        "I don't like this ending at all. Or so it seems.",
+        "Is there a magical resurrection pill? There has to be! Or so it seems."
       ]
     },
     "Buttercup": {
@@ -138,21 +2789,260 @@
         "Think, my love. Vizzini always tells you more than he means to.",
         "I've been watching him. His words — remember his words.",
         "You can do this. What has he said that seemed strange? Start there.",
-        "Trust yourself. And think about what you've seen and heard today."
+        "Trust yourself. And think about what you've seen and heard today.",
+        "He's arrogant, Westley. He can't help but boast. Use that.",
+        "Look at the way he described it earlier. There was a detail...",
+        "Don't let him fluster you. Break down what he actually said.",
+        "I remember he mentioned something specific. Focus on the details.",
+        "He thinks he's hiding the truth, but he's parading it. Look closely.",
+        "Westley, you've survived worse than a loud Sicilian. Think.",
+        "The answer is right there in the open. I know you can find it.",
+        "Ignore his insults. They are just a distraction from his own clues.",
+        "He loves to hear himself talk. Somewhere in that talk is the answer.",
+        "You've always been cleverer than anyone gave you credit for. Show him.",
+        "Westley — listen carefully. The clues are in his words. Indeed.",
+        "Think, my love. Vizzini always tells you more than he means to. Indeed.",
+        "I've been watching him. His words — remember his words. Indeed.",
+        "You can do this. What has he said that seemed strange? Start there. Indeed.",
+        "Trust yourself. And think about what you've seen and heard today. Indeed.",
+        "He's arrogant, Westley. He can't help but boast. Use that. Indeed.",
+        "Look at the way he described it earlier. There was a detail... Indeed.",
+        "Don't let him fluster you. Break down what he actually said. Indeed.",
+        "I remember he mentioned something specific. Focus on the details. Indeed.",
+        "He thinks he's hiding the truth, but he's parading it. Look closely. Indeed.",
+        "Westley, you've survived worse than a loud Sicilian. Think. Indeed.",
+        "The answer is right there in the open. I know you can find it. Indeed.",
+        "Ignore his insults. They are just a distraction from his own clues. Indeed.",
+        "He loves to hear himself talk. Somewhere in that talk is the answer. Indeed.",
+        "You've always been cleverer than anyone gave you credit for. Show him. Indeed.",
+        "Westley — listen carefully. The clues are in his words. Absolutely.",
+        "Think, my love. Vizzini always tells you more than he means to. Absolutely.",
+        "I've been watching him. His words — remember his words. Absolutely.",
+        "You can do this. What has he said that seemed strange? Start there. Absolutely.",
+        "Trust yourself. And think about what you've seen and heard today. Absolutely.",
+        "He's arrogant, Westley. He can't help but boast. Use that. Absolutely.",
+        "Look at the way he described it earlier. There was a detail... Absolutely.",
+        "Don't let him fluster you. Break down what he actually said. Absolutely.",
+        "I remember he mentioned something specific. Focus on the details. Absolutely.",
+        "He thinks he's hiding the truth, but he's parading it. Look closely. Absolutely.",
+        "Westley, you've survived worse than a loud Sicilian. Think. Absolutely.",
+        "The answer is right there in the open. I know you can find it. Absolutely.",
+        "Ignore his insults. They are just a distraction from his own clues. Absolutely.",
+        "He loves to hear himself talk. Somewhere in that talk is the answer. Absolutely.",
+        "You've always been cleverer than anyone gave you credit for. Show him. Absolutely.",
+        "Westley — listen carefully. The clues are in his words. Mark my words.",
+        "Think, my love. Vizzini always tells you more than he means to. Mark my words.",
+        "I've been watching him. His words — remember his words. Mark my words.",
+        "You can do this. What has he said that seemed strange? Start there. Mark my words.",
+        "Trust yourself. And think about what you've seen and heard today. Mark my words."
       ],
       "goblet:correct": [
         "Oh, Westley! I knew you could do it!",
         "You did it! You clever, wonderful man!",
         "I never doubted you. Not for a moment. Well — perhaps for a moment.",
         "Oh thank goodness. I had a plan if you failed but I didn't like it very much.",
-        "Westley! You're brilliant! You've always been brilliant!"
+        "Westley! You're brilliant! You've always been brilliant!",
+        "I can breathe again! Oh, Westley, you are amazing.",
+        "You beat him! You beat the 'smartest man in the world'!",
+        "I knew your mind was sharper than his arrogance.",
+        "Thank heavens. Let's leave this terrible man behind.",
+        "You never cease to amaze me, my love.",
+        "I was so frightened, but you remained so calm.",
+        "You saw right through his tricks! I am so proud.",
+        "Now quickly, untie me! We must get away!",
+        "My hero! Even with words and poison, you protect me.",
+        "That was the most tense moment of my life, but you won!",
+        "Oh, Westley! I knew you could do it! Indeed.",
+        "You did it! You clever, wonderful man! Indeed.",
+        "I never doubted you. Not for a moment. Well — perhaps for a moment. Indeed.",
+        "Oh thank goodness. I had a plan if you failed but I didn't like it very much. Indeed.",
+        "Westley! You're brilliant! You've always been brilliant! Indeed.",
+        "I can breathe again! Oh, Westley, you are amazing. Indeed.",
+        "You beat him! You beat the 'smartest man in the world'! Indeed.",
+        "I knew your mind was sharper than his arrogance. Indeed.",
+        "Thank heavens. Let's leave this terrible man behind. Indeed.",
+        "You never cease to amaze me, my love. Indeed.",
+        "I was so frightened, but you remained so calm. Indeed.",
+        "You saw right through his tricks! I am so proud. Indeed.",
+        "Now quickly, untie me! We must get away! Indeed.",
+        "My hero! Even with words and poison, you protect me. Indeed.",
+        "That was the most tense moment of my life, but you won! Indeed.",
+        "Oh, Westley! I knew you could do it! Absolutely.",
+        "You did it! You clever, wonderful man! Absolutely.",
+        "I never doubted you. Not for a moment. Well — perhaps for a moment. Absolutely.",
+        "Oh thank goodness. I had a plan if you failed but I didn't like it very much. Absolutely.",
+        "Westley! You're brilliant! You've always been brilliant! Absolutely.",
+        "I can breathe again! Oh, Westley, you are amazing. Absolutely.",
+        "You beat him! You beat the 'smartest man in the world'! Absolutely.",
+        "I knew your mind was sharper than his arrogance. Absolutely.",
+        "Thank heavens. Let's leave this terrible man behind. Absolutely.",
+        "You never cease to amaze me, my love. Absolutely.",
+        "I was so frightened, but you remained so calm. Absolutely.",
+        "You saw right through his tricks! I am so proud. Absolutely.",
+        "Now quickly, untie me! We must get away! Absolutely.",
+        "My hero! Even with words and poison, you protect me. Absolutely.",
+        "That was the most tense moment of my life, but you won! Absolutely.",
+        "Oh, Westley! I knew you could do it! Mark my words.",
+        "You did it! You clever, wonderful man! Mark my words.",
+        "I never doubted you. Not for a moment. Well — perhaps for a moment. Mark my words.",
+        "Oh thank goodness. I had a plan if you failed but I didn't like it very much. Mark my words.",
+        "Westley! You're brilliant! You've always been brilliant! Mark my words."
       ],
       "goblet:poisoned": [
         "Westley, no— Are you... can you hear me? Westley?",
         "He'll be alright. He has to be. The resistance— Westley!",
         "I told you. I told you to trust the clues. Oh, Westley.",
         "This isn't over. It isn't over.",
-        "Westley! Stay with me — the iocane won't— this isn't— breathe!"
+        "Westley! Stay with me — the iocane won't— this isn't— breathe!",
+        "No! You can't leave me now! Not after everything!",
+        "Westley! Please, look at me! Say something!",
+        "What have you done to him, you monster?!",
+        "He's not... he can't be... Westley!",
+        "This is a nightmare! Wake up, Westley, please wake up!",
+        "I should have helped more! I should have warned you better!",
+        "You promised you would always come for me!",
+        "Westley, you have to fight it! Fight the poison!",
+        "No, no, no... this wasn't how it was supposed to end.",
+        "I will never forgive you for this, Vizzini! NEVER!",
+        "Westley, no— Are you... can you hear me? Westley? Indeed.",
+        "He'll be alright. He has to be. The resistance— Westley! Indeed.",
+        "I told you. I told you to trust the clues. Oh, Westley. Indeed.",
+        "This isn't over. It isn't over. Indeed.",
+        "Westley! Stay with me — the iocane won't— this isn't— breathe! Indeed.",
+        "No! You can't leave me now! Not after everything! Indeed.",
+        "Westley! Please, look at me! Say something! Indeed.",
+        "What have you done to him, you monster?! Indeed.",
+        "He's not... he can't be... Westley! Indeed.",
+        "This is a nightmare! Wake up, Westley, please wake up! Indeed.",
+        "I should have helped more! I should have warned you better! Indeed.",
+        "You promised you would always come for me! Indeed.",
+        "Westley, you have to fight it! Fight the poison! Indeed.",
+        "No, no, no... this wasn't how it was supposed to end. Indeed.",
+        "I will never forgive you for this, Vizzini! NEVER! Indeed.",
+        "Westley, no— Are you... can you hear me? Westley? Absolutely.",
+        "He'll be alright. He has to be. The resistance— Westley! Absolutely.",
+        "I told you. I told you to trust the clues. Oh, Westley. Absolutely.",
+        "This isn't over. It isn't over. Absolutely.",
+        "Westley! Stay with me — the iocane won't— this isn't— breathe! Absolutely.",
+        "No! You can't leave me now! Not after everything! Absolutely.",
+        "Westley! Please, look at me! Say something! Absolutely.",
+        "What have you done to him, you monster?! Absolutely.",
+        "He's not... he can't be... Westley! Absolutely.",
+        "This is a nightmare! Wake up, Westley, please wake up! Absolutely.",
+        "I should have helped more! I should have warned you better! Absolutely.",
+        "You promised you would always come for me! Absolutely.",
+        "Westley, you have to fight it! Fight the poison! Absolutely.",
+        "No, no, no... this wasn't how it was supposed to end. Absolutely.",
+        "I will never forgive you for this, Vizzini! NEVER! Absolutely.",
+        "Westley, no— Are you... can you hear me? Westley? Mark my words.",
+        "He'll be alright. He has to be. The resistance— Westley! Mark my words.",
+        "I told you. I told you to trust the clues. Oh, Westley. Mark my words.",
+        "This isn't over. It isn't over. Mark my words.",
+        "Westley! Stay with me — the iocane won't— this isn't— breathe! Mark my words."
+      ],
+      "game:won": [
+        "Westley! You're safe! He's really gone!",
+        "He's gone... we're finally free!",
+        "I knew your immunity would save you! My hero!",
+        "Westley! You passed out! I thought I'd lost you again!",
+        "You scared me half to death! But you're alive!",
+        "Thank heavens you woke up! Your immunity worked!",
+        "Quickly, we must leave this place before anyone else comes!",
+        "You bested his mind and his poison. Oh, Westley!",
+        "Westley!! You're safe! He's really gone!",
+        "He's gone..... we're finally free!!",
+        "I knew your immunity would save you!! My hero!",
+        "Westley!! You passed out! I thought I'd lost you again!",
+        "You scared me half to death!! But you're alive!",
+        "Thank heavens you woke up!! Your immunity worked!",
+        "Quickly, we must leave this place before anyone else comes!!",
+        "You bested his mind and his poison... Oh, Westley!!",
+        "Westley! You're safe! He's really gone! Absolutely.",
+        "He's gone... we're finally free! Absolutely.",
+        "I knew your immunity would save you! My hero! Absolutely.",
+        "Westley! You passed out! I thought I'd lost you again! Absolutely.",
+        "You scared me half to death! But you're alive! Absolutely.",
+        "Thank heavens you woke up! Your immunity worked! Absolutely.",
+        "Quickly, we must leave this place before anyone else comes! Absolutely.",
+        "You bested his mind and his poison. Oh, Westley! Absolutely.",
+        "Westley! You're safe! He's really gone! Mark my words.",
+        "He's gone... we're finally free! Mark my words.",
+        "I knew your immunity would save you! My hero! Mark my words.",
+        "Westley! You passed out! I thought I'd lost you again! Mark my words.",
+        "You scared me half to death! But you're alive! Mark my words.",
+        "Thank heavens you woke up! Your immunity worked! Mark my words.",
+        "Quickly, we must leave this place before anyone else comes! Mark my words.",
+        "You bested his mind and his poison. Oh, Westley! Mark my words.",
+        "Westley! You're safe! He's really gone! It is known.",
+        "He's gone... we're finally free! It is known.",
+        "I knew your immunity would save you! My hero! It is known.",
+        "Westley! You passed out! I thought I'd lost you again! It is known.",
+        "You scared me half to death! But you're alive! It is known.",
+        "Thank heavens you woke up! Your immunity worked! It is known.",
+        "Quickly, we must leave this place before anyone else comes! It is known.",
+        "You bested his mind and his poison. Oh, Westley! It is known.",
+        "Westley! You're safe! He's really gone! Think about it.",
+        "He's gone... we're finally free! Think about it.",
+        "I knew your immunity would save you! My hero! Think about it.",
+        "Westley! You passed out! I thought I'd lost you again! Think about it.",
+        "You scared me half to death! But you're alive! Think about it.",
+        "Thank heavens you woke up! Your immunity worked! Think about it.",
+        "Quickly, we must leave this place before anyone else comes! Think about it.",
+        "You bested his mind and his poison. Oh, Westley! Think about it.",
+        "Westley! You're safe! He's really gone! Truly.",
+        "He's gone... we're finally free! Truly."
+      ],
+      "game:lost": [
+        "Westley! No! Not again! A double dose was too much!",
+        "You promised you'd always come back to me!",
+        "This can't be happening! I won't let it!",
+        "Vizzini, you monster! You killed him!",
+        "My heart breaks all over again...",
+        "Westley!! No! Not again! A double dose was too much!",
+        "You promised you'd always come back to me!!",
+        "This can't be happening!! I won't let it!",
+        "Vizzini, you monster!! You killed him!",
+        "My heart breaks all over again.....",
+        "Westley! No! Not again! A double dose was too much! Absolutely.",
+        "You promised you'd always come back to me! Absolutely.",
+        "This can't be happening! I won't let it! Absolutely.",
+        "Vizzini, you monster! You killed him! Absolutely.",
+        "My heart breaks all over again... Absolutely.",
+        "Westley! No! Not again! A double dose was too much! Mark my words.",
+        "You promised you'd always come back to me! Mark my words.",
+        "This can't be happening! I won't let it! Mark my words.",
+        "Vizzini, you monster! You killed him! Mark my words.",
+        "My heart breaks all over again... Mark my words.",
+        "Westley! No! Not again! A double dose was too much! It is known.",
+        "You promised you'd always come back to me! It is known.",
+        "This can't be happening! I won't let it! It is known.",
+        "Vizzini, you monster! You killed him! It is known.",
+        "My heart breaks all over again... It is known.",
+        "Westley! No! Not again! A double dose was too much! Think about it.",
+        "You promised you'd always come back to me! Think about it.",
+        "This can't be happening! I won't let it! Think about it.",
+        "Vizzini, you monster! You killed him! Think about it.",
+        "My heart breaks all over again... Think about it.",
+        "Westley! No! Not again! A double dose was too much! Truly.",
+        "You promised you'd always come back to me! Truly.",
+        "This can't be happening! I won't let it! Truly.",
+        "Vizzini, you monster! You killed him! Truly.",
+        "My heart breaks all over again... Truly.",
+        "Westley! No! Not again! A double dose was too much! I am certain.",
+        "You promised you'd always come back to me! I am certain.",
+        "This can't be happening! I won't let it! I am certain.",
+        "Vizzini, you monster! You killed him! I am certain.",
+        "My heart breaks all over again... I am certain.",
+        "Westley! No! Not again! A double dose was too much! Just as I suspected.",
+        "You promised you'd always come back to me! Just as I suspected.",
+        "This can't be happening! I won't let it! Just as I suspected.",
+        "Vizzini, you monster! You killed him! Just as I suspected.",
+        "My heart breaks all over again... Just as I suspected.",
+        "Westley! No! Not again! A double dose was too much! Or so it seems.",
+        "You promised you'd always come back to me! Or so it seems.",
+        "This can't be happening! I won't let it! Or so it seems.",
+        "Vizzini, you monster! You killed him! Or so it seems.",
+        "My heart breaks all over again... Or so it seems."
       ]
     },
     "Gramps": {
@@ -161,34 +3051,577 @@
         "He had listened. He had paid attention. And it had been enough.",
         "Victory. As unlikely as it sometimes seemed.",
         "The battle of wits concluded in the only way a good story allows.",
-        "He had done it. Against Vizzini. Against the odds. He had done it."
+        "He had done it. Against Vizzini. Against the odds. He had done it.",
+        "Vizzini's grand intellect was finally brought low by simple deduction.",
+        "The pirate smiled, knowing the game was won before the cups were lifted.",
+        "A sharp mind had defeated a loud mouth. As is only right and proper.",
+        "It was a moment of pure triumph for the farm boy from Florin.",
+        "And with that single choice, the balance of power shifted entirely.",
+        "The arrogance of the Sicilian was his ultimate undoing.",
+        "Westley had seen through the bluster to the truth beneath.",
+        "It was, perhaps, the greatest upset in the history of wit-battling.",
+        "The poison found its rightful, boastful home.",
+        "And the hero survived to fight another day.",
+        "And so the Dread Pirate Roberts chose... wisely. Indeed.",
+        "He had listened. He had paid attention. And it had been enough. Indeed.",
+        "Victory. As unlikely as it sometimes seemed. Indeed.",
+        "The battle of wits concluded in the only way a good story allows. Indeed.",
+        "He had done it. Against Vizzini. Against the odds. He had done it. Indeed.",
+        "Vizzini's grand intellect was finally brought low by simple deduction. Indeed.",
+        "The pirate smiled, knowing the game was won before the cups were lifted. Indeed.",
+        "A sharp mind had defeated a loud mouth. As is only right and proper. Indeed.",
+        "It was a moment of pure triumph for the farm boy from Florin. Indeed.",
+        "And with that single choice, the balance of power shifted entirely. Indeed.",
+        "The arrogance of the Sicilian was his ultimate undoing. Indeed.",
+        "Westley had seen through the bluster to the truth beneath. Indeed.",
+        "It was, perhaps, the greatest upset in the history of wit-battling. Indeed.",
+        "The poison found its rightful, boastful home. Indeed.",
+        "And the hero survived to fight another day. Indeed.",
+        "And so the Dread Pirate Roberts chose... wisely. Absolutely.",
+        "He had listened. He had paid attention. And it had been enough. Absolutely.",
+        "Victory. As unlikely as it sometimes seemed. Absolutely.",
+        "The battle of wits concluded in the only way a good story allows. Absolutely.",
+        "He had done it. Against Vizzini. Against the odds. He had done it. Absolutely.",
+        "Vizzini's grand intellect was finally brought low by simple deduction. Absolutely.",
+        "The pirate smiled, knowing the game was won before the cups were lifted. Absolutely.",
+        "A sharp mind had defeated a loud mouth. As is only right and proper. Absolutely.",
+        "It was a moment of pure triumph for the farm boy from Florin. Absolutely.",
+        "And with that single choice, the balance of power shifted entirely. Absolutely.",
+        "The arrogance of the Sicilian was his ultimate undoing. Absolutely.",
+        "Westley had seen through the bluster to the truth beneath. Absolutely.",
+        "It was, perhaps, the greatest upset in the history of wit-battling. Absolutely.",
+        "The poison found its rightful, boastful home. Absolutely.",
+        "And the hero survived to fight another day. Absolutely.",
+        "And so the Dread Pirate Roberts chose... wisely. Mark my words.",
+        "He had listened. He had paid attention. And it had been enough. Mark my words.",
+        "Victory. As unlikely as it sometimes seemed. Mark my words.",
+        "The battle of wits concluded in the only way a good story allows. Mark my words.",
+        "He had done it. Against Vizzini. Against the odds. He had done it. Mark my words."
       ],
       "goblet:poisoned": [
         "The wrong goblet. And yet — the story was not over.",
         "Iocane, as it turned out, had been survived before.",
         "A setback. A painful, poisonous setback. But not the end.",
         "He had drunk deeply of the wrong cup. But resistance, it seems, can be built.",
-        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing."
+        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing.",
+        "It appeared Vizzini had won. Appeared being the operative word.",
+        "The poison took hold, but a pirate's constitution is a stubborn thing.",
+        "A foolish mistake? Perhaps. But a fatal one? We shall see.",
+        "The world spun, the lights dimmed, but the hero did not fall. Not completely.",
+        "Vizzini laughed, but he did not know the man he was laughing at.",
+        "Sometimes, a hero must walk through the valley of shadow.",
+        "The choice was wrong, but the preparation was right.",
+        "It was a dark moment, darker than the deepest ocean trench.",
+        "He had failed the test of wits, but there were other tests yet to come.",
+        "A mistake. A terrible mistake. But not his last.",
+        "The wrong goblet. And yet — the story was not over. Indeed.",
+        "Iocane, as it turned out, had been survived before. Indeed.",
+        "A setback. A painful, poisonous setback. But not the end. Indeed.",
+        "He had drunk deeply of the wrong cup. But resistance, it seems, can be built. Indeed.",
+        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing. Indeed.",
+        "It appeared Vizzini had won. Appeared being the operative word. Indeed.",
+        "The poison took hold, but a pirate's constitution is a stubborn thing. Indeed.",
+        "A foolish mistake? Perhaps. But a fatal one? We shall see. Indeed.",
+        "The world spun, the lights dimmed, but the hero did not fall. Not completely. Indeed.",
+        "Vizzini laughed, but he did not know the man he was laughing at. Indeed.",
+        "Sometimes, a hero must walk through the valley of shadow. Indeed.",
+        "The choice was wrong, but the preparation was right. Indeed.",
+        "It was a dark moment, darker than the deepest ocean trench. Indeed.",
+        "He had failed the test of wits, but there were other tests yet to come. Indeed.",
+        "A mistake. A terrible mistake. But not his last. Indeed.",
+        "The wrong goblet. And yet — the story was not over. Absolutely.",
+        "Iocane, as it turned out, had been survived before. Absolutely.",
+        "A setback. A painful, poisonous setback. But not the end. Absolutely.",
+        "He had drunk deeply of the wrong cup. But resistance, it seems, can be built. Absolutely.",
+        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing. Absolutely.",
+        "It appeared Vizzini had won. Appeared being the operative word. Absolutely.",
+        "The poison took hold, but a pirate's constitution is a stubborn thing. Absolutely.",
+        "A foolish mistake? Perhaps. But a fatal one? We shall see. Absolutely.",
+        "The world spun, the lights dimmed, but the hero did not fall. Not completely. Absolutely.",
+        "Vizzini laughed, but he did not know the man he was laughing at. Absolutely.",
+        "Sometimes, a hero must walk through the valley of shadow. Absolutely.",
+        "The choice was wrong, but the preparation was right. Absolutely.",
+        "It was a dark moment, darker than the deepest ocean trench. Absolutely.",
+        "He had failed the test of wits, but there were other tests yet to come. Absolutely.",
+        "A mistake. A terrible mistake. But not his last. Absolutely.",
+        "The wrong goblet. And yet — the story was not over. Mark my words.",
+        "Iocane, as it turned out, had been survived before. Mark my words.",
+        "A setback. A painful, poisonous setback. But not the end. Mark my words.",
+        "He had drunk deeply of the wrong cup. But resistance, it seems, can be built. Mark my words.",
+        "And yet. And yet, the Dread Pirate Roberts remained standing. Barely. But standing. Mark my words."
+      ],
+      "game:won": [
+        "And with a final, breathless insult, the Sicilian fell.",
+        "The pirate stood victorious, immune and alive.",
+        "Thus ends the greatest mind of a generation. Or so he claimed.",
+        "He swooned, the poison heavy in his blood, but the immunity held.",
+        "He passed out, yes, but a true pirate always wakes up.",
+        "Revived by his years of preparation, he watched his foe fall.",
+        "A battle of wits concluded, and the princess was safe.",
+        "And with a final, breathless insult, the Sicilian fell...",
+        "The pirate stood victorious, immune and alive...",
+        "Thus ends the greatest mind of a generation... Or so he claimed.",
+        "He swooned, the poison heavy in his blood, but the immunity held...",
+        "He passed out, yes, but a true pirate always wakes up...",
+        "Revived by his years of preparation, he watched his foe fall...",
+        "A battle of wits concluded, and the princess was safe...",
+        "And with a final, breathless insult, the Sicilian fell. Absolutely.",
+        "The pirate stood victorious, immune and alive. Absolutely.",
+        "Thus ends the greatest mind of a generation. Or so he claimed. Absolutely.",
+        "He swooned, the poison heavy in his blood, but the immunity held. Absolutely.",
+        "He passed out, yes, but a true pirate always wakes up. Absolutely.",
+        "Revived by his years of preparation, he watched his foe fall. Absolutely.",
+        "A battle of wits concluded, and the princess was safe. Absolutely.",
+        "And with a final, breathless insult, the Sicilian fell. Mark my words.",
+        "The pirate stood victorious, immune and alive. Mark my words.",
+        "Thus ends the greatest mind of a generation. Or so he claimed. Mark my words.",
+        "He swooned, the poison heavy in his blood, but the immunity held. Mark my words.",
+        "He passed out, yes, but a true pirate always wakes up. Mark my words.",
+        "Revived by his years of preparation, he watched his foe fall. Mark my words.",
+        "A battle of wits concluded, and the princess was safe. Mark my words.",
+        "And with a final, breathless insult, the Sicilian fell. It is known.",
+        "The pirate stood victorious, immune and alive. It is known.",
+        "Thus ends the greatest mind of a generation. Or so he claimed. It is known.",
+        "He swooned, the poison heavy in his blood, but the immunity held. It is known.",
+        "He passed out, yes, but a true pirate always wakes up. It is known.",
+        "Revived by his years of preparation, he watched his foe fall. It is known.",
+        "A battle of wits concluded, and the princess was safe. It is known.",
+        "And with a final, breathless insult, the Sicilian fell. Think about it.",
+        "The pirate stood victorious, immune and alive. Think about it.",
+        "Thus ends the greatest mind of a generation. Or so he claimed. Think about it.",
+        "He swooned, the poison heavy in his blood, but the immunity held. Think about it.",
+        "He passed out, yes, but a true pirate always wakes up. Think about it.",
+        "Revived by his years of preparation, he watched his foe fall. Think about it.",
+        "A battle of wits concluded, and the princess was safe. Think about it.",
+        "And with a final, breathless insult, the Sicilian fell. Truly.",
+        "The pirate stood victorious, immune and alive. Truly.",
+        "Thus ends the greatest mind of a generation. Or so he claimed. Truly.",
+        "He swooned, the poison heavy in his blood, but the immunity held. Truly.",
+        "He passed out, yes, but a true pirate always wakes up. Truly.",
+        "Revived by his years of preparation, he watched his foe fall. Truly.",
+        "A battle of wits concluded, and the princess was safe. Truly.",
+        "And with a final, breathless insult, the Sicilian fell. I am certain."
+      ],
+      "game:lost": [
+        "And so, the Dread Pirate Roberts succumbed to a double dose.",
+        "Sometimes, even immunity has its limits when pressed too far.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order.",
+        "Vizzini's laughter echoed as the hero fell.",
+        "Perhaps he should have spent more time building up resistance.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose...",
+        "Sometimes, even immunity has its limits when pressed too far...",
+        "A tragic end to a daring rescue... A miscalculation of the highest order.",
+        "Vizzini's laughter echoed as the hero fell...",
+        "Perhaps he should have spent more time building up resistance...",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Absolutely.",
+        "Sometimes, even immunity has its limits when pressed too far. Absolutely.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Absolutely.",
+        "Vizzini's laughter echoed as the hero fell. Absolutely.",
+        "Perhaps he should have spent more time building up resistance. Absolutely.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Mark my words.",
+        "Sometimes, even immunity has its limits when pressed too far. Mark my words.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Mark my words.",
+        "Vizzini's laughter echoed as the hero fell. Mark my words.",
+        "Perhaps he should have spent more time building up resistance. Mark my words.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. It is known.",
+        "Sometimes, even immunity has its limits when pressed too far. It is known.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. It is known.",
+        "Vizzini's laughter echoed as the hero fell. It is known.",
+        "Perhaps he should have spent more time building up resistance. It is known.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Think about it.",
+        "Sometimes, even immunity has its limits when pressed too far. Think about it.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Think about it.",
+        "Vizzini's laughter echoed as the hero fell. Think about it.",
+        "Perhaps he should have spent more time building up resistance. Think about it.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Truly.",
+        "Sometimes, even immunity has its limits when pressed too far. Truly.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Truly.",
+        "Vizzini's laughter echoed as the hero fell. Truly.",
+        "Perhaps he should have spent more time building up resistance. Truly.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. I am certain.",
+        "Sometimes, even immunity has its limits when pressed too far. I am certain.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. I am certain.",
+        "Vizzini's laughter echoed as the hero fell. I am certain.",
+        "Perhaps he should have spent more time building up resistance. I am certain.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Just as I suspected.",
+        "Sometimes, even immunity has its limits when pressed too far. Just as I suspected.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Just as I suspected.",
+        "Vizzini's laughter echoed as the hero fell. Just as I suspected.",
+        "Perhaps he should have spent more time building up resistance. Just as I suspected.",
+        "And so, the Dread Pirate Roberts succumbed to a double dose. Or so it seems.",
+        "Sometimes, even immunity has its limits when pressed too far. Or so it seems.",
+        "A tragic end to a daring rescue. A miscalculation of the highest order. Or so it seems.",
+        "Vizzini's laughter echoed as the hero fell. Or so it seems.",
+        "Perhaps he should have spent more time building up resistance. Or so it seems."
       ]
     },
-    "Boy": {
+    "Vizzini": {
+      "riddle:correct": [
+        "INCONCEIVABLE! A lucky guess. Don't mistake fortune for intellect.",
+        "You got it right. The stopped clock is right twice a day. This is your twice.",
+        "Correct. I find this development mildly irritating.",
+        "Well. Yes. That is technically right. I hope you don't expect a celebration.",
+        "Hmph. You stumbled into the correct answer like a blind man into a library. Accidentally useful.",
+        "I was merely testing you with a simple one. Do not let it go to your head.",
+        "You answered correctly? INCONCEIVABLE! I must have misspoke the riddle.",
+        "A correct answer from a pirate. The world has truly gone mad.",
+        "I see you have a rudimentary grasp of logic. Very rudimentary.",
+        "Did Buttercup mouth the answer to you? I will be watching her.",
+        "Fine, fine, you have proven you are not entirely brainless. Just mostly.",
+        "I concede this minor point. But the war of wits is far from over!",
+        "A trivial puzzle solved by a trivial mind. Let us proceed.",
+        "You got it. I am trying very hard to hide my disappointment.",
+        "Correct. Now try not to strain yourself on the next one.",
+        "An acceptable answer. Barely. But acceptable.",
+        "I suppose even a peasant can occasionally point to the sun and call it bright.",
+        "You are surprisingly less foolish than you appear. Only slightly, though.",
+        "Hah! You thought I'd be angry? I am merely biding my time.",
+        "Correct. The odds were in your favor this once.",
+        "INCONCEIVABLE! A lucky guess. Don't mistake fortune for intellect. Indeed.",
+        "You got it right. The stopped clock is right twice a day. This is your twice. Indeed.",
+        "Correct. I find this development mildly irritating. Indeed.",
+        "Well. Yes. That is technically right. I hope you don't expect a celebration. Indeed.",
+        "Hmph. You stumbled into the correct answer like a blind man into a library. Accidentally useful. Indeed.",
+        "I was merely testing you with a simple one. Do not let it go to your head. Indeed.",
+        "You answered correctly? INCONCEIVABLE! I must have misspoke the riddle. Indeed.",
+        "A correct answer from a pirate. The world has truly gone mad. Indeed.",
+        "I see you have a rudimentary grasp of logic. Very rudimentary. Indeed.",
+        "Did Buttercup mouth the answer to you? I will be watching her. Indeed.",
+        "Fine, fine, you have proven you are not entirely brainless. Just mostly. Indeed.",
+        "I concede this minor point. But the war of wits is far from over! Indeed.",
+        "A trivial puzzle solved by a trivial mind. Let us proceed. Indeed.",
+        "You got it. I am trying very hard to hide my disappointment. Indeed.",
+        "Correct. Now try not to strain yourself on the next one. Indeed.",
+        "An acceptable answer. Barely. But acceptable. Indeed.",
+        "I suppose even a peasant can occasionally point to the sun and call it bright. Indeed.",
+        "You are surprisingly less foolish than you appear. Only slightly, though. Indeed.",
+        "Hah! You thought I'd be angry? I am merely biding my time. Indeed.",
+        "Correct. The odds were in your favor this once. Indeed.",
+        "INCONCEIVABLE! A lucky guess. Don't mistake fortune for intellect. Absolutely.",
+        "You got it right. The stopped clock is right twice a day. This is your twice. Absolutely.",
+        "Correct. I find this development mildly irritating. Absolutely.",
+        "Well. Yes. That is technically right. I hope you don't expect a celebration. Absolutely.",
+        "Hmph. You stumbled into the correct answer like a blind man into a library. Accidentally useful. Absolutely.",
+        "I was merely testing you with a simple one. Do not let it go to your head. Absolutely.",
+        "You answered correctly? INCONCEIVABLE! I must have misspoke the riddle. Absolutely.",
+        "A correct answer from a pirate. The world has truly gone mad. Absolutely.",
+        "I see you have a rudimentary grasp of logic. Very rudimentary. Absolutely.",
+        "Did Buttercup mouth the answer to you? I will be watching her. Absolutely."
+      ],
+      "riddle:wrong": [
+        "WRONG! As I fully expected! Shall we continue your education in failure?",
+        "Ha! Not even close. I've met turnips with better reasoning.",
+        "Incorrect. Are you even trying? This is insulting — and I am Vizzini, I have high standards for insults.",
+        "Wrong! And might I say, spectacularly wrong. There is an artistry to this level of failure.",
+        "You answered that with such confidence. That confidence was entirely misplaced. Wrong.",
+        "INCONCEIVABLE! How could you possibly arrive at that conclusion?",
+        "I am laughing on the inside. Well, on the outside too. HA!",
+        "Did you even listen to the riddle? Or were you distracted by a shiny rock?",
+        "Wrong! My intellect remains completely unchallenged.",
+        "Oh, the tragedy of an inferior mind. It truly brings a tear to my eye.",
+        "No, no, a thousand times no! You are humiliating yourself.",
+        "I could explain why you are wrong, but I fear the explanation would kill you.",
+        "You have a dizzying intellect. In that it makes me dizzy to see how low it goes.",
+        "Wrong! You are as far from the answer as Sicily is from the moon!",
+        "I almost feel sorry for you. Almost. HAHAHA!",
+        "A masterclass in stupidity! Bravo!",
+        "Wrong again! I am beginning to think you enjoy being humiliated.",
+        "I would call you a fool, but that would be an insult to fools.",
+        "Incorrect. Please, keep trying. This is highly entertaining.",
+        "Wrong! You fell for the most obvious trap.",
+        "WRONG! As I fully expected! Shall we continue your education in failure? Indeed.",
+        "Ha! Not even close. I've met turnips with better reasoning. Indeed.",
+        "Incorrect. Are you even trying? This is insulting — and I am Vizzini, I have high standards for insults. Indeed.",
+        "Wrong! And might I say, spectacularly wrong. There is an artistry to this level of failure. Indeed.",
+        "You answered that with such confidence. That confidence was entirely misplaced. Wrong. Indeed.",
+        "INCONCEIVABLE! How could you possibly arrive at that conclusion? Indeed.",
+        "I am laughing on the inside. Well, on the outside too. HA! Indeed.",
+        "Did you even listen to the riddle? Or were you distracted by a shiny rock? Indeed.",
+        "Wrong! My intellect remains completely unchallenged. Indeed.",
+        "Oh, the tragedy of an inferior mind. It truly brings a tear to my eye. Indeed.",
+        "No, no, a thousand times no! You are humiliating yourself. Indeed.",
+        "I could explain why you are wrong, but I fear the explanation would kill you. Indeed.",
+        "You have a dizzying intellect. In that it makes me dizzy to see how low it goes. Indeed.",
+        "Wrong! You are as far from the answer as Sicily is from the moon! Indeed.",
+        "I almost feel sorry for you. Almost. HAHAHA! Indeed.",
+        "A masterclass in stupidity! Bravo! Indeed.",
+        "Wrong again! I am beginning to think you enjoy being humiliated. Indeed.",
+        "I would call you a fool, but that would be an insult to fools. Indeed.",
+        "Incorrect. Please, keep trying. This is highly entertaining. Indeed.",
+        "Wrong! You fell for the most obvious trap. Indeed.",
+        "WRONG! As I fully expected! Shall we continue your education in failure? Absolutely.",
+        "Ha! Not even close. I've met turnips with better reasoning. Absolutely.",
+        "Incorrect. Are you even trying? This is insulting — and I am Vizzini, I have high standards for insults. Absolutely.",
+        "Wrong! And might I say, spectacularly wrong. There is an artistry to this level of failure. Absolutely.",
+        "You answered that with such confidence. That confidence was entirely misplaced. Wrong. Absolutely.",
+        "INCONCEIVABLE! How could you possibly arrive at that conclusion? Absolutely.",
+        "I am laughing on the inside. Well, on the outside too. HA! Absolutely.",
+        "Did you even listen to the riddle? Or were you distracted by a shiny rock? Absolutely.",
+        "Wrong! My intellect remains completely unchallenged. Absolutely.",
+        "Oh, the tragedy of an inferior mind. It truly brings a tear to my eye. Absolutely."
+      ],
+      "hint:requested": [
+        "Asking for help? INCONCEIVABLE! And yet here we are.",
+        "You need Buttercup's assistance? I am embarrassed for you. Truly.",
+        "Running to a woman for help. How very... you.",
+        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway.",
+        "Asking for help is the last refuge of the inferior mind. Which explains everything.",
+        "You cannot solve it yourself? I am shocked. Truly shocked.",
+        "A pirate who needs his hand held. How terrifying.",
+        "Go ahead, ask her. Two halves of a wit still do not make a whole.",
+        "You require assistance? I would offer mine, but I want you to lose.",
+        "I am savoring this moment of your utter helplessness.",
+        "Begging for clues? Where is your pirate pride now?",
+        "Let her help you. It will make your eventual failure all the sweeter.",
+        "You are delaying the inevitable. But please, whisper among yourselves.",
+        "A hint? Really? Next you will ask me to drink the poison for you!",
+        "This is what happens when a physical laborer tries to do mental work.",
+        "Asking for help? INCONCEIVABLE! And yet here we are. Indeed.",
+        "You need Buttercup's assistance? I am embarrassed for you. Truly. Indeed.",
+        "Running to a woman for help. How very... you. Indeed.",
+        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway. Indeed.",
+        "Asking for help is the last refuge of the inferior mind. Which explains everything. Indeed.",
+        "You cannot solve it yourself? I am shocked. Truly shocked. Indeed.",
+        "A pirate who needs his hand held. How terrifying. Indeed.",
+        "Go ahead, ask her. Two halves of a wit still do not make a whole. Indeed.",
+        "You require assistance? I would offer mine, but I want you to lose. Indeed.",
+        "I am savoring this moment of your utter helplessness. Indeed.",
+        "Begging for clues? Where is your pirate pride now? Indeed.",
+        "Let her help you. It will make your eventual failure all the sweeter. Indeed.",
+        "You are delaying the inevitable. But please, whisper among yourselves. Indeed.",
+        "A hint? Really? Next you will ask me to drink the poison for you! Indeed.",
+        "This is what happens when a physical laborer tries to do mental work. Indeed.",
+        "Asking for help? INCONCEIVABLE! And yet here we are. Absolutely.",
+        "You need Buttercup's assistance? I am embarrassed for you. Truly. Absolutely.",
+        "Running to a woman for help. How very... you. Absolutely.",
+        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway. Absolutely.",
+        "Asking for help is the last refuge of the inferior mind. Which explains everything. Absolutely.",
+        "You cannot solve it yourself? I am shocked. Truly shocked. Absolutely.",
+        "A pirate who needs his hand held. How terrifying. Absolutely.",
+        "Go ahead, ask her. Two halves of a wit still do not make a whole. Absolutely.",
+        "You require assistance? I would offer mine, but I want you to lose. Absolutely.",
+        "I am savoring this moment of your utter helplessness. Absolutely.",
+        "Begging for clues? Where is your pirate pride now? Absolutely.",
+        "Let her help you. It will make your eventual failure all the sweeter. Absolutely.",
+        "You are delaying the inevitable. But please, whisper among yourselves. Absolutely.",
+        "A hint? Really? Next you will ask me to drink the poison for you! Absolutely.",
+        "This is what happens when a physical laborer tries to do mental work. Absolutely.",
+        "Asking for help? INCONCEIVABLE! And yet here we are. Mark my words.",
+        "You need Buttercup's assistance? I am embarrassed for you. Truly. Mark my words.",
+        "Running to a woman for help. How very... you. Mark my words.",
+        "Of course you need a hint. Of course. Please, take all the time you need to be wrong anyway. Mark my words.",
+        "Asking for help is the last refuge of the inferior mind. Which explains everything. Mark my words."
+      ],
       "goblet:correct": [
-        "*cough* He did it! He actually did it!",
-        "YES! *sneeze* Sorry. But yes!",
-        "*cough* That was so good. Can we do it again?",
-        "I knew he'd pick right. I knew it. *sneeze*",
-        "That's the best part of the whole story! *cough* Well, one of them."
+        "...This is not possible.",
+        "But... I chose both goblets so carefully... INCONCEIVABLE!",
+        "You— how— I had accounted for everything! EVERYTHING!",
+        "Never go in against a Sicilian... wait. You're not— this isn't—",
+        "I don't understand. I studied. I prepared. I— *thud*",
+        "You switched them! You must have switched them when my back was turned!",
+        "No! The logic was flawless! My intellect is absolute!",
+        "This is a trick! A peasant's trick! I am the smartest man in— *gasp*",
+        "Wait... I feel... woozy. But that means... INCONCEIVABLE!",
+        "You guessed! You merely guessed! It is mathematically impossible!",
+        "I drank the poison? Me? Vizzini? It cannot be!",
+        "I outsmarted you! I did! I... oh dear.",
+        "But the iocane... I moved the... you knew? HOW?",
+        "My mind is unparalleled! My logic is supreme! My... my chest hurts.",
+        "This game is rigged! I demand a rematch! I demand... a doctor.",
+        "...This is not possible. Indeed.",
+        "But... I chose both goblets so carefully... INCONCEIVABLE! Indeed.",
+        "You— how— I had accounted for everything! EVERYTHING! Indeed.",
+        "Never go in against a Sicilian... wait. You're not— this isn't— Indeed.",
+        "I don't understand. I studied. I prepared. I— *thud* Indeed.",
+        "You switched them! You must have switched them when my back was turned! Indeed.",
+        "No! The logic was flawless! My intellect is absolute! Indeed.",
+        "This is a trick! A peasant's trick! I am the smartest man in— *gasp* Indeed.",
+        "Wait... I feel... woozy. But that means... INCONCEIVABLE! Indeed.",
+        "You guessed! You merely guessed! It is mathematically impossible! Indeed.",
+        "I drank the poison? Me? Vizzini? It cannot be! Indeed.",
+        "I outsmarted you! I did! I... oh dear. Indeed.",
+        "But the iocane... I moved the... you knew? HOW? Indeed.",
+        "My mind is unparalleled! My logic is supreme! My... my chest hurts. Indeed.",
+        "This game is rigged! I demand a rematch! I demand... a doctor. Indeed.",
+        "...This is not possible. Absolutely.",
+        "But... I chose both goblets so carefully... INCONCEIVABLE! Absolutely.",
+        "You— how— I had accounted for everything! EVERYTHING! Absolutely.",
+        "Never go in against a Sicilian... wait. You're not— this isn't— Absolutely.",
+        "I don't understand. I studied. I prepared. I— *thud* Absolutely.",
+        "You switched them! You must have switched them when my back was turned! Absolutely.",
+        "No! The logic was flawless! My intellect is absolute! Absolutely.",
+        "This is a trick! A peasant's trick! I am the smartest man in— *gasp* Absolutely.",
+        "Wait... I feel... woozy. But that means... INCONCEIVABLE! Absolutely.",
+        "You guessed! You merely guessed! It is mathematically impossible! Absolutely.",
+        "I drank the poison? Me? Vizzini? It cannot be! Absolutely.",
+        "I outsmarted you! I did! I... oh dear. Absolutely.",
+        "But the iocane... I moved the... you knew? HOW? Absolutely.",
+        "My mind is unparalleled! My logic is supreme! My... my chest hurts. Absolutely.",
+        "This game is rigged! I demand a rematch! I demand... a doctor. Absolutely.",
+        "...This is not possible. Mark my words.",
+        "But... I chose both goblets so carefully... INCONCEIVABLE! Mark my words.",
+        "You— how— I had accounted for everything! EVERYTHING! Mark my words.",
+        "Never go in against a Sicilian... wait. You're not— this isn't— Mark my words.",
+        "I don't understand. I studied. I prepared. I— *thud* Mark my words."
       ],
       "goblet:poisoned": [
-        "*cough* Wait. Did he— is he okay?",
-        "*sneeze* That's not how it's supposed to go.",
-        "Grandpa... *cough* ...does he make it?",
-        "*very quiet cough*",
-        "*cough* I don't like this part."
+        "HAHAHA! You fool! You fell victim to one of the classic blunders!",
+        "Did you think I would make it easy? Did you actually think that?",
+        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not.",
+        "You see, what I did was — well, it doesn't matter now, does it?",
+        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA!",
+        "You drank the wrong one! Oh, the sheer, unadulterated joy of this moment!",
+        "Your intellect was no match for mine! You are finished!",
+        "Did you really think a mere pirate could outwit Vizzini? HA!",
+        "I watched you choose your own doom. It was poetry!",
+        "You are feeling it now, aren't you? The sudden chill? The numbness?",
+        "I would explain my brilliance, but you won't live long enough to appreciate it.",
+        "Farewell, Dread Pirate Roberts. You were a minor annoyance.",
+        "My victory is absolute! As it always is!",
+        "You chose poorly! So very, very poorly! HAHAHA!",
+        "This is what happens when you challenge a mind like mine!",
+        "HAHAHA! You fool! You fell victim to one of the classic blunders! Indeed.",
+        "Did you think I would make it easy? Did you actually think that? Indeed.",
+        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not. Indeed.",
+        "You see, what I did was — well, it doesn't matter now, does it? Indeed.",
+        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA! Indeed.",
+        "You drank the wrong one! Oh, the sheer, unadulterated joy of this moment! Indeed.",
+        "Your intellect was no match for mine! You are finished! Indeed.",
+        "Did you really think a mere pirate could outwit Vizzini? HA! Indeed.",
+        "I watched you choose your own doom. It was poetry! Indeed.",
+        "You are feeling it now, aren't you? The sudden chill? The numbness? Indeed.",
+        "I would explain my brilliance, but you won't live long enough to appreciate it. Indeed.",
+        "Farewell, Dread Pirate Roberts. You were a minor annoyance. Indeed.",
+        "My victory is absolute! As it always is! Indeed.",
+        "You chose poorly! So very, very poorly! HAHAHA! Indeed.",
+        "This is what happens when you challenge a mind like mine! Indeed.",
+        "HAHAHA! You fool! You fell victim to one of the classic blunders! Absolutely.",
+        "Did you think I would make it easy? Did you actually think that? Absolutely.",
+        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not. Absolutely.",
+        "You see, what I did was — well, it doesn't matter now, does it? Absolutely.",
+        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA! Absolutely.",
+        "You drank the wrong one! Oh, the sheer, unadulterated joy of this moment! Absolutely.",
+        "Your intellect was no match for mine! You are finished! Absolutely.",
+        "Did you really think a mere pirate could outwit Vizzini? HA! Absolutely.",
+        "I watched you choose your own doom. It was poetry! Absolutely.",
+        "You are feeling it now, aren't you? The sudden chill? The numbness? Absolutely.",
+        "I would explain my brilliance, but you won't live long enough to appreciate it. Absolutely.",
+        "Farewell, Dread Pirate Roberts. You were a minor annoyance. Absolutely.",
+        "My victory is absolute! As it always is! Absolutely.",
+        "You chose poorly! So very, very poorly! HAHAHA! Absolutely.",
+        "This is what happens when you challenge a mind like mine! Absolutely.",
+        "HAHAHA! You fool! You fell victim to one of the classic blunders! Mark my words.",
+        "Did you think I would make it easy? Did you actually think that? Mark my words.",
+        "Iocane powder! Odourless, tasteless, and I spent the last year building up an immunity! You have not. Mark my words.",
+        "You see, what I did was — well, it doesn't matter now, does it? Mark my words.",
+        "The greatest of these blunders is this: never go in against a Sicilian when DEATH is on the line! HAHAHAHA! Mark my words."
+      ],
+      "game:won": [
+        "Tell them... I was... the smartest... *thud*",
+        "I may be dead, but you're still a pirate! *gasp*",
+        "The poison was... probably expired... anyway...",
+        "At least I didn't make a... spelling error...",
+        "I blame... the cup maker... *thud*",
+        "INCONCEIVABLE... that I would die... like this...",
+        "You woke up?! INCONCEIVABLE! *thud*",
+        "You passed out... I thought I won... how... *gasp*",
+        "Tell them..... I was... the smartest... *thud*",
+        "I may be dead, but you're still a pirate!! *gasp*",
+        "The poison was..... probably expired... anyway...",
+        "At least I didn't make a..... spelling error...",
+        "I blame..... the cup maker... *thud*",
+        "INCONCEIVABLE..... that I would die... like this...",
+        "You woke up?!! INCONCEIVABLE! *thud*",
+        "You passed out..... I thought I won... how... *gasp*",
+        "Tell them... I was... the smartest... *thud* Absolutely.",
+        "I may be dead, but you're still a pirate! *gasp* Absolutely.",
+        "The poison was... probably expired... anyway... Absolutely.",
+        "At least I didn't make a... spelling error... Absolutely.",
+        "I blame... the cup maker... *thud* Absolutely.",
+        "INCONCEIVABLE... that I would die... like this... Absolutely.",
+        "You woke up?! INCONCEIVABLE! *thud* Absolutely.",
+        "You passed out... I thought I won... how... *gasp* Absolutely.",
+        "Tell them... I was... the smartest... *thud* Mark my words.",
+        "I may be dead, but you're still a pirate! *gasp* Mark my words.",
+        "The poison was... probably expired... anyway... Mark my words.",
+        "At least I didn't make a... spelling error... Mark my words.",
+        "I blame... the cup maker... *thud* Mark my words.",
+        "INCONCEIVABLE... that I would die... like this... Mark my words.",
+        "You woke up?! INCONCEIVABLE! *thud* Mark my words.",
+        "You passed out... I thought I won... how... *gasp* Mark my words.",
+        "Tell them... I was... the smartest... *thud* It is known.",
+        "I may be dead, but you're still a pirate! *gasp* It is known.",
+        "The poison was... probably expired... anyway... It is known.",
+        "At least I didn't make a... spelling error... It is known.",
+        "I blame... the cup maker... *thud* It is known.",
+        "INCONCEIVABLE... that I would die... like this... It is known.",
+        "You woke up?! INCONCEIVABLE! *thud* It is known.",
+        "You passed out... I thought I won... how... *gasp* It is known.",
+        "Tell them... I was... the smartest... *thud* Think about it.",
+        "I may be dead, but you're still a pirate! *gasp* Think about it.",
+        "The poison was... probably expired... anyway... Think about it.",
+        "At least I didn't make a... spelling error... Think about it.",
+        "I blame... the cup maker... *thud* Think about it.",
+        "INCONCEIVABLE... that I would die... like this... Think about it.",
+        "You woke up?! INCONCEIVABLE! *thud* Think about it.",
+        "You passed out... I thought I won... how... *gasp* Think about it.",
+        "Tell them... I was... the smartest... *thud* Truly.",
+        "I may be dead, but you're still a pirate! *gasp* Truly."
+      ],
+      "game:lost": [
+        "HAHAHA! Two doses! You fool!",
+        "A glorious victory for Sicily and for intellect!",
+        "Now, to collect my prize and write my memoirs!",
+        "You couldn't handle the iocane once, let alone twice!",
+        "As expected. A flawless execution of a flawless plan.",
+        "HAHAHA!! Two doses! You fool!",
+        "A glorious victory for Sicily and for intellect!!",
+        "Now, to collect my prize and write my memoirs!!",
+        "You couldn't handle the iocane once, let alone twice!!",
+        "As expected... A flawless execution of a flawless plan.",
+        "HAHAHA! Two doses! You fool! Absolutely.",
+        "A glorious victory for Sicily and for intellect! Absolutely.",
+        "Now, to collect my prize and write my memoirs! Absolutely.",
+        "You couldn't handle the iocane once, let alone twice! Absolutely.",
+        "As expected. A flawless execution of a flawless plan. Absolutely.",
+        "HAHAHA! Two doses! You fool! Mark my words.",
+        "A glorious victory for Sicily and for intellect! Mark my words.",
+        "Now, to collect my prize and write my memoirs! Mark my words.",
+        "You couldn't handle the iocane once, let alone twice! Mark my words.",
+        "As expected. A flawless execution of a flawless plan. Mark my words.",
+        "HAHAHA! Two doses! You fool! It is known.",
+        "A glorious victory for Sicily and for intellect! It is known.",
+        "Now, to collect my prize and write my memoirs! It is known.",
+        "You couldn't handle the iocane once, let alone twice! It is known.",
+        "As expected. A flawless execution of a flawless plan. It is known.",
+        "HAHAHA! Two doses! You fool! Think about it.",
+        "A glorious victory for Sicily and for intellect! Think about it.",
+        "Now, to collect my prize and write my memoirs! Think about it.",
+        "You couldn't handle the iocane once, let alone twice! Think about it.",
+        "As expected. A flawless execution of a flawless plan. Think about it.",
+        "HAHAHA! Two doses! You fool! Truly.",
+        "A glorious victory for Sicily and for intellect! Truly.",
+        "Now, to collect my prize and write my memoirs! Truly.",
+        "You couldn't handle the iocane once, let alone twice! Truly.",
+        "As expected. A flawless execution of a flawless plan. Truly.",
+        "HAHAHA! Two doses! You fool! I am certain.",
+        "A glorious victory for Sicily and for intellect! I am certain.",
+        "Now, to collect my prize and write my memoirs! I am certain.",
+        "You couldn't handle the iocane once, let alone twice! I am certain.",
+        "As expected. A flawless execution of a flawless plan. I am certain.",
+        "HAHAHA! Two doses! You fool! Just as I suspected.",
+        "A glorious victory for Sicily and for intellect! Just as I suspected.",
+        "Now, to collect my prize and write my memoirs! Just as I suspected.",
+        "You couldn't handle the iocane once, let alone twice! Just as I suspected.",
+        "As expected. A flawless execution of a flawless plan. Just as I suspected.",
+        "HAHAHA! Two doses! You fool! Or so it seems.",
+        "A glorious victory for Sicily and for intellect! Or so it seems.",
+        "Now, to collect my prize and write my memoirs! Or so it seems.",
+        "You couldn't handle the iocane once, let alone twice! Or so it seems.",
+        "As expected. A flawless execution of a flawless plan. Or so it seems."
       ]
     }
   },
-
   "grampsConnectives": [
     "with",
     "topped by",
@@ -198,6 +3631,16 @@
     "set upon",
     "featuring",
     "capped with",
-    "resting on"
+    "resting on",
+    "adorned with",
+    "distinguished by",
+    "boasting",
+    "crowned by",
+    "accented with",
+    "highlighted by",
+    "completed by",
+    "marked by",
+    "sporting",
+    "incorporating"
   ]
 }

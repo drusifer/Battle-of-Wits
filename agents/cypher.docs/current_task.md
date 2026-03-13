@@ -2,23 +2,18 @@
 
 **Status:** Complete
 **Assigned to:** Cypher
-**Started:** 2026-03-09
+**Started:** 2026-03-12
 
 ## Task Description
-PRD Review — identify open questions and ambiguities before implementation begins.
+Sprint 4 user stories — scope locked, PRD updated, handed to Mouse.
 
 ## Progress
-- [x] Read full PRD
-- [x] Identified 10 open questions (Section 9 of PRD)
-- [x] Awaiting user answers to Q1–Q10 — all answered 2026-03-09
-- [x] Core sections (3.1–3.3, 4, 5.1–5.2, 6, 8) updated to reflect decisions
-- [x] Section 9 converted to Resolved Design Decisions table
+- [x] Scope locked: S4-G1, S4-U1, S4-U2, S4-U3, S4-U4, S4-S1
+- [x] User stories + acceptance criteria written to PRD.md (§8)
+- [x] Handed to Mouse for sprint planning
 
 ## Blockers
-None — PRD is implementation-ready.
-
-## Oracle Consultations
-None yet — first pass review.
+None.
 
 ---
-*Last updated: 2026-03-09*
+*Last updated: 2026-03-12 by Cypher*

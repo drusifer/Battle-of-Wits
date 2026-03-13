@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from "./Character.js";
 
 /**
  * Boy — the sick grandchild listening to the story.
@@ -9,6 +9,6 @@ import { Character } from './Character.js';
  */
 export class Boy extends Character {
   constructor(reactionDecks) {
-    super('Boy', '🤧', reactionDecks);
+    super("Boy", "🤧", reactionDecks);
   }
 }

@@ -94,15 +94,90 @@
 - **Testing:** Vitest / Chai.
 - **Assets:** Google Fonts (Merriweather, Roboto).
 
-## 8. Future Enhancements (Backlog)
-- **Difficulty Scaling:** Tiered riddle difficulty (Easy/Medium/Hard) that scales with round number or player setting (e.g., 'Inconceivable Mode'). Difficulty may affect clue clarity.
-- Sound effects and thematic background music.
-- Leaderboard for 'Lowest Hearts Lost' or 'Fastest Win'.
-- Integration of more characters from the lore (e.g., Inigo Montoya, Fezzik).
+## 8. Sprint 4 Requirements
+
+### Sprint 4 User Stories
+
+**S4-G1 — Goblet Phase Hint (Buttercup's Secret)**
+> As a player, I want to ask Buttercup for a goblet attribute hint during the Goblet Phase so that I have an additional clue to choose the safe goblet — at the cost of one heart.
+
+**Acceptance Criteria:**
+- "Ask Buttercup" button is visible in the Goblet Phase (before a choice is made)
+- Clicking it draws from `buttercup.gobletHintDeck` and posts a hint in chat
+- Vizzini reacts to the hint request (existing `hint:requested` reaction deck)
+- Costs 1 heart (StatusBar updates); button disabled after use
+- If player has 0 hearts remaining, button is disabled (cannot use)
+- Event: `hint:goblet-requested` emitted with `{ hintLine, vizziniReaction }`
 
 ---
 
-## 9. Resolved Design Decisions
+**S4-U1 — Vizzini Clue Flash on Buttercup Hint**
+> As a player, when Buttercup gives a riddle hint, I want the most recent Vizzini clue bubble to briefly flash green (safe goblet) or red (poisoned goblet) so I can see the connection between Vizzini's clue and the hint.
+
+**Acceptance Criteria:**
+- Flash triggers after Buttercup finishes speaking (`whenIdle` before flash)
+- Safe clue (`clueType: 'complement'`) flashes with green tint (`.clue-flash-safe`)
+- Poison clue (`clueType: 'insult'`) flashes with red tint (`.clue-flash-poison`)
+- Flash fades back to normal over ~2–3s (CSS transition/animation)
+- GameEngine adds `clueType: 'complement' | 'insult'` to `hint:requested` payload
+
+---
+
+**S4-U2 — Real Typing Animation Queue**
+> As a player, I want to see each character's typing indicator appear and animate for a realistic duration before their message appears, so the conversation feels natural and immersive.
+
+**Acceptance Criteria:**
+- `ChatUI.whenIdle()` returns a Promise that resolves only after the message queue fully drains
+- Each message has a typing delay proportional to message length (min ~400ms, max ~1800ms)
+- TypingIndicator appears per-character while their message is "typing"
+- GameEngine `await whenIdle()` call sites behave correctly — no messages lost or skipped
+- All existing tests remain green; new tests cover queue drain behavior
+
+---
+
+**S4-U3 — Goblet Reveal Animation**
+> As a player, when I choose a goblet, I want a brief visual animation (shake for poison, glow for safe) before the outcome text appears, so the moment feels dramatic and weighty.
+
+**Acceptance Criteria:**
+- Chosen goblet plays a CSS animation before outcome events fire: shake (`.goblet-shake`) for poisoned, glow pulse (`.goblet-glow`) for safe
+- Animation duration ~600ms; outcome chat messages wait until animation completes
+- Non-chosen goblet has no animation
+- No regressions on goblet selection logic or event order
+
+---
+
+**S4-U4 — Mobile Tap Target Audit**
+> As a player on a mobile device, I want goblet buttons and the chat input to be large enough to tap accurately, so the game is playable without a mouse.
+
+**Acceptance Criteria:**
+- Goblet buttons: minimum 44×44px tap target on viewport ≤ 480px
+- Chat input + submit button: minimum 44px height on mobile
+- No horizontal overflow on viewport ≤ 375px
+- Existing desktop layout unchanged
+
+---
+
+**S4-S1 — Sound Effects**
+> As a player, I want to hear audio feedback for key game moments (correct riddle, wrong riddle, goblet chosen safe, goblet chosen poisoned) so the game feels more alive and rewarding.
+
+**Acceptance Criteria:**
+- Sound plays on: `riddle:answered` (correct ✓ tone; wrong ✗ tone), `goblet:chosen` (safe = triumphant; poisoned = ominous)
+- Sounds are short (<2s), thematically appropriate, royalty-free
+- Audio is opt-out: a mute toggle is accessible in the UI
+- No sound plays if browser autoplay policy blocks it (graceful silent fallback)
+- Sound assets bundled in `assets/sounds/` as `.mp3` or `.ogg`
+
+---
+
+## 9. Future Enhancements (Backlog)
+- **Difficulty Scaling:** Tiered riddle difficulty (Easy/Medium/Hard) that scales with round number or player setting (e.g., 'Inconceivable Mode'). Difficulty may affect clue clarity.
+- Leaderboard for 'Lowest Hearts Lost' or 'Fastest Win'.
+- Integration of more characters from the lore (e.g., Inigo Montoya, Fezzik).
+- Streak / score tracking across sessions (localStorage).
+
+---
+
+## 10. Resolved Design Decisions
 
 > **All questions resolved 2026-03-09. Requirements are ready for implementation.**
 

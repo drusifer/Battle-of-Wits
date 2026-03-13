@@ -1,4 +1,4 @@
-import { Deck } from '../utils/Deck.js';
+import { Deck } from "../utils/Deck.js";
 
 /**
  * GobletManager — generates goblet pairs using the Deck-of-Decks pattern.
@@ -25,17 +25,17 @@ export class GobletManager {
     this.#attributeDeck.reset(); // reset outer only — variant sub-decks stay consumed
     const rightAttrs = this.#drawAttributes();
 
-    const safe = Deck.coinFlip() ? 'left' : 'right';
-    const safeAttrs = safe === 'left' ? leftAttrs : rightAttrs;
-    const poisonAttrs = safe === 'left' ? rightAttrs : leftAttrs;
+    const safe = Deck.coinFlip() ? "left" : "right";
+    const safeAttrs = safe === "left" ? leftAttrs : rightAttrs;
+    const poisonAttrs = safe === "left" ? rightAttrs : leftAttrs;
 
     return {
       leftGoblet: { attributes: leftAttrs },
       rightGoblet: { attributes: rightAttrs },
       safe,
-      vizziniComplimentDeck: new Deck(safeAttrs.flatMap(v => v.compliments)),
-      vizziniInsultDeck: new Deck(poisonAttrs.flatMap(v => v.insults)),
-      buttercupGobletDeck: new Deck(safeAttrs.flatMap(v => v.hints)),
+      vizziniComplimentDeck: new Deck(safeAttrs.flatMap((v) => v.compliments)),
+      vizziniInsultDeck: new Deck(poisonAttrs.flatMap((v) => v.insults)),
+      buttercupGobletDeck: new Deck(safeAttrs.flatMap((v) => v.hints)),
     };
   }
 

@@ -18,26 +18,26 @@ export class TypingIndicator {
   show(speakerName, avatarEmoji, containerEl) {
     this.#container = containerEl;
 
-    const bubble = document.createElement('div');
-    bubble.className = 'chat-bubble typing-indicator';
+    const bubble = document.createElement("div");
+    bubble.className = "chat-bubble typing-indicator";
 
-    const avatarEl = document.createElement('span');
-    avatarEl.className = 'chat-avatar';
+    const avatarEl = document.createElement("span");
+    avatarEl.className = "chat-avatar";
     avatarEl.textContent = avatarEmoji;
-    avatarEl.setAttribute('aria-label', speakerName);
+    avatarEl.setAttribute("aria-label", speakerName);
 
-    const nameEl = document.createElement('span');
-    nameEl.className = 'chat-name';
+    const nameEl = document.createElement("span");
+    nameEl.className = "chat-name";
     nameEl.textContent = speakerName;
 
-    const headerEl = document.createElement('div');
-    headerEl.className = 'chat-header';
+    const headerEl = document.createElement("div");
+    headerEl.className = "chat-header";
     headerEl.appendChild(avatarEl);
     headerEl.appendChild(nameEl);
 
-    const dotsEl = document.createElement('span');
-    dotsEl.className = 'chat-line typing-dots';
-    dotsEl.textContent = '...';
+    const dotsEl = document.createElement("span");
+    dotsEl.className = "chat-line typing-dots";
+    dotsEl.textContent = "...";
 
     bubble.appendChild(headerEl);
     bubble.appendChild(dotsEl);
@@ -51,7 +51,11 @@ export class TypingIndicator {
    * No-op if show() has not been called or bubble was already removed.
    */
   hide() {
-    if (this.#bubble && this.#container && this.#container.contains(this.#bubble)) {
+    if (
+      this.#bubble &&
+      this.#container &&
+      this.#container.contains(this.#bubble)
+    ) {
       this.#container.removeChild(this.#bubble);
     }
     this.#bubble = null;

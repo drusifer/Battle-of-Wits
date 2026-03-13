@@ -291,7 +291,7 @@ WIN / LOSE
 | `conversation:play` | `[{ char, line }, ...]` |
 | `phase:changed` | `{ from, to, round }` — **Note:** `round` is `0` during the `IDLE→INTRO` transition (game start). All `phase:changed` subscribers must guard `round > 0` before using the round value. |
 | `riddle:presented` | `{ riddle }` |
-| `riddle:answered` | `{ correct, clueLine, reactionLine }` |
+| `riddle:answered` | `{ correct, answer: string, clueLine, reactionLine }` — `answer` is the raw player input, rendered as a right-anchored DPR bubble |
 | `hint:requested` | `{ hintLine, vizziniReaction }` |
 | `goblets:described` | `{ left: string, right: string }` |
 | `goblet:chosen` | `{ choice: 'left'\|'right', outcome: 'goblet:correct'\|'goblet:poisoned', reactionLines: Array<GobletReaction> }` — `GobletReaction = { char: string, line: string }`; nulls filtered by GameEngine before emit; ChatUI uses `entry.char` / `entry.line` directly |
@@ -393,13 +393,15 @@ class Vizzini extends Character {
 No template injection. Lines are complete as authored. Vizzini never references a goblet.
 
 ### Buttercup (`characters/Buttercup.js`)
-When hint requested, GameEngine assembles a 3-part hint:
+When hint requested during the Riddle Phase, GameEngine assembles a 2-part hint:
 ```js
-[buttercup.react('hint:requested'), buttercup.drawGobletHint(), currentRiddle.hint]
+[buttercup.react('hint:requested'), currentRiddle.hint]
   .filter(Boolean)
   .join(' ')
 ```
-Parts: (1) Buttercup's `hint:requested` reaction line, (2) a goblet-attribute clue from the safe goblet's hint deck, (3) the current riddle's `hint` field. Any null parts are filtered out. GameEngine then also draws Vizzini's `hint:requested` reaction and emits both via `hint:requested`.
+Parts: (1) Buttercup's `hint:requested` encouragement reaction line, (2) the current riddle's `hint` field. Any null parts are filtered out. GameEngine also draws Vizzini's `hint:requested` reaction and emits both via `hint:requested`.
+
+> **Note:** Buttercup holds a `gobletHintDeck` (assembled from the safe goblet's attribute hints). It is **not** drawn during the Riddle Phase — goblet hints are reserved for Goblet Phase UX. The deck is preserved on the Buttercup instance for future Sprint 4 use (e.g. UX-1 clue flash feature).
 
 ### Gramps (`characters/Gramps.js`)
 Assembles description on demand from goblet variant fragments + connective deck. Not a speaker in banter conversations.
@@ -489,6 +491,12 @@ Internal: `validate(rawAttributes)` throws if any category has < 5 variants.
 
 **HTML contract — required child selectors:**
 - Each goblet button element must contain a child element with class `goblet-desc` (e.g., `<span class="goblet-desc">`). `GobletDisplay` uses `querySelector('.goblet-desc')` to populate description text. If this child is absent, a null-dereference error will occur at `goblets:described` time.
+- Each goblet button must also contain a child element with class `goblet-cta` (e.g., `<span class="goblet-cta">`). `GobletDisplay` uses `querySelector('.goblet-cta')` to show/hide the call-to-action text.
+
+**CSS display contracts (GobletDisplay):**
+- `#setVisible(true)` sets `style.display = 'flex'` on the goblet button elements. The CSS default for `#goblet-left` and `#goblet-right` must be `display: none`.
+- `#setCtaVisible(true)` sets `style.display = 'inline-block'` on `.goblet-cta` elements. The CSS default for `.goblet-cta` must be `display: none`.
+- **Never use `style.display = ''` to show these elements** — when a CSS rule explicitly sets `display: none`, the empty-string reset defers back to CSS and the element stays hidden. Always set the explicit display value (`flex` or `inline-block`).
 
 **AVATARS map (ChatUI.js):**
 ```js
@@ -498,13 +506,9 @@ const AVATARS = {
 ```
 When adding a new character to the game, add their name → emoji entry here. Unknown characters fall back to `'🎭'`.
 
-**`goblet:chosen` payload (full shape):**
-```js
-{ choice: 'left'|'right', outcome: 'goblet:correct'|'goblet:poisoned', reactionLines: string[] }
-```
-`reactionLines` is an ordered array: `[vizziniLine, buttercupLine, grampLine, boyLine]`. Any entry may be null; ChatUI skips nulls.
-
 **`whenIdle()` (Sprint 3 MVP):** Resolves immediately — no typing animation queue yet. T31 will implement the real async queue drain. All GameEngine `await chatUI.whenIdle()` call sites are wired correctly; only the UI-side timing is deferred.
+
+> For the full `goblet:chosen` payload shape (including `reactionLines: Array<GobletReaction>`), see the event table above.
 
 ---
 

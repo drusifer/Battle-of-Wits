@@ -2,7 +2,79 @@
    Parchment-style UI, flex layout, mobile-friendly.
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500&display=swap");
+
+/* ── Theme Tokens ──────────────────────────────────────────────── */
+
+:root {
+  --bg-page: #1a1008;
+  --bg-panel: #2a1a06;
+  --bg-panel-hover: #3a2410;
+  --bg-chat: #f5e9c8;
+  --bg-chat-gradient: #ede0a8;
+  --border-gold: #8b6914;
+  --border-gold-bright: #f0d87c;
+  --text-primary: #e8d8a0;
+  --text-gold: #f0d87c;
+  --text-amber: #c8a840;
+  --text-dim: #c8b880;
+  --text-placeholder: #7a6040;
+  --title-shadow: #8b6914;
+  --scrollbar-track: #e8d8a0;
+  --scrollbar-thumb: #c8a840;
+  --chat-banter-bg: rgba(180, 140, 60, 0.12);
+  --chat-banter-border: #c8a840;
+}
+
+[data-theme="light"] .theme-btn {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="light"] {
+  --bg-page: #f2e4b8;
+  --bg-panel: #e0ca88;
+  --bg-panel-hover: #d4b870;
+  --bg-chat: #faf3d8;
+  --bg-chat-gradient: #f0e6b0;
+  --border-gold: #7a5a10;
+  --border-gold-bright: #8b6200;
+  --text-primary: #2a1a06;
+  --text-gold: #4a2c00;
+  --text-amber: #7a5000;
+  --text-dim: #6a4a18;
+  --text-placeholder: #8a7050;
+  --title-shadow: #c8a840;
+  --scrollbar-track: #d8c280;
+  --scrollbar-thumb: #9a7020;
+  --chat-banter-bg: rgba(100, 70, 10, 0.1);
+  --chat-banter-border: #7a5000;
+}
+
+@media (prefers-color-scheme: light) {
+  [data-theme="system"] .theme-btn {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+  }
+
+  [data-theme="system"] {
+    --bg-page: #f2e4b8;
+    --bg-panel: #e0ca88;
+    --bg-panel-hover: #d4b870;
+    --bg-chat: #faf3d8;
+    --bg-chat-gradient: #f0e6b0;
+    --border-gold: #7a5a10;
+    --border-gold-bright: #8b6200;
+    --text-primary: #2a1a06;
+    --text-gold: #4a2c00;
+    --text-amber: #7a5000;
+    --text-dim: #6a4a18;
+    --text-placeholder: #8a7050;
+    --title-shadow: #c8a840;
+    --scrollbar-track: #d8c280;
+    --scrollbar-thumb: #9a7020;
+    --chat-banter-bg: rgba(100, 70, 10, 0.1);
+    --chat-banter-border: #7a5000;
+  }
+}
 
 /* ── Reset & Base ──────────────────────────────────────────────── */
 
@@ -17,9 +89,9 @@
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #1a1008;
-  color: #e8d8a0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
 }
 
 /* ── App Layout ────────────────────────────────────────────────── */
@@ -34,19 +106,32 @@ body {
   gap: 10px;
 }
 
+/* ── Game Intro ────────────────────────────────────────────────── */
+
+#game-intro {
+  font-family: "Merriweather", serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-dim);
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+
 /* ── Status Bar ────────────────────────────────────────────────── */
 
 #status-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #2a1a06;
-  border: 2px solid #8b6914;
+  background: var(--bg-panel);
+  border: 2px solid var(--border-gold);
   border-radius: 8px;
   padding: 8px 16px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1rem;
-  color: #f0d87c;
+  color: var(--text-gold);
   flex-shrink: 0;
 }
 
@@ -66,11 +151,13 @@ body {
   min-height: 300px;
   max-height: 55vh;
   overflow-y: auto;
-  background: #f5e9c8;
-  background-image:
-    radial-gradient(ellipse at top, #f5e9c8, #ede0a8),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23ede0a8'/%3E%3Crect x='0' y='0' width='2' height='2' fill='%23e8d898' opacity='0.4'/%3E%3C/svg%3E");
-  border: 3px solid #8b6914;
+  background-color: var(--bg-chat);
+  background-image: radial-gradient(
+    ellipse at top,
+    var(--bg-chat),
+    var(--bg-chat-gradient)
+  );
+  border: 3px solid var(--border-gold);
   border-radius: 8px;
   padding: 12px;
   color: #2a1a06;
@@ -90,8 +177,8 @@ body {
 }
 
 .chat-bubble.banter {
-  background: rgba(180, 140, 60, 0.12);
-  border-left: 3px solid #c8a840;
+  background: var(--chat-banter-bg);
+  border-left: 3px solid var(--chat-banter-border);
   color: #4a3010;
   font-size: 0.9rem;
   font-style: italic;
@@ -99,7 +186,7 @@ body {
 
 .chat-bubble.gameplay {
   background: rgba(60, 30, 5, 0.08);
-  border: 2px solid #8b6914;
+  border: 2px solid var(--border-gold);
   border-left: 5px solid #c8500a;
   color: #1a1008;
   font-size: 0.95rem;
@@ -119,7 +206,7 @@ body {
 }
 
 .chat-name {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 0.75rem;
   font-weight: 700;
   color: #6b4c10;
@@ -131,8 +218,25 @@ body {
   color: #8b3000;
 }
 
+.chat-bubble.player {
+  align-self: flex-end;
+  margin-left: auto;
+  background: #3a2006;
+  border: 2px solid #c8a840;
+  color: #f0d87c;
+  text-align: right;
+}
+
+.chat-bubble.player .chat-header {
+  flex-direction: row-reverse;
+}
+
+.chat-bubble.player .chat-name {
+  color: #f0d87c;
+}
+
 .chat-line {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   line-height: 1.5;
 }
 
@@ -147,11 +251,13 @@ body {
 #goblet-left,
 #goblet-right {
   flex: 1;
+  min-width: 0;
   display: none;
   flex-direction: column;
-  align-items: center;
-  background: #2a1a06;
-  border: 3px solid #8b6914;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--bg-panel);
+  border: 3px solid var(--border-gold);
   border-radius: 12px;
   padding: 16px 12px;
   cursor: pointer;
@@ -159,17 +265,19 @@ body {
     border-color 0.2s,
     background 0.2s,
     transform 0.1s;
-  text-align: center;
-  color: #e8d8a0;
-  font-family: 'Merriweather', serif;
+  text-align: left;
+  color: var(--text-primary);
+  font-family: "Merriweather", serif;
+  white-space: normal;
+  word-break: break-word;
   appearance: none;
   -webkit-appearance: none;
 }
 
 #goblet-left:hover:not(:disabled),
 #goblet-right:hover:not(:disabled) {
-  border-color: #f0d87c;
-  background: #3a2410;
+  border-color: var(--border-gold-bright);
+  background: var(--bg-panel-hover);
   transform: translateY(-2px);
 }
 
@@ -194,26 +302,26 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #c8a840;
+  color: var(--text-amber);
   margin-bottom: 8px;
 }
 
 .goblet-desc {
   font-size: 0.82rem;
-  color: #c8b880;
+  color: var(--text-dim);
   font-style: italic;
   line-height: 1.4;
 }
 
 .goblet-cta {
   display: none;
-  margin-top: 10px;
+  margin-top: auto;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #f0d87c;
-  border: 1px solid #c8a840;
+  color: var(--text-gold);
+  border: 1px solid var(--text-amber);
   border-radius: 4px;
   padding: 4px 10px;
   cursor: pointer;
@@ -230,18 +338,18 @@ body {
 #answer-input {
   flex: 1;
   padding: 10px 14px;
-  background: #2a1a06;
-  border: 2px solid #8b6914;
+  background: var(--bg-panel);
+  border: 2px solid var(--border-gold);
   border-radius: 6px;
-  color: #e8d8a0;
-  font-family: 'Roboto', sans-serif;
+  color: var(--text-primary);
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   outline: none;
   transition: border-color 0.2s;
 }
 
 #answer-input:focus {
-  border-color: #f0d87c;
+  border-color: var(--border-gold-bright);
 }
 
 #answer-input:disabled {
@@ -250,13 +358,13 @@ body {
 }
 
 #answer-input::placeholder {
-  color: #7a6040;
+  color: var(--text-placeholder);
 }
 
 /* ── Buttons ───────────────────────────────────────────────────── */
 
 button {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 0.9rem;
   font-weight: 700;
   border: none;
@@ -314,27 +422,66 @@ button:disabled {
 }
 
 #restart-btn {
-  background: #2a1a06;
-  color: #c8a840;
-  border: 2px solid #8b6914;
+  background: var(--bg-panel);
+  color: var(--text-amber);
+  border: 2px solid var(--border-gold);
   font-size: 0.8rem;
   padding: 8px 14px;
 }
 
 #restart-btn:hover:not(:disabled) {
-  background: #3a2410;
-  border-color: #f0d87c;
+  background: var(--bg-panel-hover);
+  border-color: var(--border-gold-bright);
+}
+
+/* ── Theme Picker ──────────────────────────────────────────────── */
+
+#theme-picker {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-panel);
+  border: 2px solid var(--border-gold);
+  border-radius: 6px;
+  padding: 2px;
+  margin-right: auto;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 7px;
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  opacity: 0.65;
+  transition:
+    opacity 0.15s,
+    background 0.15s;
+  white-space: nowrap;
+}
+
+.theme-btn[aria-pressed="true"] {
+  background: var(--border-gold);
+  opacity: 1;
+}
+
+.theme-btn:hover:not([aria-pressed="true"]) {
+  opacity: 0.9;
+  box-shadow:
+    0 0 0 1px var(--border-gold),
+    inset 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* ── Title / Header ────────────────────────────────────────────── */
 
 #game-title {
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1.5rem;
   font-style: italic;
-  color: #f0d87c;
-  text-shadow: 1px 1px 4px #8b6914;
+  color: var(--text-gold);
+  text-shadow: 1px 1px 4px var(--title-shadow);
   padding: 4px 0;
   flex-shrink: 0;
 }
@@ -346,12 +493,12 @@ button:disabled {
 }
 
 #chat-container::-webkit-scrollbar-track {
-  background: #e8d8a0;
+  background: var(--scrollbar-track);
   border-radius: 4px;
 }
 
 #chat-container::-webkit-scrollbar-thumb {
-  background: #c8a840;
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 
@@ -400,4 +547,146 @@ button:disabled {
     font-size: 0.85rem;
     padding: 9px 12px;
   }
+
+  /* S4-U4: Mobile tap targets — min 44px height on small screens */
+  #goblet-left,
+  #goblet-right {
+    min-height: 44px;
+  }
+
+  #answer-input,
+  #submit-btn,
+  #hint-btn,
+  #goblet-hint-btn {
+    min-height: 44px;
+  }
+}
+
+/* ── Sprint 4: Clue Flash (S4-U1) ─────────────────────────────── */
+
+@keyframes clue-flash-safe-anim {
+  0% {
+    background: rgba(34, 197, 94, 0);
+  }
+  20% {
+    background: rgba(34, 197, 94, 0.35);
+  }
+  100% {
+    background: rgba(34, 197, 94, 0);
+  }
+}
+
+@keyframes clue-flash-poison-anim {
+  0% {
+    background: rgba(239, 68, 68, 0);
+  }
+  20% {
+    background: rgba(239, 68, 68, 0.35);
+  }
+  100% {
+    background: rgba(239, 68, 68, 0);
+  }
+}
+
+.chat-bubble.clue-flash-safe {
+  animation: clue-flash-safe-anim 2.5s ease-out forwards;
+}
+
+.chat-bubble.clue-flash-poison {
+  animation: clue-flash-poison-anim 2.5s ease-out forwards;
+}
+
+/* ── Sprint 4: Goblet Reveal Animations (S4-U3) ───────────────── */
+
+@keyframes goblet-shake-anim {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-8px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(8px) rotate(2deg);
+  }
+  45% {
+    transform: translateX(-6px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(6px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes goblet-glow-anim {
+  0% {
+    box-shadow: 0 0 0px rgba(240, 216, 124, 0);
+    border-color: var(--border-gold);
+  }
+  40% {
+    box-shadow: 0 0 24px 6px rgba(240, 216, 124, 0.7);
+    border-color: var(--border-gold-bright);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(240, 216, 124, 0);
+    border-color: var(--border-gold);
+  }
+}
+
+.goblet-shake {
+  animation: goblet-shake-anim 0.6s ease-in-out;
+}
+
+.goblet-glow {
+  animation: goblet-glow-anim 0.6s ease-in-out;
+}
+
+/* ── Sprint 4: Goblet Phase Hint Button (S4-G1) ───────────────── */
+
+#goblet-hint-btn {
+  display: none;
+  margin: 4px auto 0;
+  background: transparent;
+  border: 1px dashed var(--border-gold);
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+#goblet-hint-btn:hover:not(:disabled) {
+  border-color: var(--border-gold-bright);
+  color: var(--text-gold);
+}
+
+#goblet-hint-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Sprint 4: Mute Button (S4-S1) ────────────────────────────── */
+
+#mute-btn {
+  background: transparent;
+  border: 1px solid var(--border-gold);
+  color: var(--text-gold);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    opacity 0.2s;
+}
+
+#mute-btn:hover {
+  border-color: var(--border-gold-bright);
 }

@@ -24,6 +24,7 @@ targets:
   - { cmd: "make merge-attributes",description: "Merge category JSONs into data/attributes.json" }
   - { cmd: "make tldr",            description: "Show TL;DR summaries from all project files" }
   - { cmd: "make help",            description: "Show all targets with descriptions (bypasses mkf)" }
+  - { cmd: "make chat",            description: "Post a message to CHAT.md (bypasses mkf). Usage: make chat MSG='...' [PERSONA='...'] [CMD='...'] [TO='...']" }
   - { cmd: "make preview",         description: "Start dev server on 0.0.0.0, auto-selects port (bypasses mkf, foreground)" }
   - { cmd: "make install",         description: "Copy agents into a project (usage: make install TARGET=/path)" }
 ---
@@ -112,6 +113,7 @@ make lint V=-vv            # lint with failure lines visible
 ### Dev / Tooling
 | Command | Description |
 |---------|-------------|
+| `make chat MSG="..." [PERSONA="..."] [CMD="..."] [TO="..."]` | Post a message to `agents/CHAT.md`. **Bypasses mkf.** |
 | `make preview` | Dev server on `0.0.0.0`, auto-selects port — prints URL. **Foreground, Ctrl+C to stop. Bypasses mkf.** |
 | `make goblet-preview` | Sample goblet description pairs — `make goblet-preview COUNT=20` |
 | `make npm-install` | Install npm dependencies |

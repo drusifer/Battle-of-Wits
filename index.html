@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,14 @@
   <body>
     <div id="app">
       <h1 id="game-title">⚔️ Battle of Wits ⚔️</h1>
+
+      <p id="game-intro">
+        You are the Dread Pirate Roberts, locked in a battle of wits against the
+        cunning Vizzini — one goblet holds iocane powder, and only the clever
+        survive. Answer Vizzini's riddles to earn clues hidden in his taunts,
+        then choose your goblet wisely. Answer correctly and you win — answer
+        wrong and your resistance to iocane may be all that saves you.
+      </p>
 
       <div id="status-bar" role="status" aria-live="polite">
         <!-- Populated by StatusBar.js -->
@@ -32,6 +40,9 @@
           <span class="goblet-cta" style="display:none">Choose this goblet</span>
         </button>
       </div>
+      <button id="goblet-hint-btn" type="button" style="display:none" aria-label="Ask Buttercup for a goblet hint">
+        Ask Buttercup (costs 1 ❤️)
+      </button>
 
       <div id="input-area">
         <input
@@ -48,6 +59,12 @@
       </div>
 
       <div id="control-bar">
+        <div id="theme-picker" role="group" aria-label="Color theme">
+          <button type="button" class="theme-btn" data-theme-value="dark"   aria-pressed="true"  title="Dark theme">🌙</button>
+          <button type="button" class="theme-btn" data-theme-value="light"  aria-pressed="false" title="Light theme">☀️</button>
+          <button type="button" class="theme-btn" data-theme-value="system" aria-pressed="false" title="System theme">⚙️</button>
+        </div>
+        <button id="mute-btn" type="button" aria-label="Toggle sound" title="Toggle sound">🔊</button>
         <button id="restart-btn" type="button">↺ Restart</button>
       </div>
     </div>

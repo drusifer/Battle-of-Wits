@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from "./Character.js";
 
 /**
  * Gramps — the narrator.
@@ -16,7 +16,7 @@ export class Gramps extends Character {
    * @param {Deck}   connectivesDeck - auto-reshuffle Deck of connective words/phrases
    */
   constructor(reactionDecks, connectivesDeck) {
-    super('Gramps', '🧓', reactionDecks);
+    super("Gramps", "🧓", reactionDecks);
     this.#connectivesDeck = connectivesDeck;
   }
 
@@ -34,20 +34,21 @@ export class Gramps extends Character {
    * @returns {string}
    */
   describeGoblet(attributes) {
-    if (!attributes || attributes.length === 0) return '';
+    if (!attributes || attributes.length === 0) return "";
 
     const SENTENCE_BREAK = 2;
     const sentences = [];
 
-    const buildSentence = group => {
+    const buildSentence = (group) => {
       const [first, ...rest] = group;
-      const cap = first.fragment.charAt(0).toUpperCase() + first.fragment.slice(1);
+      const cap =
+        first.fragment.charAt(0).toUpperCase() + first.fragment.slice(1);
       const parts = [cap];
       for (const attr of rest) {
         const connective = this.#connectivesDeck.draw();
         parts.push(`${connective} ${attr.fragment}`);
       }
-      return `${parts.join(', ')}.`;
+      return `${parts.join(", ")}.`;
     };
 
     sentences.push(buildSentence(attributes.slice(0, SENTENCE_BREAK)));
@@ -55,6 +56,6 @@ export class Gramps extends Character {
       sentences.push(buildSentence(attributes.slice(SENTENCE_BREAK)));
     }
 
-    return sentences.join(' ');
+    return sentences.join(" ");
   }
 }

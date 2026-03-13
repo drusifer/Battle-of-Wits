@@ -25,7 +25,7 @@ export class EventBus {
    */
   off(event, callback) {
     if (!this.#listeners.has(event)) return;
-    const updated = this.#listeners.get(event).filter(cb => cb !== callback);
+    const updated = this.#listeners.get(event).filter((cb) => cb !== callback);
     this.#listeners.set(event, updated);
   }
 

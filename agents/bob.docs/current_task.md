@@ -1,14 +1,15 @@
 # Current Task
 
-**Status:** Not started
-**Assigned to:** N/A
-**Started:** N/A
+**Status:** Awaiting instructions
+**Assigned to:** Bob
+**Started:** 2026-03-12
 
 ## Task Description
-No active task
+Initialize Bob protocol and await further instructions from the user.
 
 ## Progress
-- [ ] Not started
+- [x] Initialized Bob protocol
+- [ ] Await instructions
 
 ## Blockers
 None
@@ -17,4 +18,4 @@ None
 None yet
 
 ---
-*Last updated: [timestamp]*
+*Last updated: 2026-03-12*

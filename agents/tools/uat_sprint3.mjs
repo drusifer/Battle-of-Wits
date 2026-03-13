@@ -253,7 +253,7 @@ check('goblets:described populates right description',
   rightDescEl?.textContent === 'A humble clay vessel, unadorned.',
   rightDescEl?.textContent);
 check('goblets:described makes goblets visible',
-  gdLeft2.style.display === '' && gdRight2.style.display === '');
+  gdLeft2.style.display === 'flex' && gdRight2.style.display === 'flex');
 check('goblets:described enables goblets',
   gdLeft2.disabled === false && gdRight2.disabled === false);
 

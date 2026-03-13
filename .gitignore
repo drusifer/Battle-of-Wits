@@ -1,4 +1,6 @@
 .history
+.build/*
+.build
 .claude/
 .cursorrules
 .github/

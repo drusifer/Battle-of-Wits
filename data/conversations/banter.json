@@ -1,0 +1,2573 @@
+{
+  "intro": [
+    [
+      {
+        "char": "Gramps",
+        "line": "Now then, where were we? Ah yes... the battle of wits."
+      },
+      {
+        "char": "Boy",
+        "line": "Has it started? Who's winning?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Nobody can tell yet. That is rather the point of a battle of wits."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Ah, the Dread Pirate Roberts. I was beginning to think you weren't coming."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Now, a battle of wits to the death. *cackles* Poison is on the table. Genius is not — at least on your side."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* Is this the part where he figures out the cup?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not yet. First he must prove himself worthy. There are riddles."
+      },
+      {
+        "char": "Boy",
+        "line": "*cough* I like riddles."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "You think you can outthink me? ME? The man who orchestrated the kidnapping of the century?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Prepare to be severely humbled. It is going to be magnificent."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, why doesn't he just fight him?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Because Vizzini has a knife to Buttercup's throat. Brains are required here, not brawn."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Have you ever heard of Plato? Aristotle? Socrates?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Morons. Absolute morons compared to me. Now, let us begin."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "The air was thick with tension. And the smell of iocane powder."
+      },
+      {
+        "char": "Boy",
+        "line": "I thought you said iocane powder was odorless?"
+      },
+      {
+        "char": "Gramps",
+        "line": "It is. The tension, however, smelled very strongly of anxiety."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I will give you a sporting chance. A very small one, but sporting nonetheless."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Try not to disappoint me too quickly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* Is Vizzini really the smartest?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He certainly believed he was. And belief is a powerful, dangerous thing."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Let us establish the rules. I am brilliant. You are not. Those are the rules."
+      },
+      {
+        "char": "Vizzini",
+        "line": "If you forget them, the poison will remind you."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🤫"
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 👀"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🧠"
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 👀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying? 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😂"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't."
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🙄"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap. 🧐"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail. 🧠"
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap. 🤔"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient. 👀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      },
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient. 🤫"
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop? 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🍿"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      },
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 😎"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🧠"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't."
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient. 🧐"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop? 🤫"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "And do try to keep up."
+      }
+    ]
+  ],
+  "riddlePhase": [
+    [
+      {
+        "char": "Vizzini",
+        "line": "I suppose you think yourself clever. How TIRESOME."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* Grandpa, is Vizzini always this... loud?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He does love the sound of his own voice, yes."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have never lost a battle of wits. NEVER. It is a point of professional pride."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* Sorry. Go on."
+      },
+      {
+        "char": "Gramps",
+        "line": "Bless you."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "You are staring at me blankly. Is the cognitive load too much for you?"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "I think I know the answer to this one!"
+      },
+      {
+        "char": "Gramps",
+        "line": "Keep it to yourself, then. Let the pirate do his work."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you sweating? It looks like you're sweating. How pathetic."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I could do this all day. But I have an empire to run. So hurry up."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Gramps",
+        "line": "The pirate remained completely still. His face a mask of absolute calm."
+      },
+      {
+        "char": "Boy",
+        "line": "Was he scared?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Terrified. But he hid it well."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Tick tock, pirate. Tick tock."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so bored I might just start drinking the poison myself to liven things up."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* This part always makes me nervous."
+      }
+    ],
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 🍿"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      },
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you. 🙄"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird. 🤷‍♂️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 🤯"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😎"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers. 🙄"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😎"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 💀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird. 🧐"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 😂"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 👀"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird. 💀"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 🤣"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🤔"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🧐"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      }
+    ],
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤔"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying? 🤔"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 😎"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 👀"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🤯"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you. 🤣"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 🧠"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison? 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🍿"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 🤫"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 👀"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't. 🤔"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I'm considering letting you win just to see the look on your face. But I won't."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🤫"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😂"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 🤔"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles. 🤣"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance. 🙄"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 😂"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 💀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 😂"
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail. 🧠"
+      }
+    ],
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers. 🤷‍♂️"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance. 🙄"
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🍿"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🤯"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🤷‍♂️"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      },
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail. 😎"
+      }
+    ]
+  ],
+  "gobletPhase": [
+    [
+      {
+        "char": "Vizzini",
+        "line": "Choose. But choose wisely. Or poorly. I honestly have no preference."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I'd pick the one on the left."
+      },
+      {
+        "char": "Gramps",
+        "line": "Shh. Let him think."
+      },
+      {
+        "char": "Boy",
+        "line": "I was just saying—"
+      },
+      {
+        "char": "Gramps",
+        "line": "Shh."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "You're taking a very long time. Is this a strategy? It is a very bad one."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "It's a simple choice. 50/50. Or is it? INCONCEIVABLE!"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "What if he picks the wrong one on purpose to trick him?"
+      },
+      {
+        "char": "Gramps",
+        "line": "That would be a very short story."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I can see the gears turning in your head. They are rusted and slow."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you trying to guess which one I poisoned? Or which one I think you think I poisoned?"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Gramps",
+        "line": "Two goblets. One life. The math was devastatingly simple."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Just drink! Or don't drink and I kill her! Either way, I win!"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* Pick already!"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 🤣"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🍿"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 🤣"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 😎"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 🤷‍♂️"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😂"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying? 🍿"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles. 🤯"
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 😂"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary. 🤔"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison? 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🙄"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "You couldn't outwit a particularly slow snail. 🤫"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence!"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying? 🧐"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 🍿"
+      },
+      {
+        "char": "Vizzini",
+        "line": "This is like playing chess with a pigeon. 💀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet? 🧠"
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*sneeze* This guy is weird."
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it. 💀"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap."
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤫"
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 🤔"
+      },
+      {
+        "char": "Gramps",
+        "line": "If only his logic matched his vocabulary."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap. 🧠"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real? 🙄"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      },
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be. 🤯"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him. 🤯"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Is being a genius always this annoying?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He had a PhD in self-importance. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop? 🤷‍♂️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles. 🤔"
+      },
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "Even the poison is getting impatient."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😂"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "I have a dizzying intellect. Are you dizzy yet?"
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😎"
+      }
+    ],
+    [
+      {
+        "char": "Vizzini",
+        "line": "If my ego were a physical object, it would crush you."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am surrounded by incompetence! 😎"
+      }
+    ],
+    null,
+    null,
+    [
+      {
+        "char": "Vizzini",
+        "line": "Are you taking notes? You should be."
+      },
+      {
+        "char": "Vizzini",
+        "line": "I am so smart, my brain has muscles."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "He talks A LOT. Does he ever just... stop?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the smartest man in the room is the quietest one. Obviously not him."
+      }
+    ],
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "If he's so smart, why is he holding a cup of poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "I bet I could beat him in checkers."
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline. 🤣"
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "*cough* I think he needs a nap. 💀"
+      },
+      {
+        "char": "Gramps",
+        "line": "Patience, my boy. Arrogance always has a punchline."
+      }
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      {
+        "char": "Boy",
+        "line": "Grandpa, is this guy for real?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Genius is a heavy burden, mostly for those who have to listen to it."
+      }
+    ]
+  ],
+  "outro_win": [
+    [
+      {
+        "char": "Gramps",
+        "line": "And so the Dread Pirate Roberts proved his worth. The battle of wits was won."
+      },
+      {
+        "char": "Boy",
+        "line": "He beat Vizzini? *cough* But Vizzini's supposed to be the smartest man in the world!"
+      },
+      {
+        "char": "Gramps",
+        "line": "Only in his own estimation, which is the loneliest kind of genius."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "Vizzini never did learn the first rule of a battle of wits: never assume you're the smartest one at the table."
+      },
+      {
+        "char": "Boy",
+        "line": "*cough* What's the first rule?"
+      },
+      {
+        "char": "Gramps",
+        "line": "I just told you."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "Buttercup was rescued. Vizzini was outwitted. And the goblet chose wisely."
+      },
+      {
+        "char": "Boy",
+        "line": "Was Vizzini very angry?"
+      },
+      {
+        "char": "Gramps",
+        "line": "In his experience, Vizzini was always angry. It was his natural resting state."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "The pirate smiled. It was a good smile. A winning smile."
+      },
+      {
+        "char": "Boy",
+        "line": "I knew he'd do it! I never doubted him for a second!"
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "And that, my boy, is why you always check both cups before you drink."
+      },
+      {
+        "char": "Boy",
+        "line": "*cough* I'll remember that when I'm drinking my milk."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "Vizzini's grand intellect was finally silenced. Permanently."
+      },
+      {
+        "char": "Boy",
+        "line": "Did it hurt? The poison?"
+      },
+      {
+        "char": "Gramps",
+        "line": "He barely had time to register his own failure before the end came."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Take that, you arrogant... Sicilian! 😂"
+      },
+      {
+        "char": "Gramps",
+        "line": "Language, my boy. But yes, exactly."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "He won! The pirate won! 🏴‍☠️"
+      },
+      {
+        "char": "Gramps",
+        "line": "Indeed. A victory for quiet competence over loud incompetence."
+      }
+    ]
+  ],
+  "outro_lose": [
+    [
+      {
+        "char": "Gramps",
+        "line": "Well. That did not go as hoped."
+      },
+      {
+        "char": "Boy",
+        "line": "*cough* Does he die?"
+      },
+      {
+        "char": "Gramps",
+        "line": "...Would you like to hear a different part of the story?"
+      },
+      {
+        "char": "Boy",
+        "line": "Yes please."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "Vizzini was, it must be said, very smug about the whole business."
+      },
+      {
+        "char": "Boy",
+        "line": "*sneeze* He won?"
+      },
+      {
+        "char": "Gramps",
+        "line": "Briefly. As villains sometimes do. But that is a story for another night."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "The iocane powder is odorless, tasteless, and entirely fatal. He should have known."
+      },
+      {
+        "char": "Boy",
+        "line": "Maybe next time he'll be more careful."
+      },
+      {
+        "char": "Gramps",
+        "line": "Next time he will be. Sleep now — we'll try again tomorrow."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "A tragic miscalculation. The pirate fell, and Vizzini laughed."
+      },
+      {
+        "char": "Boy",
+        "line": "No! Stop reading! That's a terrible ending!"
+      },
+      {
+        "char": "Gramps",
+        "line": "Sometimes the hero stumbles. It makes the getting up all the more impressive."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "Vizzini took his prize and left the pirate to his fate."
+      },
+      {
+        "char": "Boy",
+        "line": "*cough* I hate Vizzini. He's a cheater."
+      }
+    ],
+    [
+      {
+        "char": "Gramps",
+        "line": "And so, the battle of wits ended in a bitter defeat."
+      },
+      {
+        "char": "Boy",
+        "line": "Are you sure you read it right? Maybe check the words again."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "That's terrible! Read the good ending instead! 😭"
+      },
+      {
+        "char": "Gramps",
+        "line": "A story must follow its own logic, even when it stings."
+      }
+    ],
+    [
+      {
+        "char": "Boy",
+        "line": "Wait, what? He can't lose! 🤯"
+      },
+      {
+        "char": "Gramps",
+        "line": "Not every risk pays off. That's the problem with poison."
+      }
+    ]
+  ]
+}

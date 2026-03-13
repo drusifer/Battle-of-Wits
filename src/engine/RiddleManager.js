@@ -1,4 +1,4 @@
-import { normalize } from '../utils/normalize.js';
+import { normalize } from "../utils/normalize.js";
 
 /**
  * RiddleManager — draws riddles and validates player answers.

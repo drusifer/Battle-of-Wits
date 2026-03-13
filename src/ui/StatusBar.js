@@ -9,12 +9,12 @@
  * No template-literal innerHTML injection — all text set via .textContent.
  */
 
-import { BaseSubscriber } from './BaseSubscriber.js';
-import { STATES } from '../engine/GameEngine.js';
+import { BaseSubscriber } from "./BaseSubscriber.js";
+import { STATES } from "../engine/GameEngine.js";
 
 const MAX_HEARTS = 2;
-const HEART_FULL = '❤️';
-const HEART_EMPTY = '🖤';
+const HEART_FULL = "❤️";
+const HEART_EMPTY = "🖤";
 
 export class StatusBar extends BaseSubscriber {
   #el;
@@ -57,8 +57,13 @@ export class StatusBar extends BaseSubscriber {
 
   /** @param {import('../engine/EventBus.js').EventBus} bus */
   #initSubscriptions(bus) {
-    this.subscribe(bus, 'phase:changed', ({ to, round }) => this.#onPhaseChanged(to, round));
-    this.subscribe(bus, 'goblet:chosen', ({ outcome }) => this.#onGobletChosen(outcome));
+    this.subscribe(bus, "phase:changed", ({ to, round }) =>
+      this.#onPhaseChanged(to, round),
+    );
+    this.subscribe(bus, "goblet:chosen", ({ outcome }) =>
+      this.#onGobletChosen(outcome),
+    );
+    this.subscribe(bus, "heart:spent", () => this.#onHeartSpent());
   }
 
   /**
@@ -72,9 +77,15 @@ export class StatusBar extends BaseSubscriber {
 
   /** @param {string} outcome */
   #onGobletChosen(outcome) {
-    if (outcome === 'goblet:poisoned' && this.#hearts > 0) {
+    if (outcome === "goblet:poisoned" && this.#hearts > 0) {
       this.#hearts -= 1;
     }
+    this.#render();
+  }
+
+  /** Decrement hearts when goblet hint is used (S4-G1). */
+  #onHeartSpent() {
+    if (this.#hearts > 0) this.#hearts -= 1;
     this.#render();
   }
 
@@ -85,19 +96,22 @@ export class StatusBar extends BaseSubscriber {
   #render() {
     const heartsDisplay = this.#buildHeartsDisplay();
 
-    const roundSpan = document.createElement('span');
-    roundSpan.className = 'status-round';
-    roundSpan.textContent = 'Round ' + this.#round;
+    const roundSpan = document.createElement("span");
+    roundSpan.className = "status-round";
+    roundSpan.textContent = "Round " + this.#round;
 
-    const heartsSpan = document.createElement('span');
-    heartsSpan.className = 'status-hearts';
-    heartsSpan.setAttribute('aria-label', this.#hearts + ' of ' + MAX_HEARTS + ' hearts');
+    const heartsSpan = document.createElement("span");
+    heartsSpan.className = "status-hearts";
+    heartsSpan.setAttribute(
+      "aria-label",
+      this.#hearts + " of " + MAX_HEARTS + " hearts",
+    );
     heartsSpan.textContent = heartsDisplay;
 
     // Clear container and append new child elements.
     // In real browser DOM, innerHTML = '' clears children; then appendChild adds them.
     // The innerHTML property is also updated for environments (tests) that read it as a string.
-    this.#el.innerHTML = '';
+    this.#el.innerHTML = "";
     this.#el.appendChild(roundSpan);
     this.#el.appendChild(heartsSpan);
 
@@ -109,11 +123,11 @@ export class StatusBar extends BaseSubscriber {
       this.#round +
       '</span><span class="status-hearts" aria-label="' +
       this.#hearts +
-      ' of ' +
+      " of " +
       MAX_HEARTS +
       ' hearts">' +
       heartsDisplay +
-      '</span>';
+      "</span>";
   }
 
   /** @returns {string} */
@@ -122,6 +136,6 @@ export class StatusBar extends BaseSubscriber {
     for (let i = 0; i < MAX_HEARTS; i++) {
       hearts.push(i < this.#hearts ? HEART_FULL : HEART_EMPTY);
     }
-    return hearts.join(' ');
+    return hearts.join(" ");
   }
 }

@@ -1,13 +1,31 @@
-=== make uat-gui @ 2026-03-12 12:47:04 ===
+=== make test @ 2026-03-13 10:56:45 ===
 make[1]: Entering directory '/home/drusifer/Projects/Battle-of-Wits'
-PORT=$(python3 -c "import socket; s=socket.socket(); s.bind(('',0)); p=s.getsockname()[1]; s.close(); print(p)") npx playwright test
+npm test
 
-Running 4 tests using 1 worker
+> battle-of-wits@0.1.0 test
+> vitest run
 
-  ✓  1 [chromium] › tests/gui/sprint3_feedback.spec.js:53:1 › T-GUI-1: intro scene renders Gramps dialogue on load (594ms)
-  ✓  2 [chromium] › tests/gui/sprint3_feedback.spec.js:65:1 › T-GUI-2: Vizzini presents the riddle, not Gramps (404ms)
-  ✓  3 [chromium] › tests/gui/sprint3_feedback.spec.js:93:1 › T-GUI-3: goblet CTA buttons appear when goblet phase starts (761ms)
-  ✓  4 [chromium] › tests/gui/sprint3_feedback.spec.js:117:1 › T-GUI-4: Buttercup hint contains no goblet-reveal vocabulary during riddle phase (400ms)
 
-  4 passed (4.6s)
+ RUN  v3.2.4 /home/drusifer/Projects/Battle-of-Wits
+
+ ✓ tests/unit/DataIntegrity.test.js (24 tests) 161ms
+ ✓ tests/unit/GameEngine.test.js (30 tests) 87ms
+ ✓ tests/unit/Backlog.test.js (6 tests) 165ms
+ ✓ tests/unit/GobletManager.test.js (11 tests) 43ms
+ ✓ tests/unit/ChatUI.test.js (43 tests) 57ms
+ ✓ tests/unit/BacklogSprint4.test.js (32 tests) 99ms
+ ✓ tests/unit/BacklogSprint3.test.js (21 tests) 51ms
+ ✓ tests/unit/Deck.test.js (27 tests) 39ms
+ ✓ tests/unit/DataLoader.test.js (16 tests) 30ms
+ ✓ tests/unit/Characters.test.js (30 tests) 35ms
+ ✓ tests/unit/TechDebt.test.js (8 tests) 25ms
+ ✓ tests/unit/EventBus.test.js (12 tests) 17ms
+ ✓ tests/unit/normalize.test.js (11 tests) 7ms
+ ✓ tests/unit/RiddleManager.test.js (9 tests) 13ms
+
+ Test Files  14 passed (14)
+      Tests  280 passed (280)
+   Start at  10:56:45
+   Duration  2.62s (transform 424ms, setup 0ms, collect 1.27s, tests 828ms, environment 5ms, prepare 1.96s)
+
 make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'

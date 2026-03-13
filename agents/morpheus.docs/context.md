@@ -1,4 +1,4 @@
-> TL;DR: Morpheus's architecture knowledge — Deck-of-Decks pattern, factory functions, 75% win rate (intentional), ARCH.md updated post Sprint 1 review. Sprint 2: characters + EventBus + GameEngine.
+> TL;DR: Sprint 3 shipped. Tech Debt Sprint planned 2026-03-12: TD1 = P1 bug (restart destroys UI subscriptions), TD2 = 3 stale ARCH sections, TD3 = dead enable() call in main.js.
 
 ## Recent Decisions
 

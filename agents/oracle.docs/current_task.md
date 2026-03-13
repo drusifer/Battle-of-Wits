@@ -4,14 +4,16 @@
 **Assigned to:** Oracle
 **Completed:** 2026-03-12
 
-## Task: Knowledge Distillation (`*ora tldr`)
+## Task: Add Round End Reactions (`*chat ora now we need some reactions to DPR or Vizzini drinking the poison...`)
 
-**Goal:** Generate and inject a TL;DR summary at the top of `agents/CHAT.md`.
+**Goal:** Add `game:won` and `game:lost` reactions to all characters, factoring in the narrative of DPR surviving due to iocane resistance or dying from a double dose, and Vizzini delivering a final zinger upon his demise. 
 
 ## Completed Actions
-- [x] Analyzed current unarchived chat log, which centers around Sprint 3 review, bug fixes, UI finalization, and documentation grooming.
-- [x] Read template at `agents/templates/_template_tldr.md`.
-- [x] Pre-pended `> TL;DR: ...` snippet to the very top of `agents/CHAT.md` according to the requirement for `make tldr` to parse it.
+- [x] Read current character reaction files in `data/conversations/reactions/`.
+- [x] Created `scripts/add_round_end_reactions.js` to systematically add specific narrative-driven `game:won` and `game:lost` seed lines for all characters.
+- [x] Expanded those lines dynamically to 50 items each per character.
+- [x] Fixed a trailing backslash-newline JSON parsing bug in the script output.
+- [x] Rebuilt with `make assemble-all` and verified `DataIntegrity.test.js` passes.
 
 ## Blockers
 None

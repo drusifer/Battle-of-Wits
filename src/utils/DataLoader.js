@@ -1,4 +1,4 @@
-import { Deck } from './Deck.js';
+import { Deck } from "./Deck.js";
 
 const MIN_VARIANTS = 5;
 
@@ -10,7 +10,7 @@ function validate(rawAttributes) {
   for (const [category, variants] of Object.entries(rawAttributes)) {
     if (variants.length < MIN_VARIANTS) {
       throw new Error(
-        `Category "${category}" has ${variants.length} variants — minimum is ${MIN_VARIANTS}`
+        `Category "${category}" has ${variants.length} variants — minimum is ${MIN_VARIANTS}`,
       );
     }
   }
@@ -23,7 +23,7 @@ function validate(rawAttributes) {
  */
 function createAttributeDeck(rawAttributes) {
   const categoryDecks = Object.values(rawAttributes).map(
-    variants => new Deck(variants, { autoReshuffle: false })
+    (variants) => new Deck(variants, { autoReshuffle: false }),
   );
   return new Deck(categoryDecks, { autoReshuffle: true });
 }
@@ -79,11 +79,11 @@ export function buildGameData(rawRiddles, rawAttributes, rawConversations) {
  * @param {string} basePath - Base URL or path prefix (default: 'data')
  * @returns {Promise<GameData>}
  */
-export async function fetchAndBuild(basePath = 'data') {
+export async function fetchAndBuild(basePath = "data") {
   const [riddles, attributes, conversations] = await Promise.all([
-    fetch(`${basePath}/riddles.json`).then(r => r.json()),
-    fetch(`${basePath}/attributes.json`).then(r => r.json()),
-    fetch(`${basePath}/conversations.json`).then(r => r.json()),
+    fetch(`${basePath}/riddles.json`).then((r) => r.json()),
+    fetch(`${basePath}/attributes.json`).then((r) => r.json()),
+    fetch(`${basePath}/conversations.json`).then((r) => r.json()),
   ]);
   return buildGameData(riddles, attributes, conversations);
 }

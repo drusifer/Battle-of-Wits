@@ -1,6 +1,6 @@
 # Sprint Log
 
-> TL;DR: Sprint 1 complete (15/15 tasks, 2026-03-10). Sprint 2 (T16–T29): 3 backlog tests + characters + EventBus + GameEngine + data expansion. Sprint 3 (T30–T41): full playable UI — ChatUI, input area, hint button, goblet selection, status bar, typing indicator, app bootstrap, UAT script.
+> TL;DR: Sprint 1 complete (15/15 tasks, 2026-03-10). Sprint 2 (T16–T29): 3 backlog tests + characters + EventBus + GameEngine + data expansion. Sprint 3 (T30–T41): full playable UI — ChatUI, input area, hint button, goblet selection, status bar, typing indicator, app bootstrap, UAT script. Sprint 4 planned (T36–T44): real whenIdle, clue flash, goblet animations, mobile audit, goblet-phase hint, sound effects.
 
 ## Sprint 1 — Logic Core
 **Started:** 2026-03-10
@@ -92,3 +92,24 @@
 | `goblets:described` | GobletDisplay — populate description text |
 | `goblet:chosen` | StatusBar — update hearts; GobletDisplay — hide |
 | `game:won` / `game:lost` | ChatUI — outro bubbles; Restart button highlight |
+
+**Sprint 3 ACCEPTED 2026-03-12:** 248 unit tests / 47 UAT3 / 5 GUI green. Tech Debt Sprint completed same day.
+
+---
+
+## Sprint 4 — UX Polish + Sound
+**Planned:** 2026-03-12
+**Goal:** Real typing queue, clue flash, goblet animations, mobile audit, goblet-phase hint, sound effects.
+**Target tasks:** T42–T50
+
+| ID | Task | Owner | Status |
+|----|------|-------|--------|
+| T42 | S4-U1: Clue flash — `clueType` payload + CSS flash classes | Neo | `[ ]` |
+| T43 | S4-U2: Real `whenIdle()` — message queue + typing delays | Neo | `[ ]` |
+| T44 | S4-U3: Goblet reveal animation (shake/glow) | Neo | `[ ]` |
+| T45 | S4-U4: Mobile tap target audit | Neo | `[ ]` |
+| T46 | S4-G1: Goblet phase hint — new event, Ask Buttercup button, heart cost | Neo | `[ ]` |
+| T47 | S4-S1: Sound effects — SoundManager, 4 assets, mute toggle | Neo | `[ ]` |
+| T48 | Tests: S4-U1 + S4-G1 | Trin | `[ ]` |
+| T49 | Tests: S4-U2 `whenIdle()` real queue | Trin | `[ ]` |
+| T50 | UAT Sprint 4 + GUI test updates | Trin | `[ ]` |

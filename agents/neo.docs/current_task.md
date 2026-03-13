@@ -1,40 +1,30 @@
 # Current Task
 
-**Status:** Sprint 2 — T28 remaining (attributes.json expansion)
+**Status:** Complete — Sprint 4 impl T42–T47 shipped
 **Assigned to:** Neo
-**Started:** 2026-03-10
+**Started:** 2026-03-12
 
-## Sprint 2 Deliverables
+## Deliverables
 
-- [x] T17 `src/characters/Character.js` — base class
-- [x] T18 `src/characters/Vizzini.js` — setRoundDecks, drawClue
-- [x] T19 `src/characters/Buttercup.js` — setRoundDeck, drawGobletHint
-- [x] T20 `src/characters/Gramps.js` — describeGoblet from fragments + connectives
-- [x] T21 `src/characters/Boy.js` — reaction decks only
-- [x] T22 `tests/unit/Characters.test.js` — 28 tests, all green
-- [x] T23 `src/engine/EventBus.js` — pub/sub
-- [x] T24 `tests/unit/EventBus.test.js` — 12 tests, all green
-- [x] T25 `src/engine/GameEngine.js` — async state machine, 7 states
-- [x] T26 `tests/unit/GameEngine.test.js` — 27 tests, all green
-- [x] T27 `data/riddles.json` — 100 riddles, no duplicates
-- [x] T16 `tests/unit/Backlog.test.js` — 6 backlog tests from Sprint 1 review
-- [x] `tests/unit/DataIntegrity.test.js` — 21 data quality tests
-- [ ] T28 `data/attributes.json` — expand to 20+ categories × 8+ variants
+- [x] T42: S4-U1 clue flash — `clueType` in `hint:requested` payload (GameEngine); `#chainAnimatedClue` + `#chainFlash` in ChatUI; CSS `.clue-flash-safe` / `.clue-flash-poison`
+- [x] T43: S4-U2 whenIdle — already implemented in Sprint 3; tests added to BacklogSprint4.test.js
+- [x] T44: S4-U3 goblet reveal animation — `goblet:chosen` subscription in GobletDisplay (`.goblet-shake`/`.goblet-glow`); 600ms `#chainDelay` in ChatUI; CSS keyframes
+- [x] T45: S4-U4 mobile tap targets — 44px min-height on goblet + input buttons at ≤480px
+- [x] T46: S4-G1 goblet phase hint — `requestGobletHint()` on GameEngine; `heart:spent` event; `#onHeartSpent()` in StatusBar; `setHintButton()` + `#onGobletHintUsed()` in GobletDisplay; `#goblet-hint-btn` in index.html; wired in main.js
+- [x] T47: S4-S1 sound effects — `SoundManager` (Web Audio API synth tones, no external assets); mute toggle; wired in main.js
 
-## Current State
+## Results
 
-168/168 tests green. make lint clean.
-DataIntegrity.test.js will gate T28 quality when expanded.
-T28 pending: DataIntegrity tests require 20+ categories × 8+ variants × 5+ insults/compliments/hints each.
+- 278/278 tests green (30 new Sprint 4 tests)
+- `make lint` clean
+- `src/utils/SoundManager.js` created
+- `tests/unit/BacklogSprint4.test.js` created
 
-## Bugs Fixed During TDD
+## Key Decisions
 
-- drawN() L07: checked isEmpty AFTER draw → genuine null in last position treated as exhaustion. Fixed to check BEFORE draw.
-- riddles.json: 7 duplicate answers + 1 self-referencing alternate. All fixed.
-
-## Blockers
-
-None. T28 is the only outstanding task.
+- Sound: Web Audio API synth tones (no file assets needed) — graceful no-op in Node/test env
+- `#scrollToBottom`: guarded with `typeof requestAnimationFrame !== 'undefined'` for Node compat
+- `wireControls`: refactored to options object to satisfy max-params lint rule
 
 ---
-*Last updated: 2026-03-10*
+*Last updated: 2026-03-12 by Neo*

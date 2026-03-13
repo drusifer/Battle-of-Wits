@@ -9,6 +9,6 @@ export function normalize(input) {
   return input
     .toLowerCase()
     .trim()
-    .replace(/^(the|an|a)\s+/, '')
-    .replace(/[^a-z0-9\s-]+$/, '');
+    .replace(/^(the|an|a)\s+/, "")
+    .replace(/[^a-z0-9\s-]+$/, "");
 }

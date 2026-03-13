@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from "./Character.js";
 
 /**
  * Vizzini — the villain.
@@ -14,7 +14,7 @@ export class Vizzini extends Character {
   #insultDeck = null; // poisoned-goblet clues (wrong riddle answer)
 
   constructor(reactionDecks) {
-    super('Vizzini', '😤', reactionDecks);
+    super("Vizzini", "😤", reactionDecks);
   }
 
   /**

@@ -13,17 +13,17 @@ The `chat` skill posts structured messages to `agents/CHAT.md`, the shared team 
 ## Usage
 
 ```bash
-python agents/tools/chat.py "<message>" --persona <Name> --cmd <command> [--to <recipient>]
+make chat MSG="<message>" [PERSONA="<Name>"] [CMD="<command>"] [TO="<recipient>"]
 ```
 
 ### Arguments
 
-| Argument | Flag | Default | Description |
-|----------|------|---------|-------------|
-| message | positional | required | Message content |
-| persona | `--persona` / `-p` | `$USER` | Who is sending (e.g. `Neo`, `Trin`) |
-| cmd | `--cmd` / `-c` | `chat` | Command prefix (auto-prefixed with `*`) |
-| to | `--to` / `-t` | `all` | Recipient persona name |
+| Argument | Make Variable | Default | Description |
+|----------|---------------|---------|-------------|
+| message | `MSG` | required | Message content |
+| persona | `PERSONA` | `$USER` | Who is sending (e.g. `Neo`, `Trin`) |
+| cmd | `CMD` | `chat` | Command prefix (auto-prefixed with `*`) |
+| to | `TO` | `all` | Recipient persona name |
 
 ### Output Format
 
@@ -37,17 +37,17 @@ python agents/tools/chat.py "<message>" --persona <Name> --cmd <command> [--to <
 
 ### Log a user request
 ```bash
-python agents/tools/chat.py "fix the bug in parser.py" --persona User --cmd "request"
+make chat MSG="fix the bug in parser.py" PERSONA="User" CMD="request"
 ```
 
 ### Post a persona response
 ```bash
-python agents/tools/chat.py "Fixed bug in parser.py line 42" --persona Neo --cmd "swe fix" --to Trin
+make chat MSG="Fixed bug in parser.py line 42" PERSONA="Neo" CMD="swe fix" TO="Trin"
 ```
 
 ### Assign work to another persona
 ```bash
-python agents/tools/chat.py "@Trin please verify the fix in parser.py" --persona Neo --cmd "handoff" --to Trin
+make chat MSG="@Trin please verify the fix in parser.py" PERSONA="Neo" CMD="handoff" TO="Trin"
 ```
 
 ## When to Post

@@ -114,4 +114,40 @@
 | T35 | Expand all data to final target counts (if not reached in S2) | Neo |
 
 ---
-*Last updated: 2026-03-10 by Mouse — Sprint 2 planned ✓*
+
+## Sprint 4: UX Polish + Sound
+**Goal:** Real typing queue, clue flash, goblet animations, mobile audit, goblet-phase hint, sound effects.
+**Started:** 2026-03-12
+**Team:** Neo (impl), Trin (tests + UAT)
+
+### Definition of Done
+- [ ] T42–T50 all complete and checked off
+- [ ] `make test` green (250+ tests)
+- [ ] `make uat3` passes (47/47)
+- [ ] `make uat-gui` passes (5/5)
+- [ ] `make lint` clean
+- [ ] Sound assets bundled in `assets/sounds/`
+
+---
+
+### Implementation
+
+| ID  | Task | Owner | Status | Notes |
+|-----|------|-------|--------|-------|
+| T42 | S4-U1: Clue flash — add `clueType` to `hint:requested` payload (GameEngine); CSS `.clue-flash-safe` / `.clue-flash-poison` classes + fade animation; ChatUI applies flash to last Vizzini `.gameplay` bubble after `whenIdle` | Neo | `[ ]` | ~1h. PRD: S4-U1 |
+| T43 | S4-U2: Real `whenIdle()` — message queue in ChatUI; typing delay per message (proportional to length, 400–1800ms); TypingIndicator per-character; `whenIdle()` resolves on queue drain | Neo | `[ ]` | ~2h. PRD: S4-U2. High risk — touches ChatUI core |
+| T44 | S4-U3: Goblet reveal animation — CSS `.goblet-shake` (poisoned) / `.goblet-glow` (safe); apply on `goblet:chosen` before outcome chat messages fire; 600ms | Neo | `[ ]` | ~1h. PRD: S4-U3 |
+| T45 | S4-U4: Mobile tap audit — goblet buttons + chat input ≥ 44px on ≤480px viewport; no overflow at 375px | Neo | `[ ]` | ~30m. PRD: S4-U4 |
+| T46 | S4-G1: Goblet phase hint — new `hint:goblet-requested` event; GameEngine draws `buttercup.gobletHintDeck` + Vizzini reaction; costs 1 heart; GobletDisplay "Ask Buttercup" button (disabled at 0 hearts or after use) | Neo | `[ ]` | ~1h. PRD: S4-G1 |
+| T47 | S4-S1: Sound effects — `assets/sounds/` (correct.mp3, wrong.mp3, safe.mp3, poison.mp3); SoundManager util; play on events; mute toggle in UI; graceful autoplay fallback | Neo | `[ ]` | ~2h. PRD: S4-S1 |
+
+### Testing
+
+| ID  | Task | Owner | Status | Notes |
+|-----|------|-------|--------|-------|
+| T48 | Test suite: S4-U1 clue flash (clueType payload, CSS class applied) + S4-G1 goblet hint (event fired, heart cost, button states) | Trin | `[ ]` | Depends on T42, T46 |
+| T49 | Test suite: S4-U2 `whenIdle()` real queue (resolves after drain, typing delay range, TypingIndicator lifecycle) | Trin | `[ ]` | Depends on T43. Regression: all existing `await whenIdle()` call sites |
+| T50 | UAT Sprint 4 — create `agents/tools/uat_sprint4.mjs`; update GUI tests for new button + animations; full `make test` + `make uat3` + `make uat-gui` green | Trin | `[ ]` | Depends on T42–T49 |
+
+---
+*Last updated: 2026-03-12 by Mouse — Sprint 4 planned ✓ (T42–T50)*

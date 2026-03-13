@@ -1,13 +1,13 @@
 # Next Steps
 
 ## Immediate Next Action
-None planned
+Wait for user to provide the next task or command.
 
 ## Waiting On
-None
+User input.
 
 ## Planned Work
-- [ ] No planned work
+- [ ] Process user instructions once received.
 
 ---
-*Last updated: [timestamp]*
+*Last updated: 2026-03-12*

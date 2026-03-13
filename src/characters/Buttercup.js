@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from "./Character.js";
 
 /**
  * Buttercup — the ally.
@@ -18,7 +18,7 @@ export class Buttercup extends Character {
   #gobletHintDeck = null;
 
   constructor(reactionDecks) {
-    super('Buttercup', '👸', reactionDecks);
+    super("Buttercup", "👸", reactionDecks);
   }
 
   /**

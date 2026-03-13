@@ -6,11 +6,11 @@ ifdef MKF_ACTIVE
 
 # ── Real recipes (invoked by mkf, not directly by the user) ─────────────────
 
-.PHONY: tldr npm-install merge-attributes test test-watch test-coverage \
-        uat uat2 uat3 uat-gui goblet-preview \
+.PHONY: tldr npm-install merge-attributes merge-conversations assemble-all test test-watch test-coverage \
+        uat uat2 uat3 uat4 uat-gui goblet-preview simulate \
         lint lint-fix lint-format lint-format-fix lint-complexity \
         lint-dead-code lint-security lint-structure lint-duplication \
-        install
+        install_bob
 
 tldr: ## Show TL;DR summaries from all project files (quick orientation for agents)
 	@rg --no-heading "TL;DR:" --glob "*.md" -N | sed 's|^\./||' | sort
@@ -20,6 +20,11 @@ npm-install: ## Install npm dependencies
 
 merge-attributes: ## Merge individual category JSONs into data/attributes.json
 	node scripts/mergeAttributes.js
+
+merge-conversations: ## Merge individual conversation JSONs into data/conversations.json
+	node scripts/mergeConversations.js
+
+assemble-all: merge-attributes merge-conversations ## Assemble all data files (attributes and conversations)
 
 test: ## Run test suite once
 	npm test
@@ -39,11 +44,17 @@ uat2: ## Run Sprint 2 UAT acceptance checks
 uat3: ## Run Sprint 3 UAT acceptance checks (UI layer contracts)
 	node agents/tools/uat_sprint3.mjs
 
+uat4: ## Run Sprint 4 UAT acceptance checks (UX polish + sound)
+	node agents/tools/uat_sprint4.mjs
+
 uat-gui: ## Run headless Playwright GUI tests — validates SPRINT3_Feedback UX contracts (starts/stops dev server)
 	PORT=$$(python3 -c "import socket; s=socket.socket(); s.bind(('',0)); p=s.getsockname()[1]; s.close(); print(p)") npx playwright test
 
 goblet-preview: ## Print COUNT goblet description pairs for human eval (default: 10)
 	node agents/tools/goblet_preview.mjs $(COUNT)
+
+simulate: ## Run the GameSimulator for deck optimization and metrics (usage: make simulate [COUNT=1000])
+	node scripts/simulate.js $(COUNT)
 
 # ── Code Quality ─────────────────────────────────────────────────────────────
 
@@ -77,8 +88,8 @@ lint-structure: ## Code smell detection (magic numbers, nesting, var, eqeq, etc.
 lint-duplication: ## Detect copy-paste duplication (min 8 lines / 50 tokens)
 	npm run duplication
 
-install: ## Copy agents into a project and set up skill links (usage: make install TARGET=/path/to/project)
-	@[ -n "$(TARGET)" ] || { echo "Usage: make install TARGET=/path/to/project"; exit 1; }
+install_bob: ## Copy agents into a project and set up skill links (usage: make install TARGET=/path/to/project)
+	@[ -n "$(TARGET)" ] || { echo "Usage: make install_bob TARGET=/path/to/project"; exit 1; }
 	@[ -d "$(TARGET)" ] || { echo "Error: $(TARGET) does not exist"; exit 1; }
 	@echo "Installing BobProtocol into $(TARGET)..."
 	@rsync -a \
@@ -113,7 +124,7 @@ else
 #   make test V=-vv        stderr + filtered failures to terminal
 #   make test V=-vvv       stderr + full stdout to terminal
 
-.PHONY: help preview
+.PHONY: help chat preview
 
 help: ## Show available make targets
 	@echo ""
@@ -134,6 +145,13 @@ help: ## Show available make targets
 	@echo "  Targets:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "    \033[36m%-22s\033[0m %s\n", $$1, $$2}'
 	@echo ""
+
+chat: ## Post a message to CHAT.md (usage: make chat MSG="<msg>" [PERSONA="<name>"] [CMD="<cmd>"] [TO="<recipient>"])
+	@[ -n "$(MSG)" ] || { echo "Usage: make chat MSG=\"<message>\" [PERSONA=\"<name>\"] [CMD=\"<cmd>\"] [TO=\"<recipient>\"]"; exit 1; }
+	@python agents/tools/chat.py "$(MSG)" \
+		$(if $(PERSONA),--persona "$(PERSONA)") \
+		$(if $(CMD),--cmd "$(CMD)") \
+		$(if $(TO),--to "$(TO)")
 
 preview: ## Start dev server on 0.0.0.0 with an available port (Ctrl+C to stop)
 	@echo "Starting dev server — press Ctrl+C to stop"
