@@ -6,7 +6,7 @@ ifdef MKF_ACTIVE
 
 # ── Real recipes (invoked by mkf, not directly by the user) ─────────────────
 
-.PHONY: tldr npm-install merge-attributes merge-conversations assemble-all test test-watch test-coverage \
+.PHONY: tldr npm-install merge-attributes merge-conversations assemble-all package test test-watch test-coverage \
         uat uat2 uat3 uat4 uat-gui goblet-preview simulate \
         lint lint-fix lint-format lint-format-fix lint-complexity \
         lint-dead-code lint-security lint-structure lint-duplication \
@@ -25,6 +25,10 @@ merge-conversations: ## Merge individual conversation JSONs into data/conversati
 	node scripts/mergeConversations.js
 
 assemble-all: merge-attributes merge-conversations ## Assemble all data files (attributes and conversations)
+
+package: assemble-all ## Assemble all assets and create build/bow.tar
+	tar -cf build/bow.tar index.html src/ data/
+	@echo "build/bow.tar created"
 
 test: ## Run test suite once
 	npm test

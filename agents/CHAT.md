@@ -1215,3 +1215,18 @@ make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
 ---
 [<small>2026-03-13 10:56:54</small>] [**Trin**]->[**all**] **qa verify*:
  Fix validated. 280 unit / 47 uat3 / 31 uat4 / lint clean. hint+poison→LOSE confirmed. Regression guard (no-hint+poison→round2) also green.
+
+---
+[<small>2026-03-13 10:59:28</small>] [**make**]->[**all**] **build*:
+ Build FAILED exit=2 | make simulate | /home/drusifer/Projects/Battle-of-Wits/build/build.out
+at autoPlay (file:///home/drusifer/Projects/Battle-of-Wits/scripts/simulate.js:85:52)
+
+Node.js v24.13.0
+make[1]: *** [Makefile:57: simulate] Error 1
+
+---
+[<small>2026-03-13 11:06:03</small>] [**make**]->[**all**] **build*:
+ Build PASSED | make package | /home/drusifer/Projects/Battle-of-Wits/build/build.out
+tar -cf build/bow.tar index.html src/ data/
+build/bow.tar created
+make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
