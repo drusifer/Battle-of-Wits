@@ -6,6 +6,11 @@
 
 Play as the Dread Pirate Roberts in a high-stakes intellectual duel against Vizzini. Solve riddles, collect oblique clues from Vizzini's taunts, and deduce which goblet is safe to drink from.
 
+
+Play the game here: https://web.drewgut.com/battle-of-wits
+
+or follow the steps below to deploy a local version yourself.
+
 ---
 
 ## Quick Start
