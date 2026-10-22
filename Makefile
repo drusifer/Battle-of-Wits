@@ -115,6 +115,17 @@ install_bob: ## Copy agents into a project and set up skill links (usage: make i
 	@echo "Done. BobProtocol installed in $(TARGET)"
 	@echo "Run 'make tldr' inside $(TARGET) to verify."
 
+
+# ── Publish to the pi-patch Forgejo registry (forge.pi-patch.lan) ──────────────
+# Credentials: make -C $(PI_PATCH)/cluster forgejo-token
+PI_PATCH        ?= $(HOME)/Projects/pi-patch
+FORGEJO_PUBLISH := $(PI_PATCH)/cluster/scripts/forgejo-publish.sh
+FORGEJO_VERSION ?= $(shell git describe --tags --always --dirty)
+
+.PHONY: deploy-forgejo
+deploy-forgejo: package ## Build build/bow.tar and publish it to pi-patch Forgejo
+	$(FORGEJO_PUBLISH) file build/bow.tar battle-of-wits $(FORGEJO_VERSION)
+
 else
 
 # ── Interception layer ───────────────────────────────────────────────────────
@@ -162,6 +173,9 @@ preview: ## Start dev server on 0.0.0.0 with an available port (Ctrl+C to stop)
 	npx vite --host 0.0.0.0
 
 %:
+	@./scripts/mkf $(V) $@
+
+deploy-forgejo: ## Build build/bow.tar and publish it to pi-patch Forgejo
 	@./scripts/mkf $(V) $@
 
 endif
