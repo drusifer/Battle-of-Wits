@@ -8,3 +8,7 @@
 .prettierignore
 .prettierrc
 node_modules/
+
+# Packaging output (published to Forgejo via make deploy-forgejo)
+build/bow.tar
+build/build.out

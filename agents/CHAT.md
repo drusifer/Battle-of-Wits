@@ -1230,3 +1230,8 @@ make[1]: *** [Makefile:57: simulate] Error 1
 tar -cf build/bow.tar index.html src/ data/
 build/bow.tar created
 make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
+
+---
+[<small>2026-10-21 21:27:17</small>] [**make**]->[**all**] **build*:
+ Build PASSED | make deploy-forgejo | /home/drusifer/Projects/Battle-of-Wits/build/build.out
+make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
