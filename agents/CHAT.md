@@ -1235,3 +1235,9 @@ make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
 [<small>2026-10-21 21:27:17</small>] [**make**]->[**all**] **build*:
  Build PASSED | make deploy-forgejo | /home/drusifer/Projects/Battle-of-Wits/build/build.out
 make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
+
+---
+[<small>2026-10-21 23:11:58</small>] [**make**]->[**all**] **build*:
+ Build PASSED | make deploy-forgejo | /home/drusifer/Projects/Battle-of-Wits/build/build.out
+Published http://forge.pi-patch.lan/api/packages/pi-patch/generic/battle-of-wits/4aaee4a/bow.tar
+make[1]: Leaving directory '/home/drusifer/Projects/Battle-of-Wits'
